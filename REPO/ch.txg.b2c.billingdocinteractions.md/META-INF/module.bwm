@@ -38,4 +38,7 @@
       <sca:interface.wsdl xmi:id="_tSSf4czYEeqN9aEzAo8lZA" interface="http://xmlns.example.com/20200723133610PLT#wsdl.interface(api-companies-BillingDocList)" scaext:wsdlLocation="../Processes/ch/txg/b2c/billingdocinteractions/tlp/BillingDocList_tlp.bwp"/>
     </sca:service>
   </sca:component>
+  <sca:component xmi:id="_EC1KgM3AEeqGdrklu0KhLQ" name="ComponentLoadErrorConfiguration" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_EC1Kgc3AEeqGdrklu0KhLQ" processName="ch.txg.b2c.billingdocinteractions.startup.LoadErrorConfiguration"/>
+  </sca:component>
 </sca:composite>
