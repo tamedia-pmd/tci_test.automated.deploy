@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema 
+	xmlns="http://ch/txg/core/lehf/common/xsd/RaiseException/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://ch/txg/core/lehf/common/xsd/RaiseException/"
+	elementFormDefault="qualified"
+	targetNamespace="http://ch/txg/core/lehf/common/xsd/RaiseException/">
+	
+	<xsd:complexType name="RaiseExceptionInputElementType">
+		<xsd:sequence>
+			<xsd:element maxOccurs="1" minOccurs="0" name="API" type="xsd:string" />
+			<xsd:element maxOccurs="1" minOccurs="0" name="ApplicationName"				type="xsd:string" />
+			<xsd:element maxOccurs="1" minOccurs="0" name="BSLProcess"			type="xsd:string" />
+			<xsd:element maxOccurs="1" minOccurs="1" name="BusinessKey"			type="xsd:string" />
+			<xsd:element maxOccurs="1" minOccurs="0" name="CaseReference"		type="xsd:string" />
+			<xsd:element maxOccurs="1" minOccurs="0" name="ErrorData">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element maxOccurs="1" minOccurs="0" name="ErrorCode"	type="xsd:string" />
+						<xsd:element maxOccurs="1" minOccurs="0" name="ErrorMsg">
+							<xsd:simpleType>
+								<xsd:restriction base="xsd:string">
+									<xsd:maxLength value="500" />
+								</xsd:restriction>
+							</xsd:simpleType>
+						</xsd:element>
+						<xsd:element maxOccurs="1" minOccurs="0" name="ErrorType" type="errorTypeType" />
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element maxOccurs="1" minOccurs="0" name="ErrorTimestamp"  type="xsd:string" />
+			<xsd:element maxOccurs="1" minOccurs="0" name="OriginalMessage"	type="xsd:string" />
+			<xsd:element maxOccurs="1" minOccurs="0" name="Payload">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:maxLength value="2000" />
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:element>
+
+			<xsd:element maxOccurs="1" minOccurs="0" name="ProcessStack"  type="xsd:string" />
+			<xsd:element maxOccurs="1" minOccurs="0" name="Severity"      type="severityType" />
+			<xsd:element maxOccurs="1" minOccurs="0" name="SourceSystem"  type="xsd:string" />
+			<xsd:element maxOccurs="1" minOccurs="0" name="StartTimestamp" 	type="xsd:string" />
+			<xsd:element maxOccurs="1" minOccurs="1" name="TrackId"  	type="xsd:string" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:simpleType name="errorTypeType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="System" />
+			<xsd:enumeration value="Business" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="severityType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="INFO" />
+			<xsd:enumeration value="DEBUG" />
+			<xsd:enumeration value="WARN" />
+			<xsd:enumeration value="ERROR" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+
+	<xsd:element name="RaiseExceptionInputElement" type="RaiseExceptionInputElementType" />
+
+</xsd:schema>

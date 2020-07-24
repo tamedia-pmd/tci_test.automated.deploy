@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<msv:DocumentRoot xmlns:msv="http://tns.tibco.com/bw/model/core/moduleSV">
+  <moduleSharedVariables>
+    <moduleSharedVariable name="ErrorItems" type="{http://ch/txg/core/lehf/common/xsd/ErrorConfiguration/}ErrorConfigurations" initialValueMode="none"/>
+  </moduleSharedVariables>
+  <import importType="http://www.w3.org/2001/XMLSchema" namespace="http://ch/txg/core/lehf/common/xsd/ErrorConfiguration/" location="../Schemas/ErrorConfigurations.xsd"/>
+</msv:DocumentRoot>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:http="http://xsd.tns.tibco.com/bw/models/sharedresource/httpclient" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmi:id="_XEd6EbrVEeqV9MnteWbH5w" name="ch.txg.core.configuration.common.sh.http.HttpClientResourceConfig" type="http:HttpClientConfiguration">
+  <jndi:configuration xsi:type="http:HttpClientConfiguration" xmi:id="_XEehILrVEeqV9MnteWbH5w" httpClientVersion="httpcomponents" useDefaultSSL="true">
+    <substitutionBindings xmi:id="_ZlVIwLrfEeqV9MnteWbH5w" template="maxTotalConnections" propName="/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/MAX_TOTAL_CONNECTIONS"/>
+    <substitutionBindings xmi:id="_c4NOwLrfEeqV9MnteWbH5w" template="maxTotalConnectionsPerHost" propName="/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/MAX_CONNECTION_PER_HOST"/>
+    <substitutionBindings xmi:id="_kc9ZoLrfEeqV9MnteWbH5w" template="useSingleThreadConnectionManager" propName="/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/DISABLE_CONNECTION_POOLING"/>
+    <substitutionBindings xmi:id="_mMdoYLrfEeqV9MnteWbH5w" template="idleConnectionTimeout" propName="/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/IDLE_CONNECTION_TIMEOUT_ms"/>
+    <substitutionBindings xmi:id="_w6_AkLrfEeqV9MnteWbH5w" template="retryCount" propName="/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/RETRY_COUNT"/>
+    <substitutionBindings xmi:id="_yyeGoLrfEeqV9MnteWbH5w" template="useNonPreemptiveAuth" propName="/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/USE_NONPREEMPTIVE_AUTHENTICATION"/>
+    <substitutionBindings xmi:id="_1WI9QLrfEeqV9MnteWbH5w" template="acceptRedirect" propName="/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/ACCEPT_REDIRECT"/>
+    <substitutionBindings xmi:id="_3L_roLrfEeqV9MnteWbH5w" template="useSingleCookieHeader" propName="/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/USE_SINGLE_COOKIE_HEADER"/>
+    <substitutionBindings xmi:id="_5N-KcLrfEeqV9MnteWbH5w" template="logReqRespTime" propName="/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/LOG_REQUEST_RESPONSE_TIME"/>
+    <tcpDetails xmi:id="_XEehIbrVEeqV9MnteWbH5w">
+      <substitutionBindings xmi:id="_VBrXYLrfEeqV9MnteWbH5w" template="host" propName="/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/HOST"/>
+      <substitutionBindings xmi:id="_XqGLILrfEeqV9MnteWbH5w" template="port" propName="/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/PORT"/>
+      <substitutionBindings xmi:id="_odeBsLrfEeqV9MnteWbH5w" template="staleCheck" propName="/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/STALE_CHECK"/>
+      <substitutionBindings xmi:id="_rTvEMLrfEeqV9MnteWbH5w" template="soTimeout" propName="/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/SOCKET_TIMEOUT_ms"/>
+      <substitutionBindings xmi:id="_t5IZILrfEeqV9MnteWbH5w" template="connectionTimeout" propName="/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/CONNECTION_TIMEOUT_ms"/>
+    </tcpDetails>
+  </jndi:configuration>
+</jndi:namedResource>

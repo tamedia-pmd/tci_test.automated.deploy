@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ErrorConfiguration="http://ch/txg/core/lehf/common/xsd/ErrorConfiguration/" xmlns:dataformat="http://ns.tibco.com/bw/palette/dataformat" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmi:id="_buIFMaV-EeqLVt7Wcdp5Rw" name="sharedaudit.ErrorConfigDataFormat" type="dataformat:DataFormat">
+  <imports xmi:id="_4HFP0KsFEeq-fvviRkPzdA" importType="http://www.w3.org/2001/XMLSchema" namespace="http://ch/txg/core/lehf/common/xsd/ErrorConfiguration/"/>
+  <jndi:configuration xsi:type="dataformat:DataFormat" xmi:id="_buIFMqV-EeqLVt7Wcdp5Rw" formatType="Delimiter separated" colSeparator=";" colSeparatorParseRule="Treat all characters as entered as a single column separator string" lineSeparator="Carriage Return/Line Feed (windows)" fillCharacter="Space" schemaElementQName="ErrorConfiguration:ErrorConfiguration" fieldOffsetsStr="ErrorCode(0,0)&#xA;ErrorMessage(0,0)&#xA;ErrorType(0,0)&#xA;CreateCase(0,0)&#xA;CircuitBreaker(0,0)&#xA;HTTPStatusCode(0,0)&#xA;APIname(0,0)&#xA;BSLProcess(0,0)">
+    <fieldOffsets xmi:id="_4I_UUKsFEeq-fvviRkPzdA" name="ErrorCode"/>
+    <fieldOffsets xmi:id="_4I_UUasFEeq-fvviRkPzdA" name="ErrorMessage"/>
+    <fieldOffsets xmi:id="_4I_UUqsFEeq-fvviRkPzdA" name="ErrorType"/>
+    <fieldOffsets xmi:id="_4I_UU6sFEeq-fvviRkPzdA" name="CreateCase"/>
+    <fieldOffsets xmi:id="_4I_UVKsFEeq-fvviRkPzdA" name="CircuitBreaker"/>
+    <fieldOffsets xmi:id="_4I_UVasFEeq-fvviRkPzdA" name="HTTPStatusCode"/>
+    <fieldOffsets xmi:id="_4I_UVqsFEeq-fvviRkPzdA" name="APIname"/>
+    <fieldOffsets xmi:id="_It1UsLCuEeqf8bBK90HxEg" name="BSLProcess"/>
+  </jndi:configuration>
+</jndi:namedResource>

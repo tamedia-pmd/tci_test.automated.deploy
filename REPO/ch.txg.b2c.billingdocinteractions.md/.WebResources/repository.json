@@ -1,0 +1,7 @@
+{
+    "records": [],
+    "resources": [{
+        "location": "Service Descriptors/ch.txg.b2c.billingdocinteractions.tlp.BillingDocList_tlp-BillingDocList.json",
+        "type": "generated"
+    }]
+}

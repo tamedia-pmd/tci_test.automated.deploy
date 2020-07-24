@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ch/txg/b2c/billingDoc/sl/TokenResponse" xmlns:tns="http://ch/txg/b2c/billingDoc/sl/TokenResponse" elementFormDefault="qualified">
+
+<element name="TokenServiceResponse" type="tns:TokenServiceResponse_type" />
+
+	<complexType name="TokenServiceResponse_type">
+		<sequence>
+			<element name="access_token" type="string" />
+			<element name="expires_in" type="integer" />
+			<element name="token_type" type="string" />
+			<element name="refresh_token" type="string" />
+			<element name="scope" type="string" />
+		</sequence>
+	</complexType>
+
+</schema>

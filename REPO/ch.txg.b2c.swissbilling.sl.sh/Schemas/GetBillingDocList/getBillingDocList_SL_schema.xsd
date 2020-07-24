@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:ns1="http://tns.tibco.com/bw/REST_SwissBilling_BillingDoc" xmlns:ns2="http://xmlns.example.com/Api/parameters" xmlns:tns="http://ch/txg/b2c/swissbilling/getBillingDocList/sl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://ch/txg/b2c/swissbilling/getBillingDocList/sl/">
+
+	<xsd:import namespace="http://tns.tibco.com/bw/REST_SwissBilling_BillingDoc" schemaLocation="../RESTSchema.xsd"/>
+
+	<xsd:import namespace="http://xmlns.example.com/Api/parameters" schemaLocation="ApiParameterSchema.xsd"/>
+
+	<xsd:element name="Input" type="tns:getBillingDocListSL_Input"/>
+
+
+	<xsd:complexType name="getBillingDocListSL_Input">
+		<xsd:sequence>
+		<!-- <xsd:element ref="ns1:httpHeaders"/>   not necessary at the moment-->
+			<xsd:element ref="ns2:api-companies-companyCode-BillingDocListGetParameters"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+
+</xsd:schema>

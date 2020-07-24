@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema 
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ch/txg/core/lehf/common/xsd/loggingwrapper/internal"
+	xmlns:tns="http://ch/txg/core/lehf/common/xsd/loggingwrapper/internal"
+	xmlns:ns0="http://ch/txg/core/lehf/common/xsd/RaiseException/"
+	xmlns:lw="http://ch/txg/core/lehf/common/AuditTypes/0100"
+	xmlns:ec="http://ch/txg/core/lehf/common/xsd/ErrorConfiguration/"
+	elementFormDefault="qualified">
+
+	<xsd:import namespace="http://ch/txg/core/lehf/common/AuditTypes/0100" schemaLocation="./AUDIT.xsd"/>
+	<xsd:import namespace="http://ch/txg/core/lehf/common/xsd/ErrorConfiguration/" schemaLocation="./ErrorConfigurations.xsd"/>		
+
+
+	<xsd:element name="LEHF_Output"  type="tns:LEHF_OutputType"/>
+	
+	<xsd:complexType name="LEHF_OutputType" >
+		<xsd:sequence>
+			<xsd:element ref="lw:LogAudit" />
+			<xsd:element minOccurs="0" maxOccurs="1"   ref="ec:ErrorConfiguration" />
+		</xsd:sequence>
+	</xsd:complexType>
+	
+
+</xsd:schema>

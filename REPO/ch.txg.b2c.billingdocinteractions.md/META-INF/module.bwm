@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:JsonSchema="/T1595501254880Converted/JsonSchema" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_1EL3QMzKEeqN9aEzAo8lZA" targetNamespace="http://tns.tibco.com/bw/composite/ch.txg.b2c.billingdocinteractions.md" name="ch.txg.b2c.billingdocinteractions.md" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_tSTG8MzYEeqN9aEzAo8lZA" name="api-companies-BillingDocList" promote="ComponentBillingDocList_tlp/api-companies-BillingDocList">
+    <sca:interface.wsdl xmi:id="_tSTG9MzYEeqN9aEzAo8lZA" interface="http://xmlns.example.com/20200723133610PLT#wsdl.interface(api-companies-BillingDocList)" scaext:wsdlLocation="../Processes/ch/txg/b2c/billingdocinteractions/tlp/BillingDocList_tlp.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_tS480MzYEeqN9aEzAo8lZA" name="RestService" path="/api/companies/{companyCode}/BillingDocList" docBasePath="http://localhost:7777/ch.txg.b2c.billingdocinteractions.md" docResourcePath="BillingDocList" basePath="/" connector="ch.txg.b2c.billingdocinteractions.re.BillingDocList" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/ch.txg.b2c.billingdocinteractions.tlp.BillingDocList_tlp-BillingDocList.json">
+      <operation xmi:id="_tS-cYMzYEeqN9aEzAo8lZA" operationName="get" nickname="get-api-companies-BillingDocList" httpMethod="GET" notes="Retrieve billing documents by provided criterias" responseStyle="element" outputPartName="item">
+        <parameters xmi:id="_5h53YMzYEeqN9aEzAo8lZA">
+          <parameterMapping xmi:id="_5h53YczYEeqN9aEzAo8lZA" parameterName="debtorCRMID" parameterType="Query" dataType="string"/>
+          <parameterMapping xmi:id="_8LRGUMzYEeqN9aEzAo8lZA" parameterName="docStatus" parameterType="Query" dataType="string"/>
+          <parameterMapping xmi:id="_-cMnIMzYEeqN9aEzAo8lZA" parameterName="paymentStatus" parameterType="Query" dataType="string"/>
+          <parameterMapping xmi:id="_AvhUoMzZEeqN9aEzAo8lZA" parameterName="workflowStatus" parameterType="Query" dataType="integer#int32"/>
+          <parameterMapping xmi:id="_Ecf8sMzZEeqN9aEzAo8lZA" parameterName="stopMode" parameterType="Query" dataType="string"/>
+          <parameterMapping xmi:id="_Go_pcMzZEeqN9aEzAo8lZA" parameterName="afterDunning" parameterType="Query" dataType="string"/>
+        </parameters>
+        <responseStatus xmi:id="_4ULogM2zEeqzmqqa3phF1w" statusCode="200" reasonPhrase="OK" dataType="string"/>
+        <responseStatus xmi:id="_45MaEM2zEeqzmqqa3phF1w" statusCode="401" reasonPhrase="Unauthorized" dataType="string"/>
+        <responseStatus xmi:id="_54pE4M2zEeqzmqqa3phF1w" statusCode="500" reasonPhrase="Internal Server Error" dataType="string"/>
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_tTeLoMzYEeqN9aEzAo8lZA">
+        <parameterMapping xmi:id="_tTeLoczYEeqN9aEzAo8lZA" parameterName="companyCode" parameterType="Path" required="true"/>
+      </parameters>
+      <advancedConfig xmi:id="_tS480czYEeqN9aEzAo8lZA" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_tS-cYczYEeqN9aEzAo8lZA" bindingName="RestService"/>
+  </sca:service>
+  <sca:property xmi:id="_2lhHIMzKEeqN9aEzAo8lZA" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_2l4TgMzKEeqN9aEzAo8lZA" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_2l-aIMzKEeqN9aEzAo8lZA" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_2mGV8MzKEeqN9aEzAo8lZA" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_2mO40MzKEeqN9aEzAo8lZA" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_2mWNkMzKEeqN9aEzAo8lZA" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_YWTwAMzqEeqN9aEzAo8lZA" name="/InteractionInterfaces/BillingDocList/client/endpoint" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:component xmi:id="_tR-94MzYEeqN9aEzAo8lZA" name="ComponentBillingDocList_tlp" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_tR-94czYEeqN9aEzAo8lZA" processName="ch.txg.b2c.billingdocinteractions.tlp.BillingDocList_tlp"/>
+    <sca:service xmi:id="_tSSf4MzYEeqN9aEzAo8lZA" name="api-companies-BillingDocList">
+      <sca:interface.wsdl xmi:id="_tSSf4czYEeqN9aEzAo8lZA" interface="http://xmlns.example.com/20200723133610PLT#wsdl.interface(api-companies-BillingDocList)" scaext:wsdlLocation="../Processes/ch/txg/b2c/billingdocinteractions/tlp/BillingDocList_tlp.bwp"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>

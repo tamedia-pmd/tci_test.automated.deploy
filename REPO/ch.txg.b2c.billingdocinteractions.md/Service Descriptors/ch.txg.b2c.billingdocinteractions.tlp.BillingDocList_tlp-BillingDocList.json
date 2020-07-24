@@ -1,0 +1,93 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "BillingDocList",
+    "description" : "Retrieve billing documents by provided criterias"
+  },
+  "host" : "localhost:8383",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/api/companies/{companyCode}/BillingDocList" : {
+      "get" : {
+        "summary" : "Retrieve billing documents by provided criterias",
+        "description" : "Retrieve billing documents by provided criterias",
+        "operationId" : "get-api-companies-BillingDocList",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "companyCode",
+          "in" : "path",
+          "description" : "",
+          "type" : "string",
+          "required" : true
+        }, {
+          "name" : "docStatus",
+          "in" : "query",
+          "description" : "",
+          "type" : "string",
+          "required" : false
+        }, {
+          "name" : "workflowStatus",
+          "in" : "query",
+          "description" : "",
+          "type" : "integer",
+          "format" : "int32",
+          "required" : false
+        }, {
+          "name" : "stopMode",
+          "in" : "query",
+          "description" : "",
+          "type" : "string",
+          "required" : false
+        }, {
+          "name" : "afterDunning",
+          "in" : "query",
+          "description" : "",
+          "type" : "string",
+          "required" : false
+        }, {
+          "name" : "debtorCRMID",
+          "in" : "query",
+          "description" : "",
+          "type" : "string",
+          "required" : false
+        }, {
+          "name" : "paymentStatus",
+          "in" : "query",
+          "description" : "",
+          "type" : "string",
+          "required" : false
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a BillingDocListResult to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/BillingDocListResult"
+            },
+            "headers" : { }
+          },
+          "401" : {
+            "description" : "Unauthorized",
+            "schema" : {
+              "type" : "string"
+            }
+          },
+          "500" : {
+            "description" : "Internal Server Error",
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "BillingDocListResult" : {
+      "type" : "object",
+      "properties" : { }
+    }
+  }
+}

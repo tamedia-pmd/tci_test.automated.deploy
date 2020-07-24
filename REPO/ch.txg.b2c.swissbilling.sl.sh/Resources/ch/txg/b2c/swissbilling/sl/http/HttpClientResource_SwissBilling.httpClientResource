@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:http="http://xsd.tns.tibco.com/bw/models/sharedresource/httpclient" xmlns:id="http://www.tibco.com/ws/2013/11/identity" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmlns:sca_ext="http://www.tibco.com/ns/sca/201311" xmlns:sslclient="http://xsd.tns.tibco.com/bw/sharedresource/trinity/models/sslclient" xmlns:subject="http://xsd.tns.tibco.com/bw/sharedresource/trinity/models/identity/subject" xmi:id="_XxFuIY6kEeqaK55m6Ewc6g" name="ch.txg.b2c.swissbilling.sl.http.HttpClientResource_SwissBilling" type="http:HttpClientConfiguration">
+  <identitySet xmi:id="_r19ZgI-HEeqaLdqzsiaJQg" appliesTo="namedResource" name="HttpClientIdentitySet" provides="confidentiality">
+    <sca_ext:intentMap xmi:id="_r19ZgY-HEeqaLdqzsiaJQg" provides="sca_ext:confidentiality">
+      <sca_ext:qualifier xmi:id="_r19Zgo-HEeqaLdqzsiaJQg" name="transport">
+        <id:IdentityReference xmi:id="_r2Ac0I-HEeqaLdqzsiaJQg" URI="" type="sslclient:SSLClientConfiguration"/>
+        <id:IdentityReference xmi:id="_dFozAJUdEeqnU_ZcIDr5DA" URI="" type="subject:SubjectConfiguration"/>
+      </sca_ext:qualifier>
+    </sca_ext:intentMap>
+  </identitySet>
+  <jndi:configuration xsi:type="http:HttpClientConfiguration" xmi:id="_XxGVMI6kEeqaK55m6Ewc6g" httpClientVersion="httpcomponents" cmdExecutionIsolationStrategy="THREAD" cmdExecutionIsolationTimeout="1000" cmdExecutionTimeoutEnabled="true" cmdExecutionIsolationInterruptOnTimeout="true" cmdExecutionIsolationSemaphoreMaxConcRequests="8" cmdCircuitBreakerRequestVolumeThreshold="20" cmdCircuitBreakerSleepWindow="5000" cmdCircuitBreakerErrorThresholdPercentage="50" cmdMetricsRollingStatsTime="10000" cmdMetricsRollingStatsNumBuckets="10" cmdMetricsHealthSnapshotInterval="500" cmdRequestLogEnabled="true" tpCoreSize="10" tpMaxQueueSize="-1" tpQueueSizeRejectionThreshold="5" tpKeepAliveTime="1">
+    <substitutionBindings xmi:id="_Hsv_YI92EeqLfa7gOGOgnA" template="useSingleThreadConnectionManager" propName="/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/DISABLE_CONNECTION_POOLING"/>
+    <substitutionBindings xmi:id="_-KPR4I92EeqLfa7gOGOgnA" template="retryCount" propName="/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/RETRY_COUNT"/>
+    <substitutionBindings xmi:id="_hTxAYI93EeqLfa7gOGOgnA" template="maxTotalConnections" propName="/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/MAX_TOTAL_CONNECTIONS"/>
+    <substitutionBindings xmi:id="_jPMLQI93EeqLfa7gOGOgnA" template="idleConnectionTimeout" propName="/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/IDLE_CONNECTION_TIMEOUT_ms"/>
+    <substitutionBindings xmi:id="_mgQTYI93EeqLfa7gOGOgnA" template="maxTotalConnectionsPerHost" propName="/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/MAX_CONNECTION_PER_HOST"/>
+    <substitutionBindings xmi:id="_HIB20I94EeqLfa7gOGOgnA" template="acceptRedirect" propName="/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/ACCEPT_REDIRECT"/>
+    <substitutionBindings xmi:id="_RVMOYI94EeqLfa7gOGOgnA" template="useNonPreemptiveAuth" propName="/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/USE_NONPREEMPTIVE_AUTHENTICATION"/>
+    <substitutionBindings xmi:id="_Uz4i0I94EeqLfa7gOGOgnA" template="logReqRespTime" propName="/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/LOG_REQUEST_RESPONSE_TIME"/>
+    <substitutionBindings xmi:id="_P9V-oJXvEeqk2K6dCgJGoA" template="useDefaultSSL" propName="/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/DEFAULT_CONFIDENTIALITY"/>
+    <substitutionBindings xmi:id="_QXGicJXvEeqk2K6dCgJGoA" template="useSSL" propName="/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/CONFIDENTIALITY"/>
+    <substitutionBindings xmi:id="_kE0xMKAqEeql97ZPvC453Q" template="useSingleCookieHeader" propName="/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/USE_SINGLE_COOKIE_HEADER"/>
+    <tcpDetails xmi:id="_XxGVMY6kEeqaK55m6Ewc6g">
+      <substitutionBindings xmi:id="_07GBwI92EeqLfa7gOGOgnA" template="staleCheck" propName="/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/STALE_CHECK"/>
+      <substitutionBindings xmi:id="_Wk9UUI93EeqLfa7gOGOgnA" template="host" propName="/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/HOST"/>
+      <substitutionBindings xmi:id="_YkrJUI93EeqLfa7gOGOgnA" template="port" propName="/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/PORT"/>
+      <substitutionBindings xmi:id="_DXj14I94EeqLfa7gOGOgnA" template="soTimeout" propName="/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/SOCKET_TIMEOUT_ms"/>
+      <substitutionBindings xmi:id="_FNbLUI94EeqLfa7gOGOgnA" template="connectionTimeout" propName="/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/CONNECTION_TIMEOUT_ms"/>
+    </tcpDetails>
+  </jndi:configuration>
+</jndi:namedResource>

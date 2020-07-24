@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://ch.txg/core/lehf/InternalInterface_RetryProcess/0100"
+	xmlns:tns="http://ch.txg/core/lehf/InternalInterface_RetryProcess/0100"
+	elementFormDefault="qualified">
+	
+		<element name="Input_RetryProcess" type="tns:Input_RetryProcessType"/> 
+		<element name="Output_RetryProcess" type="tns:Output_RetryProcessType"/>
+		<element name="Input_CallService" type="tns:Input_CallServiceType"/> 
+		<element name="Output_CallService" type="tns:Output_CallServiceType"/>
+
+		<complexType name="Input_RetryProcessType"> 
+			<sequence>
+				<element name="Payload" type="string" minOccurs="0"/>
+				<element name="ProcessName" type="string"/>
+				<element name="Token" type="string" minOccurs="0"/>
+			</sequence>
+		</complexType>
+
+
+		<complexType name="Output_RetryProcessType"> 
+			<sequence>
+				<element name="Payload" type="string" minOccurs="0"/>
+			</sequence>
+		</complexType>
+		
+
+		<complexType name="Input_CallServiceType"> 
+			<sequence>
+				<element name="Payload" type="string" minOccurs="0"/>
+				<element name="Token" type="string" minOccurs="0"/>
+			</sequence>
+		</complexType>
+
+
+		<complexType name="Output_CallServiceType"> 
+			<sequence>
+				<element name="Payload" type="string" minOccurs="0"/>
+				<element name="Status_code" type="integer" minOccurs="1"/>
+				<element name="Reason_Phrase" type="string" minOccurs="0"/>
+			</sequence>
+		</complexType>
+
+</schema>

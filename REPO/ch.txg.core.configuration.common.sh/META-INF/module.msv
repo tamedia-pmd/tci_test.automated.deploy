@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<msv:DocumentRoot xmlns:msv="http://tns.tibco.com/bw/model/core/moduleSV">
+  <moduleSharedVariables>
+    <moduleSharedVariable name="GoogleGroupIDVariable" type="{http://ch/txg/b2c/configuration/AODocsGetGoogleID}GoogleGroupIDVariable" initialValueMode="none"/>
+    <moduleSharedVariable name="LibraryVariable" type="{http://ch/txg/b2c/configuration/AODocsGetLibrary}LibraryVariable" initialValueMode="none"/>
+    <moduleSharedVariable name="AuthorizationConfig" type="{http://ch/txg/b2c/swissbilling/bsl/authorizationManager}root" initialValueMode="none" initialValue=""/>
+  </moduleSharedVariables>
+  <import importType="http://www.w3.org/2001/XMLSchema" namespace="http://ch/txg/b2c/configuration/AODocsGetGoogleID" location="../Schemas/AODocsConfiguration/AODocsGetGoogleID.xsd"/>
+  <import importType="http://www.w3.org/2001/XMLSchema" namespace="http://ch/txg/b2c/configuration/AODocsGetLibrary" location="../Schemas/AODocsConfiguration/AODocsGetLibrary.xsd"/>
+  <import importType="http://www.w3.org/2001/XMLSchema" namespace="http://ch/txg/b2c/swissbilling/bsl/authorizationManager" location="../Schemas/AuthConfiguration/AuthorizationManager_schema.xsd"/>
+</msv:DocumentRoot>

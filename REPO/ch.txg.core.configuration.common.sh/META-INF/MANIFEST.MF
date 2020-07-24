@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Ch Txg Core Configuration Common Sh Module
+Bundle-SymbolicName: ch.txg.core.configuration.common.sh
+Bundle-Version: 1.0.1.qualifier
+Bundle-Vendor: TIBCO Software Inc.
+TIBCO-BW-ConfigProfile: META-INF/default.substvar
+TIBCO-BW-SharedModule: META-INF/module.bwm
+TIBCO-BW-Edition: bwcloud
+TIBCO-BW-JobSharedVariables: META-INF/module.jsv
+Require-Capability: com.tibco.bw.model; filter:="(name=bwext)",
+ com.tibco.bw.module; filter:="(&(name=ch.txg.core.lehf.common.sh)(version=1.1.8))",
+ com.tibco.bw.palette; filter:="(name=bw.generalactivities)",
+ com.tibco.bw.palette; filter:="(name=bw.restjson)",
+ com.tibco.bw.palette; filter:="(name=bw.http)",
+ com.tibco.bw.sharedresource.model; filter:="(name=bw.httpclient)"
+TIBCO-BW-ModuleSharedVariables: META-INF/module.msv
+Provide-Capability: com.tibco.bw.module; name="ch.txg.core.configuration.common.sh"; version:Version="1.0.1",
+ com.tibco.bw.schemas; ns="http://ch/txg/b2c/configuration/AODocsGetGoogleID",
+ com.tibco.bw.schemas; ns="http://ch/txg/b2c/configuration/AODocsGetLibrary",
+ com.tibco.bw.schemas; ns="http://ch/txg/b2c/swissbilling/bsl/authorizationManager",
+ com.tibco.bw.processes; name="ch.txg.core.configuration.common.sl",
+ com.tibco.bw.resources; name="ch.txg.core.configuration.common.sh.http"
+TIBCO-BW-Version: 2.5.3 V26 2020-05-15

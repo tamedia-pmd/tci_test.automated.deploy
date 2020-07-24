@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ch/txg/b2c/billingDoc/sl/SWB_InternalSchemas" xmlns:tns="http://ch/txg/b2c/billingDoc/sl/SWB_InternalSchemas" elementFormDefault="qualified">
+
+	<element name="Input" type="tns:callBillingDoc_inputType"/>
+
+	<complexType name="callBillingDoc_inputType">
+		<sequence>
+			<element name="InputJsonString" type="string"/>
+			<element name="dryRun" type="boolean"/>
+		</sequence>
+	</complexType>
+
+</schema>
