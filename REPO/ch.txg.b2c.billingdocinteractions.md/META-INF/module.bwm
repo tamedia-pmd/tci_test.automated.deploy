@@ -15,6 +15,7 @@
         <responseStatus xmi:id="_4ULogM2zEeqzmqqa3phF1w" statusCode="200" reasonPhrase="OK" dataType="string"/>
         <responseStatus xmi:id="_45MaEM2zEeqzmqqa3phF1w" statusCode="401" reasonPhrase="Unauthorized" dataType="string"/>
         <responseStatus xmi:id="_54pE4M2zEeqzmqqa3phF1w" statusCode="500" reasonPhrase="Internal Server Error" dataType="string"/>
+        <responseStatus xmi:id="_DqgswNATEeqsHspAAczhKg" statusCode="400" reasonPhrase="Bad Request" dataType="string"/>
         <clientFormat>json</clientFormat>
         <clientRequestFormat>json</clientRequestFormat>
       </operation>

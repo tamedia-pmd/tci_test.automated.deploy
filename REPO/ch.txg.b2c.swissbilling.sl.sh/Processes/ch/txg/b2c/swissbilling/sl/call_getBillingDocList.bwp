@@ -22,6 +22,54 @@
     xmlns:sca-bpel="http://docs.oasis-open.org/ns/opencsa/sca-bpel/200801"
     xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"
     xmlns:tibprop="http://ns.tibco.com/bw/property" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <tibex:VariableDescriptor type="MemorySaving">
+        <task name="End">
+            <endingVariables>
+                <variable>invokeBillingDocList</variable>
+            </endingVariables>
+        </task>
+        <task name="RepeatOnError">
+            <endingVariables>
+                <variable>maxRetry</variable>
+                <variable>indexRetry</variable>
+                <variable>FaultDetails</variable>
+                <variable>Start</variable>
+                <variable>baseDelay_s</variable>
+            </endingVariables>
+        </task>
+        <task name="invokeBillingDocList">
+            <endingVariables>
+                <variable>invokeBillingDocList-input</variable>
+                <variable>call_for_AccessToken</variable>
+            </endingVariables>
+        </task>
+        <task name="Sleep">
+            <endingVariables>
+                <variable>Sleep-input</variable>
+            </endingVariables>
+        </task>
+        <task name="ThrowTokenError">
+            <endingVariables>
+                <variable>ThrowTokenError-input</variable>
+            </endingVariables>
+        </task>
+        <task name="ThrowClientFault">
+            <endingVariables>
+                <variable>ThrowClientFault-input</variable>
+            </endingVariables>
+        </task>
+        <task name="ThrowServerFault">
+            <endingVariables>
+                <variable>ThrowServerFault-input</variable>
+            </endingVariables>
+        </task>
+        <task name="ThrowGenericError">
+            <endingVariables>
+                <variable>ThrowGenericError-input</variable>
+                <variable>FaultDetails1</variable>
+            </endingVariables>
+        </task>
+    </tibex:VariableDescriptor>
     <tibex:Types>
         <xs:schema attributeFormDefault="unqualified"
             elementFormDefault="qualified"

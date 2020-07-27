@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmi:id="_AMeUwMBeEeqMife8oOXPKg" targetNamespace="http://tns.tibco.com/bw/composite/ch.txg.core.configuration.common.sh" name="ch.txg.core.configuration.common.sh" compositeext:version="1.0.0" compositeext:formatVersion="2">
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_AMeUwMBeEeqMife8oOXPKg" targetNamespace="http://tns.tibco.com/bw/composite/ch.txg.core.configuration.common.sh" name="ch.txg.core.configuration.common.sh" compositeext:version="1.0.0" compositeext:formatVersion="2">
   <sca:property xmi:id="_ASSo4MBeEeqMife8oOXPKg" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
   <sca:property xmi:id="_ASXhYMBeEeqMife8oOXPKg" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
   <sca:property xmi:id="_ASYIcMBeEeqMife8oOXPKg" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
@@ -28,4 +28,5 @@
   <sca:property xmi:id="_WNXHIMBgEeqMife8oOXPKg" name="/ch.txg.core.configuration.common.sh/AodocsParameters/AodocsConfig/googleGroupTTL_sec" type="XMLSchema:int" publicAccess="true" scalable="true"/>
   <sca:property xmi:id="_WOyDcMBgEeqMife8oOXPKg" name="/ch.txg.core.configuration.common.sh/AodocsParameters/AodocsConfig/libraryIDTTL_sec" type="XMLSchema:int" publicAccess="true" scalable="true"/>
   <sca:property xmi:id="_9H3rIMDoEeqMife8oOXPKg" name="/ch.txg.core.configuration.common.sh/GetAuthConfiguration/AllAccessString" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_4o_lQNAAEeqsHspAAczhKg" name="/ch.txg.core.configuration.common.sh/GetAuthConfiguration/getAuthConfigTTL_sec" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
 </sca:composite>

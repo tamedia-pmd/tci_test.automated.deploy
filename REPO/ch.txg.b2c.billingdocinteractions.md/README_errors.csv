@@ -1,9 +1,18 @@
 ErrorCode;ErrorMessage;ErrorType;CreateCase;CircuitBreaker;HTTPStatusCode;APIname;BSLProcess
-BDOC000400;Bad Request - Json validation failed;Business;false;false;400;BillingDoc;Billingdoc_bsl
+BDLS000400;Bad Request - Json validation failed;Business;false;false;400;BillingDoc;Billingdoc_bsl
 BDLS000002;Business Error invoking Swissbilling - getBillingDocList;Business;false;false;400;BillingDocList;BillingDocList_bsl
 BDLS000003;System Error invoking Swissbilling - getBillingDocList;System;false;false;500;BillingDocList;BillingDocList_bsl
 BDLS000004;Generic Error invoking Swissbilling - getBillingDocList;System;false;false;500;BillingDocList;BillingDocList_bsl
 BDLS000005;Business Error invoking Swissbilling - getBillingDocList;Business;false;false;400;BillingDocList;BillingDocList_bsl
 BDLS000006;User not authorized for the input companyCode;System;false;false;401;BillingDocList;BillingDocList_bsl
+BDLS000007;Generic Error occured invoking Swissbilling - getBillingDocList;System;false;false;500;BillingDocList;BillingDocList_bsl
 AUTH000001;System error inside the Authorization Manager;System;false;false;;BillingDocList;BillingDocList_bsl
 AUTH000002;System error calling Get Authorization Configuration;System;false;false;;BillingDocList;BillingDocList_bsl
+AUTH000003;Empty username provided;System;false;false;;BillingDocList;BillingDocList_bsl
+CONFCO000017;[ERROR]  Empty username provided;System;false;false;400;;
+CONFCO000001;[ERROR]  System error inside the AuthorizationManager Process;System;false;false;;;
+CONFCO000002;[ERROR]  System Exception time out inside GetAuthConfiguration process;System;false;false;;;
+CONFCO000003;[ERROR]  Business Error inside GetAuthConfiguration process;Business;false;false;;;
+CONFCO000004;[ERROR]  System exception error in http communication inside GetAuthConfiguration process;System;false;false;;;
+CONFCO000005;[ERROR]  System Exception  Http Server Exception inside GetAuthConfiguration process;System;false;false;;;
+CONFCO000006;[ERROR]  Unknow error inside GetAuthConfiguration process;Business;false;false;;;
