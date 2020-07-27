@@ -1664,6 +1664,108 @@
                                     <styles xsi:type="notation:FilteringStyle"/>
                                     </children>
                                     <children type="3032">
+                                    <children type="4005">
+                                    <children type="3007">
+                                    <children type="4002 bw.generalactivities.callprocess">
+                                    <children type="4017">
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+                                    <children type="4017">
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+                                    <children type="4017">
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+                                    <children type="4017">
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+                                    <styles
+                                    backgroundColor="16777215"
+                                    gradientEndColor="50431"
+                                    gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
+                                    <element href="//0/@process/@activity/@faultHandlers/@catchAll/@activity/@activity/@activities.0"/>
+                                    <layoutConstraint
+                                    height="40"
+                                    width="40"
+                                    x="48"
+                                    xsi:type="notation:Bounds" y="50"/>
+                                    </children>
+                                    <children type="4002">
+                                    <children type="4017">
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+                                    <children type="4017">
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+                                    <children type="4017">
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+                                    <children type="4017">
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+                                    <styles
+                                    backgroundColor="16777215"
+                                    gradientEndColor="50431"
+                                    gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
+                                    <element href="//0/@process/@activity/@faultHandlers/@catchAll/@activity/@activity/@activities.1"/>
+                                    <layoutConstraint
+                                    x="283"
+                                    xsi:type="notation:Bounds" y="50"/>
+                                    </children>
+                                    <styles xsi:type="notation:DrawerStyle"/>
+                                    <styles xsi:type="notation:SortingStyle"/>
+                                    <styles xsi:type="notation:FilteringStyle"/>
+                                    </children>
+                                    <styles fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+                                    <styles
+                                    backgroundColor="16777215"
+                                    gradientEndColor="50431"
+                                    gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
+                                    <styles xsi:type="bwnotation:ResizingStyle"/>
+                                    <element href="//0/@process/@activity/@faultHandlers/@catchAll/@activity/@activity"/>
+                                    <layoutConstraint
+                                    height="168"
+                                    width="1196" xsi:type="notation:Bounds"/>
+                                    </children>
                                     <styles xsi:type="notation:SortingStyle"/>
                                     <styles xsi:type="notation:FilteringStyle"/>
                                     </children>
@@ -1851,6 +1953,17 @@
             <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@faultHandlers/@catchAll/@activity/@activity/@links/@children.0"/>
             <bendpoints points="[0, 0, 0, 0]$[0, 0, 0, 0]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
+        <edges
+            source="//@children.0/@children.4/@children.0/@children.0/@children.1/@children.0/@children.0/@children.1/@children.0/@children.0/@children.0"
+            target="//@children.0/@children.4/@children.0/@children.0/@children.1/@children.0/@children.0/@children.1/@children.0/@children.0/@children.1" type="4006">
+            <children type="6002">
+                <layoutConstraint xsi:type="notation:Location" y="40"/>
+            </children>
+            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
+            <styles fontName="Segoe UI" xsi:type="notation:FontStyle"/>
+            <element href="//0/@process/@activity/@faultHandlers/@catchAll/@activity/@activity/@links/@children.0"/>
+            <bendpoints points="[0, 0, 0, 0]$[0, 0, 0, 0]" xsi:type="notation:RelativeBendpoints"/>
+        </edges>
     </notation:Diagram>
     <tibex:NamespaceRegistry enabled="true">
         <tibex:namespaceItem
@@ -1960,6 +2073,11 @@
         <bpws:variable element="ns7:LEHF_Output" name="LogGenericError" sca-bpel:internal="true"/>
         <bpws:variable name="FaultName1" sca-bpel:internal="true" type="xsd:string"/>
         <bpws:variable element="ns0:FaultDetail" name="FaultDetails1" sca-bpel:internal="true"/>
+        <bpws:variable element="ns6:LogAudit"
+            name="LogProcessError-input" sca-bpel:internal="true"/>
+        <bpws:variable element="ns7:LEHF_Output" name="LogProcessError" sca-bpel:internal="true"/>
+        <bpws:variable messageType="ns:getResponse"
+            name="ReplyProcessError-input" sca-bpel:internal="true"/>
     </bpws:variables>
     <bpws:extensions>
         <bpws:extension mustUnderstand="no" namespace="http://www.eclipse.org/gmf/runtime/1.0.2/notation"/>
@@ -1975,7 +2093,45 @@
                 tibex:faultNameVar="FaultName1" tibex:xpdlId="908fd58c-45ee-4722-8ce0-5fe75faec740">
                 <bpws:scope name="scope4">
                     <bpws:flow name="flow4">
-                        <bpws:links/>
+                        <bpws:links>
+                            <bpws:link name="LogProcessErrorToReply1" tibex:linkType="SUCCESS"/>
+                        </bpws:links>
+                        <bpws:extensionActivity>
+                            <tibex:extActivity
+                                inputVariable="LogProcessError-input"
+                                name="LogProcessError"
+                                outputVariable="LogProcessError"
+                                tibex:xpdlId="ba59c081-3eaf-4f0b-9aa4-0c264794be64"
+                                type="bw.generalactivities.callprocess" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                                <bpws:sources>
+                                    <bpws:source linkName="LogProcessErrorToReply1"/>
+                                </bpws:sources>
+                                <tibex:inputBindings>
+                                    <tibex:inputBinding
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns7=&quot;http://ch/txg/core/lehf/common/AuditTypes/0100&quot; xmlns:bw=&quot;http://www.tibco.com/bw/xpath/bw-custom-functions&quot; xmlns:tib=&quot;http://www.tibco.com/bw/xslt/custom-functions&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;ERROR_Severity&quot;/>&lt;xsl:param name=&quot;SetLogParams&quot;/>&lt;xsl:param name=&quot;FaultDetails1&quot;/>&lt;xsl:template name=&quot;LogProcessError-input&quot; match=&quot;/&quot;>&lt;tns7:LogAudit>&lt;auditElement>&lt;APPLICATION_NAME>&lt;xsl:value-of select=&quot;bw:getModuleProperty(&amp;quot;BW.APPLICATION.NAME&amp;quot;)&quot;/>&lt;/APPLICATION_NAME>&lt;xsl:if test=&quot;$SetLogParams/SOURCESYSTEM&quot;>&lt;SOURCESYSTEM>&lt;xsl:value-of select=&quot;$SetLogParams/SOURCESYSTEM&quot;/>&lt;/SOURCESYSTEM>&lt;/xsl:if>&lt;STARTTIMESTAMP>&lt;xsl:value-of select=&quot;current-dateTime()&quot;/>&lt;/STARTTIMESTAMP>&lt;SEVERITY>&lt;xsl:value-of select=&quot;$ERROR_Severity&quot;/>&lt;/SEVERITY>&lt;TRACKID>&lt;xsl:value-of select=&quot;tib:uuid()&quot;/>&lt;/TRACKID>&lt;BUSINESSKEY>&lt;xsl:value-of select=&quot;&amp;quot;&amp;quot;&quot;/>&lt;/BUSINESSKEY>&lt;PROCESSSTACK>&lt;xsl:value-of select=&quot;&amp;quot;&amp;quot;&quot;/>&lt;/PROCESSSTACK>&lt;PAYLOAD>&lt;xsl:value-of select=&quot; tib:render-xml($FaultDetails1,false(),true())&quot;/>&lt;/PAYLOAD>&lt;/auditElement>&lt;auditErrorElement>&lt;ERRORCODE>&lt;xsl:value-of select=&quot;'BDLS000400'&quot;/>&lt;/ERRORCODE>&lt;ERRORTIMESTAMP>&lt;xsl:value-of select=&quot;current-dateTime()&quot;/>&lt;/ERRORTIMESTAMP>&lt;/auditErrorElement>&lt;/tns7:LogAudit>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                                </tibex:inputBindings>
+                                <tibex:CallProcess
+                                    moduleRef="ch.txg.core.lehf.common.sh"
+                                    subProcessName="sharedaudit.LoggingWrapper" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"/>
+                            </tibex:extActivity>
+                        </bpws:extensionActivity>
+                        <bpws:reply name="ReplyProcessError"
+                            operation="get"
+                            partnerLink="api-companies-BillingDocList"
+                            portType="ns:api-companies-BillingDocList"
+                            tibex:xpdlId="e8661bb2-86e1-44c4-ad47-583b7c52acf0" variable="ReplyProcessError-input">
+                            <tibex:inputBinding expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:tns="http://xmlns.example.com/20200723133610PLT" xmlns:tns1="/T1588620390643Converted/JsonSchema" xmlns:tns10="http://ch/txg/core/lehf/common/xsd/ErrorConfiguration/" xmlns:tns2="http://tns.tibco.com/bw/REST" version="2.0"&gt;&lt;xsl:param name="FaultDetails1"/&gt;&lt;xsl:param name="LogProcessError"/&gt;&lt;xsl:template name="ReplyProcessError-input" match="/"&gt;&lt;tns:getResponse&gt;&lt;item&gt;&lt;tns1:BillingDocListResult&gt;&lt;tns1:success&gt;&lt;xsl:value-of select="false()"/&gt;&lt;/tns1:success&gt;&lt;xsl:if test="$LogProcessError/tns10:ErrorConfiguration/tns10:ErrorCode"&gt;&lt;tns1:errorCode&gt;&lt;xsl:value-of select="$LogProcessError/tns10:ErrorConfiguration/tns10:ErrorCode"/&gt;&lt;/tns1:errorCode&gt;&lt;/xsl:if&gt;&lt;xsl:if test="$LogProcessError/tns10:ErrorConfiguration/tns10:ErrorMessage"&gt;&lt;tns1:errorList&gt;&lt;xsl:value-of select="$LogProcessError/tns10:ErrorConfiguration/tns10:ErrorMessage"/&gt;&lt;/tns1:errorList&gt;&lt;/xsl:if&gt;&lt;xsl:if test="exists($FaultDetails1/Data/*/msg)"&gt;&lt;xsl:if test="$FaultDetails1/Data/*/msg"&gt;&lt;tns1:errorList&gt;&lt;xsl:value-of select="$FaultDetails1/Data/*/msg"/&gt;&lt;/tns1:errorList&gt;&lt;/xsl:if&gt;&lt;/xsl:if&gt;&lt;/tns1:BillingDocListResult&gt;&lt;/item&gt;&lt;status&gt;&lt;tns2:statusLine&gt;&lt;statusCode&gt;&lt;xsl:value-of select="400"/&gt;&lt;/statusCode&gt;&lt;/tns2:statusLine&gt;&lt;/status&gt;&lt;/tns:getResponse&gt;&lt;/xsl:template&gt;&lt;/xsl:stylesheet&gt;</tibex:inputBinding>
+                            <tibex:inputBindings>
+                                <tibex:partBinding
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns=&quot;http://xmlns.example.com/20200723133610PLT&quot; xmlns:tns1=&quot;/T1588620390643Converted/JsonSchema&quot; xmlns:tns10=&quot;http://ch/txg/core/lehf/common/xsd/ErrorConfiguration/&quot; xmlns:tns2=&quot;http://tns.tibco.com/bw/REST&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;FaultDetails1&quot;/>&#xa;    &lt;xsl:param name=&quot;LogProcessError&quot;/>&#xa;    &lt;xsl:template name=&quot;ReplyProcessError-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns1:BillingDocListResult>&#xa;            &lt;tns1:success>&#xa;                &lt;xsl:value-of select=&quot;false()&quot;/>&#xa;            &lt;/tns1:success>&#xa;            &lt;xsl:if test=&quot;$LogProcessError/tns10:ErrorConfiguration/tns10:ErrorCode&quot;>&#xa;                &lt;tns1:errorCode>&#xa;                    &lt;xsl:value-of select=&quot;$LogProcessError/tns10:ErrorConfiguration/tns10:ErrorCode&quot;/>&#xa;                &lt;/tns1:errorCode>&#xa;            &lt;/xsl:if>&#xa;            &lt;xsl:if test=&quot;$LogProcessError/tns10:ErrorConfiguration/tns10:ErrorMessage&quot;>&#xa;                &lt;tns1:errorList>&#xa;                    &lt;xsl:value-of select=&quot;$LogProcessError/tns10:ErrorConfiguration/tns10:ErrorMessage&quot;/>&#xa;                &lt;/tns1:errorList>&#xa;            &lt;/xsl:if>&#xa;            &lt;xsl:if test=&quot;exists($FaultDetails1/Data/*/msg)&quot;>&#xa;                &lt;xsl:if test=&quot;$FaultDetails1/Data/*/msg&quot;>&#xa;                    &lt;tns1:errorList>&#xa;                        &lt;xsl:value-of select=&quot;$FaultDetails1/Data/*/msg&quot;/>&#xa;                    &lt;/tns1:errorList>&#xa;                &lt;/xsl:if>&#xa;            &lt;/xsl:if>&#xa;        &lt;/tns1:BillingDocListResult>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                                <tibex:partBinding
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns=&quot;http://xmlns.example.com/20200723133610PLT&quot; xmlns:tns1=&quot;/T1588620390643Converted/JsonSchema&quot; xmlns:tns10=&quot;http://ch/txg/core/lehf/common/xsd/ErrorConfiguration/&quot; xmlns:tns2=&quot;http://tns.tibco.com/bw/REST&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:template name=&quot;ReplyProcessError-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns2:statusLine>&#xa;            &lt;statusCode>&#xa;                &lt;xsl:value-of select=&quot;400&quot;/>&#xa;            &lt;/statusCode>&#xa;        &lt;/tns2:statusLine>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                            </tibex:inputBindings>
+                            <bpws:targets>
+                                <bpws:target linkName="LogProcessErrorToReply1"/>
+                            </bpws:targets>
+                        </bpws:reply>
                     </bpws:flow>
                 </bpws:scope>
             </bpws:catchAll>

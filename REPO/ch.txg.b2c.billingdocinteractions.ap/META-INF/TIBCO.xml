@@ -763,7 +763,7 @@
     <packaging:module>
       <packaging:symbolicName>ch.txg.b2c.billingdocinteractions.md</packaging:symbolicName>
       <packaging:technologyType>osgi-bundle,bw-appmodule</packaging:technologyType>
-      <packaging:technologyVersion>1.0.2.qualifier</packaging:technologyVersion>
+      <packaging:technologyVersion>1.0.3.qualifier</packaging:technologyVersion>
     </packaging:module>
     <packaging:module>
       <packaging:symbolicName>ch.txg.b2c.swissbilling.sl.sh</packaging:symbolicName>
