@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ch/txg/b2c/BillingEngine_getAPI_schema" xmlns:tns="http://ch/txg/b2c/BillingEngine_getAPI_schema" elementFormDefault="qualified">
+
+	<element name="inputBillingEngine" type="tns:callBillingEngine_inputType"/>
+
+	<element name="outputBillingEngine" type="tns:callBillingEngine_outputType"/>
+
+
+	<complexType name="callBillingEngine_outputType">
+		<sequence>
+			<element name="JsonResponse" type="string"/>
+			<element name="statusCode" type="int"/>				
+			<element minOccurs="0" name="reasonPhrase" type="string"/>
+			
+		</sequence>
+	</complexType>
+
+	<complexType name="callBillingEngine_inputType">
+		<sequence>
+			<element minOccurs="1" name="URIpath" type="string"/>
+			<element minOccurs="0" name="queryParamsString" type="string"/>
+		</sequence>
+	</complexType>
+
+
+</schema>

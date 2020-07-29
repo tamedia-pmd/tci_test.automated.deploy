@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <bpws:process exitOnStandardFault="no"
-    name="ch.txg.b2c.billingdocinteractions.bls.BillingDocList_BSL"
+    name="ch.txg.b2c.billingdocinteractions.bsl.BillingDocList_BSL"
     suppressJoinFailure="yes"
     targetNamespace="http://xmlns.example.com/20200724113643"
     xmlns:bpws="http://docs.oasis-open.org/wsbpel/2.0/process/executable"
@@ -19,6 +19,35 @@
     xmlns:sca-bpel="http://docs.oasis-open.org/ns/opencsa/sca-bpel/200801"
     xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"
     xmlns:tibprop="http://ns.tibco.com/bw/property" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <tibex:VariableDescriptor type="MemorySaving">
+        <task name="flow">
+            <endingVariables>
+                <variable>call_getBillingDocList</variable>
+            </endingVariables>
+        </task>
+        <task name="call_getBillingDocList">
+            <endingVariables>
+                <variable>call_getBillingDocList-input</variable>
+                <variable>Start</variable>
+            </endingVariables>
+        </task>
+        <task name="ThrowBusinessError">
+            <endingVariables>
+                <variable>ThrowBusinessError-input</variable>
+            </endingVariables>
+        </task>
+        <task name="ThrowError">
+            <endingVariables>
+                <variable>ThrowError-input</variable>
+            </endingVariables>
+        </task>
+        <task name="ThrowGenericError">
+            <endingVariables>
+                <variable>ThrowGenericError-input</variable>
+                <variable>FaultDetails</variable>
+            </endingVariables>
+        </task>
+    </tibex:VariableDescriptor>
     <tibex:Types>
         <xs:schema attributeFormDefault="unqualified"
             elementFormDefault="qualified"

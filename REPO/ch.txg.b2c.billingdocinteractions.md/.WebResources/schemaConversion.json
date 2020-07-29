@@ -18,5 +18,10 @@
         "jsonSchemaLocation": "/ch.txg.b2c.billingdocinteractions.md/Service Descriptors/20200720BillingDocAPISpecificationV1.1.2_2.yaml-Swagger20.json",
         "conversionType": "generated",
         "xsdSchemaTargetNamespace": "/T1595511609939Converted/JsonSchema"
+    },
+    {
+        "jsonSchemaLocation": "/ch.txg.b2c.billingdocinteractions.md/Service Descriptors/ch.txg.b2c.billingdocinteractions.tlp.BillingCustomer_tlp-BillingCustomer.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "/T1588620390643Converted/JsonSchema"
     }
 ]}

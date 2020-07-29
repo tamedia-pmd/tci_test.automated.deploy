@@ -2,9 +2,9 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: ch txg b2c billingdocinteractions ap
 Bundle-SymbolicName: ch.txg.b2c.billingdocinteractions.ap
-Bundle-Version: 1.0.3.qualifier
+Bundle-Version: 1.0.4.qualifier
 Bundle-Vendor: TIBCO Software Inc.
 TIBCO-BW-Version: 2.5.3 V26 2020-05-15
 TIBCO-BW-Edition: bwcloud
 TIBCO-BW-Application: META-INF/TIBCO.xml
-TIBCO-BW-ConfigProfile: META-INF/default.substvar
+TIBCO-BW-ConfigProfile: META-INF/DEV.substvar

@@ -3,6 +3,7 @@
 	<globalVariables>
 		<globalVariable>
 			<name>/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/DISABLE_CONNECTION_POOLING</name>
+			<value>false</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Boolean</type>
@@ -11,6 +12,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/SOCKET_TIMEOUT_ms</name>
+			<value>180000</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
@@ -19,6 +21,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/ACCEPT_REDIRECT</name>
+			<value>false</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Boolean</type>
@@ -27,6 +30,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/STALE_CHECK</name>
+			<value>false</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Boolean</type>
@@ -35,6 +39,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/MAX_TOTAL_CONNECTION_PER_HOST</name>
+			<value>20</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
@@ -43,6 +48,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/CONNECTION_TIMEOUT_ms</name>
+			<value>30000</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
@@ -51,6 +57,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/DEFAULT_CONFIDENTIALITY</name>
+			<value>true</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Boolean</type>
@@ -59,6 +66,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/USE_SINGLE_COOKIE_HEADER</name>
+			<value>false</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Boolean</type>
@@ -67,6 +75,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/IDLE_CONNECTION_TIMEOUT_ms</name>
+			<value>3000</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
@@ -75,6 +84,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/MAX_TOTAL_CONNECTIONS</name>
+			<value>200</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
@@ -83,6 +93,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/RETRY_COUNT</name>
+			<value>3</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
@@ -91,6 +102,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/CONFIDENTIALITY</name>
+			<value>false</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Boolean</type>
@@ -99,6 +111,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/HOST</name>
+			<value>security-staging.swissbilling.ch</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -107,6 +120,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/USE_NONPREEMPTIVE_AUTH</name>
+			<value>false</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Boolean</type>
@@ -115,6 +129,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/PORT</name>
+			<value>443</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
@@ -123,6 +138,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/LOG_REQ_RESP_TIME</name>
+			<value>false</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Boolean</type>
@@ -131,6 +147,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/HOST</name>
+			<value>glados-staging.swissbilling.ch</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -139,6 +156,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/ACCEPT_REDIRECT</name>
+			<value>false</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Boolean</type>
@@ -147,6 +165,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/STALE_CHECK</name>
+			<value>false</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Boolean</type>
@@ -155,6 +174,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/CONNECTION_TIMEOUT_ms</name>
+			<value>30000</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
@@ -163,6 +183,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/MAX_TOTAL_CONNECTIONS</name>
+			<value>200</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
@@ -171,6 +192,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/MAX_CONNECTION_PER_HOST</name>
+			<value>20</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
@@ -179,6 +201,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/USE_SINGLE_COOKIE_HEADER</name>
+			<value>false</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Boolean</type>
@@ -187,6 +210,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/LOG_REQUEST_RESPONSE_TIME</name>
+			<value>false</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Boolean</type>
@@ -195,6 +219,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/USE_NONPREEMPTIVE_AUTHENTICATION</name>
+			<value>false</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Boolean</type>
@@ -203,6 +228,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/RETRY_COUNT</name>
+			<value>3</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
@@ -211,6 +237,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/IDLE_CONNECTION_TIMEOUT_ms</name>
+			<value>3000</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
@@ -219,6 +246,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/SOCKET_TIMEOUT_ms</name>
+			<value>180000</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
@@ -227,6 +255,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/PORT</name>
+			<value>443</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
@@ -235,6 +264,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/CONFIDENTIALITY</name>
+			<value>false</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Boolean</type>
@@ -243,6 +273,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/DISABLE_CONNECTION_POOLING</name>
+			<value>false</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Boolean</type>
@@ -251,6 +282,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/DEFAULT_CONFIDENTIALITY</name>
+			<value>true</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Boolean</type>
@@ -259,6 +291,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Token_Params/client_id</name>
+			<value>glados-service-client</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -267,6 +300,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Token_Params/username</name>
+			<value>txg-tc-team@catenate.com</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -275,6 +309,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Token_Params/grant_type</name>
+			<value>password</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -283,6 +318,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Token_Params/RequestURI/URI</name>
+			<value>/connect/token</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -291,6 +327,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/CONNECTION_TIMEOUT_ms</name>
+			<value>60000</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
@@ -299,6 +336,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/RETRY_COUNT</name>
+			<value>3</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
@@ -307,6 +345,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/USE_SINGLE_COOKIE_HEADER</name>
+			<value>false</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Boolean</type>
@@ -315,6 +354,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/MAX_TOTAL_CONNECTIONS</name>
+			<value>20</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
@@ -323,6 +363,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/PORT</name>
+			<value>443</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
@@ -331,6 +372,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/SOCKET_TIMEOUT_ms</name>
+			<value>180000</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
@@ -339,6 +381,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/DISABLE_CONNECTION_POOLING</name>
+			<value>false</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Boolean</type>
@@ -347,6 +390,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/MAX_CONNECTION_PER_HOST</name>
+			<value>20</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
@@ -355,6 +399,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/STALE_CHECK</name>
+			<value>false</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Boolean</type>
@@ -363,6 +408,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/ACCEPT_REDIRECT</name>
+			<value>true</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Boolean</type>
@@ -371,6 +417,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/LOG_REQUEST_RESPONSE_TIME</name>
+			<value>false</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Boolean</type>
@@ -379,6 +426,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/IDLE_CONNECTION_TIMEOUT_ms</name>
+			<value>3000</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
@@ -387,6 +435,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/USE_NONPREEMPTIVE_AUTHENTICATION</name>
+			<value>false</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Boolean</type>
@@ -395,6 +444,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/HOST</name>
+			<value>eu-west-1.integration.cloud.tibcoapps.com</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -403,6 +453,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/ch.txg.core.configuration.common.sh/Connection/Http/Client/LibraryID/URI</name>
+			<value>/3mnh4m5wafr7rwtkq3h2ljecnqxx23mc/dev/common/configuration/libraryId/v1</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -411,6 +462,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/ch.txg.core.configuration.common.sh/Connection/Http/Client/GetAuthConfiguration/URI</name>
+			<value>/3mnh4m5wafr7rwtkq3h2ljecnqxx23mc/dev/common/configuration/authorization/v1</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -419,6 +471,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/ch.txg.core.configuration.common.sh/RetryManagement/maxRetry</name>
+			<value>2</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
@@ -427,6 +480,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/ch.txg.core.configuration.common.sh/RetryManagement/baseRetryDelay_s</name>
+			<value>1</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
@@ -435,6 +489,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/ch.txg.core.configuration.common.sh/GetAuthConfiguration/AllAccessString</name>
+			<value>ALL</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -443,6 +498,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/ch.txg.core.configuration.common.sh/GetAuthConfiguration/getAuthConfigTTL_sec</name>
+			<value>86400</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
@@ -568,292 +624,323 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.b2c.swissbilling.sl.sh///ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/DISABLE_CONNECTION_POOLING</name>
-			<value>false</value>
+			<value>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/DISABLE_CONNECTION_POOLING%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Boolean</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/DISABLE_CONNECTION_POOLING%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.b2c.swissbilling.sl.sh///ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/SOCKET_TIMEOUT_ms</name>
-			<value>180000</value>
+			<value>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/SOCKET_TIMEOUT_ms%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/SOCKET_TIMEOUT_ms%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.b2c.swissbilling.sl.sh///ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/ACCEPT_REDIRECT</name>
-			<value>false</value>
+			<value>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/ACCEPT_REDIRECT%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Boolean</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/ACCEPT_REDIRECT%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.b2c.swissbilling.sl.sh///ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/STALE_CHECK</name>
-			<value>false</value>
+			<value>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/STALE_CHECK%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Boolean</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/STALE_CHECK%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.b2c.swissbilling.sl.sh///ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/MAX_TOTAL_CONNECTION_PER_HOST</name>
-			<value>20</value>
+			<value>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/MAX_TOTAL_CONNECTION_PER_HOST%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/MAX_TOTAL_CONNECTION_PER_HOST%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.b2c.swissbilling.sl.sh///ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/CONNECTION_TIMEOUT_ms</name>
-			<value>30000</value>
+			<value>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/CONNECTION_TIMEOUT_ms%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/CONNECTION_TIMEOUT_ms%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.b2c.swissbilling.sl.sh///ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/DEFAULT_CONFIDENTIALITY</name>
-			<value>true</value>
+			<value>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/DEFAULT_CONFIDENTIALITY%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Boolean</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/DEFAULT_CONFIDENTIALITY%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.b2c.swissbilling.sl.sh///ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/USE_SINGLE_COOKIE_HEADER</name>
-			<value>false</value>
+			<value>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/USE_SINGLE_COOKIE_HEADER%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Boolean</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/USE_SINGLE_COOKIE_HEADER%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.b2c.swissbilling.sl.sh///ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/IDLE_CONNECTION_TIMEOUT_ms</name>
-			<value>3000</value>
+			<value>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/IDLE_CONNECTION_TIMEOUT_ms%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/IDLE_CONNECTION_TIMEOUT_ms%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.b2c.swissbilling.sl.sh///ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/MAX_TOTAL_CONNECTIONS</name>
-			<value>200</value>
+			<value>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/MAX_TOTAL_CONNECTIONS%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/MAX_TOTAL_CONNECTIONS%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.b2c.swissbilling.sl.sh///ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/RETRY_COUNT</name>
-			<value>3</value>
+			<value>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/RETRY_COUNT%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/RETRY_COUNT%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.b2c.swissbilling.sl.sh///ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/CONFIDENTIALITY</name>
-			<value>false</value>
+			<value>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/CONFIDENTIALITY%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Boolean</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/CONFIDENTIALITY%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.b2c.swissbilling.sl.sh///ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/HOST</name>
-			<value>security-staging.swissbilling.ch</value>
+			<value>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/HOST%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/HOST%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.b2c.swissbilling.sl.sh///ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/USE_NONPREEMPTIVE_AUTH</name>
-			<value>false</value>
+			<value>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/USE_NONPREEMPTIVE_AUTH%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Boolean</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/USE_NONPREEMPTIVE_AUTH%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.b2c.swissbilling.sl.sh///ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/PORT</name>
-			<value>443</value>
+			<value>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/PORT%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/PORT%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.b2c.swissbilling.sl.sh///ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/LOG_REQ_RESP_TIME</name>
-			<value>false</value>
+			<value>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/LOG_REQ_RESP_TIME%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Boolean</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/LOG_REQ_RESP_TIME%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.b2c.swissbilling.sl.sh///ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/HOST</name>
-			<value>glados-staging.swissbilling.ch</value>
+			<value>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/HOST%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
-			<lookupValue>glados-staging.swissbilling.ch</lookupValue>
+			<lookupValue>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/HOST%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.b2c.swissbilling.sl.sh///ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/ACCEPT_REDIRECT</name>
-			<value>false</value>
+			<value>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/ACCEPT_REDIRECT%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Boolean</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/ACCEPT_REDIRECT%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.b2c.swissbilling.sl.sh///ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/STALE_CHECK</name>
-			<value>false</value>
+			<value>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/STALE_CHECK%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Boolean</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/STALE_CHECK%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.b2c.swissbilling.sl.sh///ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/CONNECTION_TIMEOUT_ms</name>
-			<value>30000</value>
+			<value>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/CONNECTION_TIMEOUT_ms%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/CONNECTION_TIMEOUT_ms%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.b2c.swissbilling.sl.sh///ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/MAX_TOTAL_CONNECTIONS</name>
-			<value>200</value>
+			<value>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/MAX_TOTAL_CONNECTIONS%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/MAX_TOTAL_CONNECTIONS%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.b2c.swissbilling.sl.sh///ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/MAX_CONNECTION_PER_HOST</name>
-			<value>20</value>
+			<value>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/MAX_CONNECTION_PER_HOST%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/MAX_CONNECTION_PER_HOST%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.b2c.swissbilling.sl.sh///ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/USE_SINGLE_COOKIE_HEADER</name>
-			<value>false</value>
+			<value>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/USE_SINGLE_COOKIE_HEADER%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Boolean</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/USE_SINGLE_COOKIE_HEADER%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.b2c.swissbilling.sl.sh///ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/LOG_REQUEST_RESPONSE_TIME</name>
-			<value>false</value>
+			<value>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/LOG_REQUEST_RESPONSE_TIME%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Boolean</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/LOG_REQUEST_RESPONSE_TIME%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.b2c.swissbilling.sl.sh///ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/USE_NONPREEMPTIVE_AUTHENTICATION</name>
-			<value>false</value>
+			<value>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/USE_NONPREEMPTIVE_AUTHENTICATION%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Boolean</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/USE_NONPREEMPTIVE_AUTHENTICATION%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.b2c.swissbilling.sl.sh///ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/RETRY_COUNT</name>
-			<value>3</value>
+			<value>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/RETRY_COUNT%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/RETRY_COUNT%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.b2c.swissbilling.sl.sh///ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/IDLE_CONNECTION_TIMEOUT_ms</name>
-			<value>3000</value>
+			<value>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/IDLE_CONNECTION_TIMEOUT_ms%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/IDLE_CONNECTION_TIMEOUT_ms%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.b2c.swissbilling.sl.sh///ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/SOCKET_TIMEOUT_ms</name>
-			<value>180000</value>
+			<value>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/SOCKET_TIMEOUT_ms%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/SOCKET_TIMEOUT_ms%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.b2c.swissbilling.sl.sh///ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/PORT</name>
-			<value>443</value>
+			<value>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/PORT%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/PORT%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.b2c.swissbilling.sl.sh///ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/CONFIDENTIALITY</name>
-			<value>false</value>
+			<value>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/CONFIDENTIALITY%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Boolean</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/CONFIDENTIALITY%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.b2c.swissbilling.sl.sh///ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/DISABLE_CONNECTION_POOLING</name>
-			<value>false</value>
+			<value>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/DISABLE_CONNECTION_POOLING%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Boolean</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/DISABLE_CONNECTION_POOLING%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.b2c.swissbilling.sl.sh///ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/DEFAULT_CONFIDENTIALITY</name>
-			<value>true</value>
+			<value>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/DEFAULT_CONFIDENTIALITY%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Boolean</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/DEFAULT_CONFIDENTIALITY%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.b2c.swissbilling.sl.sh///ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Client/endpoints/billingDocList_URI</name>
@@ -875,12 +962,13 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.b2c.swissbilling.sl.sh///ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Token_Params/client_id</name>
-			<value>glados-service-client</value>
+			<value>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Token_Params/client_id%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Token_Params/client_id%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.b2c.swissbilling.sl.sh///ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Token_Params/client_secret</name>
@@ -893,30 +981,33 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.b2c.swissbilling.sl.sh///ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Token_Params/username</name>
-			<value>txg-tc-team@catenate.com</value>
+			<value>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Token_Params/username%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Token_Params/username%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.b2c.swissbilling.sl.sh///ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Token_Params/grant_type</name>
-			<value>password</value>
+			<value>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Token_Params/grant_type%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Token_Params/grant_type%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.b2c.swissbilling.sl.sh///ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Token_Params/RequestURI/URI</name>
-			<value>/connect/token</value>
+			<value>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Token_Params/RequestURI/URI%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Token_Params/RequestURI/URI%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.b2c.swissbilling.sl.sh///ch.txg.b2c.swissbilling.sl.sh/connections/RetryManagement/baseRetryDelay_s</name>
@@ -1216,129 +1307,143 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.core.configuration.common.sh///ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/CONNECTION_TIMEOUT_ms</name>
-			<value>60000</value>
+			<value>%%/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/CONNECTION_TIMEOUT_ms%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/CONNECTION_TIMEOUT_ms%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.core.configuration.common.sh///ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/RETRY_COUNT</name>
-			<value>3</value>
+			<value>%%/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/RETRY_COUNT%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/RETRY_COUNT%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.core.configuration.common.sh///ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/USE_SINGLE_COOKIE_HEADER</name>
-			<value>false</value>
+			<value>%%/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/USE_SINGLE_COOKIE_HEADER%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Boolean</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/USE_SINGLE_COOKIE_HEADER%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.core.configuration.common.sh///ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/MAX_TOTAL_CONNECTIONS</name>
-			<value>20</value>
+			<value>%%/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/MAX_TOTAL_CONNECTIONS%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/MAX_TOTAL_CONNECTIONS%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.core.configuration.common.sh///ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/PORT</name>
-			<value>443</value>
+			<value>%%/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/PORT%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/PORT%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.core.configuration.common.sh///ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/SOCKET_TIMEOUT_ms</name>
-			<value>180000</value>
+			<value>%%/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/SOCKET_TIMEOUT_ms%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/SOCKET_TIMEOUT_ms%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.core.configuration.common.sh///ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/DISABLE_CONNECTION_POOLING</name>
-			<value>false</value>
+			<value>%%/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/DISABLE_CONNECTION_POOLING%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Boolean</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/DISABLE_CONNECTION_POOLING%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.core.configuration.common.sh///ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/MAX_CONNECTION_PER_HOST</name>
-			<value>20</value>
+			<value>%%/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/MAX_CONNECTION_PER_HOST%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/MAX_CONNECTION_PER_HOST%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.core.configuration.common.sh///ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/STALE_CHECK</name>
-			<value>false</value>
+			<value>%%/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/STALE_CHECK%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Boolean</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/STALE_CHECK%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.core.configuration.common.sh///ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/ACCEPT_REDIRECT</name>
-			<value>true</value>
+			<value>%%/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/ACCEPT_REDIRECT%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Boolean</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/ACCEPT_REDIRECT%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.core.configuration.common.sh///ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/LOG_REQUEST_RESPONSE_TIME</name>
-			<value>false</value>
+			<value>%%/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/LOG_REQUEST_RESPONSE_TIME%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Boolean</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/LOG_REQUEST_RESPONSE_TIME%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.core.configuration.common.sh///ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/IDLE_CONNECTION_TIMEOUT_ms</name>
-			<value>3000</value>
+			<value>%%/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/IDLE_CONNECTION_TIMEOUT_ms%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/IDLE_CONNECTION_TIMEOUT_ms%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.core.configuration.common.sh///ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/USE_NONPREEMPTIVE_AUTHENTICATION</name>
-			<value>false</value>
+			<value>%%/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/USE_NONPREEMPTIVE_AUTHENTICATION%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Boolean</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/USE_NONPREEMPTIVE_AUTHENTICATION%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.core.configuration.common.sh///ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/HOST</name>
-			<value>eu-west-1.integration.cloud.tibcoapps.com</value>
+			<value>%%/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/HOST%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/HOST%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.core.configuration.common.sh///ch.txg.core.configuration.common.sh/Connection/Http/Client/LibraryID/URI</name>
@@ -1348,6 +1453,7 @@
 			<type>String</type>
 			<isOverride>false</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>/3mnh4m5wafr7rwtkq3h2ljecnqxx23mc/dev/common/configuration/libraryId/v1</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.core.configuration.common.sh///ch.txg.core.configuration.common.sh/Connection/Http/Client/GoogleGroupID/URI</name>
@@ -1360,30 +1466,33 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.core.configuration.common.sh///ch.txg.core.configuration.common.sh/Connection/Http/Client/GetAuthConfiguration/URI</name>
-			<value>/3mnh4m5wafr7rwtkq3h2ljecnqxx23mc/dev/common/configuration/authorization/v1</value>
+			<value>%%/ch.txg.core.configuration.common.sh/Connection/Http/Client/GetAuthConfiguration/URI%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.core.configuration.common.sh/Connection/Http/Client/GetAuthConfiguration/URI%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.core.configuration.common.sh///ch.txg.core.configuration.common.sh/RetryManagement/maxRetry</name>
-			<value>2</value>
+			<value>%%/ch.txg.core.configuration.common.sh/RetryManagement/maxRetry%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.core.configuration.common.sh/RetryManagement/maxRetry%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.core.configuration.common.sh///ch.txg.core.configuration.common.sh/RetryManagement/baseRetryDelay_s</name>
-			<value>1</value>
+			<value>%%/ch.txg.core.configuration.common.sh/RetryManagement/baseRetryDelay_s%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.core.configuration.common.sh/RetryManagement/baseRetryDelay_s%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.core.configuration.common.sh///ch.txg.core.configuration.common.sh/AodocsParameters/AodocsConfig/googleGroupTTL_sec</name>
@@ -1405,21 +1514,23 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.core.configuration.common.sh///ch.txg.core.configuration.common.sh/GetAuthConfiguration/AllAccessString</name>
-			<value>ALL</value>
+			<value>%%/ch.txg.core.configuration.common.sh/GetAuthConfiguration/AllAccessString%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.core.configuration.common.sh/GetAuthConfiguration/AllAccessString%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.core.configuration.common.sh///ch.txg.core.configuration.common.sh/GetAuthConfiguration/getAuthConfigTTL_sec</name>
-			<value>86400</value>
+			<value>%%/ch.txg.core.configuration.common.sh/GetAuthConfiguration/getAuthConfigTTL_sec%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.core.configuration.common.sh/GetAuthConfiguration/getAuthConfigTTL_sec%%</lookupValue>
 		</globalVariable>
 	</globalVariables>
 </repository>

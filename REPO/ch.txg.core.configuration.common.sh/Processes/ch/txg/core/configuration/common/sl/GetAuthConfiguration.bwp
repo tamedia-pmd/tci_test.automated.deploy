@@ -34,6 +34,71 @@
     xmlns:tibprop="http://ns.tibco.com/bw/property"
     xmlns:tns="http://schemas.tibco.com/bw/plugins/http/5.0/httpExceptions"
     xmlns:tns1="http://schemas.tibco.com/bw/pe/plugin/5.0/exceptions" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <tibex:VariableDescriptor type="MemorySaving">
+        <task name="End">
+            <endingVariables>
+                <variable>MapResponse</variable>
+                <variable>GetAuthConfig</variable>
+                <variable>InvokeGetAuthConfig</variable>
+                <variable>TTL_s</variable>
+            </endingVariables>
+        </task>
+        <task name="ParseBodyResponse">
+            <endingVariables>
+                <variable>ParseBodyResponse-input</variable>
+            </endingVariables>
+        </task>
+        <task name="MapResponse">
+            <endingVariables>
+                <variable>MapResponse-input</variable>
+                <variable>ParseBodyResponse</variable>
+            </endingVariables>
+        </task>
+        <task name="SetAuthConfig">
+            <endingVariables>
+                <variable>SetAuthConfig-input</variable>
+                <variable>SetAuthConfig</variable>
+            </endingVariables>
+        </task>
+        <task name="RetryInvokeGetAuthConfig">
+            <endingVariables>
+                <variable>_error_InvokeGetAuthConfig</variable>
+                <variable>maxRetry</variable>
+                <variable>indexRetry</variable>
+                <variable>URI</variable>
+                <variable>baseRetryDelay_s</variable>
+                <variable>System_EXCEPTION</variable>
+            </endingVariables>
+        </task>
+        <task name="InvokeGetAuthConfig">
+            <endingVariables>
+                <variable>InvokeGetAuthConfig-input</variable>
+            </endingVariables>
+        </task>
+        <task name="Sleep">
+            <endingVariables>
+                <variable>Sleep-input</variable>
+            </endingVariables>
+        </task>
+        <task name="ThrowError400">
+            <endingVariables>
+                <variable>ThrowError400-input</variable>
+            </endingVariables>
+        </task>
+        <task name="ThrowEnd">
+            <endingVariables>
+                <variable>ThrowEnd-input</variable>
+            </endingVariables>
+        </task>
+        <task name="ThrowError">
+            <endingVariables>
+                <variable>ThrowError-input</variable>
+                <variable>FaultDetails</variable>
+                <variable>_error_ThrowError400</variable>
+                <variable>_error_ThrowEnd</variable>
+            </endingVariables>
+        </task>
+    </tibex:VariableDescriptor>
     <tibex:Types>
         <xs:schema attributeFormDefault="unqualified"
             elementFormDefault="qualified"
@@ -1927,8 +1992,6 @@
                         <tibex:inputBinding
                             expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns5=&quot;http://ch/txg/b2c/swissbilling/bsl/authorizationManager&quot; xmlns:tib=&quot;http://www.tibco.com/bw/xslt/custom-functions&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;GetAuthConfig&quot;/>&lt;xsl:param name=&quot;InvokeGetAuthConfig&quot;/>&lt;xsl:param name=&quot;MapResponse&quot;/>&lt;xsl:param name=&quot;TTL_s&quot;/>&lt;xsl:template name=&quot;End-input&quot; match=&quot;/&quot;>&lt;xsl:choose>&lt;xsl:when test=&quot;exists($GetAuthConfig/tns5:Result) or (tib:timestamp() - $GetAuthConfig/tns5:lastupdate &amp;lt; $TTL_s * 1000)&quot;>&lt;xsl:copy-of select=&quot;$GetAuthConfig&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;xsl:choose>&lt;xsl:when test=&quot;$InvokeGetAuthConfig/statusLine/statusCode=200&quot;>&lt;xsl:copy-of select=&quot;$MapResponse&quot;/>&lt;/xsl:when>&lt;xsl:when test=&quot;$InvokeGetAuthConfig/statusLine/statusCode=204&quot;>&lt;tns5:AuthConfigVariable>&lt;tns5:lastupdate>&lt;xsl:value-of select=&quot;tib:timestamp()&quot;/>&lt;/tns5:lastupdate>&lt;/tns5:AuthConfigVariable>&lt;/xsl:when>&lt;/xsl:choose>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                     </tibex:inputBindings>
-                    <tibex:inputBinding
-                        expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">&lt;?xml version="1.0" encoding="UTF-8"?&gt; &lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:tns5="http://ch/txg/b2c/swissbilling/bsl/authorizationManager" version="2.0"&gt; &lt;xsl:template name="End-input" match="/"&gt; &lt;tns5:AuthConfigVariable/&gt;&lt;/xsl:template&gt; &lt;/xsl:stylesheet&gt;</tibex:inputBinding>
                     <tibex:config>
                         <bwext:BWActivity
                             activityTypeID="bw.internal.end"

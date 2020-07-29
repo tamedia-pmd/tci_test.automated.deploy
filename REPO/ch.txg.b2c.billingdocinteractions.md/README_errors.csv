@@ -6,10 +6,16 @@ BDLS000004;Generic Error invoking Swissbilling - getBillingDocList;System;false;
 BDLS000005;Business Error invoking Swissbilling - getBillingDocList;Business;false;false;400;BillingDocList;BillingDocList_bsl
 BDLS000006;User not authorized for the input companyCode;System;false;false;401;BillingDocList;BillingDocList_bsl
 BDLS000007;Generic Error occured invoking Swissbilling - getBillingDocList;System;false;false;500;BillingDocList;BillingDocList_bsl
+
+
+BCST000400;Bad Request - Json validation failed;Business;false;false;400;BillingDoc;Billingdoc_bsl
+BCST000004;Generic Error invoking Swissbilling - getBillingCustomer;System;false;false;500;BillingCustomer;BillingCustomer_BSL
+BCST000005;An error occured parsing the JSON Response from Swissbilling;Business;false;false;500;BillingCustomer;BillingCustomer_BSL
+
 AUTH000001;System error inside the Authorization Manager;System;false;false;;BillingDocList;BillingDocList_bsl
 AUTH000002;System error calling Get Authorization Configuration;System;false;false;;BillingDocList;BillingDocList_bsl
-AUTH000003;Empty username provided;System;false;false;;BillingDocList;BillingDocList_bsl
-CONFCO000017;[ERROR]  Empty username provided;System;false;false;400;;
+AUTH000003;Empty username provided;System;false;false;403;BillingDocList;BillingDocList_bsl
+CONFCO000017;[ERROR]  Empty username provided;System;false;false;403;;
 CONFCO000001;[ERROR]  System error inside the AuthorizationManager Process;System;false;false;;;
 CONFCO000002;[ERROR]  System Exception time out inside GetAuthConfiguration process;System;false;false;;;
 CONFCO000003;[ERROR]  Business Error inside GetAuthConfiguration process;Business;false;false;;;
