@@ -22,12 +22,49 @@
           "description" : "",
           "type" : "string",
           "required" : true
+        }, {
+          "name" : "fromDate",
+          "in" : "query",
+          "description" : "",
+          "type" : "string",
+          "required" : false
+        }, {
+          "name" : "toDate",
+          "in" : "query",
+          "description" : "",
+          "type" : "string",
+          "required" : false
         } ],
         "responses" : {
           "200" : {
             "description" : "a BillingDeliveryResult to be returned",
             "schema" : {
               "$ref" : "#/definitions/BillingDeliveryResult"
+            },
+            "headers" : { }
+          },
+          "400" : {
+            "description" : "Bad Request",
+            "schema" : {
+              "type" : "string"
+            }
+          },
+          "401" : {
+            "description" : "Unauthorized",
+            "schema" : {
+              "type" : "string"
+            }
+          },
+          "403" : {
+            "description" : "Forbidden",
+            "schema" : {
+              "type" : "string"
+            }
+          },
+          "500" : {
+            "description" : "Internal Server Error",
+            "schema" : {
+              "type" : "string"
             }
           }
         }

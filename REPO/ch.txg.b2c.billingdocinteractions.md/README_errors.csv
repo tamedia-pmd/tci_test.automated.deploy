@@ -9,6 +9,15 @@ BDLS000007;Generic Error occured invoking Swissbilling - getBillingDocList;Syste
 BCST000400;Bad Request - Json validation failed;Business;false;false;400;BillingDoc;Billingdoc_bsl
 BCST000004;Generic Error invoking Swissbilling - getBillingCustomer;System;false;false;500;BillingCustomer;BillingCustomer_BSL
 BCST000005;An error occured parsing the JSON Response from Swissbilling;Business;false;false;500;BillingCustomer;BillingCustomer_BSL
+
+BNUM000004;Generic Error invoking Swissbilling - getBillingDocuNum;System;false;false;500;BillingDocNum;BillingDocNum_bsl
+BNUM000006;User not authorized for the input companyCode;System;false;false;403;BillingDocNum;BillingDocNum_bsl
+BNUM000400;Bad Request - Json validation failed;Business;false;false;400;BillingDocNum;BillingDocNum_bsl
+
+BDLS000004;Generic Error invoking Swissbilling - getBillingDelivery;System;false;false;500;BillingDelivery;BillingDelivery_bsl
+BDEL000007;Generic Error occured invoking Swissbilling - getBillingDelivery;System;false;false;500;BillingDelivery;BillingDelivery_bsl
+BDEL000400;Bad Request - Json validation failed;Business;false;false;400;BillingDelivery;BillingDelivery_bsl
+
 AUTH000001;System error inside the Authorization Manager;System;false;false;;BillingDocList;BillingDocList_bsl
 AUTH000002;System error calling Get Authorization Configuration;System;false;false;;BillingDocList;BillingDocList_bsl
 AUTH000003;Empty username provided;System;false;false;403;BillingDocList;BillingDocList_bsl

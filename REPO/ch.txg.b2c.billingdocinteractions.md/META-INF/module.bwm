@@ -67,6 +67,29 @@
     </scaext:binding>
     <scact:bindingAdjunct xmi:id="_zTJ24dJOEeqGXOqt2-tjUA" bindingName="RestService2"/>
   </sca:service>
+  <sca:service xmi:id="_1i8l5NJnEeqGXOqt2-tjUA" name="api-companies-BillingDelivery" promote="ComponentBillingDelivery_tlp/api-companies-BillingDelivery">
+    <sca:interface.wsdl xmi:id="_1jGW4tJnEeqGXOqt2-tjUA" interface="http://xmlns.example.com/20200723133610PLT34929#wsdl.interface(api-companies-BillingDelivery)" scaext:wsdlLocation="../Processes/ch/txg/b2c/billingdocinteractions/tlp/BillingDelivery_tlp.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_1jTyQNJnEeqGXOqt2-tjUA" name="RestService3" path="/api/companies/{companyCode}/BillingDelivery" docBasePath="http://localhost:7777/ch.txg.b2c.billingdocinteractions.md" docResourcePath="BillingDelivery" basePath="/" connector="ch.txg.b2c.billingdocinteractions.re.Interactions" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/ch.txg.b2c.billingdocinteractions.tlp.BillingDelivery_tlp-BillingDelivery.json">
+      <operation xmi:id="_1jTyQtJnEeqGXOqt2-tjUA" operationName="get" nickname="getBillingDelivery" httpMethod="GET" notes="Retrieve delivery reports created between the set interval" responseStyle="element" outputPartName="item">
+        <parameters xmi:id="_7CeJoNJnEeqGXOqt2-tjUA">
+          <parameterMapping xmi:id="_7CeJodJnEeqGXOqt2-tjUA" parameterName="fromDate" parameterType="Query" dataType="string"/>
+          <parameterMapping xmi:id="_9sSrkNJnEeqGXOqt2-tjUA" parameterName="toDate" parameterType="Query" dataType="string"/>
+        </parameters>
+        <responseStatus xmi:id="_4qAA8NJoEeqGXOqt2-tjUA" statusCode="200" reasonPhrase="OK" dataType="string"/>
+        <responseStatus xmi:id="_4z8AENJoEeqGXOqt2-tjUA" statusCode="400" reasonPhrase="Bad Request" dataType="string"/>
+        <responseStatus xmi:id="_5ymAsNJoEeqGXOqt2-tjUA" statusCode="401" reasonPhrase="Unauthorized" dataType="string"/>
+        <responseStatus xmi:id="_61-wUNJoEeqGXOqt2-tjUA" statusCode="500" reasonPhrase="Internal Server Error" dataType="string"/>
+        <responseStatus xmi:id="_83euANJoEeqGXOqt2-tjUA" statusCode="403" reasonPhrase="Forbidden" dataType="string"/>
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_1jdjQNJnEeqGXOqt2-tjUA">
+        <parameterMapping xmi:id="_1jdjQdJnEeqGXOqt2-tjUA" parameterName="companyCode" parameterType="Path" required="true"/>
+      </parameters>
+      <advancedConfig xmi:id="_1jTyQdJnEeqGXOqt2-tjUA" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_1jTyQ9JnEeqGXOqt2-tjUA" bindingName="RestService3"/>
+  </sca:service>
   <sca:property xmi:id="_2lhHIMzKEeqN9aEzAo8lZA" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
   <sca:property xmi:id="_2l4TgMzKEeqN9aEzAo8lZA" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
   <sca:property xmi:id="_2l-aIMzKEeqN9aEzAo8lZA" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
@@ -93,6 +116,12 @@
     <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_zS278dJOEeqGXOqt2-tjUA" processName="ch.txg.b2c.billingdocinteractions.tlp.BillingDocNum_tlp"/>
     <sca:service xmi:id="_zS278tJOEeqGXOqt2-tjUA" name="api-companies-BillingDocNum">
       <sca:interface.wsdl xmi:id="_zS2789JOEeqGXOqt2-tjUA" interface="http://xmlns.example.com/20200723133610PLT34#wsdl.interface(api-companies-BillingDocNum)"/>
+    </sca:service>
+  </sca:component>
+  <sca:component xmi:id="_1i8l4NJnEeqGXOqt2-tjUA" name="ComponentBillingDelivery_tlp" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_1i8l4dJnEeqGXOqt2-tjUA" processName="ch.txg.b2c.billingdocinteractions.tlp.BillingDelivery_tlp"/>
+    <sca:service xmi:id="_1i8l4tJnEeqGXOqt2-tjUA" name="api-companies-BillingDelivery">
+      <sca:interface.wsdl xmi:id="_1i8l49JnEeqGXOqt2-tjUA" interface="http://xmlns.example.com/20200723133610PLT34929#wsdl.interface(api-companies-BillingDelivery)"/>
     </sca:service>
   </sca:component>
 </sca:composite>

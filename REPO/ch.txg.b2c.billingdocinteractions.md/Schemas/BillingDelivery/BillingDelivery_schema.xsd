@@ -4,16 +4,18 @@
 		   xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" 
 		   xmlns:xs="http://www.w3.org/2001/XMLSchema" 
 		   xmlns:sb="/T1588620390643Converted/JsonSchema"
+		   xmlns:bdel="http://xmlns.example.com/BillingDelivery/parameters"
 		   elementFormDefault="qualified" 
 		   targetNamespace="http://ch/b2c/billingDelivery/xsd/bsl/internal">
 
 <xs:import namespace="/T1588620390643Converted/JsonSchema" schemaLocation="../../../ch.txg.b2c.swissbilling.sl.sh/Schemas/Swissbilling_Gateways_1.1.2.xsd" />
+<xs:import namespace="http://xmlns.example.com/BillingDelivery/parameters" schemaLocation="BillingDeliveryParameterSchema.xsd" />
+
 
   <xs:element name="Input_BSL">
     <xs:complexType>
       <xs:sequence>
-        <xs:element maxOccurs="1" minOccurs="1" name="companyCode" type="xs:string"/>
-        <xs:element maxOccurs="1" minOccurs="1" name="docNum" type="xs:string"/>
+        <xs:element ref="bdel:api-companies-BillingDeliveryGetParameters"  />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
