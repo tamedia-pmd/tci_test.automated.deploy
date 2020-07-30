@@ -1,0 +1,43 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "BillingDelivery",
+    "description" : "Retrieve delivery reports"
+  },
+  "host" : "localhost:8383",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/api/companies/{companyCode}/BillingDelivery" : {
+      "get" : {
+        "summary" : "Retrieve delivery reports",
+        "description" : "Retrieve delivery reports created between the set interval",
+        "operationId" : "getBillingDelivery",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "companyCode",
+          "in" : "path",
+          "description" : "",
+          "type" : "string",
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a BillingDeliveryResult to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/BillingDeliveryResult"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "BillingDeliveryResult" : {
+      "type" : "object",
+      "properties" : { }
+    }
+  }
+}

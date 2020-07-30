@@ -16,6 +16,18 @@
         {
             "location": "Service Descriptors/ch.txg.b2c.billingdocinteractions.tlp.BillingCustomer_tlp-BillingCustomer.json",
             "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/ch.txg.b2c.billingdocinteractions.tlp.BillingDocNum_tlp-BillingDocNum.json",
+            "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/ch.txg.b2c.billingdocinteractions.tlp.BillingDelivery_tlp-BillingDocNum.json",
+            "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/ch.txg.b2c.billingdocinteractions.tlp.BillingDelivery_tlp-BillingDelivery.json",
+            "type": "generated"
         }
     ]
 }
