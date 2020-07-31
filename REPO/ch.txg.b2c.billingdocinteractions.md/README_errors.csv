@@ -14,6 +14,14 @@ BNUM000004;Generic Error invoking Swissbilling - getBillingDocuNum;System;false;
 BNUM000006;User not authorized for the input companyCode;System;false;false;403;BillingDocNum;BillingDocNum_bsl
 BNUM000400;Bad Request - Json validation failed;Business;false;false;400;BillingDocNum;BillingDocNum_bsl
 
+
+
+BEVN000004;Generic Error invoking Swissbilling - getBillingDocuNum;System;false;false;500;BillingDocNum;BillingDocNum_bsl
+BNUM000006;User not authorized for the input companyCode;System;false;false;403;BillingDocNum;BillingDocNum_bsl
+
+
+
+
 BDLS000004;Generic Error invoking Swissbilling - getBillingDelivery;System;false;false;500;BillingDelivery;BillingDelivery_bsl
 BDEL000007;Generic Error occured invoking Swissbilling - getBillingDelivery;System;false;false;500;BillingDelivery;BillingDelivery_bsl
 BDEL000400;Bad Request - Json validation failed;Business;false;false;400;BillingDelivery;BillingDelivery_bsl

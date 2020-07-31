@@ -1891,8 +1891,7 @@
                         variableName="//ch.txg.core.lehf.common.sh//loggerParams" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"/>
                 </tibex:extActivity>
             </bpws:extensionActivity>
-            <bpws:scope name="RepeatOnError" tibex:group="repeatOnError"
-                tibex:indexToGlobal="false" tibex:xpdlId="ed385d0f-f296-4dce-b2da-ec87767739ba">
+            <bpws:scope name="RepeatOnError" tibex:group="repeatOnError" tibex:xpdlId="ed385d0f-f296-4dce-b2da-ec87767739ba">
                 <bpws:targets>
                     <bpws:target linkName="GetLoggerParamsToRepeatOnError"/>
                 </bpws:targets>

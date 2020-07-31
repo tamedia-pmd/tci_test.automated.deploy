@@ -90,6 +90,32 @@
     </scaext:binding>
     <scact:bindingAdjunct xmi:id="_1jTyQ9JnEeqGXOqt2-tjUA" bindingName="RestService3"/>
   </sca:service>
+  <sca:service xmi:id="_nT321NMREeqcH5rFIQFdMA" name="api-companies-BillingEvents" promote="ComponentBillingEvents_tlp/api-companies-BillingEvents">
+    <sca:interface.wsdl xmi:id="_nT4d4NMREeqcH5rFIQFdMA" interface="http://xmlns.example.com/20200723133610PLT3492971928#wsdl.interface(api-companies-BillingEvents3)" scaext:wsdlLocation="../Processes/ch/txg/b2c/billingdocinteractions/tlp/BillingEvents_tlp.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_nT6TENMREeqcH5rFIQFdMA" name="RestService4" path="/api/companies/{companyCode}/BillingEvents" docBasePath="http://localhost:7777/ch.txg.b2c.billingdocinteractions.md" docResourcePath="BillingEvents" basePath="/" connector="ch.txg.b2c.billingdocinteractions.re.Interactions" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/ch.txg.b2c.billingdocinteractions.tlp.BillingEvents_tlp-BillingEvents.json">
+      <operation xmi:id="_nUBn0NMREeqcH5rFIQFdMA" operationName="get" nickname="getBillingEvents" httpMethod="GET" notes="Retrieve all events that occured between two dates" responseStyle="element" outputPartName="item">
+        <parameters xmi:id="_qtp2ENMREeqcH5rFIQFdMA">
+          <parameterMapping xmi:id="_qtp2EdMREeqcH5rFIQFdMA" parameterName="fromDate" parameterType="Query" dataType="string"/>
+          <parameterMapping xmi:id="_t7XvQNMREeqcH5rFIQFdMA" parameterName="toDate" parameterType="Query" dataType="string"/>
+          <parameterMapping xmi:id="_xn4dQNMREeqcH5rFIQFdMA" parameterName="minEventID" parameterType="Query" dataType="integer#int32"/>
+          <parameterMapping xmi:id="_3NQxYNMREeqcH5rFIQFdMA" parameterName="maxEventID" parameterType="Query" dataType="integer#int32"/>
+        </parameters>
+        <responseStatus xmi:id="_CcxWwNMSEeqcH5rFIQFdMA" statusCode="200" reasonPhrase="OK" dataType="string"/>
+        <responseStatus xmi:id="_CtFqsNMSEeqcH5rFIQFdMA" statusCode="400" reasonPhrase="Bad Request" dataType="string"/>
+        <responseStatus xmi:id="_DWLD8NMSEeqcH5rFIQFdMA" statusCode="500" reasonPhrase="Internal Server Error" dataType="string"/>
+        <responseStatus xmi:id="_EHUNANMSEeqcH5rFIQFdMA" statusCode="404" reasonPhrase="Not Found" dataType="string"/>
+        <responseStatus xmi:id="_FIhLUNMSEeqcH5rFIQFdMA" statusCode="401" reasonPhrase="Unauthorized" dataType="string"/>
+        <responseStatus xmi:id="_Gn9k0NMSEeqcH5rFIQFdMA" statusCode="403" reasonPhrase="Forbidden" dataType="string"/>
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_nUDdANMREeqcH5rFIQFdMA">
+        <parameterMapping xmi:id="_nUDdAdMREeqcH5rFIQFdMA" parameterName="companyCode" parameterType="Path" required="true"/>
+      </parameters>
+      <advancedConfig xmi:id="_nT6TEdMREeqcH5rFIQFdMA" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_nUBn0dMREeqcH5rFIQFdMA" bindingName="RestService4"/>
+  </sca:service>
   <sca:property xmi:id="_2lhHIMzKEeqN9aEzAo8lZA" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
   <sca:property xmi:id="_2l4TgMzKEeqN9aEzAo8lZA" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
   <sca:property xmi:id="_2l-aIMzKEeqN9aEzAo8lZA" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
@@ -122,6 +148,12 @@
     <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_1i8l4dJnEeqGXOqt2-tjUA" processName="ch.txg.b2c.billingdocinteractions.tlp.BillingDelivery_tlp"/>
     <sca:service xmi:id="_1i8l4tJnEeqGXOqt2-tjUA" name="api-companies-BillingDelivery">
       <sca:interface.wsdl xmi:id="_1i8l49JnEeqGXOqt2-tjUA" interface="http://xmlns.example.com/20200723133610PLT34929#wsdl.interface(api-companies-BillingDelivery)"/>
+    </sca:service>
+  </sca:component>
+  <sca:component xmi:id="_nT320NMREeqcH5rFIQFdMA" name="ComponentBillingEvents_tlp" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_nT320dMREeqcH5rFIQFdMA" processName="ch.txg.b2c.billingdocinteractions.tlp.BillingEvents_tlp"/>
+    <sca:service xmi:id="_nT320tMREeqcH5rFIQFdMA" name="api-companies-BillingEvents">
+      <sca:interface.wsdl xmi:id="_nT3209MREeqcH5rFIQFdMA" interface="http://xmlns.example.com/20200723133610PLT3492971928#wsdl.interface(api-companies-BillingEvents3)"/>
     </sca:service>
   </sca:component>
 </sca:composite>

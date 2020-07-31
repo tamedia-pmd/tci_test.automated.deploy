@@ -24,41 +24,6 @@
     xmlns:sca-bpel="http://docs.oasis-open.org/ns/opencsa/sca-bpel/200801"
     xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"
     xmlns:tibprop="http://ns.tibco.com/bw/property" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <tibex:VariableDescriptor type="MemorySaving">
-        <task name="End">
-            <endingVariables>
-                <variable>MapOutput</variable>
-            </endingVariables>
-        </task>
-        <task name="call_BillingEngine">
-            <endingVariables>
-                <variable>call_BillingEngine-input</variable>
-                <variable>Start</variable>
-            </endingVariables>
-        </task>
-        <task name="MapOutput">
-            <endingVariables>
-                <variable>MapOutput-input</variable>
-                <variable>call_BillingEngine</variable>
-            </endingVariables>
-        </task>
-        <task name="ThrowError">
-            <endingVariables>
-                <variable>ThrowError-input</variable>
-            </endingVariables>
-        </task>
-        <task name="ThrowJsonResponseError">
-            <endingVariables>
-                <variable>ThrowJsonResponseError-input</variable>
-            </endingVariables>
-        </task>
-        <task name="ThrowGenericError">
-            <endingVariables>
-                <variable>ThrowGenericError-input</variable>
-                <variable>FaultDetails</variable>
-            </endingVariables>
-        </task>
-    </tibex:VariableDescriptor>
     <tibex:Types>
         <xs:schema attributeFormDefault="unqualified"
             elementFormDefault="qualified"
@@ -1081,8 +1046,6 @@
                         <tibex:inputBinding
                             expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;MapOutput&quot;/>&lt;xsl:template name=&quot;End-input&quot; match=&quot;/&quot;>&lt;xsl:copy-of select=&quot;$MapOutput&quot;/>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                     </tibex:inputBindings>
-                    <tibex:inputBinding
-                        expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">&lt;?xml version="1.0" encoding="UTF-8"?&gt; &lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:tns="http://ch/b2c/billingCustomers/xsd/bsl/internal" version="2.0"&gt; &lt;xsl:template name="End-input" match="/"&gt; &lt;tns:Output_BSL/&gt;&lt;/xsl:template&gt; &lt;/xsl:stylesheet&gt;</tibex:inputBinding>
                     <tibex:config>
                         <bwext:BWActivity
                             activityTypeID="bw.internal.end"

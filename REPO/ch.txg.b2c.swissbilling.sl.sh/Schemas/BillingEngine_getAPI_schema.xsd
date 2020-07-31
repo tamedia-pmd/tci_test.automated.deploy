@@ -19,8 +19,17 @@
 		<sequence>
 			<element minOccurs="1" name="URIpath" type="string"/>
 			<element minOccurs="0" name="queryParamsString" type="string"/>
+			<element minOccurs="0" maxOccurs="unbounded" name="queryParamsKV" type="tns:KVType"/>
 		</sequence>
 	</complexType>
+
+	<complexType name="KVType">
+		<sequence>
+			<element minOccurs="1" name="key" type="string"/>
+			<element minOccurs="1" name="value" type="string"/>			
+		</sequence>
+	</complexType>
+
 
 
 </schema>

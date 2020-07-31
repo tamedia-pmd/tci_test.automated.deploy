@@ -28,6 +28,10 @@
         {
             "location": "Service Descriptors/ch.txg.b2c.billingdocinteractions.tlp.BillingDelivery_tlp-BillingDelivery.json",
             "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/ch.txg.b2c.billingdocinteractions.tlp.BillingEvents_tlp-BillingEvents.json",
+            "type": "generated"
         }
     ]
 }
