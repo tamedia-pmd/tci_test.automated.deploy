@@ -5,15 +5,15 @@
 
 	<element name="outputBillingEngine" type="tns:callBillingEngine_outputType"/>
 
-
-	<complexType name="callBillingEngine_outputType">
-		<sequence>
-			<element name="JsonResponse" type="string"/>
-			<element name="statusCode" type="int"/>				
-			<element minOccurs="0" name="reasonPhrase" type="string"/>
-			
-		</sequence>
-	</complexType>
+	<element name="parameters"  type="tns:parametersListType"   />
+	
+		<complexType name="callBillingEngine_outputType">
+			<sequence>
+				<element name="JsonResponse" type="string"/>
+				<element name="statusCode" type="int"/>				
+				<element minOccurs="0" name="reasonPhrase" type="string"/>
+			</sequence>
+		</complexType>
 
 	<complexType name="callBillingEngine_inputType">
 		<sequence>
@@ -30,6 +30,10 @@
 		</sequence>
 	</complexType>
 
-
+	<complexType name="parametersListType">
+		<sequence>
+			<element name="paramersList" 	minOccurs="1" maxOccurs="unbounded" type="string" />
+		</sequence>
+	</complexType>
 
 </schema>

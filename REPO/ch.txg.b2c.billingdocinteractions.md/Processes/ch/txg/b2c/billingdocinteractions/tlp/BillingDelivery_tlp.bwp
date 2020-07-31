@@ -2724,7 +2724,6 @@
                                     inputVariable="MapSuccessResponse-input"
                                     name="MapSuccessResponse"
                                     outputVariable="MapSuccessResponse"
-                                    tibex:copyOf="ParseJSONResponse"
                                     tibex:xpdlId="4561e2d8-303d-42b1-a44a-04672906d8bc" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                                     <bpws:targets>
                                     <bpws:target linkName="ParseJSONToMapSuccessResponse"/>
@@ -2734,7 +2733,7 @@
                                     </bpws:sources>
                                     <tibex:inputBindings>
                                     <tibex:inputBinding
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;ParseJSONResponse&quot;/>&lt;xsl:template name=&quot;MapSuccessResponse-input&quot; match=&quot;/&quot;>&lt;xsl:copy-of select=&quot;$ParseJSONResponse&quot;/>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns1=&quot;/T1588620390643Converted/JsonSchema&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;ParseJSONResponse&quot;/>&lt;xsl:template name=&quot;MapSuccessResponse-input&quot; match=&quot;/&quot;>&lt;tns1:BillingDeliveryResult>&lt;xsl:if test=&quot;$ParseJSONResponse/tns1:success&quot;>&lt;tns1:success>&lt;xsl:value-of select=&quot;$ParseJSONResponse/tns1:success&quot;/>&lt;/tns1:success>&lt;/xsl:if>&lt;xsl:if test=&quot;$ParseJSONResponse/tns1:errorCode&quot;>&lt;tns1:errorCode>&lt;xsl:value-of select=&quot;$ParseJSONResponse/tns1:errorCode&quot;/>&lt;/tns1:errorCode>&lt;/xsl:if>&lt;xsl:for-each select=&quot;$ParseJSONResponse/tns1:errorList&quot;>&lt;tns1:errorList>&lt;xsl:value-of select=&quot;.&quot;/>&lt;/tns1:errorList>&lt;/xsl:for-each>&lt;xsl:copy-of select=&quot;$ParseJSONResponse/tns1:deliveryList&quot;/>&lt;/tns1:BillingDeliveryResult>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                                     </tibex:inputBindings>
                                     <tibex:config>
                                     <bwext:BWActivity

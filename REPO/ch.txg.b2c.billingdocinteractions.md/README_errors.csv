@@ -7,25 +7,33 @@ BDLS000005;Business Error invoking Swissbilling - getBillingDocList;Business;fal
 BDLS000006;User not authorized for the input companyCode;System;false;false;403;BillingDocList;BillingDocList_bsl
 BDLS000007;Generic Error occured invoking Swissbilling - getBillingDocList;System;false;false;500;BillingDocList;BillingDocList_bsl
 BCST000400;Bad Request - Json validation failed;Business;false;false;400;BillingDoc;Billingdoc_bsl
-BCST000004;Generic Error invoking Swissbilling - getBillingCustomer;System;false;false;500;BillingCustomer;BillingCustomer_BSL
-BCST000005;An error occured parsing the JSON Response from Swissbilling;Business;false;false;500;BillingCustomer;BillingCustomer_BSL
-
-BNUM000004;Generic Error invoking Swissbilling - getBillingDocuNum;System;false;false;500;BillingDocNum;BillingDocNum_bsl
+BCST000002;Business Error invoking Swissbilling - getBillingCustomer;Business;false;false;400;BillingCustomer;BillingCustomer_bsl
+BCST000003;System Error invoking Swissbilling - getBillingCustomer;System;false;false;500;BillingCustomer;BillingCustomer_bsl
+BCST000004;Generic Error invoking Swissbilling - getBillingCustomer;System;false;false;500;BillingCustomer;BillingCustomer_bsl
+BCST000005;Business Error invoking Swissbilling - getBillingCustomer;Business;false;false;400;BillingCustomer;BillingCustomer_bsl
+BCST000006;User not authorized for the input companyCode;System;false;false;403;BillingCustomer;BillingCustomer_bsl
+BCST000007;Generic Error occured invoking Swissbilling - getBillingCustomer;System;false;false;500;BillingCustomer;BillingCustomer_bsl
+BNUM000400;Bad Request - Json validation failed;Business;false;false;400;BillingDoc;Billingdoc_bsl
+BNUM000002;Business Error invoking Swissbilling - getBillingDocNum;Business;false;false;400;BillingDocNum;BillingDocNum_bsl
+BNUM000003;System Error invoking Swissbilling - getBillingDocNum;System;false;false;500;BillingDocNum;BillingDocNum_bsl
+BNUM000004;Generic Error invoking Swissbilling - getBillingDocNum;System;false;false;500;BillingDocNum;BillingDocNum_bsl
+BNUM000005;Business Error invoking Swissbilling - getBillingDocNum;Business;false;false;400;BillingDocNum;BillingDocNum_bsl
 BNUM000006;User not authorized for the input companyCode;System;false;false;403;BillingDocNum;BillingDocNum_bsl
-BNUM000400;Bad Request - Json validation failed;Business;false;false;400;BillingDocNum;BillingDocNum_bsl
-
-
-
-BEVN000004;Generic Error invoking Swissbilling - getBillingDocuNum;System;false;false;500;BillingDocNum;BillingDocNum_bsl
-BNUM000006;User not authorized for the input companyCode;System;false;false;403;BillingDocNum;BillingDocNum_bsl
-
-
-
-
-BDLS000004;Generic Error invoking Swissbilling - getBillingDelivery;System;false;false;500;BillingDelivery;BillingDelivery_bsl
+BNUM000007;Generic Error occured invoking Swissbilling - getBillingDocNum;System;false;false;500;BillingDocNum;BillingDocNum_bsl
+BEVN000400;Bad Request - Json validation failed;Business;false;false;400;BillingDoc;Billingdoc_bsl
+BEVN000002;Business Error invoking Swissbilling - getBillingEvents;Business;false;false;400;BillingEvents;BillingEvents_bsl
+BEVN000003;System Error invoking Swissbilling - getBillingEvents;System;false;false;500;BillingEvents;BillingEvents_bsl
+BEVN000004;Generic Error invoking Swissbilling - getBillingEvents;System;false;false;500;BillingEvents;BillingEvents_bsl
+BEVN000005;Business Error invoking Swissbilling - getBillingEvents;Business;false;false;400;BillingEvents;BillingEvents_bsl
+BEVN000006;User not authorized for the input companyCode;System;false;false;403;BillingEvents;BillingEvents_bsl
+BEVN000007;Generic Error occured invoking Swissbilling - getBillingEvents;System;false;false;500;BillingEvents;BillingEvents_bsl
+BDEL000400;Bad Request - Json validation failed;Business;false;false;400;BillingDoc;Billingdoc_bsl
+BDEL000002;Business Error invoking Swissbilling - getBillingDelivery;Business;false;false;400;BillingDelivery;BillingDelivery_bsl
+BDEL000003;System Error invoking Swissbilling - getBillingDelivery;System;false;false;500;BillingDelivery;BillingDelivery_bsl
+BDEL000004;Generic Error invoking Swissbilling - getBillingDelivery;System;false;false;500;BillingDelivery;BillingDelivery_bsl
+BDEL000005;Business Error invoking Swissbilling - getBillingDelivery;Business;false;false;400;BillingDelivery;BillingDelivery_bsl
+BDEL000006;User not authorized for the input companyCode;System;false;false;403;BillingDelivery;BillingDelivery_bsl
 BDEL000007;Generic Error occured invoking Swissbilling - getBillingDelivery;System;false;false;500;BillingDelivery;BillingDelivery_bsl
-BDEL000400;Bad Request - Json validation failed;Business;false;false;400;BillingDelivery;BillingDelivery_bsl
-
 AUTH000001;System error inside the Authorization Manager;System;false;false;;BillingDocList;BillingDocList_bsl
 AUTH000002;System error calling Get Authorization Configuration;System;false;false;;BillingDocList;BillingDocList_bsl
 AUTH000003;Empty username provided;System;false;false;403;BillingDocList;BillingDocList_bsl
@@ -36,3 +44,8 @@ CONFCO000003;[ERROR]  Business Error inside GetAuthConfiguration process;Busines
 CONFCO000004;[ERROR]  System exception error in http communication inside GetAuthConfiguration process;System;false;false;;;
 CONFCO000005;[ERROR]  System Exception  Http Server Exception inside GetAuthConfiguration process;System;false;false;;;
 CONFCO000006;[ERROR]  Unknow error inside GetAuthConfiguration process;Business;false;false;500;;
+BITF000001;System Error occured invoking Swissbilling - BillingEngine;System;false;false;404;
+BITF000002;Business Error occured invoking Swissbilling - BillingEngine;Business;false;false;400;
+BITF000003;System Error Invoking Swissbilling. HTTP Request timed out;System;false;false;500;
+BITF000004;Generic System Error Invoking Swissbilling - Billing Engine;System;false;false;500;
+BITF000005;Server System Error Invoking Swissbilling - Billing Engine;System;false;false;500;
