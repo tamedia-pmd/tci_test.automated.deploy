@@ -2238,7 +2238,7 @@
             <bpws:extensionActivity>
                 <tibex:activityExtension
                     inputVariable="PreparedQueryString"
-                    name="AssignQueryString"
+                    name="PrepareQueryString"
                     outputVariable="PreparedQueryString"
                     tibex:xpdlId="49d4b751-d006-437b-8d75-b5ffbe4d2488" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                     <bpws:targets>
@@ -2249,7 +2249,7 @@
                     </bpws:sources>
                     <tibex:inputBindings>
                         <tibex:inputBinding
-                            expression="string-join($parameters/ns15:paramersList, &quot;&amp;&quot;)" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"/>
+                            expression="if (  count($parameters/ns15:paramersList)=1  ) then $parameters/ns15:paramersList[1] else  ( string-join($parameters/ns15:paramersList, &quot;&amp;&quot;) )" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"/>
                     </tibex:inputBindings>
                     <tibex:config>
                         <bwext:BWActivity

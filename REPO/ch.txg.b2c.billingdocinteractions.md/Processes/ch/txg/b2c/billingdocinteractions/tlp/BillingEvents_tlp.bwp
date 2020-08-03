@@ -2467,6 +2467,8 @@
             namespace="http://ch/b2c/billingDelivery/xsd/bsl/internal" prefix="tns19"/>
         <tibex:namespaceItem
             namespace="http://xmlns.example.com/BillingEvents/parameters" prefix="tns20"/>
+        <tibex:namespaceItem
+            namespace="http://ch/b2c/billingEvents/xsd/bsl/internal" prefix="tns21"/>
     </tibex:NamespaceRegistry>
     <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://tns.tibco.com/bw/REST"/>
     <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="/T1588620390643Converted/JsonSchema"/>
@@ -2828,7 +2830,7 @@
                             </bpws:reply>
                             <bpws:extensionActivity>
                                 <tibex:extActivity
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns19=&quot;http://ch/b2c/billingDelivery/xsd/bsl/internal&quot; xmlns:tns20=&quot;http://xmlns.example.com/BillingEvents/parameters&quot; xmlns:tns=&quot;http://ch/b2c/billingEvents/xsd/bsl/internal&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;get&quot;/>&lt;xsl:template name=&quot;call_BSL-input&quot; match=&quot;/&quot;>&lt;tns:Input_BSL>&lt;xsl:copy-of select=&quot;$get/parameters/tns20:api-companies-BillingEvents3GetParameters&quot;/>&lt;/tns:Input_BSL>&lt;/xsl:template>&lt;/xsl:stylesheet>"
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns20=&quot;http://xmlns.example.com/BillingEvents/parameters&quot; xmlns:tns21=&quot;http://ch/b2c/billingEvents/xsd/bsl/internal&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;get&quot;/>&lt;xsl:template name=&quot;call_BSL-input&quot; match=&quot;/&quot;>&lt;tns21:Input_BSL>&lt;xsl:copy-of select=&quot;$get/parameters/tns20:api-companies-BillingEvents3GetParameters&quot;/>&lt;/tns21:Input_BSL>&lt;/xsl:template>&lt;/xsl:stylesheet>"
                                     expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"
                                     inputVariable="call_BSL-input"
                                     name="call_BSL"
@@ -2843,7 +2845,7 @@
                                     </bpws:sources>
                                     <tibex:inputBindings>
                                     <tibex:inputBinding
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns19=&quot;http://ch/b2c/billingDelivery/xsd/bsl/internal&quot; xmlns:tns20=&quot;http://xmlns.example.com/BillingEvents/parameters&quot; xmlns:tns=&quot;http://ch/b2c/billingEvents/xsd/bsl/internal&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;get.parameters&quot;/>&#xa;    &lt;xsl:template name=&quot;call_BSL-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns:Input_BSL>&#xa;            &lt;xsl:copy-of select=&quot;$get.parameters&quot;/>&#xa;        &lt;/tns:Input_BSL>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns20=&quot;http://xmlns.example.com/BillingEvents/parameters&quot; xmlns:tns21=&quot;http://ch/b2c/billingEvents/xsd/bsl/internal&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;get.parameters&quot;/>&#xa;    &lt;xsl:template name=&quot;call_BSL-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns21:Input_BSL>&#xa;            &lt;xsl:copy-of select=&quot;$get.parameters&quot;/>&#xa;        &lt;/tns21:Input_BSL>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                                     </tibex:inputBindings>
                                     <tibex:CallProcess
                                     subProcessName="ch.txg.b2c.billingdocinteractions.bsl.BillingEvents_BSL" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"/>
@@ -3062,7 +3064,7 @@
                                     </bpws:sources>
                                     <tibex:inputBindings>
                                     <tibex:inputBinding
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns14=&quot;activity.jsonParser.input+2697c9b3-6456-442a-b146-f5b815bfee44+ActivityInputType&quot; xmlns:tns19=&quot;http://ch/b2c/billingDelivery/xsd/bsl/internal&quot; xmlns:tns=&quot;http://ch/b2c/billingEvents/xsd/bsl/internal&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;call_BSL&quot;/>&lt;xsl:template name=&quot;ParseJSONResponse-input&quot; match=&quot;/&quot;>&lt;tns14:ActivityInputClass>&lt;jsonString>&lt;xsl:value-of select=&quot;$call_BSL/tns:jsonResponse&quot;/>&lt;/jsonString>&lt;/tns14:ActivityInputClass>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns14=&quot;activity.jsonParser.input+2697c9b3-6456-442a-b146-f5b815bfee44+ActivityInputType&quot; xmlns:tns21=&quot;http://ch/b2c/billingEvents/xsd/bsl/internal&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;call_BSL&quot;/>&#xa;    &lt;xsl:template name=&quot;ParseJSONResponse-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns14:ActivityInputClass>&#xa;            &lt;jsonString>&#xa;                &lt;xsl:value-of select=&quot;$call_BSL/tns21:jsonResponse&quot;/>&#xa;            &lt;/jsonString>&#xa;        &lt;/tns14:ActivityInputClass>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                                     </tibex:inputBindings>
                                     <tibex:config>
                                     <bwext:BWActivity

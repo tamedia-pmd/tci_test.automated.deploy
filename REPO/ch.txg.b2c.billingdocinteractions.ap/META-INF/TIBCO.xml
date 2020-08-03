@@ -1160,7 +1160,7 @@
     <packaging:module>
       <packaging:symbolicName>ch.txg.b2c.swissbilling.sl.sh</packaging:symbolicName>
       <packaging:technologyType>osgi-bundle,bw-sharedmodule</packaging:technologyType>
-      <packaging:technologyVersion>1.3.13.qualifier</packaging:technologyVersion>
+      <packaging:technologyVersion>1.3.14.qualifier</packaging:technologyVersion>
     </packaging:module>
     <packaging:module>
       <packaging:symbolicName>ch.txg.core.lehf.common.sh</packaging:symbolicName>
