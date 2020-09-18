@@ -317,11 +317,47 @@
 			<useLookupValue>false</useLookupValue>
 		</globalVariable>
 		<globalVariable>
+			<name>/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Token_Params/password</name>
+			<value>Tibco123!</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable>
+		<globalVariable>
+			<name>/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Token_Params/client_secret</name>
+			<value>$Ju$#RR*5PNnb5ye</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable>
+		<globalVariable>
 			<name>/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Token_Params/RequestURI/URI</name>
 			<value>/connect/token</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable>
+		<globalVariable>
+			<name>/ch.txg.b2c.swissbilling.sl.sh/connections/RetryManagement/baseRetryDelay_s</name>
+			<value>1</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>Integer</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable>
+		<globalVariable>
+			<name>/ch.txg.b2c.swissbilling.sl.sh/connections/RetryManagement/maxRetry</name>
+			<value>2</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>Integer</type>
 			<isOverride>false</isOverride>
 			<useLookupValue>false</useLookupValue>
 		</globalVariable>
@@ -453,21 +489,23 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/ch.txg.core.configuration.common.sh/Connection/Http/Client/LibraryID/URI</name>
-			<value>/3mnh4m5wafr7rwtkq3h2ljecnqxx23mc/dev/common/configuration/libraryId/v1</value>
+			<value>/z4lm36za4c6zngis7vb6ahrrdc5cttlh/dev/common/configuration/libraryId/v1</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
 			<isOverride>false</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>/z4lm36za4c6zngis7vb6ahrrdc5cttlh/dev/common/configuration/libraryId/v1</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>/ch.txg.core.configuration.common.sh/Connection/Http/Client/GetAuthConfiguration/URI</name>
-			<value>/3mnh4m5wafr7rwtkq3h2ljecnqxx23mc/dev/common/configuration/authorization/v1</value>
+			<value>/z4lm36za4c6zngis7vb6ahrrdc5cttlh/dev/common/configuration/authorization/v1</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
 			<isOverride>false</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>/z4lm36za4c6zngis7vb6ahrrdc5cttlh/dev/common/configuration/authorization/v1</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>/ch.txg.core.configuration.common.sh/RetryManagement/maxRetry</name>
@@ -953,12 +991,13 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.b2c.swissbilling.sl.sh///ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Token_Params/password</name>
-			<value>Tibco123!</value>
+			<value>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Token_Params/password%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Token_Params/password%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.b2c.swissbilling.sl.sh///ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Token_Params/client_id</name>
@@ -972,12 +1011,13 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.b2c.swissbilling.sl.sh///ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Token_Params/client_secret</name>
-			<value>$Ju$#RR*5PNnb5ye</value>
+			<value>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Token_Params/client_secret%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Token_Params/client_secret%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.b2c.swissbilling.sl.sh///ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Token_Params/username</name>
@@ -1011,21 +1051,23 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.b2c.swissbilling.sl.sh///ch.txg.b2c.swissbilling.sl.sh/connections/RetryManagement/baseRetryDelay_s</name>
-			<value>1</value>
+			<value>%%/ch.txg.b2c.swissbilling.sl.sh/connections/RetryManagement/baseRetryDelay_s%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.b2c.swissbilling.sl.sh/connections/RetryManagement/baseRetryDelay_s%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.b2c.swissbilling.sl.sh///ch.txg.b2c.swissbilling.sl.sh/connections/RetryManagement/maxRetry</name>
-			<value>2</value>
+			<value>%%/ch.txg.b2c.swissbilling.sl.sh/connections/RetryManagement/maxRetry%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.b2c.swissbilling.sl.sh/connections/RetryManagement/maxRetry%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.core.lehf.common.sh//BW.DEPLOYMENTUNIT.TYPE</name>
