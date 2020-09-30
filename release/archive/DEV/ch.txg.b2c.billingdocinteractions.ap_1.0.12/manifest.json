@@ -215,9 +215,33 @@
 		},
 
 		{
+			"name" : "/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Token_Params/password",
+			"datatype" : "string",
+			"default" : "Tibco123!"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Token_Params/client_secret",
+			"datatype" : "string",
+			"default" : "$Ju$#RR*5PNnb5ye"
+		},
+
+		{
 			"name" : "/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Token_Params/RequestURI/URI",
 			"datatype" : "string",
 			"default" : "/connect/token"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.swissbilling.sl.sh/connections/RetryManagement/baseRetryDelay_s",
+			"datatype" : "integer",
+			"default" : "1"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.swissbilling.sl.sh/connections/RetryManagement/maxRetry",
+			"datatype" : "integer",
+			"default" : "2"
 		},
 
 		{
@@ -307,13 +331,13 @@
 		{
 			"name" : "/ch.txg.core.configuration.common.sh/Connection/Http/Client/LibraryID/URI",
 			"datatype" : "string",
-			"default" : "/3mnh4m5wafr7rwtkq3h2ljecnqxx23mc/dev/common/configuration/libraryId/v1"
+			"default" : "/z4lm36za4c6zngis7vb6ahrrdc5cttlh/dev/common/configuration/libraryId/v1"
 		},
 
 		{
 			"name" : "/ch.txg.core.configuration.common.sh/Connection/Http/Client/GetAuthConfiguration/URI",
 			"datatype" : "string",
-			"default" : "/3mnh4m5wafr7rwtkq3h2ljecnqxx23mc/dev/common/configuration/authorization/v1"
+			"default" : "/z4lm36za4c6zngis7vb6ahrrdc5cttlh/dev/common/configuration/authorization/v1"
 		},
 
 		{
