@@ -935,8 +935,6 @@
         <bpws:variable element="ns:ErrorReport" name="_error" sca-bpel:internal="true"/>
         <bpws:variable element="ns8:ActivityErrorData"
             name="_error_call_GetAuthConfiguration" sca-bpel:internal="true"/>
-        <bpws:variable element="ns1:GetAuthConfigurationRequest"
-            name="call_GetAuthConfiguration-input" sca-bpel:internal="true"/>
         <bpws:variable element="ns1:AuthConfigVariable"
             name="call_GetAuthConfiguration" sca-bpel:internal="true"/>
         <bpws:variable element="ns6:ActivityErrorData" name="_error_End" sca-bpel:internal="true"/>
@@ -1049,9 +1047,7 @@
                 </tibex:activityExtension>
             </bpws:extensionActivity>
             <bpws:extensionActivity>
-                <tibex:extActivity
-                    inputVariable="call_GetAuthConfiguration-input"
-                    name="call_GetAuthConfiguration"
+                <tibex:extActivity name="call_GetAuthConfiguration"
                     outputVariable="call_GetAuthConfiguration"
                     tibex:xpdlId="76f2da56-2347-4240-a089-bb8e850f3a50"
                     type="bw.generalactivities.callprocess" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">

@@ -1198,7 +1198,7 @@
     <packaging:module>
       <packaging:symbolicName>ch.txg.core.configuration.common.sh</packaging:symbolicName>
       <packaging:technologyType>osgi-bundle,bw-sharedmodule</packaging:technologyType>
-      <packaging:technologyVersion>1.0.3.qualifier</packaging:technologyVersion>
+      <packaging:technologyVersion>1.0.4.qualifier</packaging:technologyVersion>
     </packaging:module>
   </packaging:modules>
 </packaging:packageUnit>
