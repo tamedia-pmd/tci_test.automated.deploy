@@ -1050,6 +1050,24 @@
 			<lookupValue>%%/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/Token_Params/RequestURI/URI%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
+			<name>//ch.txg.b2c.swissbilling.sl.sh///ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/PostingDoc/URI</name>
+			<value>api/PostingDoc/{postingDocId}</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable>
+		<globalVariable>
+			<name>//ch.txg.b2c.swissbilling.sl.sh///ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/PostingDoc/API</name>
+			<value>Swissbilling_Gateways</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable>
+		<globalVariable>
 			<name>//ch.txg.b2c.swissbilling.sl.sh///ch.txg.b2c.swissbilling.sl.sh/connections/RetryManagement/baseRetryDelay_s</name>
 			<value>%%/ch.txg.b2c.swissbilling.sl.sh/connections/RetryManagement/baseRetryDelay_s%%</value>
 			<deploymentSettable>false</deploymentSettable>
