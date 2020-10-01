@@ -37,9 +37,9 @@
         } ],
         "responses" : {
           "200" : {
-            "description" : "a BillingDeliveryResult to be returned",
+            "description" : "a string to be returned",
             "schema" : {
-              "$ref" : "#/definitions/BillingDeliveryResult"
+              "type" : "string"
             },
             "headers" : { }
           },
@@ -71,10 +71,5 @@
       }
     }
   },
-  "definitions" : {
-    "BillingDeliveryResult" : {
-      "type" : "object",
-      "properties" : { }
-    }
-  }
+  "definitions" : { }
 }

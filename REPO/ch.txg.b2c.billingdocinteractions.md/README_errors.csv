@@ -46,6 +46,7 @@ CONFCO000005;[ERROR]  System Exception  Http Server Exception inside GetAuthConf
 CONFCO000006;[ERROR]  Unknow error inside GetAuthConfiguration process;Business;false;false;500;;
 BITF000001;System Error occured invoking Swissbilling - BillingEngine;System;false;false;404;
 BITF000002;Business Error occured invoking Swissbilling - BillingEngine;Business;false;false;400;
-BITF000003;System Error Invoking Swissbilling. HTTP Request timed out;System;false;false;500;
-BITF000004;Generic System Error Invoking Swissbilling - Billing Engine;System;false;false;500;
-BITF000005;Server System Error Invoking Swissbilling - Billing Engine;System;false;false;500;
+BITF000003;System Error invoking Swissbilling. HTTP Request timed out;System;false;false;500;
+BITF000004;Generic System Error invoking Swissbilling - Billing Engine;System;false;false;500;
+BITF000005;Server System Error invoking Swissbilling - Billing Engine;System;false;false;500;
+BITF000006;Forbidden Client Error received  invoking Swissbilling - Billing Engine;System;false;false;403;

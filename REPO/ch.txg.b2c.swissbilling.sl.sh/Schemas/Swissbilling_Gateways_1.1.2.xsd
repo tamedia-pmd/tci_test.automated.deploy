@@ -2182,4 +2182,10 @@
             <xs:element maxOccurs="unbounded" minOccurs="0" name="BillingDoc_attachments" type="tns:Attachment"/>
         </xs:sequence>
     </xs:complexType>
+    <xs:complexType name="stringArray">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="string" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+    <xs:element name="stringArray" type="tns:stringArray"/>
 </xs:schema>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns:bdlist="http://xmlns.example.com/BillingDocList/parameters" xmlns:sb="/T1588620390643Converted/JsonSchema" xmlns:source="bw.rest" xmlns:tns="http://ch/b2c/billingDocList/xsd/bsl/internal" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://ch/b2c/billingDocList/xsd/bsl/internal">
+
+<xs:import namespace="/T1588620390643Converted/JsonSchema" schemaLocation="../../../ch.txg.b2c.swissbilling.sl.sh/Schemas/Swissbilling_Gateways_1.1.2.xsd"/>
+<xs:import namespace="http://xmlns.example.com/BillingDocList/parameters" schemaLocation="../BillingDocListParameterSchema.xsd"/>
+
+
+  <xs:element name="Input_BSL">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="bdlist:api-companies-BillingDocListGetParameters"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+
+  <xs:element name="Output_BSL">
+    <xs:complexType>
+      <xs:sequence>
+<!--    <xs:element ref="sb:BillingCustomerResult" />  Parsed SWB Response , temporary removed --> 
+        <xs:element maxOccurs="1" minOccurs="1" name="statusCode" type="xs:integer"/>
+        <xs:element maxOccurs="1" minOccurs="1" name="jsonResponse" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  
+</xs:schema>

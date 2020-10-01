@@ -93,7 +93,7 @@
   <sca:service xmi:id="_nT321NMREeqcH5rFIQFdMA" name="api-companies-BillingEvents" promote="ComponentBillingEvents_tlp/api-companies-BillingEvents">
     <sca:interface.wsdl xmi:id="_nT4d4NMREeqcH5rFIQFdMA" interface="http://xmlns.example.com/20200723133610PLT3492971928#wsdl.interface(api-companies-BillingEvents3)" scaext:wsdlLocation="../Processes/ch/txg/b2c/billingdocinteractions/tlp/BillingEvents_tlp.bwp"/>
     <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_nT6TENMREeqcH5rFIQFdMA" name="RestService4" path="/api/companies/{companyCode}/BillingEvents" docBasePath="http://localhost:7777/ch.txg.b2c.billingdocinteractions.md" docResourcePath="BillingEvents" basePath="/" connector="ch.txg.b2c.billingdocinteractions.re.Interactions" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/ch.txg.b2c.billingdocinteractions.tlp.BillingEvents_tlp-BillingEvents.json">
-      <operation xmi:id="_nUBn0NMREeqcH5rFIQFdMA" operationName="get" nickname="getBillingEvents" httpMethod="GET" notes="Retrieve all events that occured between two dates" responseStyle="element" outputPartName="item">
+      <operation xmi:id="_nUBn0NMREeqcH5rFIQFdMA" operationName="get" nickname="getBillingEvents" httpMethod="GET" notes="Retrieve all events that occured between two dates" responseStyle="json_root" outputPartName="item">
         <parameters xmi:id="_qtp2ENMREeqcH5rFIQFdMA">
           <parameterMapping xmi:id="_qtp2EdMREeqcH5rFIQFdMA" parameterName="fromDate" parameterType="Query" dataType="string"/>
           <parameterMapping xmi:id="_t7XvQNMREeqcH5rFIQFdMA" parameterName="toDate" parameterType="Query" dataType="string"/>

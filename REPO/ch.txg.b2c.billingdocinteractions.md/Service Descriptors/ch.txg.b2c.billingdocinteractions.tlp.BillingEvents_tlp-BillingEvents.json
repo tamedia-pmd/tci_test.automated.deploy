@@ -51,9 +51,9 @@
         } ],
         "responses" : {
           "200" : {
-            "description" : "a BillingEventsResult to be returned",
+            "description" : "a string to be returned",
             "schema" : {
-              "$ref" : "#/definitions/BillingEventsResult"
+              "type" : "string"
             },
             "headers" : { }
           },
@@ -91,10 +91,5 @@
       }
     }
   },
-  "definitions" : {
-    "BillingEventsResult" : {
-      "type" : "object",
-      "properties" : { }
-    }
-  }
+  "definitions" : { }
 }
