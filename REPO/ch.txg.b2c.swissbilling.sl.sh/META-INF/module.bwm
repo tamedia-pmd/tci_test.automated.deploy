@@ -45,6 +45,8 @@
   <sca:property xmi:id="_Z_pHsJT3EeqnU_ZcIDr5DA" name="/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/LOG_REQ_RESP_TIME" type="XMLSchema:boolean" scaext:simpleValue="false" publicAccess="true" scalable="true"/>
   <sca:property xmi:id="_aBPqMJT3EeqnU_ZcIDr5DA" name="/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/DEFAULT_CONFIDENTIALITY" type="XMLSchema:boolean" scaext:simpleValue="false" publicAccess="true" scalable="true"/>
   <sca:property xmi:id="_aC_9sJT3EeqnU_ZcIDr5DA" name="/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/ClientToken/CONFIDENTIALITY" type="XMLSchema:boolean" scaext:simpleValue="false" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_Nx1WEAPcEeujrd2j6C96fA" name="/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/PostingDoc/URI" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_Q8NnYAPcEeujrd2j6C96fA" name="/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/PostingDoc/API" type="XMLSchema:string" publicAccess="true" scalable="true"/>
   <sca:property xmi:id="_CWeuUJBzEeqaTpdMx66qRg" name="/ch.txg.b2c.swissbilling.sl.sh/connections/RetryManagement/maxRetry" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
   <sca:property xmi:id="_JzJ7QJBzEeqaTpdMx66qRg" name="/ch.txg.b2c.swissbilling.sl.sh/connections/RetryManagement/baseRetryDelay_s" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
 </sca:composite>

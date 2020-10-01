@@ -407,6 +407,24 @@
 			<useLookupValue>false</useLookupValue>
 		</globalVariable>
 		<globalVariable>
+			<name>/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/PostingDoc/URI</name>
+			<value>api/PostingDoc/{postingDocId}</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable>
+		<globalVariable>
+			<name>/ch.txg.b2c.swissbilling.sl.sh/connections/HTTP/PostingDoc/API</name>
+			<value>Swissbilling_Gateways</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable>
+		<globalVariable>
 			<name>/ch.txg.b2c.swissbilling.sl.sh/connections/RetryManagement/maxRetry</name>
 			<value>2</value>
 			<deploymentSettable>false</deploymentSettable>

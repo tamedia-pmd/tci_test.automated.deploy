@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://ch/txg/b2c/swissbilling/sl/PostingDocsPUT" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://ch/txg/b2c/swissbilling/sl/PostingDocsPUT">
+
+    <element name="Input">
+    	<complexType>
+    		<sequence>
+    			<element name=" postingDocId" type="string"></element>
+    		</sequence>
+    	</complexType>
+    </element>
+
+
+
+
+ <element name="ParseJsonPostingDocsPUT">
+    <complexType>
+      <sequence>
+        <element type="string" name="errorCode"/>
+        <element name="errors">
+          <complexType>
+            <sequence>
+            	<any></any>
+            </sequence>
+          </complexType>
+        </element>
+        <element type="string" name="success"/>
+      </sequence>
+    </complexType>
+  </element>
+
+
+
+
+
+ <element name="Output">
+ 	<complexType>
+ 		<sequence>
+ 			<element name="Result" type="boolean"></element>
+ 		</sequence>
+ 	</complexType>
+ </element>
+</schema>
