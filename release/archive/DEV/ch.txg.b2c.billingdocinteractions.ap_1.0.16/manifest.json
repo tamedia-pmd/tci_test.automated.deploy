@@ -362,6 +362,42 @@
 			"name" : "/ch.txg.core.configuration.common.sh/GetAuthConfiguration/getAuthConfigTTL_sec",
 			"datatype" : "integer",
 			"default" : "86400"
+		},
+
+		{
+			"name" : "/InteractionInterfaces/HTTP/Content-Type",
+			"datatype" : "string",
+			"default" : "application/json;charset=utf-8"
+		},
+
+		{
+			"name" : "/InteractionInterfaces/TargetResourcesNames/BillingDocList",
+			"datatype" : "string",
+			"default" : "billingdoclist"
+		},
+
+		{
+			"name" : "/InteractionInterfaces/TargetResourcesNames/BillingDocNum",
+			"datatype" : "string",
+			"default" : "billingdocnum"
+		},
+
+		{
+			"name" : "/InteractionInterfaces/TargetResourcesNames/BillingCustomer",
+			"datatype" : "string",
+			"default" : "billingcustomer"
+		},
+
+		{
+			"name" : "/InteractionInterfaces/TargetResourcesNames/BillingDelivery",
+			"datatype" : "string",
+			"default" : "billingdelivery"
+		},
+
+		{
+			"name" : "/InteractionInterfaces/TargetResourcesNames/BillingEvents",
+			"datatype" : "string",
+			"default" : "billingevents"
 		}
 	],
 	"endpoints" : [
