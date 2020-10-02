@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema 
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://ch/txg/b2c/interactions/internal/schema" 
+	xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" 
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:swb="http://ch/txg/b2c/BillingEngine_getAPI_schema"
+	elementFormDefault="qualified" 
+	targetNamespace="http://ch/txg/b2c/interactions/internal/schema">
+
+<xsd:import	namespace="http://ch/txg/b2c/BillingEngine_getAPI_schema"	schemaLocation="../../ch.txg.b2c.swissbilling.sl.sh/Schemas/BillingEngine_getAPI_schema.xsd"/>
+
+	<xs:element name="Input_InteractionsBSL">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element 	name="username" 		 minOccurs="1"  type="xs:string"/>
+				<xs:element 	name="requestURI" 		 minOccurs="1"  type="xs:string"/>
+				<xs:element 	name="queryParamsString" minOccurs="0"  type="xs:string"/>
+				<xs:element 	name="targetResource" 	 minOccurs="1"  type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+<xs:element name="pathParameters" >
+	<xsd:complexType>
+		<xsd:sequence>
+			<xs:element name="pathParamKV"	minOccurs="1" maxOccurs="unbounded"  type="swb:KVType" />		
+		</xsd:sequence>
+	</xsd:complexType>
+
+</xs:element>	
+	
+    <xs:complexType name="pathParamsType">
+      <xs:sequence>
+        <xs:element maxOccurs="1" minOccurs="0" name="companyCode" 	type="xs:string"/>
+        <xs:element maxOccurs="1" minOccurs="0" name="docNum" 		type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>	
+	
+<!--  				<xs:element 	name="pathParams"		 minOccurs="1" maxOccurs="unbounded"   	type="swb:KVType" />	-->	
+	
+	
+	
+</xs:schema>

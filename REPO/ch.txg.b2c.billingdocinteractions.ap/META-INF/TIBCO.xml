@@ -1192,17 +1192,59 @@
       <packaging:scalable>true</packaging:scalable>
       <packaging:overrideValue>false</packaging:overrideValue>
     </packaging:property>
+    <packaging:property>
+      <packaging:name>//ch.txg.b2c.billingdocinteractions.md///InteractionInterfaces/HTTP/Content-Type</packaging:name>
+      <packaging:type>xsd:string</packaging:type>
+      <packaging:visibility>public</packaging:visibility>
+      <packaging:scalable>true</packaging:scalable>
+      <packaging:overrideValue>false</packaging:overrideValue>
+    </packaging:property>
+    <packaging:property>
+      <packaging:name>//ch.txg.b2c.billingdocinteractions.md///InteractionInterfaces/TargetResourcesNames/BillingDocList</packaging:name>
+      <packaging:type>xsd:string</packaging:type>
+      <packaging:visibility>public</packaging:visibility>
+      <packaging:scalable>true</packaging:scalable>
+      <packaging:overrideValue>false</packaging:overrideValue>
+    </packaging:property>
+    <packaging:property>
+      <packaging:name>//ch.txg.b2c.billingdocinteractions.md///InteractionInterfaces/TargetResourcesNames/BillingDocNum</packaging:name>
+      <packaging:type>xsd:string</packaging:type>
+      <packaging:visibility>public</packaging:visibility>
+      <packaging:scalable>true</packaging:scalable>
+      <packaging:overrideValue>false</packaging:overrideValue>
+    </packaging:property>
+    <packaging:property>
+      <packaging:name>//ch.txg.b2c.billingdocinteractions.md///InteractionInterfaces/TargetResourcesNames/BillingCustomer</packaging:name>
+      <packaging:type>xsd:string</packaging:type>
+      <packaging:visibility>public</packaging:visibility>
+      <packaging:scalable>true</packaging:scalable>
+      <packaging:overrideValue>false</packaging:overrideValue>
+    </packaging:property>
+    <packaging:property>
+      <packaging:name>//ch.txg.b2c.billingdocinteractions.md///InteractionInterfaces/TargetResourcesNames/BillingDelivery</packaging:name>
+      <packaging:type>xsd:string</packaging:type>
+      <packaging:visibility>public</packaging:visibility>
+      <packaging:scalable>true</packaging:scalable>
+      <packaging:overrideValue>false</packaging:overrideValue>
+    </packaging:property>
+    <packaging:property>
+      <packaging:name>//ch.txg.b2c.billingdocinteractions.md///InteractionInterfaces/TargetResourcesNames/BillingEvents</packaging:name>
+      <packaging:type>xsd:string</packaging:type>
+      <packaging:visibility>public</packaging:visibility>
+      <packaging:scalable>true</packaging:scalable>
+      <packaging:overrideValue>false</packaging:overrideValue>
+    </packaging:property>
   </packaging:properties>
   <packaging:modules>
     <packaging:module>
       <packaging:symbolicName>ch.txg.b2c.billingdocinteractions.md</packaging:symbolicName>
       <packaging:technologyType>osgi-bundle,bw-appmodule</packaging:technologyType>
-      <packaging:technologyVersion>1.0.12.qualifier</packaging:technologyVersion>
+      <packaging:technologyVersion>1.0.16.qualifier</packaging:technologyVersion>
     </packaging:module>
     <packaging:module>
       <packaging:symbolicName>ch.txg.b2c.swissbilling.sl.sh</packaging:symbolicName>
       <packaging:technologyType>osgi-bundle,bw-sharedmodule</packaging:technologyType>
-      <packaging:technologyVersion>1.3.16.qualifier</packaging:technologyVersion>
+      <packaging:technologyVersion>1.3.18.qualifier</packaging:technologyVersion>
     </packaging:module>
     <packaging:module>
       <packaging:symbolicName>ch.txg.core.lehf.common.sh</packaging:symbolicName>

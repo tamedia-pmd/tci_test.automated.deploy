@@ -607,6 +607,60 @@
 			<useLookupValue>false</useLookupValue>
 		</globalVariable>
 		<globalVariable>
+			<name>//ch.txg.b2c.billingdocinteractions.md///InteractionInterfaces/HTTP/Content-Type</name>
+			<value>application/json;charset=utf-8</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable>
+		<globalVariable>
+			<name>//ch.txg.b2c.billingdocinteractions.md///InteractionInterfaces/TargetResourcesNames/BillingDocList</name>
+			<value>billingdoclist</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable>
+		<globalVariable>
+			<name>//ch.txg.b2c.billingdocinteractions.md///InteractionInterfaces/TargetResourcesNames/BillingDocNum</name>
+			<value>billingdocnum</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable>
+		<globalVariable>
+			<name>//ch.txg.b2c.billingdocinteractions.md///InteractionInterfaces/TargetResourcesNames/BillingCustomer</name>
+			<value>billingcustomer</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable>
+		<globalVariable>
+			<name>//ch.txg.b2c.billingdocinteractions.md///InteractionInterfaces/TargetResourcesNames/BillingDelivery</name>
+			<value>billingdelivery</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable>
+		<globalVariable>
+			<name>//ch.txg.b2c.billingdocinteractions.md///InteractionInterfaces/TargetResourcesNames/BillingEvents</name>
+			<value>billingevents</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable>
+		<globalVariable>
 			<name>//ch.txg.b2c.swissbilling.sl.sh//BW.DEPLOYMENTUNIT.NAME</name>
 			<value></value>
 			<deploymentSettable>false</deploymentSettable>

@@ -9,6 +9,7 @@
     xmlns:ns0="http://ch/txg/b2c/swissbilling/getBillingDocList/sl/"
     xmlns:ns1="/T1588620390643Converted/JsonSchema"
     xmlns:ns10="http://ch/b2c/billingDocList/xsd/bsl/internal"
+    xmlns:ns11="http://tns.tibco.com/bw/palette/internal/activityerror+090502dd-dc88-4784-b3d8-b276b78ee9b7"
     xmlns:ns2="http://xmlns.example.com/BillingDocList/parameters"
     xmlns:ns3="http://ch/txg/b2c/swissbilling/bsl/authorizationManager"
     xmlns:ns4="http://tns.tibco.com/bw/palette/internal/activityerror+384caef7-ffb4-489a-b81b-81a9dd9743b4"
@@ -198,6 +199,18 @@
             targetNamespace="http://tns.tibco.com/bw/palette/internal/activityerror+com.tibco.bw.core.design.process.editor.Activity_4002_Throw"
             xmlns="http://www.w3.org/2001/XMLSchema"
             xmlns:Q1="http://ch/txg/core/lehf/common/AuditTypes/0100" xmlns:tns="http://tns.tibco.com/bw/palette/internal/activityerror+com.tibco.bw.core.design.process.editor.Activity_4002_Throw">
+            <import namespace="http://ch/txg/core/lehf/common/AuditTypes/0100"/>
+            <element name="ActivityErrorData" type="tns:ActivityErrorDataType"/>
+            <complexType name="ActivityErrorDataType">
+                <choice>
+                    <element maxOccurs="1" minOccurs="0" ref="Q1:LogAudit"/>
+                </choice>
+            </complexType>
+        </schema>
+        <schema elementFormDefault="unqualified"
+            targetNamespace="http://tns.tibco.com/bw/palette/internal/activityerror+090502dd-dc88-4784-b3d8-b276b78ee9b7"
+            xmlns="http://www.w3.org/2001/XMLSchema"
+            xmlns:Q1="http://ch/txg/core/lehf/common/AuditTypes/0100" xmlns:tns="http://tns.tibco.com/bw/palette/internal/activityerror+090502dd-dc88-4784-b3d8-b276b78ee9b7">
             <import namespace="http://ch/txg/core/lehf/common/AuditTypes/0100"/>
             <element name="ActivityErrorData" type="tns:ActivityErrorDataType"/>
             <complexType name="ActivityErrorDataType">
@@ -811,6 +824,8 @@
             name="call_BillingEngine-input" sca-bpel:internal="true"/>
         <bpws:variable element="ns9:outputBillingEngine"
             name="call_BillingEngine" sca-bpel:internal="true"/>
+        <bpws:variable element="ns11:ActivityErrorData"
+            name="_error_call_BillingEngine" sca-bpel:internal="true"/>
     </bpws:variables>
     <bpws:extensions>
         <bpws:extension mustUnderstand="no" namespace="http://www.eclipse.org/gmf/runtime/1.0.2/notation"/>
@@ -889,8 +904,6 @@
                         <tibex:inputBinding
                             expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns6=&quot;http://ch/txg/b2c/BillingEngine_getAPI_schema&quot; xmlns:tns=&quot;http://ch/b2c/billingDocList/xsd/bsl/internal&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;call_BillingEngine&quot;/>&lt;xsl:template name=&quot;End-input&quot; match=&quot;/&quot;>&lt;tns:Output_BSL>&lt;tns:statusCode>&lt;xsl:value-of select=&quot;$call_BillingEngine/tns6:statusCode&quot;/>&lt;/tns:statusCode>&lt;tns:jsonResponse>&lt;xsl:value-of select=&quot;$call_BillingEngine/tns6:JsonResponse&quot;/>&lt;/tns:jsonResponse>&lt;/tns:Output_BSL>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                     </tibex:inputBindings>
-                    <tibex:inputBinding
-                        expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">&lt;?xml version="1.0" encoding="UTF-8"?&gt; &lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:tns="http://ch/b2c/billingDocList/xsd/bsl/internal" version="2.0"&gt; &lt;xsl:template name="End-input" match="/"&gt; &lt;tns:Output_BSL/&gt;&lt;/xsl:template&gt; &lt;/xsl:stylesheet&gt;</tibex:inputBinding>
                     <tibex:config>
                         <bwext:BWActivity
                             activityTypeID="bw.internal.end"

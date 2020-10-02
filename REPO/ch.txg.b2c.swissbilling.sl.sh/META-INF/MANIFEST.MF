@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Ch Txg B2c Swissbill Sl Sh Module
 Bundle-SymbolicName: ch.txg.b2c.swissbilling.sl.sh
-Bundle-Version: 1.3.16.qualifier
+Bundle-Version: 1.3.18.qualifier
 Bundle-Vendor: TIBCO Software Inc.
 TIBCO-BW-ConfigProfile: META-INF/default.substvar
 TIBCO-BW-SharedModule: META-INF/module.bwm
@@ -20,7 +20,7 @@ Require-Capability: com.tibco.bw.model; filter:="(name=bwext)",
  com.tibco.bw.sharedresource.model; filter:="(name=bw.userid)",
  com.tibco.bw.binding.model; filter:="(name=bw.rest.reference.binding)"
 TIBCO-BW-ModuleSharedVariables: META-INF/module.msv
-Provide-Capability: com.tibco.bw.module; name="ch.txg.b2c.swissbilling.sl.sh"; version:Version="1.3.16",
+Provide-Capability: com.tibco.bw.module; name="ch.txg.b2c.swissbilling.sl.sh"; version:Version="1.3.18",
  com.tibco.bw.schemas; ns="/T1588620390643Converted/JsonSchema",
  com.tibco.bw.schemas; ns="http://ch/txg/b2c/BillingEngine_getAPI_schema",
  com.tibco.bw.schemas; ns="http://ch/txg/b2c/billingDoc/sl/SWB_InternalSchemas",

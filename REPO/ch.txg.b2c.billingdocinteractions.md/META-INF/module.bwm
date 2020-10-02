@@ -123,6 +123,12 @@
   <sca:property xmi:id="_2mO40MzKEeqN9aEzAo8lZA" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
   <sca:property xmi:id="_2mWNkMzKEeqN9aEzAo8lZA" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
   <sca:property xmi:id="_YWTwAMzqEeqN9aEzAo8lZA" name="/InteractionInterfaces/BillingDocList/client/endpoint" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_fZcAgASNEeu5cYK73GgGag" name="/InteractionInterfaces/HTTP/Content-Type" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_NINmsASfEeu5cYK73GgGag" name="/InteractionInterfaces/TargetResourcesNames/BillingEvents" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_SWebUASfEeu5cYK73GgGag" name="/InteractionInterfaces/TargetResourcesNames/BillingDocNum" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_SalfQASfEeu5cYK73GgGag" name="/InteractionInterfaces/TargetResourcesNames/BillingDocList" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_SdY7oASfEeu5cYK73GgGag" name="/InteractionInterfaces/TargetResourcesNames/BillingDelivery" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_SgqSEASfEeu5cYK73GgGag" name="/InteractionInterfaces/TargetResourcesNames/BillingCustomer" type="XMLSchema:string" publicAccess="true" scalable="true"/>
   <sca:component xmi:id="_tR-94MzYEeqN9aEzAo8lZA" name="ComponentBillingDocList_tlp" compositeext:version="1.0.0.qualifier">
     <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_tR-94czYEeqN9aEzAo8lZA" processName="ch.txg.b2c.billingdocinteractions.tlp.BillingDocList_tlp"/>
     <sca:service xmi:id="_tSSf4MzYEeqN9aEzAo8lZA" name="api-companies-BillingDocList">
@@ -155,5 +161,8 @@
     <sca:service xmi:id="_nT320tMREeqcH5rFIQFdMA" name="api-companies-BillingEvents">
       <sca:interface.wsdl xmi:id="_nT3209MREeqcH5rFIQFdMA" interface="http://xmlns.example.com/20200723133610PLT3492971928#wsdl.interface(api-companies-BillingEvents3)"/>
     </sca:service>
+  </sca:component>
+  <sca:component xmi:id="_OE4sUASJEeu5cYK73GgGag" name="ComponentInteractionInterfaces_tlp" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_OE4sUQSJEeu5cYK73GgGag" processName="ch.txg.b2c.billingdocinteractions.tlp.InteractionInterfaces_tlp"/>
   </sca:component>
 </sca:composite>

@@ -2449,8 +2449,6 @@
         <bpws:variable element="ns4:loggerParams"
             name="SetLogParams-input" sca-bpel:internal="true"/>
         <bpws:variable element="ns4:loggerParams" name="SetLogParams" sca-bpel:internal="true"/>
-        <bpws:variable element="ns6:LogAudit" name="LogStartTLP-input" sca-bpel:internal="true"/>
-        <bpws:variable element="ns7:LEHF_Output" name="LogStartTLP" sca-bpel:internal="true"/>
         <bpws:variable name="DEBUG_Severity" sca-bpel:hotUpdate="false"
             sca-bpel:privateProperty="true" sca-bpel:property="yes"
             tibex:propertySource="//ch.txg.core.lehf.common.sh///ch.txg.core.lehf.common.sh/Logging/DEBUG_SEVERITY" type="xsd:string"/>
@@ -2468,32 +2466,18 @@
             name="ReplyUserNotAuthorized-input" sca-bpel:internal="true"/>
         <bpws:variable element="ns9:ActivityErrorData"
             name="_error_AuthorizationManager" sca-bpel:internal="true"/>
-        <bpws:variable element="ns6:LogAudit" name="LogError-input" sca-bpel:internal="true"/>
-        <bpws:variable element="ns7:LEHF_Output" name="LogError" sca-bpel:internal="true"/>
-        <bpws:variable element="ns6:LogAudit"
-            name="LogAuthorizationError-input" sca-bpel:internal="true"/>
-        <bpws:variable element="ns7:LEHF_Output"
-            name="LogAuthorizationError" sca-bpel:internal="true"/>
         <bpws:variable messageType="ns:getResponse4"
             name="ReplySWBBusinessError-input" sca-bpel:internal="true"/>
         <bpws:variable name="FaultName" sca-bpel:internal="true" type="xsd:string"/>
         <bpws:variable element="ns0:FaultDetail" name="FaultDetails" sca-bpel:internal="true"/>
         <bpws:variable messageType="ns:getResponse4"
             name="ReplyGenericError-input" sca-bpel:internal="true"/>
-        <bpws:variable element="ns6:LogAudit"
-            name="LogGenericError-input" sca-bpel:internal="true"/>
-        <bpws:variable element="ns7:LEHF_Output" name="LogGenericError" sca-bpel:internal="true"/>
         <bpws:variable name="FaultName1" sca-bpel:internal="true" type="xsd:string"/>
         <bpws:variable element="ns0:FaultDetail" name="FaultDetails1" sca-bpel:internal="true"/>
-        <bpws:variable element="ns6:LogAudit"
-            name="LogProcessError-input" sca-bpel:internal="true"/>
-        <bpws:variable element="ns7:LEHF_Output" name="LogProcessError" sca-bpel:internal="true"/>
         <bpws:variable messageType="ns:getResponse4"
             name="ReplyProcessError-input" sca-bpel:internal="true"/>
         <bpws:variable messageType="ns:getResponse4"
             name="ReplyEmptyUsername-input" sca-bpel:internal="true"/>
-        <bpws:variable element="ns6:LogAudit" name="LogEndTLP-input" sca-bpel:internal="true"/>
-        <bpws:variable element="ns7:LEHF_Output" name="LogEndTLP" sca-bpel:internal="true"/>
         <bpws:variable element="ns15:Input_BSL" name="call_BSL-input" sca-bpel:internal="true"/>
         <bpws:variable element="ns15:Output_BSL" name="call_BSL" sca-bpel:internal="true"/>
         <bpws:variable element="ns2:BillingDeliveryResult"
@@ -2522,6 +2506,22 @@
             name="PrepareBadRequestJson" sca-bpel:internal="true"/>
         <bpws:variable element="ns18:ActivityErrorData"
             name="_error_PrepareBadRequestJson" sca-bpel:internal="true"/>
+        <bpws:variable element="ns6:LogAudit" name="LogStartTLP-input" sca-bpel:internal="true"/>
+        <bpws:variable element="ns7:LEHF_Output" name="LogStartTLP" sca-bpel:internal="true"/>
+        <bpws:variable element="ns6:LogAudit"
+            name="LogAuthorizationError-input" sca-bpel:internal="true"/>
+        <bpws:variable element="ns7:LEHF_Output"
+            name="LogAuthorizationError" sca-bpel:internal="true"/>
+        <bpws:variable element="ns6:LogAudit" name="LogEndTLP-input" sca-bpel:internal="true"/>
+        <bpws:variable element="ns7:LEHF_Output" name="LogEndTLP" sca-bpel:internal="true"/>
+        <bpws:variable element="ns6:LogAudit" name="LogError-input" sca-bpel:internal="true"/>
+        <bpws:variable element="ns7:LEHF_Output" name="LogError" sca-bpel:internal="true"/>
+        <bpws:variable element="ns6:LogAudit"
+            name="LogGenericError-input" sca-bpel:internal="true"/>
+        <bpws:variable element="ns7:LEHF_Output" name="LogGenericError" sca-bpel:internal="true"/>
+        <bpws:variable element="ns6:LogAudit"
+            name="LogProcessError-input" sca-bpel:internal="true"/>
+        <bpws:variable element="ns7:LEHF_Output" name="LogProcessError" sca-bpel:internal="true"/>
     </bpws:variables>
     <bpws:extensions>
         <bpws:extension mustUnderstand="no" namespace="http://www.eclipse.org/gmf/runtime/1.0.2/notation"/>

@@ -44,9 +44,12 @@ CONFCO000003;[ERROR]  Business Error inside GetAuthConfiguration process;Busines
 CONFCO000004;[ERROR]  System exception error in http communication inside GetAuthConfiguration process;System;false;false;;;
 CONFCO000005;[ERROR]  System Exception  Http Server Exception inside GetAuthConfiguration process;System;false;false;;;
 CONFCO000006;[ERROR]  Unknow error inside GetAuthConfiguration process;Business;false;false;500;;
-BITF000001;System Error occured invoking Swissbilling - BillingEngine;System;false;false;404;
-BITF000002;Business Error occured invoking Swissbilling - BillingEngine;Business;false;false;400;
-BITF000003;System Error invoking Swissbilling. HTTP Request timed out;System;false;false;500;
-BITF000004;Generic System Error invoking Swissbilling - Billing Engine;System;false;false;500;
-BITF000005;Server System Error invoking Swissbilling - Billing Engine;System;false;false;500;
-BITF000006;Forbidden Client Error received  invoking Swissbilling - Billing Engine;System;false;false;403;
+BITF000001;System Error occured invoking Swissbilling - BillingEngine;System;false;false;404;;
+BITF000002;Business Error occured invoking Swissbilling - BillingEngine;Business;false;false;400;;
+BITF000003;System Error invoking Swissbilling. HTTP Request timed out;System;false;false;500;;
+BITF000004;Generic System Error invoking Swissbilling - Billing Engine;System;false;false;500;;
+BITF000005;Server System Error invoking Swissbilling - Billing Engine;System;false;false;500;;
+BITF000006;Forbidden Client Error received  invoking Swissbilling - Billing Engine;System;false;false;403;;
+BITF000007;User not authorized for the input companyCode;Business;false;false;401;;
+BITF000008;Generic error occured in the top layer process;System;false;false;500;;
+BITF000009;input parameter TargetResource not valid;Business;false;false;500;;
