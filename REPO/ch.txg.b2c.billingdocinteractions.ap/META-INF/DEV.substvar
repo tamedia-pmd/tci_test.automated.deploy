@@ -721,6 +721,14 @@
 			<lookupValue>%%/InteractionInterfaces/TargetResourcesNames/BillingEvents%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
+			<name>//ch.txg.b2c.billingdocinteractions.md///newGroup/newProperty</name>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable>
+		<globalVariable>
 			<name>//ch.txg.b2c.swissbilling.sl.sh//BW.DEPLOYMENTUNIT.NAME</name>
 			<value></value>
 			<deploymentSettable>false</deploymentSettable>

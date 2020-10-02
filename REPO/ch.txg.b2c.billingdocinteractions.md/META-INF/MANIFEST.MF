@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Ch Txg B2c Billingdocinteractions Md Module
 Bundle-SymbolicName: ch.txg.b2c.billingdocinteractions.md
-Bundle-Version: 1.0.16.qualifier
+Bundle-Version: 1.0.17.qualifier
 Bundle-Vendor: TIBCO Software Inc.
 TIBCO-BW-ModuleSharedVariables: META-INF/module.msv
 Require-Capability: com.tibco.bw.model; filter:="(name=bwext)",
@@ -12,8 +12,7 @@ Require-Capability: com.tibco.bw.model; filter:="(name=bwext)",
  com.tibco.bw.palette; filter:="(name=bw.generalactivities)",
  com.tibco.bw.palette; filter:="(name=bw.restjson)",
  com.tibco.bw.palette; filter:="(name=bw.http)",
- com.tibco.bw.sharedresource.model; filter:="(name=bw.httpconnector)",
- com.tibco.bw.binding.model; filter:="(name=bw.rest)"
+ com.tibco.bw.sharedresource.model; filter:="(name=bw.httpconnector)"
 TIBCO-BW-Edition: bwcloud
 TIBCO-BW-ConfigProfile: META-INF/default.substvar
 TIBCO-BW-ApplicationModule: META-INF/module.bwm
