@@ -544,6 +544,60 @@
 			<useLookupValue>false</useLookupValue>
 		</globalVariable>
 		<globalVariable>
+			<name>/InteractionInterfaces/HTTP/Content-Type</name>
+			<value>application/json;charset=utf-8</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable>
+		<globalVariable>
+			<name>/InteractionInterfaces/TargetResourcesNames/BillingDocList</name>
+			<value>billingdoclist</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable>
+		<globalVariable>
+			<name>/InteractionInterfaces/TargetResourcesNames/BillingDocNum</name>
+			<value>billingdocnum</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable>
+		<globalVariable>
+			<name>/InteractionInterfaces/TargetResourcesNames/BillingCustomer</name>
+			<value>billingcustomer</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable>
+		<globalVariable>
+			<name>/InteractionInterfaces/TargetResourcesNames/BillingDelivery</name>
+			<value>billingdelivery</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable>
+		<globalVariable>
+			<name>/InteractionInterfaces/TargetResourcesNames/BillingEvents</name>
+			<value>billingevents</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable>
+		<globalVariable>
 			<name>//ch.txg.b2c.billingdocinteractions.md//BW.APPNODE.NAME</name>
 			<value></value>
 			<deploymentSettable>false</deploymentSettable>
@@ -608,57 +662,63 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.b2c.billingdocinteractions.md///InteractionInterfaces/HTTP/Content-Type</name>
-			<value>application/json;charset=utf-8</value>
+			<value>%%/InteractionInterfaces/HTTP/Content-Type%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/InteractionInterfaces/HTTP/Content-Type%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.b2c.billingdocinteractions.md///InteractionInterfaces/TargetResourcesNames/BillingDocList</name>
-			<value>billingdoclist</value>
+			<value>%%/InteractionInterfaces/TargetResourcesNames/BillingDocList%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/InteractionInterfaces/TargetResourcesNames/BillingDocList%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.b2c.billingdocinteractions.md///InteractionInterfaces/TargetResourcesNames/BillingDocNum</name>
-			<value>billingdocnum</value>
+			<value>%%/InteractionInterfaces/TargetResourcesNames/BillingDocNum%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/InteractionInterfaces/TargetResourcesNames/BillingDocNum%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.b2c.billingdocinteractions.md///InteractionInterfaces/TargetResourcesNames/BillingCustomer</name>
-			<value>billingcustomer</value>
+			<value>%%/InteractionInterfaces/TargetResourcesNames/BillingCustomer%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/InteractionInterfaces/TargetResourcesNames/BillingCustomer%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.b2c.billingdocinteractions.md///InteractionInterfaces/TargetResourcesNames/BillingDelivery</name>
-			<value>billingdelivery</value>
+			<value>%%/InteractionInterfaces/TargetResourcesNames/BillingDelivery%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/InteractionInterfaces/TargetResourcesNames/BillingDelivery%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.b2c.billingdocinteractions.md///InteractionInterfaces/TargetResourcesNames/BillingEvents</name>
-			<value>billingevents</value>
+			<value>%%/InteractionInterfaces/TargetResourcesNames/BillingEvents%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/InteractionInterfaces/TargetResourcesNames/BillingEvents%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.b2c.swissbilling.sl.sh//BW.DEPLOYMENTUNIT.NAME</name>
