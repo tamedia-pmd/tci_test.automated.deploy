@@ -12,3 +12,8 @@ BENG000004;Generic System Error Invoking Swissbilling - Billing Engine;System;fa
 BENG000005;Server System Error Invoking Swissbilling - Billing Engine;System;false;false;500;
 AUTH000001;System error inside the Authorization Manager;System;false;;;
 AUTH000002;System error calling Get Authorization Configuration;System;false;;;
+SWSS000008;[ERROR]  Business Error inside PUTPostingDocsByID subprocess;Business;TRUE;FALSE;;
+SWSS000009;[ERROR]  System exception error in http communication inside PUTPostingDocsByID subprocess;System;TRUE;FALSE;;
+SWSS000010;[ERROR]  System Exception Http Server Exception inside PUTPostingDocsByID subprocess;System;TRUE;FALSE;;
+SWSS000011;[ERROR]  Business Error JSON PARSE inside PUTPostingDocsByID subprocess;Business;TRUE;FALSE;;
+SWSS000012;[ERROR]  Unknow error inside PUTPostingDocsByID subprocess;Business;TRUE;FALSE;;

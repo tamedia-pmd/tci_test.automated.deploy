@@ -30,6 +30,64 @@
     xmlns:tib="http://www.tibco.com/bw/xslt/custom-functions"
     xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"
     xmlns:tibprop="http://ns.tibco.com/bw/property" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <tibex:VariableDescriptor type="MemorySaving">
+        <task name="End">
+            <endingVariables>
+                <variable>invokeSWB_BillingEngine</variable>
+            </endingVariables>
+        </task>
+        <task name="RepeatOnError">
+            <endingVariables>
+                <variable>maxRetry</variable>
+                <variable>indexRetry</variable>
+                <variable>FaultDetails</variable>
+                <variable>baseDelay_s</variable>
+                <variable>call_AccessToken</variable>
+                <variable>Start</variable>
+            </endingVariables>
+        </task>
+        <task name="Delay">
+            <endingVariables>
+                <variable>Delay-input</variable>
+            </endingVariables>
+        </task>
+        <task name="invokeSWB_BillingEngine">
+            <endingVariables>
+                <variable>invokeSWB_BillingEngine-input</variable>
+            </endingVariables>
+        </task>
+        <task name="ThrowTimeOut">
+            <endingVariables>
+                <variable>ThrowTimeOut-input</variable>
+            </endingVariables>
+        </task>
+        <task name="ThrowClientError">
+            <endingVariables>
+                <variable>ThrowClientError-input</variable>
+            </endingVariables>
+        </task>
+        <task name="ThrowCommunication">
+            <endingVariables>
+                <variable>ThrowCommunication-input</variable>
+            </endingVariables>
+        </task>
+        <task name="ThrowServerError">
+            <endingVariables>
+                <variable>ThrowServerError-input</variable>
+            </endingVariables>
+        </task>
+        <task name="ThrowTokenError">
+            <endingVariables>
+                <variable>ThrowTokenError-input</variable>
+            </endingVariables>
+        </task>
+        <task name="ThrowGenericError">
+            <endingVariables>
+                <variable>ThrowGenericError-input</variable>
+                <variable>FaultDetails1</variable>
+            </endingVariables>
+        </task>
+    </tibex:VariableDescriptor>
     <tibex:Types>
         <xs:schema attributeFormDefault="unqualified"
             elementFormDefault="qualified"
@@ -611,7 +669,7 @@
                                     gradientEndColor="50431"
                                     gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
                                     <element href="//0/@process/@activity/@activity/@activities.1"/>
-                                    <layoutConstraint x="1437"
+                                    <layoutConstraint x="1524"
                                     xsi:type="notation:Bounds" y="188"/>
                                     </children>
                                     <children type="4002 bw.internal.getSharedVariable">
@@ -726,8 +784,8 @@
                                     <layoutConstraint
                                     height="40"
                                     width="40"
-                                    x="101"
-                                    xsi:type="notation:Bounds" y="31"/>
+                                    x="35"
+                                    xsi:type="notation:Bounds" y="22"/>
                                     </children>
 
                                     <children type="4002">
@@ -780,63 +838,9 @@
                                     <element href="//0/@process/@activity/@activity/@activities.3/@activity/@activity/@activity/@activities.3"/>
 
                                     <layoutConstraint
-                                    x="287"
-                                    xsi:type="notation:Bounds" y="31"/>
-                                    </children>
-
-                                    <children type="4002">
-
-                                    <children type="4017">
-
-                                    <styles
-                                    fontName="Segoe UI"
-                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
-
-                                    <layoutConstraint xsi:type="notation:Bounds"/>
-                                    </children>
-
-                                    <children type="4017">
-
-                                    <styles
-                                    fontName="Segoe UI"
-                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
-
-                                    <layoutConstraint xsi:type="notation:Bounds"/>
-                                    </children>
-
-                                    <children type="4017">
-
-                                    <styles
-                                    fontName="Segoe UI"
-                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
-
-                                    <layoutConstraint xsi:type="notation:Bounds"/>
-                                    </children>
-
-                                    <children type="4017">
-
-                                    <styles
-                                    fontName="Segoe UI"
-                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
-
-                                    <layoutConstraint xsi:type="notation:Bounds"/>
-                                    </children>
-
-                                    <styles
-                                    fontName="Segoe UI"
-                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
-
-                                    <styles
-                                    backgroundColor="16777215"
-                                    gradientEndColor="50431"
-                                    gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
-
-                                    <element href="//0/@process/@activity/@activity/@activities.3/@activity/@activity/@activity/@activities.4"/>
-
-                                    <layoutConstraint
                                     width="170"
-                                    x="468"
-                                    xsi:type="notation:Bounds" y="31"/>
+                                    x="225"
+                                    xsi:type="notation:Bounds" y="22"/>
                                     </children>
                                     <styles xsi:type="notation:DrawerStyle"/>
                                     <styles xsi:type="notation:SortingStyle"/>
@@ -853,8 +857,8 @@
                                     <element href="//0/@process/@activity/@activity/@activities.3/@activity/@activity/@activity"/>
 
                                     <layoutConstraint
-                                    height="248"
-                                    width="677" xsi:type="notation:Bounds"/>
+                                    height="249"
+                                    width="648" xsi:type="notation:Bounds"/>
                                     </children>
                                     <styles xsi:type="notation:SortingStyle"/>
                                     <styles xsi:type="notation:FilteringStyle"/>
@@ -866,8 +870,8 @@
                                     <styles xsi:type="bwnotation:ResizingStyle"/>
                                     <element href="//0/@process/@activity/@activity/@activities.3"/>
                                     <layoutConstraint
-                                    height="248"
-                                    width="680"
+                                    height="249"
+                                    width="479"
                                     x="15"
                                     xsi:type="notation:Bounds" y="20"/>
                                     </children>
@@ -961,8 +965,8 @@
                                     <styles xsi:type="bwnotation:ResizingStyle"/>
                                     <element href="//0/@process/@activity/@activity/@activities.3"/>
                                     <layoutConstraint
-                                    height="292" width="720"
-                                    x="571"
+                                    height="293" width="519"
+                                    x="853"
                                     xsi:type="notation:Bounds" y="69"/>
                                     </children>
                                     <children type="4002 bw.generalactivities.bwassign">
@@ -1039,6 +1043,41 @@
                                     x="419"
                                     xsi:type="notation:Bounds" y="277"/>
                                     </children>
+                                    <children type="4002">
+                                    <children type="4017">
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+                                    <children type="4017">
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+                                    <children type="4017">
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+                                    <children type="4017">
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+                                    <styles fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+                                    <styles
+                                    backgroundColor="16777215"
+                                    gradientEndColor="50431"
+                                    gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
+                                    <element href="//0/@process/@activity/@activity/@activities.6"/>
+                                    <layoutConstraint x="599"
+                                    xsi:type="notation:Bounds" y="183"/>
+                                    </children>
                                     <styles xsi:type="notation:DrawerStyle"/>
                                     <styles xsi:type="notation:SortingStyle"/>
                                     <styles xsi:type="notation:FilteringStyle"/>
@@ -1052,7 +1091,7 @@
                                     <styles xsi:type="bwnotation:ResizingStyle"/>
                                     <element href="//0/@process/@activity/@activity"/>
                                     <layoutConstraint height="481"
-                                    width="1570" xsi:type="notation:Bounds"/>
+                                    width="1734" xsi:type="notation:Bounds"/>
                                 </children>
                                 <styles xsi:type="notation:SortingStyle"/>
                                 <styles xsi:type="notation:FilteringStyle"/>
@@ -1062,7 +1101,7 @@
                             <styles xsi:type="bwnotation:BackgroundStyle"/>
                             <styles xsi:type="bwnotation:ResizingStyle"/>
                             <element href="//0/@process/@activity"/>
-                            <layoutConstraint height="481" width="1573" xsi:type="notation:Bounds"/>
+                            <layoutConstraint height="481" width="1737" xsi:type="notation:Bounds"/>
                         </children>
                         <children type="4022">
                             <children type="3022">
@@ -1592,7 +1631,7 @@
                     <styles xsi:type="bwnotation:BackgroundStyle"/>
                     <styles xsi:type="bwnotation:ResizingStyle"/>
                     <element href="//0/@process/@activity"/>
-                    <layoutConstraint height="1581" width="1573" x="1"
+                    <layoutConstraint height="1581" width="1737" x="1"
                         xsi:type="notation:Bounds" y="1"/>
                 </children>
                 <styles xsi:type="notation:SortingStyle"/>
@@ -1601,7 +1640,7 @@
             </children>
             <styles fontName="Segoe UI" lineColor="0" xsi:type="notation:ShapeStyle"/>
             <element href="//0/@process"/>
-            <layoutConstraint height="1633" width="1915" xsi:type="notation:Bounds"/>
+            <layoutConstraint height="1633" width="2079" xsi:type="notation:Bounds"/>
         </children>
         <styles xsi:type="notation:DiagramStyle"/>
         <element href="//0"/>
@@ -1620,7 +1659,7 @@
             source="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2"
             target="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.4" type="4006">
             <children type="6002">
-                <layoutConstraint xsi:type="notation:Location" y="40"/>
+                <layoutConstraint x="7" xsi:type="notation:Location" y="-54"/>
             </children>
             <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
             <styles fontName="Segoe UI" xsi:type="notation:FontStyle"/>
@@ -1637,17 +1676,6 @@
             <styles fontName="Segoe UI" xsi:type="notation:FontStyle"/>
             <element href="//0/@process/@activity/@activity/@activities.3/@activity/@activity/@activity/@links/@children.0"/>
             <bendpoints points="[25, -8, -121, 39]$[122, -39, -24, 8]" xsi:type="notation:RelativeBendpoints"/>
-        </edges>
-        <edges
-            source="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.3/@children.0/@children.1/@children.0/@children.0/@children.0/@children.1"
-            target="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.3/@children.0/@children.1/@children.0/@children.0/@children.0/@children.2" type="4006">
-            <children type="6002">
-                <layoutConstraint xsi:type="notation:Location" y="40"/>
-            </children>
-            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
-            <styles fontName="Segoe UI" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@activity/@activities.3/@activity/@activity/@activity/@links/@children.1"/>
-            <bendpoints points="[0, 0, 0, 0]$[0, 0, 0, 0]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
         <edges
             source="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.3"
@@ -1668,18 +1696,18 @@
             </children>
             <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
             <styles fontName="Segoe UI" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@activity/@activities.3/@activity/@activity/@activity/@links/@children.2"/>
+            <element href="//0/@process/@activity/@activity/@activities.3/@activity/@activity/@activity/@links/@children.1"/>
             <bendpoints points="[0, 0, 0, 0]$[0, 0, 0, 0]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
         <edges
-            source="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.3/@children.0/@children.1/@children.0/@children.0/@children.0/@children.2"
+            source="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.3/@children.0/@children.1/@children.0/@children.0/@children.0/@children.1"
             target="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.3/@children.0/@children.3" type="4006">
             <children type="6002">
                 <layoutConstraint xsi:type="notation:Location" y="40"/>
             </children>
             <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
             <styles fontName="Segoe UI" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@activity/@activities.3/@activity/@activity/@activity/@links/@children.3"/>
+            <element href="//0/@process/@activity/@activity/@activities.3/@activity/@activity/@activity/@links/@children.2"/>
             <bendpoints points="[0, 0, 0, 0]$[0, 0, 0, 0]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
         <edges
@@ -1690,15 +1718,15 @@
             </children>
             <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
             <styles fontName="Segoe UI" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@activity/@activities.3/@activity/@activity/@activity/@links/@children.4"/>
+            <element href="//0/@process/@activity/@activity/@activities.3/@activity/@activity/@activity/@links/@children.3"/>
             <bendpoints
                 points="[12, 11, -244, 66]$[69, 11, -187, 66]$[69, 19, -187, 74]$[253, 19, -3, 74]$[253, -30, -3, 25]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
         <edges
             source="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2"
-            target="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.3" type="4006">
+            target="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.6" type="4006">
             <children type="6002">
-                <layoutConstraint xsi:type="notation:Location" y="40"/>
+                <layoutConstraint x="-3" xsi:type="notation:Location" y="-10"/>
             </children>
             <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
             <styles fontName="Segoe UI" xsi:type="notation:FontStyle"/>
@@ -1718,7 +1746,7 @@
         </edges>
         <edges
             source="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.5"
-            target="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.3" type="4006">
+            target="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.6" type="4006">
             <children type="6002">
                 <layoutConstraint xsi:type="notation:Location" y="40"/>
             </children>
@@ -1726,6 +1754,18 @@
             <styles fontName="Segoe UI" xsi:type="notation:FontStyle"/>
             <element href="//0/@process/@activity/@activity/@links/@children.5"/>
             <bendpoints points="[0, 0, 0, 0]$[0, 0, 0, 0]" xsi:type="notation:RelativeBendpoints"/>
+            <targetAnchor id="(0.21951219512195122,0.6133333333333333)" xsi:type="notation:IdentityAnchor"/>
+        </edges>
+        <edges
+            source="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.6"
+            target="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.3" type="4006">
+            <children type="6002">
+                <layoutConstraint xsi:type="notation:Location" y="40"/>
+            </children>
+            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
+            <styles fontName="Segoe UI" xsi:type="notation:FontStyle"/>
+            <element href="//0/@process/@activity/@activity/@links/@children.6"/>
+            <bendpoints points="[25, 1, -421, 0]$[204, 0, -242, -1]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
     </notation:Diagram>
     <tibex:NamespaceRegistry enabled="true">
@@ -1945,11 +1985,15 @@
         <bpws:flow name="flow">
             <bpws:links>
                 <bpws:link name="StartToEnd" tibex:linkType="SUCCESS"/>
-                <bpws:link name="GetLoggerParamsToRepeatOnError" tibex:linkType="SUCCESSWITHCONDITION"/>
+                <bpws:link
+                    name="GetLoggerParamsToRepeatOnError_DEPRECATED"
+                    tibex:label="DEPRECATED" tibex:linkType="SUCCESSWITHCONDITION"/>
                 <bpws:link name="RepeatOnErrorToEnd" tibex:linkType="SUCCESS"/>
-                <bpws:link name="GetLoggerParamsToRepeatOnError1" tibex:linkType="SUCCESSWITHNOCONDITION"/>
+                <bpws:link name="GetLoggerParamsTocall_AccessToken"
+                    tibex:label="Otherwise" tibex:linkType="SUCCESSWITHNOCONDITION"/>
                 <bpws:link name="AssignToRepeatOnError" tibex:linkType="SUCCESS"/>
-                <bpws:link name="AssignToRepeatOnError1" tibex:linkType="SUCCESS"/>
+                <bpws:link name="PrepareQueryStringTocall_AccessToken" tibex:linkType="SUCCESS"/>
+                <bpws:link name="call_AccessTokenToRepeatOnError" tibex:linkType="SUCCESS"/>
             </bpws:links>
             <bpws:extensionActivity>
                 <tibex:receiveEvent createInstance="yes"
@@ -2000,14 +2044,14 @@
                         <bpws:target linkName="StartToEnd"/>
                     </bpws:targets>
                     <bpws:sources>
-                        <bpws:source linkName="GetLoggerParamsToRepeatOnError">
+                        <bpws:source linkName="GetLoggerParamsToRepeatOnError_DEPRECATED">
                             <tibex:DesignExpression>
                                 <tibex:expression
                                     expression="exists($Start/ns15:queryParamsKV)" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"/>
                             </tibex:DesignExpression>
                             <bpws:transitionCondition expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"><![CDATA[exists($Start/ns15:queryParamsKV)]]></bpws:transitionCondition>
                         </bpws:source>
-                        <bpws:source linkName="GetLoggerParamsToRepeatOnError1">
+                        <bpws:source linkName="GetLoggerParamsTocall_AccessToken">
                             <tibex:DesignExpression>
                                 <tibex:expression
                                     expression="##otherwise##" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"/>
@@ -2021,8 +2065,7 @@
             </bpws:extensionActivity>
             <bpws:scope name="RepeatOnError" tibex:group="repeatOnError" tibex:xpdlId="ed385d0f-f296-4dce-b2da-ec87767739ba">
                 <bpws:targets>
-                    <bpws:target linkName="GetLoggerParamsToRepeatOnError1"/>
-                    <bpws:target linkName="AssignToRepeatOnError1"/>
+                    <bpws:target linkName="call_AccessTokenToRepeatOnError"/>
                 </bpws:targets>
                 <bpws:sources>
                     <bpws:source linkName="RepeatOnErrorToEnd"/>
@@ -2056,7 +2099,7 @@
                                     expression="($indexRetry = $maxRetry + 1) or (contains(string($FaultDetails/Data/*),&quot;500&quot;))" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"/>
                                     </tibex:DesignExpression>
                                     <bpws:condition expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"><![CDATA[($indexRetry = $maxRetry + 1) or (contains(string($FaultDetails/Data/*),"500"))]]></bpws:condition>
-                                    <bpws:rethrow name="Rethrow"/>
+                                    <bpws:rethrow name="Rethrow" tibex:xpdlId="d715fed1-94e6-4e3d-ba99-8bfd826bf97e"/>
                                     <bpws:else>
                                     <bpws:assign name="Assign" validate="no">
                                     <bpws:copy>
@@ -2071,14 +2114,12 @@
                         <bpws:flow name="flow1">
                             <bpws:links>
                                 <bpws:link
-                                    name="DelayTocall_AccessToken" tibex:linkType="SUCCESS"/>
-                                <bpws:link
-                                    name="call_AccessTokenToSendHTTPRequest" tibex:linkType="SUCCESS"/>
+                                    name="DelayToinvokeSWB_BillingEngine" tibex:linkType="SUCCESS"/>
                                 <bpws:link name="GroupStartToDelay" tibex:linkType="SUCCESSWITHNOCONDITION"/>
                                 <bpws:link
                                     name="invokeSWB_BillingEngineToGroupEnd" tibex:linkType="SUCCESS"/>
                                 <bpws:link
-                                    name="GroupStartTocall_indexRetry1"
+                                    name="GroupStartToinvokeSWB_BillingEngine"
                                     tibex:label="$indexRetry = 1" tibex:linkType="SUCCESSWITHCONDITION"/>
                             </bpws:links>
                             <bpws:empty name="GroupStart"
@@ -2091,7 +2132,7 @@
                                     </tibex:DesignExpression>
                                     <bpws:transitionCondition expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"><![CDATA[##otherwise##]]></bpws:transitionCondition>
                                     </bpws:source>
-                                    <bpws:source linkName="GroupStartTocall_indexRetry1">
+                                    <bpws:source linkName="GroupStartToinvokeSWB_BillingEngine">
                                     <tibex:DesignExpression>
                                     <tibex:expression
                                     expression="$indexRetry = 1" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"/>
@@ -2120,7 +2161,7 @@
                                     <bpws:target linkName="GroupStartToDelay"/>
                                     </bpws:targets>
                                     <bpws:sources>
-                                    <bpws:source linkName="DelayTocall_AccessToken"/>
+                                    <bpws:source linkName="DelayToinvokeSWB_BillingEngine"/>
                                     </bpws:sources>
                                     <tibex:inputBindings>
                                     <tibex:inputBinding
@@ -2144,23 +2185,6 @@
                                 </tibex:activityExtension>
                             </bpws:extensionActivity>
                             <bpws:extensionActivity>
-                                <tibex:extActivity
-                                    name="call_AccessToken"
-                                    outputVariable="call_AccessToken"
-                                    tibex:xpdlId="41cf4b95-5843-4de3-ba2e-2e33b14528d4"
-                                    type="bw.generalactivities.callprocess" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
-                                    <bpws:targets>
-                                    <bpws:target linkName="DelayTocall_AccessToken"/>
-                                    <bpws:target linkName="GroupStartTocall_indexRetry1"/>
-                                    </bpws:targets>
-                                    <bpws:sources>
-                                    <bpws:source linkName="call_AccessTokenToSendHTTPRequest"/>
-                                    </bpws:sources>
-                                    <tibex:CallProcess
-                                    subProcessName="ch.txg.b2c.swissbilling.sl.call_AccessToken" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"/>
-                                </tibex:extActivity>
-                            </bpws:extensionActivity>
-                            <bpws:extensionActivity>
                                 <tibex:activityExtension
                                     governedObjectTypes="BWHttpReference"
                                     inputVariable="invokeSWB_BillingEngine-input"
@@ -2168,14 +2192,15 @@
                                     outputVariable="invokeSWB_BillingEngine"
                                     tibex:xpdlId="8411375a-2300-4039-ae64-66a9c646824b" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                                     <bpws:targets>
-                                    <bpws:target linkName="call_AccessTokenToSendHTTPRequest"/>
+                                    <bpws:target linkName="GroupStartToinvokeSWB_BillingEngine"/>
+                                    <bpws:target linkName="DelayToinvokeSWB_BillingEngine"/>
                                     </bpws:targets>
                                     <bpws:sources>
                                     <bpws:source linkName="invokeSWB_BillingEngineToGroupEnd"/>
                                     </bpws:sources>
                                     <tibex:inputBindings>
                                     <tibex:inputBinding
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns1=&quot;http://tns.tibco.com/bw/activity/sendhttprequest/input+8411375a-2300-4039-ae64-66a9c646824b+RequestActivityInput&quot; xmlns:tns3=&quot;http://ch/txg/b2c/billingDoc/sl/TokenResponse&quot; xmlns:tns6=&quot;http://ch/txg/b2c/BillingEngine_getAPI_schema&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;call_AccessToken&quot;/>&lt;xsl:param name=&quot;Start&quot;/>&lt;xsl:param name=&quot;PreparedQueryString&quot;/>&lt;xsl:template name=&quot;invokeSWB_BillingEngine-input&quot; match=&quot;/&quot;>&lt;tns1:RequestActivityInput>&lt;Method>&lt;xsl:value-of select=&quot;'GET'&quot;/>&lt;/Method>&lt;RequestURI>&lt;xsl:value-of select=&quot;$Start/tns6:URIpath&quot;/>&lt;/RequestURI>&lt;xsl:choose>&lt;xsl:when test=&quot;string-length($Start/tns6:queryParamsString)>0&quot;>&lt;xsl:if test=&quot;$Start/tns6:queryParamsString&quot;>&lt;QueryString>&lt;xsl:value-of select=&quot;$Start/tns6:queryParamsString&quot;/>&lt;/QueryString>&lt;/xsl:if>&lt;/xsl:when>&lt;xsl:otherwise>&lt;QueryString>&lt;xsl:value-of select=&quot;$PreparedQueryString&quot;/>&lt;/QueryString>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;DynamicHeaders>&lt;Header>&lt;Name>&lt;xsl:value-of select=&quot;'Authorization'&quot;/>&lt;/Name>&lt;Value>&lt;xsl:value-of select=&quot;concat($call_AccessToken/tns3:token_type, &amp;quot; &amp;quot;, $call_AccessToken/tns3:access_token)&quot;/>&lt;/Value>&lt;/Header>&lt;/DynamicHeaders>&lt;/tns1:RequestActivityInput>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns1=&quot;http://tns.tibco.com/bw/activity/sendhttprequest/input+8411375a-2300-4039-ae64-66a9c646824b+RequestActivityInput&quot; xmlns:tns3=&quot;http://ch/txg/b2c/billingDoc/sl/TokenResponse&quot; xmlns:tns6=&quot;http://ch/txg/b2c/BillingEngine_getAPI_schema&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;call_AccessToken&quot;/>&lt;xsl:param name=&quot;Start&quot;/>&lt;xsl:param name=&quot;PreparedQueryString&quot;/>&lt;xsl:template name=&quot;invokeSWB_BillingEngine-input&quot; match=&quot;/&quot;>&lt;tns1:RequestActivityInput>&lt;Method>&lt;xsl:value-of select=&quot;$Start/tns6:method&quot;/>&lt;/Method>&lt;RequestURI>&lt;xsl:value-of select=&quot;$Start/tns6:URIpath&quot;/>&lt;/RequestURI>&lt;xsl:if test=&quot;string-length($Start/tns6:body)>0&quot;>&lt;xsl:if test=&quot;$Start/tns6:body&quot;>&lt;PostData>&lt;xsl:value-of select=&quot;$Start/tns6:body&quot;/>&lt;/PostData>&lt;/xsl:if>&lt;/xsl:if>&lt;xsl:if test=&quot;string-length($PreparedQueryString)>0&quot;>&lt;QueryString>&lt;xsl:value-of select=&quot;$PreparedQueryString&quot;/>&lt;/QueryString>&lt;/xsl:if>&lt;Headers>&lt;xsl:if test=&quot;string-length($Start/tns6:contentType)>0&quot;>&lt;xsl:if test=&quot;$Start/tns6:contentType&quot;>&lt;Content-Type>&lt;xsl:value-of select=&quot;$Start/tns6:contentType&quot;/>&lt;/Content-Type>&lt;/xsl:if>&lt;/xsl:if>&lt;/Headers>&lt;DynamicHeaders>&lt;Header>&lt;Name>&lt;xsl:value-of select=&quot;'Authorization'&quot;/>&lt;/Name>&lt;Value>&lt;xsl:value-of select=&quot;concat($call_AccessToken/tns3:token_type, &amp;quot; &amp;quot;, $call_AccessToken/tns3:access_token)&quot;/>&lt;/Value>&lt;/Header>&lt;/DynamicHeaders>&lt;/tns1:RequestActivityInput>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                                     </tibex:inputBindings>
                                     <tibex:config>
                                     <bwext:BWActivity
@@ -2212,7 +2237,7 @@
                     outputVariable="parameters"
                     tibex:xpdlId="a31a399e-f867-46b6-9b2a-7f03fbd1f467" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                     <bpws:targets>
-                        <bpws:target linkName="GetLoggerParamsToRepeatOnError"/>
+                        <bpws:target linkName="GetLoggerParamsToRepeatOnError_DEPRECATED"/>
                     </bpws:targets>
                     <bpws:sources>
                         <bpws:source linkName="AssignToRepeatOnError"/>
@@ -2247,7 +2272,7 @@
                         <bpws:target linkName="AssignToRepeatOnError"/>
                     </bpws:targets>
                     <bpws:sources>
-                        <bpws:source linkName="AssignToRepeatOnError1"/>
+                        <bpws:source linkName="PrepareQueryStringTocall_AccessToken"/>
                     </bpws:sources>
                     <tibex:inputBindings>
                         <tibex:inputBinding
@@ -2269,6 +2294,22 @@
                         </bwext:BWActivity>
                     </tibex:config>
                 </tibex:activityExtension>
+            </bpws:extensionActivity>
+            <bpws:extensionActivity>
+                <tibex:extActivity name="call_AccessToken"
+                    outputVariable="call_AccessToken"
+                    tibex:xpdlId="41cf4b95-5843-4de3-ba2e-2e33b14528d4"
+                    type="bw.generalactivities.callprocess" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                    <bpws:targets>
+                        <bpws:target linkName="GetLoggerParamsTocall_AccessToken"/>
+                        <bpws:target linkName="PrepareQueryStringTocall_AccessToken"/>
+                    </bpws:targets>
+                    <bpws:sources>
+                        <bpws:source linkName="call_AccessTokenToRepeatOnError"/>
+                    </bpws:sources>
+                    <tibex:CallProcess
+                        subProcessName="ch.txg.b2c.swissbilling.sl.call_AccessToken" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"/>
+                </tibex:extActivity>
             </bpws:extensionActivity>
         </bpws:flow>
     </bpws:scope>

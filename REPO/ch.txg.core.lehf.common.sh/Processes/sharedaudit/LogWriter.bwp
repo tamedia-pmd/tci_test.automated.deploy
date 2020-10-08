@@ -19,8 +19,8 @@
     <tibex:VariableDescriptor type="MemorySaving">
         <task name="End">
             <endingVariables>
-                <variable>Start</variable>
                 <variable>SetLogData</variable>
+                <variable>Start</variable>
             </endingVariables>
         </task>
         <task name="LogDebug">

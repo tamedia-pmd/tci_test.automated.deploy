@@ -17,9 +17,12 @@
 
 	<complexType name="callBillingEngine_inputType">
 		<sequence>
+			<element minOccurs="1" name="method" type="string"/>
 			<element minOccurs="1" name="URIpath" type="string"/>
 			<element minOccurs="0" name="queryParamsString" type="string"/>
 			<element minOccurs="0" maxOccurs="unbounded" name="queryParamsKV" type="tns:KVType"/>
+			<element minOccurs="0" name="body" type="string"/>
+			<element minOccurs="0" name="contentType" type="string"/>
 		</sequence>
 	</complexType>
 

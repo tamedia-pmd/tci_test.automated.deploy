@@ -3,6 +3,7 @@
 	<name>ch.txg.b2c.swissbilling.sl.sh</name>
 	<comment></comment>
 	<projects>
+		<project>ch.txg.core.lehf.common.sh</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

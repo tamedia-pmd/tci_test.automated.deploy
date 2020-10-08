@@ -56,6 +56,49 @@
     xmlns:tibprop="http://ns.tibco.com/bw/property"
     xmlns:tns="http://ch.txg/core/lehf/InternalInterface_RetryProcess/0100"
     xmlns:tns0="http://tns.tibco.com/bw/REST_SwissBilling_BillingDoc" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <tibex:VariableDescriptor type="MemorySaving">
+        <task name="End">
+            <endingVariables>
+                <variable>ParseJsonResponse</variable>
+            </endingVariables>
+        </task>
+        <task name="RepeatOnError">
+            <endingVariables>
+                <variable>maxRetry</variable>
+                <variable>indexRetry</variable>
+                <variable>FaultDetails</variable>
+                <variable>baseRetryDelay_s</variable>
+                <variable>Start</variable>
+            </endingVariables>
+        </task>
+        <task name="Sleep">
+            <endingVariables>
+                <variable>Sleep-input</variable>
+            </endingVariables>
+        </task>
+        <task name="invoke_BillingDoc2">
+            <endingVariables>
+                <variable>invoke_BillingDoc2-input</variable>
+                <variable>call_for_AccessToken</variable>
+            </endingVariables>
+        </task>
+        <task name="ParseJsonResponse">
+            <endingVariables>
+                <variable>ParseJsonResponse-input</variable>
+                <variable>invoke_BillingDoc2</variable>
+            </endingVariables>
+        </task>
+        <task name="ThrowError">
+            <endingVariables>
+                <variable>ThrowError-input</variable>
+                <variable>FaultDetails1</variable>
+                <variable>ERROR_SEVERITY</variable>
+                <variable>System_EXCEPTION</variable>
+                <variable>Business_EXCEPTION</variable>
+                <variable>_error_invoke_BillingDoc2</variable>
+            </endingVariables>
+        </task>
+    </tibex:VariableDescriptor>
     <tibex:Types>
         <xs:schema attributeFormDefault="unqualified"
             elementFormDefault="qualified"
@@ -578,7 +621,7 @@
             xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
             <wsdl:import namespace="http://tns.tibco.com/bw/REST_SwissBilling_BillingDoc"/>
             <wsdl:import
-                location="../../../../../../Schemas/Swissbilling_Gateways_1.1.2.xsd" namespace="/T1588620390643Converted/JsonSchema"/>
+                location="../../../../../../Schemas/Swissbilling_Gateways_1.1.5.xsd" namespace="/T1588620390643Converted/JsonSchema"/>
             <wsdl:import namespace="http://xmlns.example.com/Api-BillingDoc/parameters"/>
             <wsdl:message name="postRequest">
                 <wsdl:part element="custom:BillingDoc" name="item" tibex:hasMultipleNamespaces="false"/>
