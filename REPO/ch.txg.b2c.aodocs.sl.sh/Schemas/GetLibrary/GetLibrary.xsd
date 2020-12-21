@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://ch/txg/b2c/aodocs/sl/GetLibrary" elementFormDefault="qualified" targetNamespace="http://ch/txg/b2c/aodocs/sl/GetLibrary">
+
+    <element name="InputGetLibrary">
+    	<complexType>
+    		<sequence>
+    			<element maxOccurs="unbounded" minOccurs="0" name="library" type="string"/>
+            </sequence>
+    	</complexType>
+    </element>
+    <element name="JSON" type="tns:JSONType">
+
+    </element>
+    <complexType name="folderDefinitionType">
+		<sequence>
+			<element minOccurs="0" name="kind" type="string"/>
+			<element minOccurs="0" name="libraryId" type="string"/>
+			<element minOccurs="0" name="id" type="string"/>
+			<element minOccurs="0" name="name" type="string"/>
+			<element minOccurs="0" name="dynamicValues" type="string"/>
+			<element minOccurs="0" name="folderId" type="string"/>
+			<element minOccurs="0" name="onlyAdminCanManage" type="string"/>
+			<element minOccurs="0" name="onlyAdminCanEditRootFolder" type="string"/>
+			<element minOccurs="0" name="folderVisibility" type="string"/>
+		</sequence>
+	</complexType>
+	<complexType name="viewsType">
+		<sequence>
+			<element minOccurs="0" name="kind" type="string"/>
+			<element maxOccurs="unbounded" minOccurs="0" name="items" type="tns:itemsType"/>
+		</sequence>
+	</complexType>
+	<complexType name="historyVisibilityType">
+		<sequence>
+			<element minOccurs="0" name="type" type="string"/>
+		</sequence>
+	</complexType>
+	<complexType name="categoryDefinitionsType">
+		<sequence>
+			<element minOccurs="0" name="kind" type="string"/>
+			<element maxOccurs="unbounded" minOccurs="0" name="items" type="tns:itemsType"/>
+		</sequence>
+	</complexType>
+	<complexType name="itemsType">
+		<sequence>
+			<element minOccurs="0" name="kind" type="string"/>
+			<element minOccurs="0" name="name" type="string"/>
+			<element minOccurs="0" name="name_i18n" type="string"/>
+			<element minOccurs="0" name="value" type="string"/>
+			<element minOccurs="0" name="canDisplay" type="string"/>
+		</sequence>
+	</complexType>
+	<complexType name="documentTypesType">
+		<sequence>
+			<element minOccurs="0" name="kind" type="string"/>
+			<element maxOccurs="unbounded" minOccurs="0" name="items" type="tns:itemsType"/>
+		</sequence>
+	</complexType>
+	<complexType name="permissionsType">
+		<sequence>
+			<element minOccurs="0" name="kind" type="string"/>
+			<element minOccurs="0" name="type" type="string"/>
+			<element minOccurs="0" name="role" type="string"/>
+			<element minOccurs="0" name="value" type="string"/>
+			<element minOccurs="0" name="withLink" type="string"/>
+			<element minOccurs="0" name="name" type="string"/>
+			<element minOccurs="0" name="thumbnailPhotoUrl" type="string"/>
+		</sequence>
+	</complexType>
+	<complexType name="JSONType">
+		<sequence>
+			<element minOccurs="0" name="kind" type="string"/>
+			<element minOccurs="0" name="libraryId" type="string"/>
+			<element minOccurs="0" name="name" type="string"/>
+			<element minOccurs="0" name="name_i18n" type="string"/>
+			<element minOccurs="0" name="domainName" type="string"/>
+			<element minOccurs="0" name="lastModified" type="long"/>
+			<element minOccurs="0" name="lastConfigModified" type="long"/>
+			<element minOccurs="0" name="createdAt" type="long"/>
+			<element minOccurs="0" name="homeUrl" type="string"/>
+			<element maxOccurs="1" minOccurs="0" name="technicalNotificationAddress" type="string"/>
+			<element minOccurs="0" name="daysBeforeDelete" type="byte"/>
+			<element maxOccurs="1" minOccurs="0" name="logoUrl" type="string">
+			</element>
+			<element minOccurs="0" name="welcomeText" type="string"/>
+			<element minOccurs="0" name="storageAdmin" type="string"/>
+			<element minOccurs="0" name="pushToMyDrive" type="string"/>
+			<element minOccurs="0" name="notifyUsersAboutPushToMyDrive" type="string"/>
+			<element minOccurs="0" name="onlyAdminsCanManageFolders" type="string"/>
+			<element minOccurs="0" name="onlyAdminsCanEditRootFolder" type="string"/>
+			<element minOccurs="0" name="defaultDocumentType" type="string"/>
+			<element minOccurs="0" name="rootFolderId" type="string"/>
+			<element minOccurs="0" name="creator" type="string"/>
+			<element minOccurs="0" name="lastAccessed" type="long"/>
+			<element minOccurs="0" name="forwardRequestAccessRole" type="string"/>
+			<element minOccurs="0" name="historyVisibility" type="tns:historyVisibilityType"/>
+			<element minOccurs="0" name="trashResourceId" type="string"/>
+			<element minOccurs="0" name="attachmentMode" type="string"/>
+			<element minOccurs="0" name="permissionMode" type="string"/>
+			<element minOccurs="0" name="defaultOnlyAdminCanDelete" type="string"/>
+			<element minOccurs="0" name="defaultOnlyAdminCanShare" type="string"/>
+			<element minOccurs="0" name="currentUserRight" type="string"/>
+			<element minOccurs="0" name="documentTypes" type="tns:documentTypesType"/>
+			<element minOccurs="0" name="categoryDefinitions" type="tns:categoryDefinitionsType"/>
+			<element minOccurs="0" name="folderDefinition" type="tns:folderDefinitionType"/>
+			<element minOccurs="0" name="views" type="tns:viewsType"/>
+			<element minOccurs="0" name="wokflows" type="tns:wokflowsType"/>
+			<element minOccurs="0" name="visibility" type="tns:visibilityType"/>
+			<element maxOccurs="unbounded" minOccurs="0" name="permissions" type="tns:permissionsType"/>
+			<element minOccurs="0" name="sequenceId" type="byte"/>
+			<element minOccurs="0" name="defaultView" type="string"/>
+			<element minOccurs="0" name="restrictedDownload" type="string"/>
+			<element minOccurs="0" name="locale" type="string"/>
+			<element minOccurs="0" name="timeZone" type="string"/>
+			<element minOccurs="0" name="favorited" type="string"/>
+		</sequence>
+	</complexType>
+	<complexType name="visibilityType">
+		<sequence>
+			<element minOccurs="0" name="scope" type="string"/>
+		</sequence>
+	</complexType>
+	<complexType name="wokflowsType">
+		<sequence>
+			<element minOccurs="0" name="kind" type="string" />
+
+
+			<element name="workflows" minOccurs="0" maxOccurs="unbounded">
+				<complexType>
+					<sequence>
+						<element name="kind" type="string" minOccurs="0"
+							maxOccurs="1">
+						</element>
+						<element name="id" type="string" minOccurs="0"
+							maxOccurs="1">
+						</element>
+						<element name="name" type="string" minOccurs="0"
+							maxOccurs="1">
+						</element>
+						<element name="name_i18n" type="string"
+							minOccurs="0" maxOccurs="1">
+						</element>
+
+						<element name="classId" type="string"
+							minOccurs="0" maxOccurs="1">
+						</element>
+
+						<element name="states" minOccurs="0"
+							maxOccurs="unbounded">
+							<complexType>
+								<sequence>
+									<element name="kind" type="string"
+										minOccurs="0" maxOccurs="1">
+									</element>
+									<element name="name"
+										type="string" minOccurs="0" maxOccurs="1">
+									</element>
+									<element name="name_i18n"
+										type="string" maxOccurs="1" minOccurs="0">
+									</element>
+									<element name="value"
+										type="string" minOccurs="0" maxOccurs="1">
+									</element>
+									<element name="description"
+										type="string" minOccurs="0" maxOccurs="1">
+									</element>
+									<element name="noAction"
+										type="string" minOccurs="0" maxOccurs="1">
+									</element>
+									<element name="transitions" minOccurs="0" maxOccurs="unbounded">
+										<complexType>
+											<sequence>
+												<element name="kind"
+													type="string" minOccurs="0" maxOccurs="1">
+												</element>
+												<element name="name"
+													type="string" minOccurs="0" maxOccurs="1">
+												</element>
+												<element
+													name="name_i18n" type="string" minOccurs="0">
+												</element>
+												<element name="id"
+													type="string" minOccurs="0">
+												</element>
+												<element name="value"
+													type="string" minOccurs="0" maxOccurs="1">
+												</element>
+												<element name="parallel"
+													type="string" minOccurs="0" maxOccurs="1">
+												</element>
+												<element name="fromStateId" type="string" minOccurs="0" maxOccurs="1"/>
+												<element name="fromStateName_i18n" type="string" minOccurs="0" maxOccurs="1"/>
+												<element name="fromStateName" type="string" minOccurs="0" maxOccurs="1"/>
+												<element name="targetStateId" type="string" minOccurs="0" maxOccurs="1"/>
+												<element name="targetStateName" type="string" minOccurs="0" maxOccurs="1"/>
+												<element name="targetStateName_i18n" type="string" minOccurs="0" maxOccurs="1"/>
+												<element name="workflowId" type="string" minOccurs="0" maxOccurs="1"/>
+												<element name="condition" type="string" minOccurs="0" maxOccurs="1"/>
+												<element name="mandatoryComment" type="string" minOccurs="0" maxOccurs="1"/>
+											</sequence>
+										</complexType>
+									</element>
+								</sequence>
+							</complexType>
+						</element>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+    
+    
+
+
+    <element name="OutputGetLibrary">
+    	<complexType>
+    		<sequence>
+    			<element maxOccurs="unbounded" minOccurs="0" name="OutputGetLibrary" type="tns:JSONType"/>
+    		</sequence>
+    	</complexType>
+  </element>
+
+
+ 
+    
+ 
+</schema>

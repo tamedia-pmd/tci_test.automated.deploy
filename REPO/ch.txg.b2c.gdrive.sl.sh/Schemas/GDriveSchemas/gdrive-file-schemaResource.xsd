@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://ch/txg/gdrive/fileResource" elementFormDefault="qualified" targetNamespace="http://ch/txg/gdrive/fileResource">
+  <element name="fileResource" type="tns:fileResourceType"/>
+  <complexType name="fileResourceType">
+          <sequence>
+            <element maxOccurs="1" minOccurs="0" name="kind" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="id" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="name" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="mimeType" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="starred" type="boolean"/>
+            <element maxOccurs="1" minOccurs="0" name="trashed" type="boolean"/>
+            <element maxOccurs="1" minOccurs="0" name="explicitlyTrashed" type="boolean"/>
+            <element maxOccurs="unbounded" minOccurs="0" name="parents" type="string"/>
+            <element maxOccurs="unbounded" minOccurs="0" name="spaces" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="version" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="webViewLink" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="iconLink" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="hasThumbnail" type="boolean"/>
+            <element maxOccurs="1" minOccurs="0" name="thumbnailVersion" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="viewedByMe" type="boolean"/>
+            <element maxOccurs="1" minOccurs="0" name="createdTime" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="modifiedTime" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="modifiedByMe" type="boolean"/>
+            <element maxOccurs="unbounded" minOccurs="0" name="owners">
+              <complexType>
+                <sequence>
+                  <element maxOccurs="1" minOccurs="0" name="kind" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="displayName" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="me" type="boolean"/>
+                  <element maxOccurs="1" minOccurs="0" name="permissionId" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="emailAddress" type="string"/>
+                </sequence>
+              </complexType>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="lastModifyingUser">
+              <complexType>
+                <sequence>
+                  <element maxOccurs="1" minOccurs="0" name="kind" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="displayName" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="me" type="boolean"/>
+                  <element maxOccurs="1" minOccurs="0" name="permissionId" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="emailAddress" type="string"/>
+                </sequence>
+              </complexType>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="shared" type="boolean"/>
+            <element maxOccurs="1" minOccurs="0" name="ownedByMe" type="boolean"/>
+            <element maxOccurs="1" minOccurs="0" name="capabilities">
+              <complexType>
+                <sequence>
+                  <element maxOccurs="1" minOccurs="0" name="canAddChildren" type="boolean"/>
+                  <element maxOccurs="1" minOccurs="0" name="canAddMyDriveParent" type="boolean"/>
+                  <element maxOccurs="1" minOccurs="0" name="canChangeCopyRequiresWriterPermission" type="boolean"/>
+                  <element maxOccurs="1" minOccurs="0" name="canChangeViewersCanCopyContent" type="boolean"/>
+                  <element maxOccurs="1" minOccurs="0" name="canComment" type="boolean"/>
+                  <element maxOccurs="1" minOccurs="0" name="canCopy" type="boolean"/>
+                  <element maxOccurs="1" minOccurs="0" name="canDelete" type="boolean"/>
+                  <element maxOccurs="1" minOccurs="0" name="canDownload" type="boolean"/>
+                  <element maxOccurs="1" minOccurs="0" name="canEdit" type="boolean"/>
+                  <element maxOccurs="1" minOccurs="0" name="canListChildren" type="boolean"/>
+                  <element maxOccurs="1" minOccurs="0" name="canModifyContent" type="boolean"/>
+                  <element maxOccurs="1" minOccurs="0" name="canMoveChildrenWithinDrive" type="boolean"/>
+                  <element maxOccurs="1" minOccurs="0" name="canMoveItemIntoTeamDrive" type="boolean"/>
+                  <element maxOccurs="1" minOccurs="0" name="canMoveItemOutOfDrive" type="boolean"/>
+                  <element maxOccurs="1" minOccurs="0" name="canMoveItemWithinDrive" type="boolean"/>
+                  <element maxOccurs="1" minOccurs="0" name="canReadRevisions" type="boolean"/>
+                  <element maxOccurs="1" minOccurs="0" name="canRemoveChildren" type="boolean"/>
+                  <element maxOccurs="1" minOccurs="0" name="canRemoveMyDriveParent" type="boolean"/>
+                  <element maxOccurs="1" minOccurs="0" name="canRename" type="boolean"/>
+                  <element maxOccurs="1" minOccurs="0" name="canShare" type="boolean"/>
+                  <element maxOccurs="1" minOccurs="0" name="canTrash" type="boolean"/>
+                  <element maxOccurs="1" minOccurs="0" name="canUntrash" type="boolean"/>
+                </sequence>
+              </complexType>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="viewersCanCopyContent" type="boolean"/>
+            <element maxOccurs="1" minOccurs="0" name="copyRequiresWriterPermission" type="boolean"/>
+            <element maxOccurs="1" minOccurs="0" name="writersCanShare" type="boolean"/>
+            <element maxOccurs="unbounded" minOccurs="0" name="permissions">
+              <complexType>
+                <sequence>
+                  <element maxOccurs="1" minOccurs="0" name="kind" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="id" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="type" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="emailAddress" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="role" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="displayName" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="deleted" type="boolean"/>
+                </sequence>
+              </complexType>
+            </element>
+            <element maxOccurs="unbounded" minOccurs="0" name="permissionIds" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="quotaBytesUsed" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="isAppAuthorized" type="boolean"/>
+            <element maxOccurs="1" minOccurs="0" name="exportLinks">
+              <complexType>
+                <sequence>
+                  <any processContents="skip" minOccurs="0" maxOccurs="unbounded"/>	
+                </sequence>
+              </complexType>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="description" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="webContentLink" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="thumbnailLink" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="sharedWithMeTime" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="sharingUser">
+              <complexType>
+                <sequence>
+                  <element maxOccurs="1" minOccurs="0" name="kind" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="displayName" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="me" type="boolean"/>
+                  <element maxOccurs="1" minOccurs="0" name="permissionId" type="string"/>
+                  <element maxOccurs="1" minOccurs="0" name="emailAddress" type="string"/>
+                </sequence>
+              </complexType>
+            </element>
+            <element maxOccurs="1" minOccurs="0" name="originalFilename" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="fullFileExtension" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="fileExtension" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="md5Checksum" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="size" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="headRevisionId" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="folderColorRgb" type="string"/>
+          </sequence>
+        </complexType>
+</schema>

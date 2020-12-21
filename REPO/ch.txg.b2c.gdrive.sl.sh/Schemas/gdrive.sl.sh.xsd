@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ch/txg/common/gdrive/sl/sh" xmlns:tns="http://ch/txg/common/gdrive/sl/sh" elementFormDefault="qualified" xmlns:drive="http://ch/txg/gdrive/fileResource">
+    <import namespace="http://ch/txg/gdrive/fileResource" schemaLocation="GDriveSchemas/gdrive-file-schemaResource.xsd"/>
+    <element name="uploadFileStart">
+		<complexType>
+			<sequence>
+				<element name="drive" minOccurs="1" maxOccurs="1" type="tns:DriveType"/>
+				<element name="file" minOccurs="1" maxOccurs="1" type="tns:FileType"/>
+			</sequence>
+		</complexType>
+	</element>
+	<element name="uploadFileEnd">
+		<complexType>
+			<sequence>
+				<element name="result" type="tns:ResultType" minOccurs="1" maxOccurs="1"/>
+				<element name="token" type="string" minOccurs="1" maxOccurs="1"/>
+				<element type="drive:fileResourceType" name="fileResource" minOccurs="0" maxOccurs="1"/>
+			</sequence>
+		</complexType>
+	</element>
+	<element name="deleteFileStart">
+		<complexType>
+			<sequence>
+				<element name="token" type="string" minOccurs="0" maxOccurs="1"/>
+				<element name="fileId" minOccurs="1" maxOccurs="1" type="string"/>
+			</sequence>
+		</complexType>
+	</element>
+	<element name="deleteFileEnd">
+		<complexType>
+			<sequence>
+				<element name="result" type="tns:ResultType" minOccurs="1" maxOccurs="1"/>
+				<element name="token" type="string" minOccurs="1" maxOccurs="1"/>
+			</sequence>
+		</complexType>
+	</element>
+	<element name="getMimeTypeFromExtensionStart">
+		<complexType>
+			<sequence>
+				<element name="fileExtension" minOccurs="1" maxOccurs="1" type="string"/>
+			</sequence>
+		</complexType>
+	</element>
+	<element name="getMimeTypeFromExtensionEnd">
+		<complexType>
+			<sequence>
+				<element name="mimeType" minOccurs="1" maxOccurs="1" type="string"/>
+			</sequence>
+		</complexType>
+	</element>
+	<element name="TokenVariable">
+		<complexType>
+			<sequence>
+				<element name="token" type="string" minOccurs="1" maxOccurs="1"/>
+			</sequence>
+		</complexType>
+	</element>
+	<complexType name="DriveType">
+		<sequence>
+			<element name="token" type="string" minOccurs="0" maxOccurs="1"/>
+			<element name="fileName" type="string" minOccurs="1" maxOccurs="1"/>
+			<element name="parentFolder" type="string" minOccurs="0" maxOccurs="unbounded"/>
+		</sequence>
+	</complexType>
+	<complexType name="FileType">
+		<sequence>
+			<element name="originalFileName" type="string" minOccurs="1" maxOccurs="1"/>
+			<element name="charset" type="string" default="UTF-8" minOccurs="0" maxOccurs="1"/>
+			<element name="fileContent" type="base64Binary" minOccurs="1" maxOccurs="1"/>
+		</sequence>
+	</complexType>
+	<simpleType name="ResultType">
+		<restriction base="string">
+			<enumeration value="OK"/>
+			<enumeration value="NOT_OK"/>
+		</restriction>
+	</simpleType>
+</schema>

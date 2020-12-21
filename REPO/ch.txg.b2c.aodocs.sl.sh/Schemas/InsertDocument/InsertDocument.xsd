@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://ch/txg/b2c/aodocs/sl/InsertDocument" elementFormDefault="qualified" targetNamespace="http://ch/txg/b2c/aodocs/sl/InsertDocument">
+
+    <element name="Input">
+    	<complexType>
+    		<sequence>
+    			<element name="JsonRequest" type="string"/>
+				<element name="token" 		type="string" minOccurs="0"/>
+    		</sequence>
+    	</complexType>
+    </element>
+
+    <element name="Output">
+    	<complexType>
+    		<sequence>
+    			<element name="JsonResponse" type="string"/>
+				<element name="token" 		type="string" minOccurs="0"/>
+    		</sequence>
+    	</complexType>
+    </element>
+</schema>

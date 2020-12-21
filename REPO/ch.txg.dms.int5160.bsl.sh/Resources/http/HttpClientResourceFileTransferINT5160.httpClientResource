@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:http="http://xsd.tns.tibco.com/bw/models/sharedresource/httpclient" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmi:id="_iLC4Ec28Eeqle4nGzm48qw" name="http.HttpClientResourceFileTransferINT5160" type="http:HttpClientConfiguration">
+  <jndi:configuration xsi:type="http:HttpClientConfiguration" xmi:id="_iLC4Es28Eeqle4nGzm48qw" httpClientVersion="httpcomponents">
+    <substitutionBindings xmi:id="_-EIz8M2-Eeqle4nGzm48qw" template="idleConnectionTimeout" propName="/ch.txg.dms.int5160.bsl.sh/Connections/HTTP/Client/FileTransfer/IDLE_CONNECTION_TIMEOUT_ms"/>
+    <substitutionBindings xmi:id="_AF86sM2_Eeqle4nGzm48qw" template="maxTotalConnections" propName="/ch.txg.dms.int5160.bsl.sh/Connections/HTTP/Client/FileTransfer/MAX_TOTAL_CONNECTIONS"/>
+    <substitutionBindings xmi:id="_DBcbcM2_Eeqle4nGzm48qw" template="maxTotalConnectionsPerHost" propName="/ch.txg.dms.int5160.bsl.sh/Connections/HTTP/Client/FileTransfer/MAX_CONNECTION_PER_HOST"/>
+    <substitutionBindings xmi:id="_L7PtsM2_Eeqle4nGzm48qw" template="retryCount" propName="/ch.txg.dms.int5160.bsl.sh/Connections/HTTP/Client/FileTransfer/RETRY_COUNT"/>
+    <substitutionBindings xmi:id="_PV86AM2_Eeqle4nGzm48qw" template="useSingleCookieHeader" propName="/ch.txg.dms.int5160.bsl.sh/Connections/HTTP/Client/FileTransfer/USE_SINGLE_COOKIE_HEADER"/>
+    <substitutionBindings xmi:id="_RUuT0M2_Eeqle4nGzm48qw" template="logReqRespTime" propName="/ch.txg.dms.int5160.bsl.sh/Connections/HTTP/Client/FileTransfer/LOG_REQUEST_RESPONSE_TIME"/>
+    <substitutionBindings xmi:id="_WAeRQM2_Eeqle4nGzm48qw" template="useDefaultSSL" propName="/ch.txg.dms.int5160.bsl.sh/Connections/HTTP/Client/FileTransfer/DEFAULT_CONFIDENTIALITY"/>
+    <substitutionBindings xmi:id="_YKmmgM2_Eeqle4nGzm48qw" template="useSSL" propName="/ch.txg.dms.int5160.bsl.sh/Connections/HTTP/Client/FileTransfer/CONFIDENTIALITY"/>
+    <substitutionBindings xmi:id="_BbBuwP24EeqzAsEwS4YWpQ" template="useNonPreemptiveAuth" propName="/ch.txg.dms.int5160.bsl.sh/Connections/HTTP/Client/FileTransfer/USE_NONPREEMPTIVE_AUTHENTICATION"/>
+    <substitutionBindings xmi:id="_tvsnoBkWEeu67YCgkeybCA" template="acceptRedirect" propName="/ch.txg.dms.int5160.bsl.sh/Connections/HTTP/Client/FileTransfer/ACCEPT_REDIRECT"/>
+    <tcpDetails xmi:id="_iLC4E828Eeqle4nGzm48qw">
+      <substitutionBindings xmi:id="_5avm8M2-Eeqle4nGzm48qw" template="host" propName="/ch.txg.dms.int5160.bsl.sh/Connections/HTTP/Client/FileTransfer/HOST"/>
+      <substitutionBindings xmi:id="_7Ma_8M2-Eeqle4nGzm48qw" template="port" propName="/ch.txg.dms.int5160.bsl.sh/Connections/HTTP/Client/FileTransfer/PORT"/>
+      <substitutionBindings xmi:id="_FVEq8M2_Eeqle4nGzm48qw" template="staleCheck" propName="/ch.txg.dms.int5160.bsl.sh/Connections/HTTP/Client/FileTransfer/STALE_CHECK"/>
+      <substitutionBindings xmi:id="_G4QU8M2_Eeqle4nGzm48qw" template="connectionTimeout" propName="/ch.txg.dms.int5160.bsl.sh/Connections/HTTP/Client/FileTransfer/CONNECTION_TIMEOUT_ms"/>
+      <substitutionBindings xmi:id="_I6xmUM2_Eeqle4nGzm48qw" template="soTimeout" propName="/ch.txg.dms.int5160.bsl.sh/Connections/HTTP/Client/FileTransfer/SOCKET_TIMEOUT_ms"/>
+    </tcpDetails>
+  </jndi:configuration>
+</jndi:namedResource>

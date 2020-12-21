@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<msv:DocumentRoot xmlns:msv="http://tns.tibco.com/bw/model/core/moduleSV">
+  <moduleSharedVariables>
+    <moduleSharedVariable name="LoadLibrariesSharedModule" type="{http://ch/txg/b2c/aodocs/sl/Library}loadLibraries" initialValueMode="none"/>
+    <moduleSharedVariable name="LoadListFolderAOdocs" type="{http://ch/txg/b2c/aodocs/sl/ListFoldersAOdocs}LoadListFolderAOdocs" initialValueMode="none" initialValue=""/>
+    <moduleSharedVariable name="workflowsList" type="{http://ch/txg/b2c/aodocs/sl/listWorkflowsByLibrary}workflowsVariable" initialValueMode="none"/>
+  </moduleSharedVariables>
+  <import importType="http://www.w3.org/2001/XMLSchema" namespace="http://ch/txg/b2c/aodocs/sl/Library" location="../Schemas/SharedVariableSchemas/GetLibrary/library.xsd"/>
+  <import importType="http://www.w3.org/2001/XMLSchema" namespace="http://ch/txg/b2c/aodocs/sl/ListFoldersAOdocs" location="../Schemas/ListFoldersAOdocs/ListFoldersAOdocs.xsd"/>
+  <import importType="http://www.w3.org/2001/XMLSchema" namespace="http://ch/txg/b2c/aodocs/sl/listWorkflowsByLibrary" location="../Schemas/listWorkflowsByLibrary/listWorkflowsByLibrary_schema.xsd"/>
+</msv:DocumentRoot>

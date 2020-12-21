@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid Technologies Online Tools 1.0 (https://www.liquid-technologies.com) -->
+<xs:schema xmlns:tns="http://www.aiim.org/pdfa/ns/id/" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.aiim.org/pdfa/ns/id/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:attribute name="part" type="xs:unsignedByte" />
+  <xs:attribute name="conformance" type="xs:string" />
+</xs:schema>

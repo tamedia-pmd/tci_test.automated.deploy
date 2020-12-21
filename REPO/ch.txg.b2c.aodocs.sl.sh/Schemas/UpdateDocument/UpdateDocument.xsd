@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://ch/txg/b2c/aodocs/sl/UpdateDocument" elementFormDefault="qualified" targetNamespace="http://ch/txg/b2c/aodocs/sl/UpdateDocument">
+
+    <element name="Input">
+    	<complexType>
+    		<sequence>
+    			<element name="token" type="string" minOccurs="0" maxOccurs="1"/>
+    			<element name="documentId" type="string"/>
+    			<element name="JsonRequest" type="string"/>
+    		</sequence>
+    	</complexType>
+    </element>
+
+    <element name="Output">
+    	<complexType>
+    		<sequence>
+    			<element name="token" type="string" minOccurs="1" maxOccurs="1"/>
+    			<element name="JsonResponse" type="string"/>
+    		</sequence>
+    	</complexType>
+    </element>
+</schema>

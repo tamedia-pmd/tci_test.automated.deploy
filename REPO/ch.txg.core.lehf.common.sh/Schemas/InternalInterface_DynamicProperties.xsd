@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://ch.txg/core/lehf/InternalInterface_DynamicProperties/0100"
+	elementFormDefault="qualified"
+	targetNamespace="http://ch.txg/core/lehf/InternalInterface_DynamicProperties/0100">
+
+	<element name="DynamicProperties" type="tns:DynamicPropertiesType" />
+
+	<element name="InputInterface_BuildDynamicProperties" type="tns:InputInterface_BuildDynamicPropertiesType" />
+
+	<element name="InputInterface_SetLoggerParams_ByDynamicProperties"
+		type="tns:InputInterface_SetLoggerParams_ByDynamicPropertiesType" />
+
+	<complexType name="InputInterface_SetLoggerParams_ByDynamicPropertiesType">
+		<sequence>
+			<element ref="tns:DynamicProperties" minOccurs="0" />
+			<element name="LoggerParamsToOverride" type="tns:InputInterface_BuildDynamicPropertiesType"
+				minOccurs="0" />
+		</sequence>
+	</complexType>
+
+	<complexType name="PropertyType">
+		<sequence>
+			<element name="Name" type="string" />
+			<element name="Value" type="string" />
+		</sequence>
+	</complexType>
+
+	<complexType name="DynamicPropertiesType">
+		<sequence>
+			<element maxOccurs="unbounded" minOccurs="0" name="Property"
+				type="tns:PropertyType" />
+		</sequence>
+	</complexType>
+
+	<complexType name="InputInterface_BuildDynamicPropertiesType">
+		<sequence>
+			<element maxOccurs="1" minOccurs="0" name="APPLICATION_NAME"
+				type="string" />
+			<element maxOccurs="1" minOccurs="0" name="SOURCESYSTEM"
+				type="string" />          <!-- [Mashery] -->
+			<element maxOccurs="1" minOccurs="0" name="STARTTIMESTAMP"
+				type="dateTime" />
+			<element maxOccurs="1" minOccurs="0" name="SEVERITY" type="string" />              <!--{INFO, DEBUG, WARN, ERROR} -->
+			<element maxOccurs="1" minOccurs="0" name="TRACKID" type="string" />           <!-- id tecnico (es, tib:uuid) -->
+			<element maxOccurs="1" minOccurs="0" name="BUSINESSKEY" type="string" />          <!-- id di business (es. concat interfacename+DocumentNumber -->
+			<element maxOccurs="1" minOccurs="0" name="PROCESSSTACK"
+				type="string" />
+			<element maxOccurs="1" minOccurs="0" name="PAYLOAD" type="string" />            <!-- [2000] ? -->
+		</sequence>
+	</complexType>
+
+</schema>

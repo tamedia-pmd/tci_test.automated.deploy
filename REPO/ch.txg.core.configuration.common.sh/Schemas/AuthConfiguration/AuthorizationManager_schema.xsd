@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema  xmlns:xsd="http://www.w3.org/2001/XMLSchema"  targetNamespace="http://ch/txg/b2c/swissbilling/bsl/authorizationManager"
+	xmlns:tns="http://ch/txg/b2c/swissbilling/bsl/authorizationManager"
+	elementFormDefault="qualified">
+	
+
+<xsd:element name="Result" type="tns:ResultType" />
+<xsd:element name="AuthConfigVariable" type="tns:AuthConfigurationVariable_type" />
+<xsd:element name="GetAuthConfigurationResponse" type="tns:GetAuthConfigurationResponse_type" />
+<xsd:element name="GetAuthConfigurationRequest" type="tns:GetAuthConfigurationRequest_type" />
+
+
+<xsd:element name="AuthorizationManagerInput" type="tns:AuthorizationManagerInputType" />
+
+<xsd:element name="AuthorizationManagerOutput" type="tns:AuthorizationManagerOutputType" />
+
+
+
+	<xsd:complexType name="GetAuthConfigurationRequest_type">
+		<xsd:sequence>
+			<xsd:element name="username" type="xsd:string" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="AuthorizationManagerInputType">
+		<xsd:sequence>
+			<xsd:element name="username" type="xsd:string" />
+			<xsd:element name="companyCode" type="xsd:string" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="AuthorizationManagerOutputType">
+		<xsd:sequence>
+			<xsd:element name="isAuthorized" type="xsd:boolean" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+
+
+	<xsd:complexType name="GetAuthConfigurationResponse_type">
+		<xsd:sequence>
+			<xsd:element  ref="tns:Result" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="AuthConfigurationVariable_type">
+		<xsd:sequence>
+    		<xsd:element name="lastupdate" type="xsd:long"/>
+			<xsd:element  ref="tns:Result" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+
+	<xsd:complexType name="ResultType">
+		<xsd:sequence>
+			<xsd:element name="CompanyCode" type="xsd:string" />
+			<xsd:element name="Username" type="xsd:string" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="ResultsType" >
+		<xsd:sequence>
+			<xsd:element ref="tns:Result" minOccurs="0" maxOccurs="unbounded" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+
+</xsd:schema>

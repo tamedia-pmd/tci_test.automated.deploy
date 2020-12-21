@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:id="_f2mPYLU1Eeq-F5WNyRlGRw" targetNamespace="http://tns.tibco.com/bw/composite/ch.txg.b2c.gdrive.sl.sh" name="ch.txg.b2c.gdrive.sl.sh" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:property xmi:id="_gIxkgLU1Eeq-F5WNyRlGRw" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_gJJX8LU1Eeq-F5WNyRlGRw" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_gJMbQLU1Eeq-F5WNyRlGRw" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_gJOQcLU1Eeq-F5WNyRlGRw" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_gJQFoLU1Eeq-F5WNyRlGRw" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_gJR60LU1Eeq-F5WNyRlGRw" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_aZl2ELrFEeqOmMHCPQI3sw" name="/ch.txg.b2c.gdrive.sl.sh/Connection/Http/Client/HttpResourceClient/SOCKET_TIMEOUT_ms" type="XMLSchema:int" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_bpILULrFEeqOmMHCPQI3sw" name="/ch.txg.b2c.gdrive.sl.sh/Connection/Http/Client/HttpResourceClient/IDLE_CONNECTION_TIMEOUT_ms" type="XMLSchema:int" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_ccN1ILrFEeqOmMHCPQI3sw" name="/ch.txg.b2c.gdrive.sl.sh/Connection/Http/Client/HttpResourceClient/LOG_REQUEST_RESPONSE_TIME" type="XMLSchema:boolean" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_eZKC8LrFEeqOmMHCPQI3sw" name="/ch.txg.b2c.gdrive.sl.sh/Connection/Http/Client/HttpResourceClient/MAX_TOTAL_CONNECTIONS" type="XMLSchema:int" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_f7Qu4LrFEeqOmMHCPQI3sw" name="/ch.txg.b2c.gdrive.sl.sh/Connection/Http/Client/HttpResourceClient/PORT" type="XMLSchema:int" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_g9KQwLrFEeqOmMHCPQI3sw" name="/ch.txg.b2c.gdrive.sl.sh/Connection/Http/Client/HttpResourceClient/RETRY_COUNT" type="XMLSchema:int" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_h8eYsLrFEeqOmMHCPQI3sw" name="/ch.txg.b2c.gdrive.sl.sh/Connection/Http/Client/HttpResourceClient/STALE_CHECK" type="XMLSchema:boolean" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_im85ELrFEeqOmMHCPQI3sw" name="/ch.txg.b2c.gdrive.sl.sh/Connection/Http/Client/HttpResourceClient/USE_SINGLE_COOKIE_HEADER" type="XMLSchema:boolean" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_jU91oLrFEeqOmMHCPQI3sw" name="/ch.txg.b2c.gdrive.sl.sh/Connection/Http/Client/HttpResourceClient/DISABLE_CONNECTION_POOLING" type="XMLSchema:boolean" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_kANyELrFEeqOmMHCPQI3sw" name="/ch.txg.b2c.gdrive.sl.sh/Connection/Http/Client/HttpResourceClient/ACCEPT_REDIRECT" type="XMLSchema:boolean" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_kqyZELrFEeqOmMHCPQI3sw" name="/ch.txg.b2c.gdrive.sl.sh/Connection/Http/Client/HttpResourceClient/CONNECTION_TIMEOUT_ms" type="XMLSchema:int" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_lkdMALrFEeqOmMHCPQI3sw" name="/ch.txg.b2c.gdrive.sl.sh/Connection/Http/Client/HttpResourceClient/MAX_CONNECTION_PER_HOST" type="XMLSchema:int" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_mSWz0LrFEeqOmMHCPQI3sw" name="/ch.txg.b2c.gdrive.sl.sh/Connection/Http/Client/HttpResourceClient/USE_NONPREEMPTIVE_AUTHENTICATION" type="XMLSchema:boolean" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_4YZUQNsTEeqexN12CDHJ9w" name="/ch.txg.b2c.gdrive.sl.sh/Connection/Http/Client/HttpResourceClient/RetriveToken/HOST" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_8H7vAPOnEeq49_zFQi_ygg" name="/ch.txg.b2c.gdrive.sl.sh/Connection/Http/Client/UploadFile/Host" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_AHnQoPOoEeq49_zFQi_ygg" name="/ch.txg.b2c.gdrive.sl.sh/Connection/Http/Client/UploadFile/Port" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_BniRoPOwEeqvvJ1THqbXRQ" name="/ch.txg.b2c.gdrive.sl.sh/Connection/Http/Client/UploadFile/Timeout_s" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_ItC_sPRIEeq9quEueDDbtw" name="/ch.txg.b2c.gdrive.sl.sh/Connection/Http/Client/DeleteFile/Timeout_s" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_niX0wLrGEeqOmMHCPQI3sw" name="/ch.txg.b2c.gdrive.sl.sh/Connection/RetryManagement/maxRetry" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_onXG4LrGEeqOmMHCPQI3sw" name="/ch.txg.b2c.gdrive.sl.sh/Connection/RetryManagement/baseRetryDelay_s" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_ezxKMB_BEeu0NpiaD7fS1w" name="/ch.txg.b2c.gdrive.sl.sh/Connection/RetryManagement/statusCodesToSkip" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+</sca:composite>

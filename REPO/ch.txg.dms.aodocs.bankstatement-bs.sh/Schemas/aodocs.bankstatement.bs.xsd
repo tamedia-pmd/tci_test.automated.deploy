@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:Q1="http://ch/txg/core/common/bankstatement/configuration" xmlns:Q2="http://www.example.com/namespaces/tns/1603122116032" xmlns:tns="http://ch.txg.aodocs/bankstatement/bs" elementFormDefault="qualified" targetNamespace="http://ch.txg.aodocs/bankstatement/bs">
+    <import namespace="http://www.example.com/namespaces/tns/1603122116032" schemaLocation="Input_PrepareInsertBSDocument.xsd"/>
+    <import namespace="http://ch/txg/core/common/bankstatement/configuration"/>
+    <element name="extractBSDataFromPDFProperties_Start">
+		<complexType>
+			<sequence>
+				<element maxOccurs="1" minOccurs="1" name="bank" type="string"/>
+				<element maxOccurs="1" minOccurs="1" name="filename" type="string"/>
+				<element maxOccurs="1" minOccurs="1" name="author" type="string"/>
+				<element maxOccurs="1" minOccurs="1" name="title" type="string"/>
+				<element maxOccurs="1" minOccurs="1" name="object" type="string"/>
+				<element maxOccurs="1" minOccurs="1" name="keywords" type="string"/>
+			</sequence>
+		</complexType>
+	</element>
+	<element name="extractBSDataFromPDFProperties_End">
+		<complexType>
+			<sequence>
+				<element maxOccurs="unbounded" minOccurs="0" name="keyValue" type="tns:KeyValueType"/>
+			</sequence>
+		</complexType>
+	</element>
+	<element name="mapBSDataIntoBSAoDocsClass_Start">
+		<complexType>
+			<sequence>
+				<element maxOccurs="1" minOccurs="1" name="bank" type="string"/>
+				<element maxOccurs="unbounded" minOccurs="0" name="keyValue" type="tns:KeyValueType"/>
+			</sequence>
+		</complexType>
+	</element>
+	<element name="mapBSDataIntoBSAoDocsClass_End">
+		<complexType>
+			<sequence>
+				<element maxOccurs="1" minOccurs="1" ref="Q2:Input_PrepareBSDocument"/>
+			</sequence>
+		</complexType>
+	</element>
+	
+		<element name="input_UpdateBSDocument">
+		<complexType>
+			<sequence>
+				<element maxOccurs="1" minOccurs="1" ref="Q2:Input_PrepareBSDocument"/>
+				<element maxOccurs="1" minOccurs="1" name="documentId" type="string"/>
+				<element maxOccurs="1" minOccurs="0" name="token" type="string"/>
+			</sequence>
+		</complexType>
+	</element>
+
+		<element name="input_CreateBSDocument">
+		<complexType>
+			<sequence>
+				<element maxOccurs="1" minOccurs="1" ref="Q2:Input_PrepareBSDocument"/>
+				<element maxOccurs="1" minOccurs="0" name="token" type="string"/>
+			</sequence>
+		</complexType>
+	</element>
+
+	
+	
+		<complexType name="KeyValueType">
+			<sequence>
+				<element maxOccurs="1" minOccurs="1" name="key" type="string"/>
+				<element maxOccurs="1" minOccurs="1" name="value" type="string"/>
+			</sequence>
+		</complexType>
+</schema>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+targetNamespace="http://ch/txg/core/sftp/common/FilesParameters_Schema" 
+xmlns:tns="http://ch/txg/core/sftp/common/FilesParameters_Schema" 
+xmlns:tns0="http://ch/txg/core/lehf/common/AuditTypes/0100"
+elementFormDefault="qualified">
+
+<xsd:import namespace="http://ch/txg/core/lehf/common/AuditTypes/0100" schemaLocation="../../ch.txg.core.lehf.common.sh/Schemas/AUDIT.xsd" />
+
+<xsd:complexType name="filesToMoveType">
+	<xsd:sequence>
+		<xsd:element name="oldRemoteDirectory" type="xsd:string" />
+		<xsd:element name="oldRemoteFileName" type="xsd:string" />
+		<xsd:element name="newRemoteDirectory" type="xsd:string" />
+		<xsd:element name="newRemoteFileName" type="xsd:string" />
+	</xsd:sequence>
+</xsd:complexType>
+
+
+<xsd:complexType name="CreateErrorFileType">
+	<xsd:sequence>
+		<xsd:element name="remoteFileName" 	type="xsd:string" />	
+		<xsd:choice>
+				<xsd:element name="dataContent" 	type="xsd:string" />
+				<xsd:element ref="tns0:LogAudit" />			
+		</xsd:choice>
+	</xsd:sequence>
+</xsd:complexType>
+
+
+
+<xsd:element name="errorFileManagementInput"  >
+	<xsd:complexType>
+		<xsd:sequence>
+			<xsd:element name="FilesToMove"	 	minOccurs="1" maxOccurs="unbounded" type="tns:filesToMoveType"/>
+			<xsd:element name="CreateErrorFile"  type="tns:CreateErrorFileType"/>		
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:element>
+
+</xsd:schema>

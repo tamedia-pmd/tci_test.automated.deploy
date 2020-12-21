@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema 
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ch/txg/core/lehf/common/xsd/ErrorConfiguration/"
+	xmlns:tns="http://ch/txg/core/lehf/common/xsd/ErrorConfiguration/"
+	xmlns:ns0="http://ch/txg/core/lehf/common/xsd/RaiseException/"
+	elementFormDefault="qualified">
+
+	<xsd:import namespace="http://ch/txg/core/lehf/common/xsd/RaiseException/"  schemaLocation="RaiseExceptionSchema.xsd" />
+	
+	<xsd:complexType name="ErrorConfigurationType">
+		<xsd:sequence>
+			<xsd:element name="ErrorCode" 		type="xsd:string" minOccurs="1" />
+			<xsd:element name="ErrorMessage"	type="xsd:string" minOccurs="1" />
+			<xsd:element name="ErrorType" 		type="ns0:errorTypeType" minOccurs="1" />
+			<xsd:element name="CreateCase" 		type="xsd:boolean" minOccurs="0" />
+			<xsd:element name="CircuitBreaker " type="xsd:boolean" minOccurs="0" />
+			<xsd:element name="HTTPStatusCode" 	type="xsd:integer" minOccurs="0" />
+			<xsd:element name="APIname" 		type="xsd:string" minOccurs="0"  />
+			<xsd:element name="BSLProcess" 		type="xsd:string" minOccurs="0"  />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="ErrorConfigurationsType" >
+		<xsd:sequence>
+			<xsd:element ref="tns:ErrorConfiguration" minOccurs="0" maxOccurs="unbounded" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:element name="ErrorConfiguration" type="tns:ErrorConfigurationType" />
+	<xsd:element name="ErrorConfigurations" type="tns:ErrorConfigurationsType" />
+
+</xsd:schema>

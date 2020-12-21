@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:http="http://xsd.tns.tibco.com/bw/models/sharedresource/httpclient" xmlns:id="http://www.tibco.com/ws/2013/11/identity" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmlns:sca_ext="http://www.tibco.com/ns/sca/201311" xmlns:subject="http://xsd.tns.tibco.com/bw/sharedresource/trinity/models/identity/subject" xmi:id="_o4oR0SJoEeugquPRLUw3sw" name="ch.txg.b2c.workday.sl.http.HttpClientResource_WorkDay_BankAccount" type="http:HttpClientConfiguration">
+  <identitySet xmi:id="_I03DgCROEeu1nsEfsoLMmQ" appliesTo="namedResource" name="HttpClientIdentitySet" provides="confidentiality">
+    <sca_ext:intentMap xmi:id="_I03DgSROEeu1nsEfsoLMmQ" provides="sca_ext:confidentiality">
+      <sca_ext:qualifier xmi:id="_I03DgiROEeu1nsEfsoLMmQ" name="transport">
+        <id:IdentityReference xmi:id="_I03DgyROEeu1nsEfsoLMmQ" URI="ch.txg.b2c.workday.sl.security.IdentityProvider_WorkdayBankAccountList" type="subject:SubjectConfiguration"/>
+      </sca_ext:qualifier>
+    </sca_ext:intentMap>
+  </identitySet>
+  <jndi:configuration xsi:type="http:HttpClientConfiguration" xmi:id="_o4oR0iJoEeugquPRLUw3sw" httpClientVersion="httpcomponents" retryCount="1" useDefaultSSL="true" cmdExecutionIsolationStrategy="THREAD" cmdExecutionIsolationTimeout="1000" cmdExecutionTimeoutEnabled="true" cmdExecutionIsolationInterruptOnTimeout="true" cmdExecutionIsolationSemaphoreMaxConcRequests="8" cmdCircuitBreakerRequestVolumeThreshold="20" cmdCircuitBreakerSleepWindow="5000" cmdCircuitBreakerErrorThresholdPercentage="50" cmdMetricsRollingStatsTime="10000" cmdMetricsRollingStatsNumBuckets="10" cmdMetricsHealthSnapshotInterval="500" cmdRequestLogEnabled="true" tpCoreSize="10" tpMaxQueueSize="-1" tpQueueSizeRejectionThreshold="5" tpKeepAliveTime="1">
+    <tcpDetails xmi:id="_o4oR0yJoEeugquPRLUw3sw">
+      <substitutionBindings xmi:id="_pWc74CRNEeu1nsEfsoLMmQ" template="host" propName="/ch.txg.b2c.workday.sl.sh/Connections/HTTP/Operations/getBankAccountList/HOST"/>
+      <substitutionBindings xmi:id="_ze39YCRNEeu1nsEfsoLMmQ" template="port" propName="/ch.txg.b2c.workday.sl.sh/Connections/HTTP/Operations/getBankAccountList/PORT"/>
+    </tcpDetails>
+  </jndi:configuration>
+</jndi:namedResource>

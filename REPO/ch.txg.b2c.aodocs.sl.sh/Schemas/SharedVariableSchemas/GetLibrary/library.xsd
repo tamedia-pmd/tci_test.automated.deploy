@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://ch/txg/b2c/aodocs/sl/Library" elementFormDefault="qualified" targetNamespace="http://ch/txg/b2c/aodocs/sl/Library">
+
+    <element name="loadLibraries">
+    	<complexType>
+    		<sequence>
+                <element name="lastupdate" type="decimal"></element>
+                <element maxOccurs="unbounded" minOccurs="0"
+    				name="Library" type="tns:Library" />
+    		</sequence>
+    	</complexType>
+    </element>
+
+    <complexType name="Library">
+    		<sequence>
+    			<element minOccurs="0" name="LibraryName" type="string"/>
+    			<element minOccurs="0" name="LibraryId " type="string"/>
+    			<element maxOccurs="unbounded" minOccurs="0" name="Class">
+    				<complexType>
+    					<sequence>
+    						<element minOccurs="0" name="ClassName" type="string"/>
+    						<element maxOccurs="1" minOccurs="0" name="ClassId" type="string"/>
+    					</sequence>
+    				</complexType>
+      </element>
+    		</sequence>
+    	</complexType>
+</schema>

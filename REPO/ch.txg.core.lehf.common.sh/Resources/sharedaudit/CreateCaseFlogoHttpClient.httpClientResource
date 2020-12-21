@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:http="http://xsd.tns.tibco.com/bw/models/sharedresource/httpclient" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmi:id="_5f7k0ZwtEeqQw6igFVjf7w" name="sharedaudit.CreateCaseFlogoHttpClient" type="http:HttpClientConfiguration">
+  <jndi:configuration xsi:type="http:HttpClientConfiguration" xmi:id="_5f7k0pwtEeqQw6igFVjf7w" httpClientVersion="httpcomponents" retryCount="3" idleConnectionTimeout="3000" cmdExecutionIsolationStrategy="THREAD" cmdExecutionIsolationTimeout="1000" cmdExecutionTimeoutEnabled="true" cmdExecutionIsolationInterruptOnTimeout="true" cmdExecutionIsolationSemaphoreMaxConcRequests="8" cmdCircuitBreakerRequestVolumeThreshold="20" cmdCircuitBreakerSleepWindow="5000" cmdCircuitBreakerErrorThresholdPercentage="50" cmdMetricsRollingStatsTime="10000" cmdMetricsRollingStatsNumBuckets="10" cmdMetricsHealthSnapshotInterval="500" cmdRequestLogEnabled="true" tpCoreSize="10" tpMaxQueueSize="-1" tpQueueSizeRejectionThreshold="5" tpKeepAliveTime="1">
+    <substitutionBindings xmi:id="__ySkoJw2EeqQw6igFVjf7w" template="useDefaultSSL" propName="/ch.txg.core.lehf.common.sh/ErrorHandler/LEHF_Flogo/defaultConfidentiality"/>
+    <tcpDetails xmi:id="_5f7k05wtEeqQw6igFVjf7w">
+      <substitutionBindings xmi:id="_1V3CAJw2EeqQw6igFVjf7w" template="host" propName="/ch.txg.core.lehf.common.sh/ErrorHandler/LEHF_Flogo/hostname"/>
+      <substitutionBindings xmi:id="_9LHHAJw2EeqQw6igFVjf7w" template="port" propName="/ch.txg.core.lehf.common.sh/ErrorHandler/LEHF_Flogo/port"/>
+    </tcpDetails>
+  </jndi:configuration>
+</jndi:namedResource>

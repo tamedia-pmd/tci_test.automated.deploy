@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmi:id="_kMEZ0BIGEeuzA8xUbA0YCg" targetNamespace="http://tns.tibco.com/bw/composite/ch.txg.dms.aodocs.bankstatement-bs.sh" name="ch.txg.dms.aodocs.bankstatement-bs.sh" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:property xmi:id="_kQfm0BIGEeuzA8xUbA0YCg" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_kUn44BIGEeuzA8xUbA0YCg" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_kYXwcBIGEeuzA8xUbA0YCg" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_kcSAEBIGEeuzA8xUbA0YCg" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_kgB3oBIGEeuzA8xUbA0YCg" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_kj-jgBIGEeuzA8xUbA0YCg" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_58C8MBIlEeuzA8xUbA0YCg" name="/INT5151BankStatement/dateFormat" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_DIMisBImEeuzA8xUbA0YCg" name="/INT5151BankStatement/libraryName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_DTqL0BImEeuzA8xUbA0YCg" name="/INT5151BankStatement/className" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_mrY8QBWFEeuL6JZ-zDWz5g" name="/INT5151BankStatement/dateFormatUnixTs" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_Kjs7wCTOEeuqQPo_4ZEWUw" name="/INT5151BankStatement/AODocsSecurityGroupProject" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+</sca:composite>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema elementFormDefault="qualified" targetNamespace="http://ch/txg/b2c/aodocs/sl/GetDocument" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://ch/txg/b2c/aodocs/sl/GetDocument" xmlns:Q1="http://ch/txg/b2c/aodocs/sl/ParseJson">
+<import namespace="http://ch/txg/b2c/aodocs/sl/ParseJson"/>
+    <element name="Input">
+    	<complexType>
+    		<sequence>
+    			<element name="token" type="string" minOccurs="0" maxOccurs="1"/>
+    			<element name="documentId" type="string"/>
+    			<element minOccurs="0" name="fields" type="string"/>
+    		</sequence>
+    	</complexType>
+    </element>
+
+    <element name="Output">
+		<complexType>
+			<sequence>
+				<element name="token" type="string" minOccurs="1" maxOccurs="1"/>
+				<element name="JSON" type="Q1:JSONType" minOccurs="1" maxOccurs="1"/>
+			</sequence>
+		</complexType>
+    </element>
+</schema>

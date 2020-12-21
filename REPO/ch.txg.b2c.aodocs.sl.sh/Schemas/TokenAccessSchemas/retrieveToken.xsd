@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema elementFormDefault="qualified" targetNamespace="http://ch/txg/b2c/aodocs/sl/retrieveToken/100" xmlns:tns="http://ch/txg/b2c/aodocs/sl/retrieveToken/100" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <xsd:element name="Input">
+    	<xsd:complexType>
+    		<xsd:sequence>
+    			<xsd:element maxOccurs="1" minOccurs="1" name="filepathOnGCS" type="xsd:string"/>
+    			<xsd:element maxOccurs="1" minOccurs="1" name="bucket" type="xsd:string"/>
+    			<xsd:element maxOccurs="unbounded" minOccurs="0" name="metadata">
+    				<xsd:complexType>
+    					<xsd:sequence>
+    						<xsd:element name="name" type="xsd:string"/>
+    						<xsd:element name="value" type="xsd:string"/>
+    					</xsd:sequence>
+    				</xsd:complexType>
+    			</xsd:element>
+    			<xsd:element minOccurs="0" name="contentFile" type="xsd:base64Binary"/>
+    		</xsd:sequence>
+    	</xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="Output">
+    	<xsd:complexType>
+    		<xsd:sequence>
+    			<xsd:element minOccurs="0" name="kind" type="xsd:string"/>
+    			<xsd:element minOccurs="0" name="id" type="xsd:string"/>
+    			<xsd:element minOccurs="0" name="selfLink" type="xsd:string"/>
+    			<xsd:element minOccurs="0" name="mediaLink" type="xsd:string"/>
+    			<xsd:element minOccurs="0" name="name" type="xsd:string"/>
+    			<xsd:element minOccurs="0" name="bucket" type="xsd:string"/>
+    			<xsd:element minOccurs="0" name="generation" type="xsd:string"/>
+    			<xsd:element minOccurs="0" name="metageneration" type="xsd:string"/>
+    			<xsd:element minOccurs="0" name="contentType" type="xsd:string"/>
+    			<xsd:element minOccurs="0" name="storageClass" type="xsd:string"/>
+    			<xsd:element minOccurs="0" name="size" type="xsd:string"/>
+    			<xsd:element minOccurs="0" name="md5Hash" type="xsd:string"/>
+    			<xsd:element minOccurs="0" name="crc32c" type="xsd:string"/>
+    			<xsd:element minOccurs="0" name="etag" type="xsd:string"/>
+    			<xsd:element minOccurs="0" name="timeCreated" type="xsd:string"/>
+    			<xsd:element minOccurs="0" name="updated" type="xsd:string"/>
+    			<xsd:element minOccurs="0" name="timeStorageClassUpdated" type="xsd:string"/>
+    			<xsd:element maxOccurs="unbounded" minOccurs="0" name="metadata">
+    				<xsd:complexType>
+    					<xsd:sequence>
+    						<xsd:element name="name" type="xsd:string"/>
+    						<xsd:element name="value" type="xsd:string"/>
+    					</xsd:sequence>
+    				</xsd:complexType>
+        </xsd:element>
+    		</xsd:sequence>
+    	</xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="OutputPlaceDocument">
+    	<xsd:complexType>
+    		<xsd:sequence>
+    			<xsd:element minOccurs="0" name="kind" type="xsd:string"/>
+    			<xsd:element minOccurs="0" name="id" type="xsd:string"/>
+    			<xsd:element minOccurs="0" name="selfLink" type="xsd:string"/>
+    			<xsd:element minOccurs="0" name="mediaLink" type="xsd:string"/>
+    			<xsd:element minOccurs="0" name="name" type="xsd:string"/>
+    			<xsd:element minOccurs="0" name="bucket" type="xsd:string"/>
+    			<xsd:element minOccurs="0" name="generation" type="xsd:string"/>
+    			<xsd:element minOccurs="0" name="metageneration" type="xsd:string"/>
+    			<xsd:element minOccurs="0" name="contentType" type="xsd:string"/>
+    			<xsd:element minOccurs="0" name="storageClass" type="xsd:string"/>
+    			<xsd:element minOccurs="0" name="size" type="xsd:string"/>
+    			<xsd:element minOccurs="0" name="md5Hash" type="xsd:string"/>
+    			<xsd:element minOccurs="0" name="crc32c" type="xsd:string"/>
+    			<xsd:element minOccurs="0" name="etag" type="xsd:string"/>
+    			<xsd:element minOccurs="0" name="timeCreated" type="xsd:string"/>
+    			<xsd:element minOccurs="0" name="updated" type="xsd:string"/>
+    			<xsd:element minOccurs="0" name="timeStorageClassUpdated" type="xsd:string"/>
+    			<xsd:element maxOccurs="unbounded" minOccurs="0" name="metadata">
+    				<xsd:complexType>
+    					<xsd:sequence>
+    						<xsd:element name="name" type="xsd:string"/>
+    						<xsd:element name="value" type="xsd:string"/>
+    					</xsd:sequence>
+    				</xsd:complexType>
+        </xsd:element>
+    		</xsd:sequence>
+    	</xsd:complexType>
+    </xsd:element>
+
+
+    <xsd:element name="OutputAccessToken">
+    	<xsd:complexType>
+    		<xsd:sequence>
+    			<xsd:element name="access_token" type="xsd:string"/>
+    			<xsd:element name="expires_in" type="xsd:string"/>
+    			<xsd:element name="token_type" type="xsd:string"/>
+    		</xsd:sequence>
+    	</xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="OutputRetrieveToken">
+    	<xsd:complexType>
+    		<xsd:sequence>
+    			<xsd:element name="Bearer_access_Token" type="xsd:string"/>
+    		</xsd:sequence>
+    	</xsd:complexType>
+    </xsd:element>
+</xsd:schema>

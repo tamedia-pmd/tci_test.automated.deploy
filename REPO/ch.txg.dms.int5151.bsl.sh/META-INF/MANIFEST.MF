@@ -1,0 +1,30 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Ch Txg Dms Int5151 Bsl Sh Module
+Bundle-SymbolicName: ch.txg.dms.int5151.bsl.sh
+Bundle-Version: 1.0.10.qualifier
+Bundle-Vendor: TIBCO Software Inc.
+Require-Bundle: ch.txg.core.customfunctions.common.sh;bundle-version="1.2.2"
+TIBCO-BW-Edition: bwcloud
+Provide-Capability: com.tibco.bw.module; name="ch.txg.dms.int5151.bsl.sh"; version:Version="1.0.10",
+ com.tibco.bw.schemas; ns="http://ch/txg/dms/int5151/bsl/InternalInterface_int5151",
+ com.tibco.bw.schemas; ns="http://ch/txg/dms/int5151/bsl/xsd/filetransferInterface",
+ com.tibco.bw.resources; name="http",
+ com.tibco.bw.processes; name="ch.txg.dms.int5151.bsl"
+TIBCO-BW-Version: 2.5.3 V26 2020-05-15
+Require-Capability: com.tibco.bw.model; filter:="(name=bwext)",
+ com.tibco.bw.module; filter:="(&(name=ch.txg.core.lehf.common.sh)(version=1.1.11))",
+ com.tibco.bw.module; filter:="(&(name=ch.txg.b2c.gdrive.sl.sh)(version=1.0.4))",
+ com.tibco.bw.module; filter:="(&(name=ch.txg.core.sftp.common.sh)(version=1.0.4))",
+ com.tibco.bw.module; filter:="(&(name=ch.txg.core.customfunctions.common.sh)(version=1.2.2))",
+ com.tibco.bw.module; filter:="(&(name=ch.txg.b2c.aodocs.sl.sh)(version=1.2.26))",
+ com.tibco.bw.module; filter:="(&(name=ch.txg.dms.aodocs.bankstatement-bs.sh)(version=1.0.19))",
+ com.tibco.bw.palette; filter:="(name=bw.generalactivities)",
+ com.tibco.bw.palette; filter:="(name=bw.restjson)",
+ com.tibco.bw.palette; filter:="(name=bw.sftp)",
+ com.tibco.bw.sharedresource.model; filter:="(name=bw.httpclient)",
+ com.tibco.bw.sharedresource.model; filter:="(name=bw.sftp)"
+TIBCO-BW-ConfigProfile: META-INF/default.substvar
+TIBCO-BW-ModuleSharedVariables: META-INF/module.msv
+TIBCO-BW-SharedModule: META-INF/module.bwm
+TIBCO-BW-JobSharedVariables: META-INF/module.jsv

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema  elementFormDefault="qualified" targetNamespace="urn:com.workday/bsvc" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="urn:com.workday/bsvc">
+<xs:attribute  name="type" type="xs:string" />
+<xs:attribute  name="Descriptor" type="xs:string" />
+  <xs:element name="Report_Data">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Report_Entry" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="IBAN"/>
+              <xs:element type="xs:string" name="Reference_ID"/>
+              <xs:element name="Company_Instance">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ID" maxOccurs="unbounded" minOccurs="1">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute ref="tns:type"  use="required" />
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute  ref="tns:Descriptor" use="required" />             
+                </xs:complexType>
+              </xs:element>
+ 			  <xs:element type="xs:string" name="Bank_Account_Number" minOccurs="0"/>
+ 			  <xs:element name="Account_Currency">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ID" maxOccurs="unbounded" minOccurs="1">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute ref="tns:type"  use="required" />
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute  ref="tns:Descriptor" use="required" />             
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

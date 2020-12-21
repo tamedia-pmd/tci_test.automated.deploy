@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:dataformat="http://ns.tibco.com/bw/palette/dataformat" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_EOnBIK_OEeqN9_-BooW0Og" targetNamespace="http://tns.tibco.com/bw/composite/ch.txg.core.customfunctions.common.sh" name="ch.txg.core.customfunctions.common.sh" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:property xmi:id="_EWWA0K_OEeqN9_-BooW0Og" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_EWr_EK_OEeqN9_-BooW0Og" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_EWt0QK_OEeqN9_-BooW0Og" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_EWvCYK_OEeqN9_-BooW0Og" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_EWw3kK_OEeqN9_-BooW0Og" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_EWyswK_OEeqN9_-BooW0Og" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_vA12gLAHEeqgt_CyWyLtoQ" name="/ch.txg.core.customfunctions.common.sh/payloadJson/iss" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_yoIGQLAHEeqgt_CyWyLtoQ" name="/ch.txg.core.customfunctions.common.sh/payloadJson/aud" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_XY_lkLCCEeqgt_CyWyLtoQ" name="/ch.txg.core.customfunctions.common.sh/payloadJson/privateKey" type="XMLSchema:string" scaext:simpleValue="" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_S8ETINsHEeqSONAR4u9KQA" name="/ch.txg.core.customfunctions.common.sh/payloadJson/scope/scopeGCS" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_Xxd70NsHEeqSONAR4u9KQA" name="/ch.txg.core.customfunctions.common.sh/payloadJson/scope/scopeAODocs" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_JsBSoPNGEeqTcv02i-UvWw" name="/ch.txg.core.customfunctions.common.sh/payloadJson/scope/scopeGDRIVE" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+</sca:composite>

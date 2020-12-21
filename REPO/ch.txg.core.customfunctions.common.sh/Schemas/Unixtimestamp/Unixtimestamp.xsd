@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://ch/txg/core/customfunction/common/Unixtimestamp/0100" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://ch/txg/core/customfunction/common/Unixtimestamp/0100">
+
+    <element name="InputUnixTimestamp">
+    	<complexType>
+    		<sequence>
+    			<element name="FormatDate" type="string"></element>
+    			<element name="inputdate" type="string"></element>
+    		</sequence>
+    	</complexType>
+    </element>
+    <element name="getUnixTsFromDatesStart">
+    	<complexType>
+    		<sequence>
+    			<element name="dates" minOccurs="1" maxOccurs="unbounded">
+    				<complexType>
+    					<sequence>
+    						<element name="correlationId" type="string"/>
+    						<element name="formatDate" type="string"/>
+    						<element name="inputdate" type="string"/>
+    					</sequence>
+    				</complexType>
+    			</element>
+    		</sequence>
+    	</complexType>
+    </element>
+    <element name="OutputUnixTimeStamp">
+    	<complexType>
+    		<sequence>
+    			<element name="unixtimestamp" type="long"></element>
+    		</sequence>
+    	</complexType>
+    </element>
+
+<element name="getUnixTsFromDatesEnd">
+    	<complexType>
+    		<sequence>
+    			<element name="dates" minOccurs="0" maxOccurs="unbounded">
+    				<complexType>
+    					<sequence>
+    						<element name="correlationId" type="string"/>
+    						<element name="formatDate" type="string"/>
+    						<element name="inputdate" type="string"/>
+    						<element name="unixtimestamp" type="long"/>
+    					</sequence>
+    				</complexType>
+    			</element>
+    		</sequence>
+    	</complexType>
+    </element>
+    
+ </schema>   

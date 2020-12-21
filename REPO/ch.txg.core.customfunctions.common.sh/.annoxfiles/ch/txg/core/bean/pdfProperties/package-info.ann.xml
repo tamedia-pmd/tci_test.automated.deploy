@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ASCII"?>
+<annox:package xmlns:annox="http://annox.dev.java.net" xmlns:jaxb="http://annox.dev.java.net/javax.xml.bind.annotation">
+  <annox:class name="PDFProperties">
+    <jaxb:XmlAccessorType value="NONE"/>
+    <jaxb:XmlType name="PDFPropertiesType" propOrder="author keywords object title "/>
+    <jaxb:XmlRootElement name="PDFProperties" namespace="www.tibco.com/plugin/java/xmlSchema/ch.txg.core.bean.pdfProperties.PDFProperties"/>
+    <annox:field name="author">
+      <jaxb:XmlElement name="Author" namespace="www.tibco.com/plugin/java/xmlSchema/ch.txg.core.bean.pdfProperties.PDFProperties"/>
+    </annox:field>
+    <annox:field name="keywords">
+      <jaxb:XmlElement name="Keywords" namespace="www.tibco.com/plugin/java/xmlSchema/ch.txg.core.bean.pdfProperties.PDFProperties"/>
+    </annox:field>
+    <annox:field name="object">
+      <jaxb:XmlElement name="Object" namespace="www.tibco.com/plugin/java/xmlSchema/ch.txg.core.bean.pdfProperties.PDFProperties"/>
+    </annox:field>
+    <annox:field name="title">
+      <jaxb:XmlElement name="Title" namespace="www.tibco.com/plugin/java/xmlSchema/ch.txg.core.bean.pdfProperties.PDFProperties"/>
+    </annox:field>
+  </annox:class>
+  <jaxb:XmlSchema elementFormDefault="QUALIFIED" namespace="www.tibco.com/plugin/java/xmlSchema/ch.txg.core.bean.pdfProperties.PDFProperties"/>
+</annox:package>

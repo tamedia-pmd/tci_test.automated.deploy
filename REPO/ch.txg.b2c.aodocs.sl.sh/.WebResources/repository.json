@@ -1,0 +1,17 @@
+{
+    "records": [{
+        "name": "Cloud",
+        "items": [],
+        "url": "https://eu.integration.cloud.tibco.com:443"
+    }],
+    "resources": [
+        {
+            "location": ".WebResources/docs.json",
+            "type": "generated"
+        },
+        {
+            "location": ".WebResources/Resource",
+            "type": "generated"
+        }
+    ]
+}

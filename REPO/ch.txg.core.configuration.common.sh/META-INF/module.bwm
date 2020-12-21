@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_AMeUwMBeEeqMife8oOXPKg" targetNamespace="http://tns.tibco.com/bw/composite/ch.txg.core.configuration.common.sh" name="ch.txg.core.configuration.common.sh" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:property xmi:id="_ASSo4MBeEeqMife8oOXPKg" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_ASXhYMBeEeqMife8oOXPKg" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_ASYIcMBeEeqMife8oOXPKg" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_ASYvgMBeEeqMife8oOXPKg" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_ASZWkMBeEeqMife8oOXPKg" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_ASaksMBeEeqMife8oOXPKg" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_WMMpgMBgEeqMife8oOXPKg" name="/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/ACCEPT_REDIRECT" type="XMLSchema:boolean" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_WMT-QMBgEeqMife8oOXPKg" name="/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/HOST" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_WMgLgMBgEeqMife8oOXPKg" name="/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/DISABLE_CONNECTION_POOLING" type="XMLSchema:boolean" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_WMrxsMBgEeqMife8oOXPKg" name="/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/USE_SINGLE_COOKIE_HEADER" type="XMLSchema:boolean" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_WMwqMMBgEeqMife8oOXPKg" name="/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/PORT" type="XMLSchema:int" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_WM_TsMBgEeqMife8oOXPKg" name="/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/CONNECTION_TIMEOUT_ms" type="XMLSchema:int" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_WNmXsMBgEeqMife8oOXPKg" name="/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/LOG_REQUEST_RESPONSE_TIME" type="XMLSchema:boolean" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_WN6gwMBgEeqMife8oOXPKg" name="/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/MAX_CONNECTION_PER_HOST" type="XMLSchema:int" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_WOBOcMBgEeqMife8oOXPKg" name="/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/RETRY_COUNT" type="XMLSchema:int" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_WOPQ4MBgEeqMife8oOXPKg" name="/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/IDLE_CONNECTION_TIMEOUT_ms" type="XMLSchema:int" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_WOg9sMBgEeqMife8oOXPKg" name="/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/SOCKET_TIMEOUT_ms" type="XMLSchema:int" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_WOr80MBgEeqMife8oOXPKg" name="/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/STALE_CHECK" type="XMLSchema:boolean" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_WO4KEMBgEeqMife8oOXPKg" name="/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/USE_NONPREEMPTIVE_AUTHENTICATION" type="XMLSchema:boolean" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_WO9poMBgEeqMife8oOXPKg" name="/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/MAX_TOTAL_CONNECTIONS" type="XMLSchema:int" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_WNEzQMBgEeqMife8oOXPKg" name="/ch.txg.core.configuration.common.sh/Connection/Http/Client/LibraryID/URI" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_WOUwcMBgEeqMife8oOXPKg" name="/ch.txg.core.configuration.common.sh/Connection/Http/Client/GoogleGroupID/URI" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_qcQecBMXEeuGD6sUBhSpxA" name="/ch.txg.core.configuration.common.sh/Connection/Http/Client/GoogleGroupID/URI_V3" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_TD7IMMDoEeqMife8oOXPKg" name="/ch.txg.core.configuration.common.sh/Connection/Http/Client/GetAuthConfiguration/URI" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_yxCt4AXLEeuFmZmtxtqqMA" name="/ch.txg.core.configuration.common.sh/Connection/Http/Client/AoDocsMappingTable/URI" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_jke_cAcQEeuRJPukuRrWkA" name="/ch.txg.core.configuration.common.sh/Connection/Http/Client/GetLEHF_SFTPConfiguration/URI" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_Vw8a8BIwEeu12qvUb6J23A" name="/ch.txg.core.configuration.common.sh/Connection/Http/Client/BankStatementConfiguration/URI" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_-VGcwBS6Eeu_Cuq6raJQSA" name="/ch.txg.core.configuration.common.sh/Connection/Http/Client/BankStatementConfiguration/URIDocType" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_0bH3QCA8EeuqJrFSQDGKjg" name="/ch.txg.core.configuration.common.sh/Connection/Http/Client/BankStatementConfiguration/URIFilePoller" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_WMaE4MBgEeqMife8oOXPKg" name="/ch.txg.core.configuration.common.sh/RetryManagement/baseRetryDelay_s" type="XMLSchema:int" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_WNLg8MBgEeqMife8oOXPKg" name="/ch.txg.core.configuration.common.sh/RetryManagement/maxRetry" type="XMLSchema:int" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_gmkSMCA9EeuqJrFSQDGKjg" name="/ch.txg.core.configuration.common.sh/RetryManagement/statusCodesToSkip" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_WNXHIMBgEeqMife8oOXPKg" name="/ch.txg.core.configuration.common.sh/AodocsParameters/AodocsConfig/googleGroupTTL_sec" type="XMLSchema:int" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_WOyDcMBgEeqMife8oOXPKg" name="/ch.txg.core.configuration.common.sh/AodocsParameters/AodocsConfig/libraryIDTTL_sec" type="XMLSchema:int" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_1L41IAXKEeuFmZmtxtqqMA" name="/ch.txg.core.configuration.common.sh/AodocsParameters/AodocsConfig/aodocsMappingTableTTL_sec" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_9H3rIMDoEeqMife8oOXPKg" name="/ch.txg.core.configuration.common.sh/GetAuthConfiguration/AllAccessString" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_4o_lQNAAEeqsHspAAczhKg" name="/ch.txg.core.configuration.common.sh/GetAuthConfiguration/getAuthConfigTTL_sec" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_Gnr48AcQEeuRJPukuRrWkA" name="/ch.txg.core.configuration.common.sh/GetLEHF_SFTPConfiguration/getLEHF_SFTP_TTLsec" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_xr-YICA2EeuqJrFSQDGKjg" name="/ch.txg.core.configuration.common.sh/BankStatement/FilePoller_TTLsec" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_0ZLlQCA2EeuqJrFSQDGKjg" name="/ch.txg.core.configuration.common.sh/BankStatement/DocType_TTLsec" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_9iTF4CA2EeuqJrFSQDGKjg" name="/ch.txg.core.configuration.common.sh/BankStatement/CSV_TTLsec" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+</sca:composite>

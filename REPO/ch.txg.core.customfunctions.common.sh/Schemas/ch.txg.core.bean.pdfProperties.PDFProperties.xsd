@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema elementFormDefault="qualified" version="1.0" targetNamespace="www.tibco.com/plugin/java/xmlSchema/ch.txg.core.bean.pdfProperties.PDFProperties" xmlns:tns="www.tibco.com/plugin/java/xmlSchema/ch.txg.core.bean.pdfProperties.PDFProperties" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="PDFProperties" type="tns:PDFPropertiesType"/>
+
+  <xs:complexType name="PDFPropertiesType">
+    <xs:sequence>
+      <xs:element name="Author" type="xs:string" minOccurs="0"/>
+      <xs:element name="Keywords" type="xs:string" minOccurs="0"/>
+      <xs:element name="Object" type="xs:string" minOccurs="0"/>
+      <xs:element name="Title" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

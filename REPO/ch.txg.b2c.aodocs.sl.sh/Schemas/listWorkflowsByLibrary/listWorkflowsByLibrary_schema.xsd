@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns:tns="http://ch/txg/b2c/aodocs/sl/listWorkflowsByLibrary" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://ch/txg/b2c/aodocs/sl/listWorkflowsByLibrary">
+
+	<xs:complexType name="transitionType">
+		<xs:sequence>
+			<xs:element minOccurs="0" name="kind" type="xs:string"/>
+			<xs:element minOccurs="0" name="name" type="xs:string"/>
+			<xs:element minOccurs="0" name="name_i18n" type="xs:string"/>
+			<xs:element minOccurs="0" name="id" type="xs:string"/>
+			<xs:element minOccurs="0" name="value" type="xs:string"/>
+			<xs:element minOccurs="0" name="parallel" type="xs:string"/>
+			<xs:element minOccurs="0" name="fromStateId" type="xs:string"/>
+			<xs:element minOccurs="0" name="fromStateName_i18n" type="xs:string"/>
+			<xs:element minOccurs="0" name="fromStateName" type="xs:string"/>
+			<xs:element minOccurs="0" name="targetStateId" type="xs:string"/>
+			<xs:element minOccurs="0" name="targetStateName_i18n" type="xs:string"/>
+			<xs:element minOccurs="0" name="targetStateName" type="xs:string"/>
+			<xs:element minOccurs="0" name="workflowId" type="xs:string"/>
+			<xs:element minOccurs="0" name="condition" type="xs:string"/>
+			<xs:element minOccurs="0" name="mandatoryComment" type="xs:string"/>
+			
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="stateType">
+		<xs:sequence>
+			<xs:element minOccurs="0" name="kind" type="xs:string"/>
+			<xs:element minOccurs="0" name="name" type="xs:string"/>
+			<xs:element minOccurs="0" name="name_i18n" type="xs:string"/>
+			<xs:element minOccurs="0" name="value" type="xs:string"/>
+			<xs:element minOccurs="0" name="description" type="xs:string"/>
+			<xs:element minOccurs="0" name="noAction" type="xs:string"/>
+			<xs:element maxOccurs="unbounded" minOccurs="0" name="displayFlags" type="xs:string"/>
+			<xs:element maxOccurs="unbounded" minOccurs="0" name="transitions" type="tns:transitionType"/>
+		</xs:sequence>
+	</xs:complexType>
+
+
+	<xs:complexType name="workflowsType">
+		<xs:sequence>
+
+						<xs:element minOccurs="0" name="kind" type="xs:string"/>
+						<xs:element minOccurs="0" name="id" type="xs:string"/>
+						<xs:element minOccurs="0" name="name" type="xs:string"/>
+						<xs:element minOccurs="0" name="name_i18n" type="xs:string"/>
+						<xs:element minOccurs="0" name="classId" type="xs:string"/>
+						<xs:element maxOccurs="unbounded" minOccurs="0" name="states" type="tns:stateType"/>
+		</xs:sequence>
+	</xs:complexType>
+
+
+<xs:element name="workflows" type="tns:workflowsType"/>
+
+<xs:element name="listWorkflowsResult">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element minOccurs="0" name="kind" type="xs:string"/>
+			<xs:element maxOccurs="unbounded" minOccurs="0" ref="tns:workflows"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+
+
+	<xs:element name="workflowsVariable">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="tns:listWorkflowsResult"/>
+				<xs:element name="lastUpdate" type="xs:long"/>			
+			</xs:sequence>
+		</xs:complexType>
+	
+	</xs:element>
+
+	<xs:element name="InputlistWorkflows">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="1" name="LibraryID" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="OutputListWorkFlows">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="tns:listWorkflowsResult"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>	
+	
+
+</xs:schema>

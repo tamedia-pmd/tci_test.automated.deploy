@@ -1,0 +1,32 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Ch Txg B2c Gdrive Sl Sh Module
+Bundle-SymbolicName: ch.txg.b2c.gdrive.sl.sh
+Bundle-Version: 1.0.4.qualifier
+Bundle-Vendor: TIBCO Software Inc.
+Require-Bundle: ch.txg.core.customfunctions.common.sh;bundle-version="1.2.2"
+TIBCO-BW-Edition: bwcloud
+Provide-Capability: com.tibco.bw.module; name="ch.txg.b2c.gdrive.sl.sh"; version:Version="1.0.4",
+ com.tibco.bw.schemas; ns="http://ch/txg/b2c/gdrive/sl/retrieveToken/100",
+ com.tibco.bw.schemas; ns="http://ch/txg/common/gdrive/sl/sh",
+ com.tibco.bw.schemas; ns="http://ch/txg/gdrive/fileResource",
+ com.tibco.bw.schemas; ns="http://tns.tibco.com/bw/REST_GDRIVE",
+ com.tibco.bw.schemas; ns="http://xmlns.example.com/Default/parameters",
+ com.tibco.bw.schemas; ns="http://xmlns.example.com/Upload-drive-v3-files/parameters",
+ com.tibco.bw.processes; name="ch.txg.b2c.gdrive.sl",
+ com.tibco.bw.resources; name="ch.txg.b2c.gdrive.sl.http",
+ com.tibco.bw.processes; name="ch.txg.b2c.gdrive.sl.util",
+ com.tibco.bw.resources; name="ch.txg.b2c.gdrive.sl.sh"
+TIBCO-BW-Version: 2.5.3 V26 2020-05-15
+Require-Capability: com.tibco.bw.model; filter:="(name=bwext)",
+ com.tibco.bw.module; filter:="(&(name=ch.txg.core.lehf.common.sh)(version=1.1.11))",
+ com.tibco.bw.module; filter:="(&(name=ch.txg.core.customfunctions.common.sh)(version=1.2.2))",
+ com.tibco.bw.palette; filter:="(name=bw.generalactivities)",
+ com.tibco.bw.palette; filter:="(name=bw.restjson)",
+ com.tibco.bw.palette; filter:="(name=bw.http)",
+ com.tibco.bw.sharedresource.model; filter:="(name=bw.httpclient)",
+ com.tibco.bw.binding.model; filter:="(name=bw.rest.reference.binding)"
+TIBCO-BW-ConfigProfile: META-INF/default.substvar
+TIBCO-BW-ModuleSharedVariables: META-INF/module.msv
+TIBCO-BW-SharedModule: META-INF/module.bwm
+TIBCO-BW-JobSharedVariables: META-INF/module.jsv

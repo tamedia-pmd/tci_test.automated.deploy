@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:tns="http://ch/txg/core/lehf/common/AuditTypes/0100"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ch/txg/core/lehf/common/AuditTypes/0100">
+
+	<xsd:element name="LogAudit">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="auditElement" type="tns:auditElementType" />
+				<xsd:element minOccurs="0" name="auditErrorElement"
+					type="tns:auditErrorElementType" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+	<xsd:complexType name="auditElementType">
+		<xsd:sequence>
+			<xsd:element maxOccurs="1" minOccurs="1" name="APPLICATION_NAME"
+				type="xsd:string" />
+			<xsd:element maxOccurs="1" minOccurs="0" name="SOURCESYSTEM"
+				type="xsd:string" />          <!-- [Mashery] -->
+			<xsd:element maxOccurs="1" minOccurs="1" name="STARTTIMESTAMP"
+				type="xsd:dateTime" />
+			<xsd:element maxOccurs="1" minOccurs="1" name="SEVERITY"
+				type="xsd:string" />              <!--{INFO, DEBUG, WARN, ERROR} -->
+			<xsd:element maxOccurs="1" minOccurs="1" name="TRACKID"
+				type="xsd:string" />           <!-- id tecnico (es, tib:uuid) -->
+			<xsd:element maxOccurs="1" minOccurs="1" name="BUSINESSKEY"
+				type="xsd:string" />          <!-- id di business (es. concat interfacename+DocumentNumber -->
+			<xsd:element maxOccurs="1" minOccurs="1" name="PROCESSSTACK"
+				type="xsd:string" />
+			<xsd:element maxOccurs="1" minOccurs="0" name="PAYLOAD"
+				type="xsd:string" />            <!-- [2000] ? -->
+		</xsd:sequence>
+	</xsd:complexType>
+
+
+
+	<xsd:complexType name="auditErrorElementType">
+		<xsd:sequence>
+			<xsd:element maxOccurs="1" minOccurs="1" name="ERRORCODE"
+				type="xsd:string" />          <!-- {XXXYYYYY} -->
+			<xsd:element maxOccurs="1" minOccurs="0" name="ERRORTYPE"
+				type="xsd:string" />          <!-- {System, Business} -->
+			<xsd:element maxOccurs="1" minOccurs="0" name="ERRORMESSAGE"
+				type="xsd:string" />       <!-- [500] ? -->
+			<xsd:element maxOccurs="1" minOccurs="1" name="ERRORTIMESTAMP"
+				type="xsd:dateTime" />
+			<xsd:element maxOccurs="1" minOccurs="0" name="ORIGINALMESSAGE"
+				type="xsd:anySimpleType" /> <!-- ATTACHMENTS? -->
+			<xsd:element maxOccurs="1" minOccurs="0" name="API"
+				type="xsd:string" />	<!-- [only way for resubmit?] -->
+		</xsd:sequence>
+	</xsd:complexType>
+
+
+
+	<xsd:complexType name="FaultResponseDataType">
+		<xsd:sequence>
+			<xsd:element maxOccurs="1" minOccurs="0" name="esito"
+				type="xsd:integer" />
+			<xsd:element maxOccurs="1" minOccurs="0" name="codice"
+				type="xsd:string" />
+			<xsd:element maxOccurs="1" minOccurs="0" name="motivazione"
+				type="xsd:string" />
+			<xsd:element maxOccurs="1" minOccurs="0" name="data"
+				type="xsd:string" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	
+
+</xsd:schema>

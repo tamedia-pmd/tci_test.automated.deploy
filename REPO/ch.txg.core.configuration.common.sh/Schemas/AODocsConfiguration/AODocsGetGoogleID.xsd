@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns:tns="http://ch/txg/b2c/configuration/AODocsGetGoogleID" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://ch/txg/b2c/configuration/AODocsGetGoogleID">
+<xs:element name="OutputGoogleGroupID" type="tns:GoogleGroupResult"/>
+    <xs:complexType name="GoogleGroupResult">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="Result">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="CompanyCode" type="xs:string"/>
+                        <xs:element minOccurs="0" name="GoogleGroupId" type="xs:string"/>
+                        <xs:element minOccurs="0" name="SecurityGroup" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+
+
+
+    <xs:element name="InputGoogleGroupID">
+    	<xs:complexType>
+    		<xs:sequence>
+    			<xs:element name="companyCode" type="xs:string"/>
+    		</xs:sequence>
+    	</xs:complexType>
+    </xs:element>
+    <xs:element name="InputGoogleGroupID_V3">
+    	<xs:complexType>
+    		<xs:sequence>
+    			<xs:element name="companyCode" type="xs:string"/>
+    			<xs:element name="project" type="xs:string"/>
+    		</xs:sequence>
+    	</xs:complexType>
+    </xs:element>
+
+    <xs:element name="GoogleGroupIDVariable">
+    	<xs:complexType>
+    		<xs:sequence>
+    			<xs:element name="lastupdate" type="xs:decimal"/>
+    			<xs:element name="GoogleGroup" type="tns:GoogleGroupResult"/>
+    		</xs:sequence>
+    	</xs:complexType>
+    </xs:element>
+</xs:schema>

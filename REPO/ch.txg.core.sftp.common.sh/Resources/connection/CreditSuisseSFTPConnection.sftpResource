@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmlns:sftpconnection="http://ns.tibco.com/bw/palette/sftpconnection" xmi:id="_35wpQQ-REeu5S6JNEkLgXQ" name="connection.CreditSuisseSFTPConnection" type="sftpconnection:sftpconnection">
+  <jndi:configuration xsi:type="sftpconnection:SFTPConnection" xmi:id="_35wpQg-REeu5S6JNEkLgXQ" privKeyAuth="true" privKey="Resources/keys/cs-sftp-privatekey.ppk">
+    <substitutionBindings xmi:id="_dcS2gA-SEeu5S6JNEkLgXQ" template="host" propName="/ch.txg.core.sftp.common/Connections/SFTP/CreditSuisse/Host"/>
+    <substitutionBindings xmi:id="_fJxsAA-SEeu5S6JNEkLgXQ" template="port" propName="/ch.txg.core.sftp.common/Connections/SFTP/CreditSuisse/Port"/>
+    <substitutionBindings xmi:id="_gmlBMA-SEeu5S6JNEkLgXQ" template="userName" propName="/ch.txg.core.sftp.common/Connections/SFTP/CreditSuisse/Username"/>
+  </jndi:configuration>
+</jndi:namedResource>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmlns:sp="http://xsd.tns.tibco.com/bw/sharedresource/trinity/models/securityprovider" xmlns:subject="http://xsd.tns.tibco.com/bw/sharedresource/trinity/models/identity/subject" xmi:id="_7pkG4SRNEeu1nsEfsoLMmQ" name="ch.txg.b2c.workday.sl.security.IdentityProvider_WorkdayBankAccountList" type="subject:SubjectConfiguration">
+  <jndi:configuration xsi:type="sp:IdentitySecurityProvider" xmi:id="_7pkG4iRNEeu1nsEfsoLMmQ">
+    <configuration xsi:type="subject:SubjectConfiguration" xmi:id="_7pkG4yRNEeu1nsEfsoLMmQ">
+      <substitutionBindings xmi:id="_8xG9wCRNEeu1nsEfsoLMmQ" template="username" propName="/ch.txg.b2c.workday.sl.sh/Connections/HTTP/Operations/getBankAccountList/username"/>
+      <substitutionBindings xmi:id="__KR0kCRNEeu1nsEfsoLMmQ" template="userpassword" propName="/ch.txg.b2c.workday.sl.sh/Connections/HTTP/Operations/getBankAccountList/password"/>
+    </configuration>
+  </jndi:configuration>
+</jndi:namedResource>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmlns:sp="http://xsd.tns.tibco.com/bw/sharedresource/trinity/models/securityprovider" xmlns:subject="http://xsd.tns.tibco.com/bw/sharedresource/trinity/models/identity/subject" xmi:id="_2uhp8ZXnEeq4SrfvJWVQ6Q" name="ch.txg.b2c.workday.sl.security.IdentityProvider_Workday" type="subject:SubjectConfiguration">
+  <jndi:configuration xsi:type="sp:IdentitySecurityProvider" xmi:id="_2uiRAJXnEeq4SrfvJWVQ6Q">
+    <configuration xsi:type="subject:SubjectConfiguration" xmi:id="_2uiRAZXnEeq4SrfvJWVQ6Q">
+      <substitutionBindings xmi:id="_3VSH8JXnEeq4SrfvJWVQ6Q" template="username" propName="/ch.txg.b2c.workday.sl.sh/Connections/HTTP/Client/BasicAuthentication/Username"/>
+      <substitutionBindings xmi:id="_4yGrQJXnEeq4SrfvJWVQ6Q" template="userpassword" propName="/ch.txg.b2c.workday.sl.sh/Connections/HTTP/Client/BasicAuthentication/Password"/>
+    </configuration>
+  </jndi:configuration>
+</jndi:namedResource>

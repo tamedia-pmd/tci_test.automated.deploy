@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns:tns="http://ch/txg/b2c/configuration/AODocsMappingTable" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://ch/txg/b2c/configuration/AODocsMappingTable">
+	<xs:element name="getAoDocsMappingTableStart">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="libraryName" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element> 
+	<xs:element name="getAoDocsMappingTableEnd" type="tns:AoDocsMappingTableType"/>
+	<xs:element name="aodocsMappingTableVariable">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="lastupdate" type="xs:decimal"/>
+				<xs:element name="aodocsMappingTable" minOccurs="0" maxOccurs="1" type="tns:AoDocsMappingTableType"></xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="aoDocsMappingTableConfService">
+		<xs:complexType>
+		<xs:sequence>
+			
+						<xs:element name="mappingTables" minOccurs="0" maxOccurs="unbounded">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="libraryName" type="xs:string"/>
+									<xs:element name="className" type="xs:string"/>
+									<xs:element name="field" type="xs:string"/>
+									<xs:element name="tciKey" type="xs:string"/>
+									<xs:element name="aodocsValue" type="xs:string"/>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		
+	<xs:complexType name="AoDocsMappingTableType">
+		<xs:sequence>
+			<xs:element name="mappingTableList" minOccurs="0">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="mappingTable" minOccurs="1" maxOccurs="unbounded" type="tns:MappingTableType"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="MappingTableType">
+		<xs:sequence>
+			<xs:element name="libraryName" type="xs:string"/>
+			<xs:element name="className" type="xs:string"/>
+			<xs:element name="fieldList" minOccurs="0" maxOccurs="1">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="field" minOccurs="1" maxOccurs="unbounded" type="tns:FieldType"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="FieldType">
+		<xs:sequence>
+			<xs:element name="field" type="xs:string"/>
+			<xs:element name="keyValueList" minOccurs="0" maxOccurs="1">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="keyValue" type="tns:keyValueType" minOccurs="1" maxOccurs="unbounded"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="keyValueType">
+		<xs:sequence>
+			<xs:element name="tciKey" type="xs:string"/>
+			<xs:element name="aoDocsValue" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

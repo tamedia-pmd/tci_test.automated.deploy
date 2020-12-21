@@ -1,0 +1,12 @@
+ErrorCode;ErrorMessage;ErrorType;CreateCase;CircuitBreaker;HTTPStatusCode;APIname;BSLProcess
+BSBS000001;System Error occured preparing the json request for AODocs API insertDocument call ;System;false;false;500;;
+BSBS000002;Generic System Error occured preparing the json request for AODocs API insertDocument call ;System;false;false;500;;
+BSBS000003;Generic System Error occurred extracting BankStatement Data from PDF Properties;System;false;false;500;;
+BSBS000004;System Error while extracting BankStatement data from a positional csv format;System;false;false;500;;
+BSBS000005;System Error while extracting BankStatement data from a keyvalue csv format;System;false;false;500;;
+BSBS000006;Generic System Error occurred mapping BankStatement Data into BS AoDocs Class ;System;false;false;500;;
+BSBS000007;Generic Error occured during the Create BS Document  process ;System;false;false;500;;
+BSBS000020;Wrong configuration. Please check the current configuration.;System;false;false;500;;
+BSBS000021;Error occurred inside BankStatement DataCleansing Process;System;false;false;500;;
+BSBS000022;Unknown Bank code from Configuration;System;false;false;500;;
+BSBS000023;missing DocumentType;System;false;false;500;;

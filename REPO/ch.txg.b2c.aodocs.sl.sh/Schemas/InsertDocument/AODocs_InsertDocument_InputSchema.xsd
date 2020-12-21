@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns:tns="http://ch/txg/common/aodocs/insert/document/input/sl" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://ch/txg/common/aodocs/insert/document/input/sl">
+
+<!-- <xs:import namespace="/T1600446528184Converted/JsonSchema"  schemaLocation="../../../ch.txg.b2c.aodocs.sl.sh/Schemas/AODocsGateway_Interface.xsd"/> -->
+
+ 
+        <xs:complexType name="fieldsType">
+      		<xs:sequence>
+      			<xs:element name="fieldName" type="xs:string"/>
+      			<xs:element maxOccurs="unbounded" minOccurs="0" name="values" type="xs:string"/>
+      		</xs:sequence>
+      	</xs:complexType>
+
+
+        <xs:complexType name="foldersType">
+      		<xs:sequence>
+      			<xs:element name="folderAodocsId" type="xs:string"/>
+      		</xs:sequence>
+      	</xs:complexType>
+      		
+
+		<xs:complexType name="valuesType">
+			<xs:sequence >      							
+				<xs:element  minOccurs="1" name="name" type="xs:string"/>
+				<xs:element  minOccurs="0" name="shortName" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType> 
+	
+
+		<xs:complexType name="categoriesType">
+      		<xs:sequence>
+      			<xs:element name="fieldName" type="xs:string"/>
+            	<xs:element name="values"   type="tns:valuesType"  maxOccurs="unbounded" minOccurs="0"  />
+      		</xs:sequence>
+      	</xs:complexType>
+
+		<xs:complexType name="attachmentsType">
+			<xs:sequence>
+				<xs:element name="fileId" type="xs:string" minOccurs="0" />
+			</xs:sequence>
+		</xs:complexType>
+
+
+		<xs:element name="InputJsonTrasform">
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element name="jsonstring" type="xs:string"/>
+				</xs:sequence>
+			</xs:complexType>
+		</xs:element>
+    
+    	<xs:element name="categories" type="tns:categoriesType"/>
+
+		<xs:element name="Input">
+			<xs:complexType>
+			<xs:sequence>
+				<xs:element name="libraryId" 	type="xs:string"/>
+				<xs:element name="title"  	 	type="xs:string" 			minOccurs="0"    />
+				<xs:element name="classId"   	type="xs:string"/>
+				<xs:element name="fields" 	 	type="tns:fieldsType"		minOccurs="0" maxOccurs="unbounded"  />
+				<xs:element name="folders"		type="tns:foldersType" 		minOccurs="0" maxOccurs="unbounded" />
+				<xs:element name="richText"		type="xs:string" 			minOccurs="0" maxOccurs="1" />
+				<xs:element name="attachments"	type="tns:attachmentsType" 	minOccurs="0" maxOccurs="unbounded" />
+				<xs:element name="categories" 	type="tns:categoriesType" 	minOccurs="0" maxOccurs="unbounded" />
+
+			</xs:sequence>
+			</xs:complexType>
+		</xs:element> 
+
+
+	    <xs:element name="AODocs_Output">
+	    <xs:complexType>
+	      <xs:sequence>
+	        <xs:element name="kind" type="xs:string"/>
+	        <xs:element name="domainName" type="xs:string"/>
+	        <xs:element name="libraryName" type="xs:string"/>
+	        <xs:element name="className" type="xs:string"/>
+	        <xs:element name="className_i18n" type="xs:string"/>
+	        <xs:element name="libraryId" type="xs:string"/>
+	        <xs:element name="classId" type="xs:string"/>
+	        <xs:element name="id" type="xs:string"/>
+	        <xs:element name="title" type="xs:string"/>
+	      </xs:sequence>
+	    </xs:complexType>
+	  </xs:element>
+		
+
+
+		<xs:element name="Output">
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element maxOccurs="1" minOccurs="0" name="id" type="xs:string"/>
+					<xs:element maxOccurs="1" minOccurs="0" name="title" type="xs:string"/>
+				</xs:sequence>
+			</xs:complexType>
+		</xs:element>
+
+</xs:schema>

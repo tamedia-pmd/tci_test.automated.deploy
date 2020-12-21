@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:tns="http://ch/txg/core/common/lehf/sftp/configuration" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://ch/txg/core/common/lehf/sftp/configuration">
+
+
+<xsd:element name="Input_GetLEHF_SFTPConfig">
+	<xsd:complexType>
+		<xsd:sequence>
+			<xsd:element minOccurs="0" name="TransferName" type="xsd:string"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:element>
+<xsd:element name="Output_GetLEHF_SFTPConfig" type="tns:Output_GetLEHF_SFTPConfigType"/>
+
+  <xsd:complexType name="resultLEHFSFTPConfigType">
+    <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Result">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="0" name="Action" type="xsd:string"/>
+            <xsd:element maxOccurs="1" minOccurs="0" name="FileNameSeparator" type="xsd:string"/>
+            <xsd:element maxOccurs="1" minOccurs="0" name="FolderPath" type="xsd:string"/>
+            <xsd:element maxOccurs="1" minOccurs="0" name="TokenKey" type="xsd:string"/>
+            <xsd:element maxOccurs="1" minOccurs="0" name="TokenNumber" type="xsd:string"/>
+            <xsd:element maxOccurs="1" minOccurs="0" name="SuccessFolderPath" type="xsd:string"/>
+            <xsd:element maxOccurs="1" minOccurs="0" name="TargetSystem" type="xsd:string"/>
+            <xsd:element maxOccurs="1" minOccurs="0" name="TransferName" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  
+  <xsd:complexType name="Output_GetLEHF_SFTPConfigType">
+    <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Result">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="0" name="Action" type="xsd:string"/>
+            <xsd:element maxOccurs="1" minOccurs="0" name="FileNameSeparator" type="xsd:string"/>
+            <xsd:element maxOccurs="1" minOccurs="0" name="FolderPath" type="xsd:string"/>
+            <xsd:element maxOccurs="1" minOccurs="0" name="SuccessFolderPath" type="xsd:string"/>
+            <xsd:element maxOccurs="1" minOccurs="0" name="TargetSystem" type="xsd:string"/>
+            <xsd:element maxOccurs="1" minOccurs="0" name="TransferName" type="xsd:string"/>
+            <xsd:element maxOccurs="1" minOccurs="0" name="keyValueList">
+            	<xsd:complexType>
+            		<xsd:sequence>
+            			<xsd:element maxOccurs="unbounded" minOccurs="1" name="keyValue" type="tns:keyValueType"/>
+            		</xsd:sequence>
+            	</xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  
+  <xsd:complexType name="keyValueType">
+  	<xsd:sequence>
+  		<xsd:element maxOccurs="1" minOccurs="0" name="TokenKey" type="xsd:string"/>
+        <xsd:element maxOccurs="1" minOccurs="0" name="TokenNumber" type="xsd:string"/>
+  	</xsd:sequence>
+  </xsd:complexType>
+
+<xsd:complexType name="LEHF_SFTPConfigurationVariable_type">
+	<xsd:sequence>
+    	<xsd:element name="lastupdate" type="xsd:long"/>
+    	<xsd:element name="fullResultFlag" type="xsd:boolean"/>
+		<xsd:element minOccurs="0" ref="tns:Output_GetLEHF_SFTPConfig"/>
+	</xsd:sequence>
+</xsd:complexType>
+
+<xsd:element name="LEHF_SFTPConfigurations" type="tns:resultLEHFSFTPConfigType"/>
+
+<xsd:element name="LEHF_SFTPConfigurationsVariable" type="tns:LEHF_SFTPConfigurationVariable_type"/>
+
+</xsd:schema>

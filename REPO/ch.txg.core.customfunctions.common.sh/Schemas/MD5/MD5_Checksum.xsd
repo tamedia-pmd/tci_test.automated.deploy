@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://ch/txg/core/customfunction/common/MD5_Checksum/0100"
+	elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://ch/txg/core/customfunction/common/MD5_Checksum/0100">
+	
+	<element name="inputString" type="string"/>
+	
+	<element name="outputString_MD5Checksum" type="string"/>
+	
+</schema>

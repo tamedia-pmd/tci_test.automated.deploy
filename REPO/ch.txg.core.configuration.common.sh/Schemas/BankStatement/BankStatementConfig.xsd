@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://ch/txg/core/common/bankstatement/configuration" elementFormDefault="qualified" targetNamespace="http://ch/txg/core/common/bankstatement/configuration">
+	
+	<element name="bankStatementConfigList" type="tns:bankStatementConfigListType"/>
+	<element name="bankStatementConfig" type="tns:bankStatementConfigType"/>
+	<element name="bankStatementConfigService" type="tns:bankStatementConfigServiceType"/>
+
+	<element name="bankStatementDocTypeConfigList" type="tns:bankStatementDocTypeConfigListType"/>
+	<element name="bankStatementFilePollerConfigList" type="tns:bankStatementFilePollerConfigListType"/>
+	<element name="bankStatementDocTypeConfig" type="tns:bankStatementDocTypeConfigType"/>
+	<element name="bankStatementConfigVariable">
+		<complexType>
+			<sequence>
+				<element name="lastupdate" type="long"/>
+				<element ref="tns:bankStatementConfigList"/>
+			</sequence>
+		</complexType>
+	</element>
+	<element name="bankStatementDocTypeConfigVariable">
+		<complexType>
+			<sequence>
+				<element name="lastupdate" type="long"/>
+				<element ref="tns:bankStatementDocTypeConfigList"/>
+			</sequence>
+		</complexType>
+	</element>
+	<element name="bankStatementFilePollerConfigVariable">
+		<complexType>
+			<sequence>
+				<element name="lastupdate" type="long"/>
+				<element ref="tns:bankStatementFilePollerConfigList"/>
+			</sequence>
+		</complexType>
+	</element>
+	<element name="bankStatementConfigServiceResponse">
+		<complexType>
+			<sequence>
+				<element maxOccurs="unbounded" minOccurs="0" name="Result" type="tns:bankStatementConfigServiceType"/>
+			</sequence>
+		</complexType>
+	</element>
+	<element name="bankStatementDocTypeConfigServiceResponse">
+		<complexType>
+			<sequence>
+				<element maxOccurs="unbounded" minOccurs="0" name="Result" type="tns:bankStatementDocTypeConfigType"/>
+			</sequence>
+		</complexType>
+	</element>
+	<element name="bankStatementFilePollerConfigServiceResponse">
+		<complexType>
+			<sequence>
+				<element maxOccurs="unbounded" minOccurs="0" name="Result" type="tns:bankStatementFilePollerConfigServiceType"/>
+			</sequence>
+		</complexType>
+	</element>
+	<element name="getBSFilePollerConfiguration_Start">
+		<complexType>
+			<sequence>
+				<element name="transferName" minOccurs="1" maxOccurs="1" type="string"/>
+			</sequence>
+		</complexType>
+	</element>
+	<element name="getBSFilePollerConfiguration_End">
+		<complexType>
+			<sequence>
+				<element name="result" minOccurs="1" maxOccurs="1" type="tns:bankStatementFilePollerConfigListType"/>
+			</sequence>
+		</complexType>
+	</element>
+
+
+
+	<element name="getBS_CSVConfiguration_Start">
+		<complexType>
+			<sequence>
+				<element name="forceUpdate" minOccurs="0" maxOccurs="1" type="boolean"/>
+				<element name="skipCheckTTL" type="boolean" minOccurs="0"/>
+			</sequence>
+		</complexType>
+	</element>
+
+	<element name="getBS_DocTypeConfiguration_Start">
+		<complexType>
+			<sequence>
+				<element name="forceUpdate" minOccurs="0" maxOccurs="1" type="boolean"/>
+				<element name="skipCheckTTL" type="boolean" minOccurs="0"/>
+			</sequence>
+		</complexType>
+	</element>
+
+	
+	
+	<complexType name="bankStatementConfigListType">
+		<sequence>
+			<element maxOccurs="1" minOccurs="0" name="bankStatementConfigList">
+				<complexType>
+					<sequence>
+						<element maxOccurs="unbounded" minOccurs="1" name="bankStatementConfig" type="tns:bankStatementConfigType"/>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+	<complexType name="bankStatementDocTypeConfigListType">
+		<sequence>
+			<element maxOccurs="1" minOccurs="0" name="bankStatementDocTypeConfigList">
+				<complexType>
+					<sequence>
+						<element maxOccurs="unbounded" minOccurs="1" name="bankStatementDocTypeConfig" type="tns:bankStatementDocTypeConfigType"/>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+	<complexType name="bankStatementFilePollerConfigListType">
+		<sequence>
+			<element maxOccurs="1" minOccurs="0" name="bankStatementFilePollerConfigList">
+				<complexType>
+					<sequence>
+						<element maxOccurs="unbounded" minOccurs="1" name="bankStatementFilePollerConfig" type="tns:bankStatementFilePollerConfigType"/>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+	<complexType name="bankStatementConfigType">
+		<all>
+			<element maxOccurs="1" minOccurs="1" name="Bank" type="string"/>
+			<element maxOccurs="1" minOccurs="1" name="TokenSeparator" type="string"/>
+			<element maxOccurs="1" minOccurs="1" name="CSVFormat" type="string"/>
+			<element maxOccurs="1" minOccurs="0" name="KeyValueSeparator" type="string"/>
+			<element maxOccurs="1" minOccurs="0" name="Amount" type="tns:amountType"/>
+			<element maxOccurs="1" minOccurs="0" name="EndBalance" type="tns:endBalanceType"/>
+			<element maxOccurs="1" minOccurs="0" name="Currency" type="tns:currencyType"/>
+			<element maxOccurs="1" minOccurs="0" name="BankField" type="tns:bankType"/>
+			<element maxOccurs="1" minOccurs="0" name="AccountNumber" type="tns:amountType"/>
+			<element maxOccurs="1" minOccurs="0" name="IBAN" type="tns:ibanType"/>
+			<element maxOccurs="1" minOccurs="0" name="ValueDate" type="tns:valueDateType"/>
+			<element maxOccurs="1" minOccurs="0" name="StatementDate" type="tns:statementDateType"/>
+			<element maxOccurs="1" minOccurs="0" name="StatementEndDate" type="tns:statementEndDateType"/>
+			<element maxOccurs="1" minOccurs="0" name="StatementCreationDate" type="tns:statementCreationDateType"/>
+			<element maxOccurs="1" minOccurs="0" name="DocumentType" type="tns:documentTypeType"/>
+		</all>
+	</complexType>
+	<complexType name="bankStatementConfigServiceType">
+		<all>
+			<element maxOccurs="1" minOccurs="1" name="Bank" type="string"/>
+			<element maxOccurs="1" minOccurs="1" name="TokenSeparator" type="string"/>
+			<element maxOccurs="1" minOccurs="1" name="CSVFormat" type="string"/>
+			<element maxOccurs="1" minOccurs="0" name="KeyValueSeparator" type="string"/>
+			<element maxOccurs="1" minOccurs="0" name="Amount" type="string"/>
+			<element maxOccurs="1" minOccurs="0" name="AmountAdditionalMapping" type="string"/>
+			<element maxOccurs="1" minOccurs="0" name="EndBalance" type="string"/>
+			<element maxOccurs="1" minOccurs="0" name="EndBalanceAdditionalMapping" type="string"/>
+			<element maxOccurs="1" minOccurs="0" name="Currency" type="string"/>
+			<element maxOccurs="1" minOccurs="0" name="CurrencyAdditionalMapping" type="string"/>
+			<element maxOccurs="1" minOccurs="0" name="BankField" type="string"/>
+			<element maxOccurs="1" minOccurs="0" name="BankFieldAdditionalMapping" type="string"/>
+			<element maxOccurs="1" minOccurs="0" name="AccountNumber" type="string"/>
+			<element maxOccurs="1" minOccurs="0" name="AccountNumberAdditionalMapping" type="string"/>
+			<element maxOccurs="1" minOccurs="0" name="IBAN" type="string"/>
+			<element maxOccurs="1" minOccurs="0" name="IBANAdditionalMapping" type="string"/>
+			<element maxOccurs="1" minOccurs="0" name="ValueDate" type="string"/>
+			<element maxOccurs="1" minOccurs="0" name="ValueDateAdditionalMapping" type="string"/>
+			<element maxOccurs="1" minOccurs="0" name="ValueDateFormat" type="string"/>
+			<element maxOccurs="1" minOccurs="0" name="StatementDate" type="string"/>
+			<element maxOccurs="1" minOccurs="0" name="StatementDateAdditionalMapping" type="string"/>
+			<element maxOccurs="1" minOccurs="0" name="StatementDateFormat" type="string"/>
+			<element maxOccurs="1" minOccurs="0" name="StatementEndDate" type="string"/>
+			<element maxOccurs="1" minOccurs="0" name="StatementEndDateAdditionalMapping" type="string"/>
+			<element maxOccurs="1" minOccurs="0" name="StatementEndDateFormat" type="string"/>
+			<element maxOccurs="1" minOccurs="0" name="StatementCreationDate" type="string"/>
+			<element maxOccurs="1" minOccurs="0" name="StatementCreationDateAdditionalMapping" type="string"/>
+			<element maxOccurs="1" minOccurs="0" name="StatementCreationDateFormat" type="string"/>
+			<element maxOccurs="1" minOccurs="0" name="DocumentType" type="string"/>
+			<element maxOccurs="1" minOccurs="0" name="DocumentTypeAdditionalMapping" type="string"/>
+		</all>
+	</complexType>
+
+	<complexType name="bankStatementDocTypeConfigType">
+		<all>
+			<element maxOccurs="1" minOccurs="0" name="CRSDocType" type="string"/>
+			<element maxOccurs="1" minOccurs="0" name="UBSDocType" type="string"/>
+			<element maxOccurs="1" minOccurs="0" name="PFIDocType" type="string"/>
+			<element maxOccurs="1" minOccurs="0" name="ZKBDocType" type="string"/>
+			<element maxOccurs="1" minOccurs="0" name="LKBDocType" type="string"/>
+			<element maxOccurs="1" minOccurs="0" name="AoDocsDocType" type="string"/>
+		</all>
+	</complexType>
+	<complexType name="bankStatementFilePollerConfigServiceType">
+		<all>
+			<element maxOccurs="1" minOccurs="1" name="TransferName" type="string"/>
+			<element maxOccurs="1" minOccurs="1" name="FolderPath" type="string"/>
+			<element maxOccurs="1" minOccurs="1" name="Bank" type="string"/>
+			<element maxOccurs="1" minOccurs="1" name="MaxNumberOfFileToProcess" type="positiveInteger"/>
+			<element maxOccurs="1" minOccurs="1" name="AdditionalFile" type="boolean"/>
+			<element maxOccurs="1" minOccurs="0" name="AdditionalFileExtension" type="string"/>
+			<element maxOccurs="1" minOccurs="0" name="AdditionalFileTokenNumber" type="string"/>
+			<element maxOccurs="1" minOccurs="0" name="AdditionalFileTokenSeparator" type="string"/>
+			<element maxOccurs="1" minOccurs="0" name="BinaryFileNameTokenNumber" type="string"/>
+			<element maxOccurs="1" minOccurs="0" name="BinaryFileNameTokenSeparator" type="string"/>
+		</all>
+	</complexType>
+	<complexType name="bankStatementFilePollerConfigType">
+		<all>
+			<element maxOccurs="1" minOccurs="1" name="TransferName" type="string"/>
+			<element maxOccurs="1" minOccurs="1" name="FolderPath" type="string"/>
+			<element maxOccurs="1" minOccurs="1" name="Bank" type="string"/>
+			<element maxOccurs="1" minOccurs="1" name="MaxNumberOfFileToProcess" type="positiveInteger"/>
+			<element maxOccurs="1" minOccurs="1" name="AdditionalFile" type="boolean"/>
+			<element maxOccurs="1" minOccurs="0" name="AdditionalFileDetails" type="tns:additionalFileDetails"/>
+		</all>
+	</complexType>
+	<complexType name="additionalFileDetails">
+		<sequence>
+			<element name="BinaryFile" minOccurs="1" maxOccurs="1">
+				<complexType>
+					<sequence>
+						<element name="tokenDetails" type="tns:tokenDetailsType" minOccurs="1" maxOccurs="1"/>
+					</sequence>
+				</complexType>
+			</element>
+			<element name="AdditionalFile" minOccurs="1" maxOccurs="1">
+				<complexType>
+					<sequence>
+						<element name="fileExtension" type="string" minOccurs="1" maxOccurs="1"/>
+						<element name="tokenDetails" type="tns:tokenDetailsType" minOccurs="1" maxOccurs="1"/>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+	<complexType name="tokenDetailsType">
+		<sequence>
+			<element name="tokenSeparator" type="string" minOccurs="1" maxOccurs="1"/>
+			<element name="tokenList" minOccurs="1" maxOccurs="unbounded">
+				<complexType>
+					<sequence>
+						<element name="correlationId" type="int" minOccurs="1" maxOccurs="1"/>
+						<element name="tokenNumber" type="string" minOccurs="1" maxOccurs="1"/>
+						<element name="additionalExtractingRule" type="string" minOccurs="0" maxOccurs="1"/>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+
+	<complexType name="amountType">
+		<simpleContent>
+			<extension base="string">
+				<attribute name="additionalMapping" type="string" use="optional"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="currencyType">
+		<simpleContent>
+			<extension base="string">
+				<attribute name="additionalMapping" type="string" use="optional"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="bankType">
+		<simpleContent>
+			<extension base="string">
+				<attribute name="additionalMapping" type="string" use="optional"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="endBalanceType">
+		<simpleContent>
+			<extension base="string">
+				<attribute name="additionalMapping" type="string" use="optional"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="ibanType">
+		<simpleContent>
+			<extension base="string">
+				<attribute name="additionalMapping" type="string" use="optional"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="valueDateType">
+		<simpleContent>
+			<extension base="string">
+				<attribute name="additionalMapping" type="string" use="optional"/>
+				<attribute name="dateFormat" type="string" use="optional"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="statementDateType">
+		<simpleContent>
+			<extension base="string">
+				<attribute name="additionalMapping" type="string" use="optional"/>
+				<attribute name="dateFormat" type="string" use="optional"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="statementCreationDateType">
+		<simpleContent>
+			<extension base="string">
+				<attribute name="additionalMapping" type="string" use="optional"/>
+				<attribute name="dateFormat" type="string" use="optional"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="statementEndDateType">
+		<simpleContent>
+			<extension base="string">
+				<attribute name="additionalMapping" type="string" use="optional"/>
+				<attribute name="dateFormat" type="string" use="optional"/>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<complexType name="documentTypeType">
+		<simpleContent>
+			<extension base="string">
+				<attribute name="additionalMapping" type="string" use="optional"/>
+			</extension>
+		</simpleContent>
+	</complexType>									  
+</schema>

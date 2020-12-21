@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:property="http://ns.tibco.com/bw/property" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_9GrOIJBdEeqaTpdMx66qRg" targetNamespace="http://tns.tibco.com/bw/composite/ch.txg.b2c.workday.sl.sh" name="ch.txg.b2c.workday.sl.sh" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:property xmi:id="_9L5sYJBdEeqaTpdMx66qRg" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_9MUjIJBdEeqaTpdMx66qRg" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_9MW_YJBdEeqaTpdMx66qRg" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_9MY0kJBdEeqaTpdMx66qRg" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_9MbQ0JBdEeqaTpdMx66qRg" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_9MeUIJBdEeqaTpdMx66qRg" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_E5yvsJBfEeqaTpdMx66qRg" name="/ch.txg.b2c.workday.sl.sh/Connections/HTTP/Client/HOST" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_OEVzsJBfEeqaTpdMx66qRg" name="/ch.txg.b2c.workday.sl.sh/Connections/HTTP/Client/PORT" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_OH8hUJBfEeqaTpdMx66qRg" name="/ch.txg.b2c.workday.sl.sh/Connections/HTTP/Client/DISABLE_CONNECTION_POOLING" type="XMLSchema:boolean" scaext:simpleValue="false" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_OIqTAJBfEeqaTpdMx66qRg" name="/ch.txg.b2c.workday.sl.sh/Connections/HTTP/Client/MAX_TOTAL_CONNECTIONS" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_OKHEgJBfEeqaTpdMx66qRg" name="/ch.txg.b2c.workday.sl.sh/Connections/HTTP/Client/IDLE_CONNECTION_TIMEOUT_ms" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_OLmSQJBfEeqaTpdMx66qRg" name="/ch.txg.b2c.workday.sl.sh/Connections/HTTP/Client/MAX_CONNECTION_PER_HOST" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_OM8WEJBfEeqaTpdMx66qRg" name="/ch.txg.b2c.workday.sl.sh/Connections/HTTP/Client/STALE_CHECK" type="XMLSchema:boolean" scaext:simpleValue="false" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_OOToAJBfEeqaTpdMx66qRg" name="/ch.txg.b2c.workday.sl.sh/Connections/HTTP/Client/SOCKET_TIMEOUT_ms" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_OP8mwJBfEeqaTpdMx66qRg" name="/ch.txg.b2c.workday.sl.sh/Connections/HTTP/Client/CONNECTION_TIMEOUT_ms" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_ORllgJBfEeqaTpdMx66qRg" name="/ch.txg.b2c.workday.sl.sh/Connections/HTTP/Client/ACCEPT_REDIRECT" type="XMLSchema:boolean" scaext:simpleValue="false" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_QH18gJBfEeqaTpdMx66qRg" name="/ch.txg.b2c.workday.sl.sh/Connections/HTTP/Client/RETRY_COUNT" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_QR6egJBfEeqaTpdMx66qRg" name="/ch.txg.b2c.workday.sl.sh/Connections/HTTP/Client/USE_SINGLE_COOKIE_HEADER" type="XMLSchema:boolean" scaext:simpleValue="false" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_QXosAJBfEeqaTpdMx66qRg" name="/ch.txg.b2c.workday.sl.sh/Connections/HTTP/Client/USE_NONPREEMPTIVE_AUTHENTICATION" type="XMLSchema:boolean" scaext:simpleValue="false" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_QcIxgJBfEeqaTpdMx66qRg" name="/ch.txg.b2c.workday.sl.sh/Connections/HTTP/Client/LOG_REQUEST_RESPONSE_TIME" type="XMLSchema:boolean" scaext:simpleValue="false" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_L75eQJEUEeq3PrzmFlXR9w" name="/ch.txg.b2c.workday.sl.sh/Connections/HTTP/Client/BasicAuthentication/Username" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_OjHYIJEUEeq3PrzmFlXR9w" name="/ch.txg.b2c.workday.sl.sh/Connections/HTTP/Client/BasicAuthentication/Password" type="property:password" scaext:simpleValue="#!FaQslfpA8SwUzKE6Uz+Rmw==" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_VRcSoAdHEeuRJPukuRrWkA" name="/ch.txg.b2c.workday.sl.sh/Connections/HTTP/Client/NotifyErrorWorkday/HOST" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_b17TUAdHEeuRJPukuRrWkA" name="/ch.txg.b2c.workday.sl.sh/Connections/HTTP/Client/NotifyErrorWorkday/PORT" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_aUAPcJEYEeq3PrzmFlXR9w" name="/ch.txg.b2c.workday.sl.sh/Connections/HTTP/Operations/GetToken/URI" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_dGTX8JEYEeq3PrzmFlXR9w" name="/ch.txg.b2c.workday.sl.sh/Connections/HTTP/Operations/GetToken/Refresh_Token" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_ijFwwJEYEeq3PrzmFlXR9w" name="/ch.txg.b2c.workday.sl.sh/Connections/HTTP/Operations/validateWorktags/URI" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_HhLyIAcjEeuRJPukuRrWkA" name="/ch.txg.b2c.workday.sl.sh/Connections/HTTP/Operations/processingMessages/URI" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_ibkqEAclEeuRJPukuRrWkA" name="/ch.txg.b2c.workday.sl.sh/Connections/HTTP/Operations/processingMessages/username" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_kNpEoAclEeuRJPukuRrWkA" name="/ch.txg.b2c.workday.sl.sh/Connections/HTTP/Operations/processingMessages/password" type="property:password" scaext:simpleValue="#!4EWQN7zNI1V5P5XEqHoyWg==" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_0X-MsCKZEeu00ZiivFtlrA" name="/ch.txg.b2c.workday.sl.sh/Connections/HTTP/Operations/getBankAccountList/URI" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_eUBX4CKaEeu00ZiivFtlrA" name="/ch.txg.b2c.workday.sl.sh/Connections/HTTP/Operations/getBankAccountList/HOST" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_hLoPgCRNEeu1nsEfsoLMmQ" name="/ch.txg.b2c.workday.sl.sh/Connections/HTTP/Operations/getBankAccountList/username" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_hO93YCRNEeu1nsEfsoLMmQ" name="/ch.txg.b2c.workday.sl.sh/Connections/HTTP/Operations/getBankAccountList/password" type="property:password" scaext:simpleValue="#!6V11DJ7sV4+jRlGIEU5AlA==" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_wD32ICRNEeu1nsEfsoLMmQ" name="/ch.txg.b2c.workday.sl.sh/Connections/HTTP/Operations/getBankAccountList/PORT" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_Svr5gJXmEeq4SrfvJWVQ6Q" name="/ch.txg.b2c.workday.sl.sh/Connections/HTTP/RetryhManagement/MaxRetry" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_Y7hJoJXmEeq4SrfvJWVQ6Q" name="/ch.txg.b2c.workday.sl.sh/Connections/HTTP/RetryhManagement/baseRetryDelay_s" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_WsovwCKaEeu00ZiivFtlrA" name="/ch.txg.b2c.workday.sl.sh/Connections/HTTP/RetryhManagement/statusCodesToSkip" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_4kIHACM8EeuXjLR8wTGanA" name="/ch.txg.b2c.workday.sl.sh/Parameters/TTL_sec" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+</sca:composite>

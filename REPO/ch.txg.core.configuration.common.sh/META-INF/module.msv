@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<msv:DocumentRoot xmlns:msv="http://tns.tibco.com/bw/model/core/moduleSV">
+  <moduleSharedVariables>
+    <moduleSharedVariable name="GoogleGroupIDVariable" type="{http://ch/txg/b2c/configuration/AODocsGetGoogleID}GoogleGroupIDVariable" initialValueMode="none"/>
+    <moduleSharedVariable name="LibraryVariable" type="{http://ch/txg/b2c/configuration/AODocsGetLibrary}LibraryVariable" initialValueMode="none"/>
+    <moduleSharedVariable name="AuthorizationConfig" type="{http://ch/txg/b2c/swissbilling/bsl/authorizationManager}AuthConfigVariable" initialValueMode="none" initialValue=""/>
+    <moduleSharedVariable name="AoDocsMappingTableVariable" type="{http://ch/txg/b2c/configuration/AODocsMappingTable}aodocsMappingTableVariable" initialValueMode="none"/>
+    <moduleSharedVariable name="LEHF_SFTPConfigurations" type="{http://ch/txg/core/common/lehf/sftp/configuration}LEHF_SFTPConfigurationsVariable" initialValueMode="none"/>
+    <moduleSharedVariable name="BankStatementConfigVariable" type="{http://ch/txg/core/common/bankstatement/configuration}bankStatementConfigVariable" initialValueMode="none"/>
+    <moduleSharedVariable name="BankStatementDocTypeConfigVariable" type="{http://ch/txg/core/common/bankstatement/configuration}bankStatementDocTypeConfigVariable" initialValueMode="none"/>
+    <moduleSharedVariable name="BankStatementFilePollerVariable" type="{http://ch/txg/core/common/bankstatement/configuration}bankStatementFilePollerConfigVariable" initialValueMode="none"/>
+  </moduleSharedVariables>
+  <import importType="http://www.w3.org/2001/XMLSchema" namespace="http://ch/txg/b2c/configuration/AODocsGetGoogleID" location="../Schemas/AODocsConfiguration/AODocsGetGoogleID.xsd"/>
+  <import importType="http://www.w3.org/2001/XMLSchema" namespace="http://ch/txg/b2c/configuration/AODocsGetLibrary" location="../Schemas/AODocsConfiguration/AODocsGetLibrary.xsd"/>
+  <import importType="http://www.w3.org/2001/XMLSchema" namespace="http://ch/txg/b2c/swissbilling/bsl/authorizationManager" location="../Schemas/AuthConfiguration/AuthorizationManager_schema.xsd"/>
+  <import importType="http://www.w3.org/2001/XMLSchema" namespace="http://ch/txg/b2c/configuration/AODocsMappingTable" location="../Schemas/AODocsConfiguration/AoDocsMappingTable.xsd"/>
+  <import importType="http://www.w3.org/2001/XMLSchema" namespace="http://ch/txg/core/common/lehf/sftp/configuration" location="../Schemas/LEHFConfiguration/LEHFConfig.xsd"/>
+  <import importType="http://www.w3.org/2001/XMLSchema" namespace="http://ch/txg/core/common/bankstatement/configuration" location="../Schemas/BankStatement/BankStatementConfig.xsd"/>
+</msv:DocumentRoot>

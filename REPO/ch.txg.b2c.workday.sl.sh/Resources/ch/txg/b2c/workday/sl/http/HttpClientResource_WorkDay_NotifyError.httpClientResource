@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:http="http://xsd.tns.tibco.com/bw/models/sharedresource/httpclient" xmlns:id="http://www.tibco.com/ws/2013/11/identity" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmlns:sca_ext="http://www.tibco.com/ns/sca/201311" xmlns:subject="http://xsd.tns.tibco.com/bw/sharedresource/trinity/models/identity/subject" xmi:id="_q05NAQdHEeuRJPukuRrWkA" name="ch.txg.b2c.workday.sl.http.HttpClientResource_WorkDay_NotifyError" type="http:HttpClientConfiguration">
+  <identitySet xmi:id="_CIRM4AdIEeuRJPukuRrWkA" appliesTo="namedResource" name="HttpClientIdentitySet" provides="confidentiality">
+    <sca_ext:intentMap xmi:id="_CIRM4QdIEeuRJPukuRrWkA" provides="sca_ext:confidentiality">
+      <sca_ext:qualifier xmi:id="_CIRM4gdIEeuRJPukuRrWkA" name="transport">
+        <id:IdentityReference xmi:id="_CIRM4wdIEeuRJPukuRrWkA" URI="ch.txg.b2c.workday.sl.security.IdentityProvider_WorkdayNotifyError" type="subject:SubjectConfiguration"/>
+      </sca_ext:qualifier>
+    </sca_ext:intentMap>
+  </identitySet>
+  <jndi:configuration xsi:type="http:HttpClientConfiguration" xmi:id="_q050EAdHEeuRJPukuRrWkA" httpClientVersion="httpcomponents" retryCount="3" idleConnectionTimeout="3000" useDefaultSSL="true" cmdExecutionIsolationStrategy="THREAD" cmdExecutionIsolationTimeout="1000" cmdExecutionTimeoutEnabled="true" cmdExecutionIsolationInterruptOnTimeout="true" cmdExecutionIsolationSemaphoreMaxConcRequests="8" cmdCircuitBreakerRequestVolumeThreshold="20" cmdCircuitBreakerSleepWindow="5000" cmdCircuitBreakerErrorThresholdPercentage="50" cmdMetricsRollingStatsTime="10000" cmdMetricsRollingStatsNumBuckets="10" cmdMetricsHealthSnapshotInterval="500" cmdRequestLogEnabled="true" tpCoreSize="10" tpMaxQueueSize="-1" tpQueueSizeRejectionThreshold="5" tpKeepAliveTime="1">
+    <tcpDetails xmi:id="_q050EQdHEeuRJPukuRrWkA">
+      <substitutionBindings xmi:id="_wBo-sAdHEeuRJPukuRrWkA" template="host" propName="/ch.txg.b2c.workday.sl.sh/Connections/HTTP/Client/NotifyErrorWorkday/HOST"/>
+      <substitutionBindings xmi:id="_yxJR4AdHEeuRJPukuRrWkA" template="port" propName="/ch.txg.b2c.workday.sl.sh/Connections/HTTP/Client/NotifyErrorWorkday/PORT"/>
+    </tcpDetails>
+  </jndi:configuration>
+</jndi:namedResource>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:http="http://xsd.tns.tibco.com/bw/models/sharedresource/httpclient" xmlns:id="http://www.tibco.com/ws/2013/11/identity" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmlns:sca_ext="http://www.tibco.com/ns/sca/201311" xmlns:sslclient="http://xsd.tns.tibco.com/bw/sharedresource/trinity/models/sslclient" xmlns:subject="http://xsd.tns.tibco.com/bw/sharedresource/trinity/models/identity/subject" xmi:id="_E2NFoZBeEeqaTpdMx66qRg" name="ch.txg.b2c.workday.sl.http.HttpClientResource_WorkDay_callService" type="http:HttpClientConfiguration">
+  <identitySet xmi:id="_V619MJEgEeq3PrzmFlXR9w" appliesTo="namedResource" name="HttpClientIdentitySet" provides="confidentiality">
+    <sca_ext:intentMap xmi:id="_V619MZEgEeq3PrzmFlXR9w" provides="sca_ext:confidentiality">
+      <sca_ext:qualifier xmi:id="_V619MpEgEeq3PrzmFlXR9w" name="transport">
+        <id:IdentityReference xmi:id="_V62kQJEgEeq3PrzmFlXR9w" URI="" type="subject:SubjectConfiguration"/>
+        <id:IdentityReference xmi:id="_6i8SYJNYEeqI_I3YirSzEQ" URI="" type="sslclient:SSLClientConfiguration"/>
+      </sca_ext:qualifier>
+    </sca_ext:intentMap>
+  </identitySet>
+  <jndi:configuration xsi:type="http:HttpClientConfiguration" xmi:id="_E2NssJBeEeqaTpdMx66qRg" httpClientVersion="httpcomponents" useDefaultSSL="true" cmdExecutionIsolationStrategy="THREAD" cmdExecutionIsolationTimeout="1000" cmdExecutionTimeoutEnabled="true" cmdExecutionIsolationInterruptOnTimeout="true" cmdExecutionIsolationSemaphoreMaxConcRequests="8" cmdCircuitBreakerRequestVolumeThreshold="20" cmdCircuitBreakerSleepWindow="5000" cmdCircuitBreakerErrorThresholdPercentage="50" cmdMetricsRollingStatsTime="10000" cmdMetricsRollingStatsNumBuckets="10" cmdMetricsHealthSnapshotInterval="500" cmdRequestLogEnabled="true" tpCoreSize="10" tpMaxQueueSize="-1" tpQueueSizeRejectionThreshold="5" tpKeepAliveTime="1">
+    <substitutionBindings xmi:id="_BiuQwJBgEeqaTpdMx66qRg" template="useSingleThreadConnectionManager" propName="/ch.txg.b2c.workday.sl.sh/Connections/HTTP/Client/DISABLE_CONNECTION_POOLING"/>
+    <substitutionBindings xmi:id="_C71_0JBgEeqaTpdMx66qRg" template="maxTotalConnections" propName="/ch.txg.b2c.workday.sl.sh/Connections/HTTP/Client/MAX_TOTAL_CONNECTIONS"/>
+    <substitutionBindings xmi:id="_EezAUJBgEeqaTpdMx66qRg" template="idleConnectionTimeout" propName="/ch.txg.b2c.workday.sl.sh/Connections/HTTP/Client/IDLE_CONNECTION_TIMEOUT_ms"/>
+    <substitutionBindings xmi:id="_J-bRwJBgEeqaTpdMx66qRg" template="maxTotalConnectionsPerHost" propName="/ch.txg.b2c.workday.sl.sh/Connections/HTTP/Client/MAX_CONNECTION_PER_HOST"/>
+    <substitutionBindings xmi:id="_SQ9vsJBgEeqaTpdMx66qRg" template="acceptRedirect" propName="/ch.txg.b2c.workday.sl.sh/Connections/HTTP/Client/ACCEPT_REDIRECT"/>
+    <substitutionBindings xmi:id="_UXU_QJBgEeqaTpdMx66qRg" template="retryCount" propName="/ch.txg.b2c.workday.sl.sh/Connections/HTTP/Client/RETRY_COUNT"/>
+    <substitutionBindings xmi:id="_XFz-wJBgEeqaTpdMx66qRg" template="useSingleCookieHeader" propName="/ch.txg.b2c.workday.sl.sh/Connections/HTTP/Client/USE_SINGLE_COOKIE_HEADER"/>
+    <substitutionBindings xmi:id="_aA4owJBgEeqaTpdMx66qRg" template="useNonPreemptiveAuth" propName="/ch.txg.b2c.workday.sl.sh/Connections/HTTP/Client/USE_NONPREEMPTIVE_AUTHENTICATION"/>
+    <substitutionBindings xmi:id="_b2EBsJBgEeqaTpdMx66qRg" template="logReqRespTime" propName="/ch.txg.b2c.workday.sl.sh/Connections/HTTP/Client/LOG_REQUEST_RESPONSE_TIME"/>
+    <tcpDetails xmi:id="_E2NssZBeEeqaTpdMx66qRg">
+      <substitutionBindings xmi:id="_9uWnQJBfEeqaTpdMx66qRg" template="host" propName="/ch.txg.b2c.workday.sl.sh/Connections/HTTP/Client/HOST"/>
+      <substitutionBindings xmi:id="__jFUQJBfEeqaTpdMx66qRg" template="port" propName="/ch.txg.b2c.workday.sl.sh/Connections/HTTP/Client/PORT"/>
+      <substitutionBindings xmi:id="_MVB8wJBgEeqaTpdMx66qRg" template="staleCheck" propName="/ch.txg.b2c.workday.sl.sh/Connections/HTTP/Client/STALE_CHECK"/>
+      <substitutionBindings xmi:id="_O0fo0JBgEeqaTpdMx66qRg" template="soTimeout" propName="/ch.txg.b2c.workday.sl.sh/Connections/HTTP/Client/SOCKET_TIMEOUT_ms"/>
+      <substitutionBindings xmi:id="_QVObwJBgEeqaTpdMx66qRg" template="connectionTimeout" propName="/ch.txg.b2c.workday.sl.sh/Connections/HTTP/Client/CONNECTION_TIMEOUT_ms"/>
+    </tcpDetails>
+  </jndi:configuration>
+</jndi:namedResource>

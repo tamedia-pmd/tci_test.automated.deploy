@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:property="http://ns.tibco.com/bw/property" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_9Gil8NjEEeq3QNm_x9fW0w" targetNamespace="http://tns.tibco.com/bw/composite/ch.txg.dms.int5151.bsl.sh" name="ch.txg.dms.int5151.bsl.sh" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:property xmi:id="_9OUB4NjEEeq3QNm_x9fW0w" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_9OdL0NjEEeq3QNm_x9fW0w" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_9OeZ8NjEEeq3QNm_x9fW0w" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_9OgPINjEEeq3QNm_x9fW0w" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_9OhdQNjEEeq3QNm_x9fW0w" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_9OirYNjEEeq3QNm_x9fW0w" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_95U4UNjFEeq3QNm_x9fW0w" name="/ch.txg.dms.int5151.bsl.sh/Connections/HTTP/Client/FileTransfer/MAX_CONNECTION_PER_HOST" type="XMLSchema:int" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_95X7oNjFEeq3QNm_x9fW0w" name="/ch.txg.dms.int5151.bsl.sh/Connections/HTTP/Client/FileTransfer/IDLE_CONNECTION_TIMEOUT_ms" type="XMLSchema:int" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_95epUNjFEeq3QNm_x9fW0w" name="/ch.txg.dms.int5151.bsl.sh/Connections/HTTP/Client/FileTransfer/CONNECTION_TIMEOUT_ms" type="XMLSchema:int" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_95f3cNjFEeq3QNm_x9fW0w" name="/ch.txg.dms.int5151.bsl.sh/Connections/HTTP/Client/FileTransfer/URI" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_95i6wNjFEeq3QNm_x9fW0w" name="/ch.txg.dms.int5151.bsl.sh/Connections/HTTP/Client/FileTransfer/DISABLE_CONNECTION_POOLING" type="XMLSchema:boolean" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_95jh0NjFEeq3QNm_x9fW0w" name="/ch.txg.dms.int5151.bsl.sh/Connections/HTTP/Client/FileTransfer/LOG_REQUEST_RESPONSE_TIME" type="XMLSchema:boolean" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_95kv8NjFEeq3QNm_x9fW0w" name="/ch.txg.dms.int5151.bsl.sh/Connections/HTTP/Client/FileTransfer/USE_NONPREEMPTIVE_AUTHENTICATION" type="XMLSchema:boolean" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_95l-ENjFEeq3QNm_x9fW0w" name="/ch.txg.dms.int5151.bsl.sh/Connections/HTTP/Client/FileTransfer/HOST" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_95nzQNjFEeq3QNm_x9fW0w" name="/ch.txg.dms.int5151.bsl.sh/Connections/HTTP/Client/FileTransfer/CONFIDENTIALITY" type="XMLSchema:boolean" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_95pBYNjFEeq3QNm_x9fW0w" name="/ch.txg.dms.int5151.bsl.sh/Connections/HTTP/Client/FileTransfer/RETRY_COUNT" type="XMLSchema:int" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_95pocNjFEeq3QNm_x9fW0w" name="/ch.txg.dms.int5151.bsl.sh/Connections/HTTP/Client/FileTransfer/ACCEPT_REDIRECT" type="XMLSchema:boolean" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_957VQNjFEeq3QNm_x9fW0w" name="/ch.txg.dms.int5151.bsl.sh/Connections/HTTP/Client/FileTransfer/SOCKET_TIMEOUT_ms" type="XMLSchema:int" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_9578UNjFEeq3QNm_x9fW0w" name="/ch.txg.dms.int5151.bsl.sh/Connections/HTTP/Client/FileTransfer/STALE_CHECK" type="XMLSchema:boolean" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_959xgNjFEeq3QNm_x9fW0w" name="/ch.txg.dms.int5151.bsl.sh/Connections/HTTP/Client/FileTransfer/MAX_TOTAL_CONNECTIONS" type="XMLSchema:int" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_95-YkNjFEeq3QNm_x9fW0w" name="/ch.txg.dms.int5151.bsl.sh/Connections/HTTP/Client/FileTransfer/DEFAULT_CONFIDENTIALITY" type="XMLSchema:boolean" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_96ANwNjFEeq3QNm_x9fW0w" name="/ch.txg.dms.int5151.bsl.sh/Connections/HTTP/Client/FileTransfer/USE_SINGLE_COOKIE_HEADER" type="XMLSchema:boolean" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_96A00NjFEeq3QNm_x9fW0w" name="/ch.txg.dms.int5151.bsl.sh/Connections/HTTP/Client/FileTransfer/PORT" type="XMLSchema:int" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_hs8B8A-2Eeu71_f5jnFFCw" name="/ch.txg.dms.int5151.bsl.sh/FileTransfer/RetryBaseDelaySFTP_s" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_0R0SYA-2Eeu71_f5jnFFCw" name="/ch.txg.dms.int5151.bsl.sh/FileTransfer/maxRetrySFTP" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_lLFewN1sEeq5Bdk-UjBT8A" name="/ch.txg.dms.int5151.bsl.sh/FileTransfer/INT5151_TCI/ErrorPath" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_mLvDcN1sEeq5Bdk-UjBT8A" name="/ch.txg.dms.int5151.bsl.sh/FileTransfer/INT5151_TCI/MaxNumberOfFilesPerPolling" type="XMLSchema:int" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_n42skN1sEeq5Bdk-UjBT8A" name="/ch.txg.dms.int5151.bsl.sh/FileTransfer/INT5151_TCI/SourcePath" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_o6SUYN1sEeq5Bdk-UjBT8A" name="/ch.txg.dms.int5151.bsl.sh/FileTransfer/INT5151_TCI/TargetPath" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_jk_PsP5SEeqcPcKOEf6I_Q" name="/ch.txg.dms.int5151.bsl.sh/Parameters/LibraryName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_uACiMP5mEeqcPcKOEf6I_Q" name="/ch.txg.dms.int5151.bsl.sh/Parameters/ParentFolder" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_YFWK8DiaEeul5fx0EC8DlA" name="/ch.txg.dms.int5151.bsl.sh/Parameters/searchDocumentParams/searchQueryFieldName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_ZYmikDiaEeul5fx0EC8DlA" name="/ch.txg.dms.int5151.bsl.sh/Parameters/searchDocumentParams/fieldsToIncludeInResponse" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+</sca:composite>

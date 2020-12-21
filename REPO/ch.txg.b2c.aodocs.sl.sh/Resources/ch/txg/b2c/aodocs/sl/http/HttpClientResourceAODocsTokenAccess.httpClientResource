@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:http="http://xsd.tns.tibco.com/bw/models/sharedresource/httpclient" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmi:id="_Vjb1UbCGEeqgt_CyWyLtoQ" name="ch.txg.b2c.aodocs.sl.http.HttpClientResourceAODocsTokenAccess" type="http:HttpClientConfiguration">
+  <jndi:configuration xsi:type="http:HttpClientConfiguration" xmi:id="_VjccYLCGEeqgt_CyWyLtoQ" httpClientVersion="httpcomponents" useDefaultSSL="true">
+    <substitutionBindings xmi:id="_dFX88LCrEeqAv80Bo6SZ4A" template="maxTotalConnections" propName="/ch.txg.b2c.aodocs.sl.sh/Connection/Http/Client/HttpResourceClient/MAX_TOTAL_CONNECTIONS"/>
+    <substitutionBindings xmi:id="_yGpXULCrEeqAv80Bo6SZ4A" template="maxTotalConnectionsPerHost" propName="/ch.txg.b2c.aodocs.sl.sh/Connection/Http/Client/HttpResourceClient/MAX_CONNECTION_PER_HOST"/>
+    <substitutionBindings xmi:id="_1pKb0LCrEeqAv80Bo6SZ4A" template="useSingleThreadConnectionManager" propName="/ch.txg.b2c.aodocs.sl.sh/Connection/Http/Client/HttpResourceClient/DISABLE_CONNECTION_POOLING"/>
+    <substitutionBindings xmi:id="_3qFxwLCrEeqAv80Bo6SZ4A" template="idleConnectionTimeout" propName="/ch.txg.b2c.aodocs.sl.sh/Connection/Http/Client/HttpResourceClient/IDLE_CONNECTION_TIMEOUT_ms"/>
+    <substitutionBindings xmi:id="_-0pT8LCrEeqAv80Bo6SZ4A" template="acceptRedirect" propName="/ch.txg.b2c.aodocs.sl.sh/Connection/Http/Client/HttpResourceClient/ACCEPT_REDIRECT"/>
+    <substitutionBindings xmi:id="_BCOl0LCsEeqAv80Bo6SZ4A" template="useSingleCookieHeader" propName="/ch.txg.b2c.aodocs.sl.sh/Connection/Http/Client/HttpResourceClient/USE_SINGLE_COOKIE_HEADER"/>
+    <substitutionBindings xmi:id="_FfHn4LCsEeqAv80Bo6SZ4A" template="retryCount" propName="/ch.txg.b2c.aodocs.sl.sh/Connection/Http/Client/HttpResourceClient/RETRY_COUNT"/>
+    <substitutionBindings xmi:id="_M0bokLCsEeqAv80Bo6SZ4A" template="logReqRespTime" propName="/ch.txg.b2c.aodocs.sl.sh/Connection/Http/Client/HttpResourceClient/LOG_REQUEST_RESPONSE_TIME"/>
+    <substitutionBindings xmi:id="_Rwpq8LCsEeqAv80Bo6SZ4A" template="useNonPreemptiveAuth" propName="/ch.txg.b2c.aodocs.sl.sh/Connection/Http/Client/HttpResourceClient/USE_NONPREEMPTIVE_AUTHENTICATION"/>
+    <tcpDetails xmi:id="_VjccYbCGEeqgt_CyWyLtoQ">
+      <substitutionBindings xmi:id="_LdAYELCrEeqAv80Bo6SZ4A" template="host" propName="/ch.txg.b2c.aodocs.sl.sh/Connection/Http/Client/HttpResourceClient/RetriveToken/HOST"/>
+      <substitutionBindings xmi:id="_Wn_p0LCrEeqAv80Bo6SZ4A" template="port" propName="/ch.txg.b2c.aodocs.sl.sh/Connection/Http/Client/HttpResourceClient/PORT"/>
+      <substitutionBindings xmi:id="_6BAl0LCrEeqAv80Bo6SZ4A" template="staleCheck" propName="/ch.txg.b2c.aodocs.sl.sh/Connection/Http/Client/HttpResourceClient/STALE_CHECK"/>
+      <substitutionBindings xmi:id="_80INsLCrEeqAv80Bo6SZ4A" template="soTimeout" propName="/ch.txg.b2c.aodocs.sl.sh/Connection/Http/Client/HttpResourceClient/SOCKET_TIMEOUT_ms"/>
+      <substitutionBindings xmi:id="_DLSkELCsEeqAv80Bo6SZ4A" template="connectionTimeout" propName="/ch.txg.b2c.aodocs.sl.sh/Connection/Http/Client/HttpResourceClient/CONNECTION_TIMEOUT_ms"/>
+    </tcpDetails>
+  </jndi:configuration>
+</jndi:namedResource>

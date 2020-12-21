@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmlns:sftpconnection="http://ns.tibco.com/bw/palette/sftpconnection" xmi:id="_SuAYYas4EeqKT7teyC44YA" name="connection.SFTPConnectionResource_common" type="sftpconnection:sftpconnection">
+  <jndi:configuration xsi:type="sftpconnection:SFTPConnection" xmi:id="_SuDbsKs4EeqKT7teyC44YA" host="/ch.txg.adv.int5227a.bsl.sh/Connections/SFTP/Host ftp.tamedia.ch" userName="/ch.txg.adv.int5227a.bsl.sh/Connections/SFTP/Username txtci-dev" password="/ch.txg.adv.int5227a.bsl.sh/Connections/SFTP/Password ••••••••••••">
+    <substitutionBindings xmi:id="_iROZMKs5EeqKT7teyC44YA" template="host" propName="/ch.txg.core.sftp.common/Connections/SFTP/Host"/>
+    <substitutionBindings xmi:id="_jgZiEKs5EeqKT7teyC44YA" template="port" propName="/ch.txg.core.sftp.common/Connections/SFTP/Port"/>
+    <substitutionBindings xmi:id="_lUvNgKs5EeqKT7teyC44YA" template="userName" propName="/ch.txg.core.sftp.common/Connections/SFTP/Username"/>
+    <substitutionBindings xmi:id="_nIitcKs5EeqKT7teyC44YA" template="password" propName="/ch.txg.core.sftp.common/Connections/SFTP/Password"/>
+    <substitutionBindings xmi:id="_2jDToKs5EeqKT7teyC44YA" template="timeout" propName="/ch.txg.core.sftp.common/Connections/SFTP/TimeOut_ms"/>
+  </jndi:configuration>
+</jndi:namedResource>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ch/txg/b2c/aodocs/sl/ParseJson" xmlns:Q1="http://ch/txg/b2c/aodocs/sl/ParseJson">
+	<xs:element name="JSON" type="Q1:JSONType"/>
+	<xs:complexType name="JSONType">
+		<xs:sequence>
+			<xs:element name="kind" type="xs:string" minOccurs="0"/>
+			<xs:element name="documents" type="Q1:documentsType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="count" type="xs:byte" minOccurs="0"/>
+			<xs:element name="precision" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="userMappingType">
+		<xs:sequence>
+			<xs:any namespace="##any" processContents="skip" maxOccurs="unbounded" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="valuesType">
+		<xs:sequence>
+			<xs:element name="kind" type="xs:string" minOccurs="0"/>
+			<xs:element name="id" type="xs:string" minOccurs="0"/>
+			<xs:element name="name" type="xs:string" minOccurs="0"/>
+			<xs:element name="name_i18n" type="xs:string" minOccurs="0"/>
+			<xs:element name="parentId" type="xs:byte" minOccurs="0"/>
+			<xs:element name="shortName" type="xs:string" minOccurs="0"/>
+			<xs:element name="outdated" type="xs:string" minOccurs="0"/>
+			<xs:element name="leafInNotOutdatedTree" type="xs:string" minOccurs="0"/>
+			<xs:element name="leaf" type="xs:string" minOccurs="0"/>
+			<xs:element name="value" type="xs:string" minOccurs="0"/>
+			<xs:element name="values" type="Q1:valuesType" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="categoryDefinitionType">
+		<xs:sequence>
+			<xs:element name="kind" type="xs:string" minOccurs="0"/>
+			<xs:element name="libraryId" type="xs:string" minOccurs="0"/>
+			<xs:element name="id" type="xs:string" minOccurs="0"/>
+			<xs:element name="name" type="xs:string" minOccurs="0"/>
+			<xs:element name="dynamicValues" type="xs:string" minOccurs="0"/>
+			<xs:element name="folder" type="xs:string" minOccurs="0"/>
+			<xs:element name="tags" type="xs:string" minOccurs="0"/>
+			<xs:element name="levelNames" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="levelNames_i18n" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="value" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="systemFieldsType">
+		<xs:all>
+			<xs:element name="kind" type="xs:string" minOccurs="0"/>
+			<xs:element name="id" type="xs:string" minOccurs="0"/>
+			<xs:element name="displayName" type="xs:string" minOccurs="0"/>
+			<xs:element name="editable" type="xs:string" minOccurs="0"/>
+			<xs:element name="readOnly" type="xs:string" minOccurs="0"/>
+			<xs:element name="mandatory" type="xs:string" minOccurs="0"/>
+			<xs:element name="hidden" type="xs:string" minOccurs="0"/>
+			<xs:element name="value" type="xs:string" minOccurs="0"/>
+		</xs:all>
+	</xs:complexType>
+	<xs:complexType name="categoriesType">
+		<xs:sequence>
+			<xs:element name="fieldId" type="xs:string" minOccurs="0"/>
+			<xs:element name="fieldName" type="xs:string" minOccurs="0"/>
+			<xs:element name="fieldName_i18n" type="xs:string" minOccurs="0"/>
+			<xs:element name="type" type="xs:string" minOccurs="0"/>
+			<xs:element name="description" type="xs:string" minOccurs="0"/>
+			<xs:element name="description_i18n" type="xs:string" minOccurs="0"/>
+			<xs:element name="readOnly" type="xs:string" minOccurs="0"/>
+			<xs:element name="multiple" type="xs:string" minOccurs="0"/>
+			<xs:element name="mandatory" type="xs:string" minOccurs="0"/>
+			<xs:element name="hidden" type="xs:string" minOccurs="0"/>
+			<xs:element name="rank" type="xs:byte" minOccurs="0"/>
+			<xs:element name="editable" type="xs:string" minOccurs="0"/>
+			<xs:element name="kind" type="xs:string" minOccurs="0"/>
+			<xs:element name="definitionId" type="xs:string" minOccurs="0"/>
+			<xs:element name="categoryDefinition" type="Q1:categoryDefinitionType" minOccurs="0"/>
+			<xs:element name="values" type="Q1:valuesType" minOccurs="0"/>
+			<xs:element name="definitionName" type="xs:string" minOccurs="0"/>
+			<xs:element name="levelNames" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="folder" type="xs:string" minOccurs="0"/>
+			<xs:element name="dynamicValues" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="viewConfigurationType">
+		<xs:sequence>
+			<xs:element name="kind" type="xs:string" minOccurs="0"/>
+			<xs:element name="orientation" type="xs:string" minOccurs="0"/>
+			<xs:element name="visibleSections" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="defaultTabToDisplay" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="sectionsType">
+		<xs:sequence>
+			<xs:element name="id" type="xs:string" minOccurs="0"/>
+			<xs:element name="name" type="xs:string" minOccurs="0"/>
+			<xs:element name="name_i18n" type="xs:string" minOccurs="0"/>
+			<xs:element name="description" type="xs:string" minOccurs="0"/>
+			<xs:element name="columnCount" type="xs:byte" minOccurs="0"/>
+			<xs:element name="fields" type="Q1:fieldsType" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="permissionsType">
+		<xs:sequence>
+			<xs:any namespace="##any" processContents="skip" maxOccurs="unbounded" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="fieldsType">
+		<xs:sequence>
+			<xs:element name="fieldId" type="xs:string" minOccurs="0"/>
+			<xs:element name="fieldName" type="xs:string" minOccurs="0"/>
+			<xs:element name="fieldName_i18n" type="xs:string" minOccurs="0"/>
+			<xs:element name="id" type="xs:string" minOccurs="0"/>
+			<xs:element name="type" type="xs:string" minOccurs="0"/>
+			<xs:element name="description" type="xs:string" minOccurs="0"/>
+			<xs:element name="description_i18n" type="xs:string" minOccurs="0"/>
+			<xs:element name="readOnly" type="xs:string" minOccurs="0"/>
+			<xs:element name="multiple" type="xs:string" minOccurs="0"/>
+			<xs:element name="mandatory" type="xs:string" minOccurs="0"/>
+			<xs:element name="hidden" type="xs:string" minOccurs="0"/>
+			<xs:element name="rank" type="xs:byte" minOccurs="0"/>
+			<xs:element name="editable" type="xs:string" minOccurs="0"/>
+			<xs:element name="kind" type="xs:string" minOccurs="0"/>
+			<xs:element name="values" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="documentsType">
+		<xs:sequence minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="kind" type="xs:string" minOccurs="0"/>
+			<xs:element name="domainName" type="xs:string" minOccurs="0"/>
+			<xs:element name="libraryName" type="xs:string" minOccurs="0"/>
+			<xs:element name="className" type="xs:string" minOccurs="0"/>
+			<xs:element name="className_i18n" type="xs:string" minOccurs="0"/>
+			<xs:element name="libraryId" type="xs:string" minOccurs="0"/>
+			<xs:element name="classId" type="xs:string" minOccurs="0"/>
+			<xs:element name="id" type="xs:string" minOccurs="0"/>
+			<xs:element name="title" type="xs:string" minOccurs="0"/>
+			<xs:element name="richText" type="xs:string" minOccurs="0"/>
+			<xs:element name="incomplete" type="xs:string" minOccurs="0"/>
+			<xs:element name="invalidValues" type="xs:string" minOccurs="0"/>
+			<xs:element name="systemFields" type="Q1:systemFieldsType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="fields" type="Q1:fieldsType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="attachments"	type="Q1:attachmentsType" 	minOccurs="0" maxOccurs="unbounded" />
+			<xs:element name="categories" type="Q1:categoriesType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="state" type="xs:string" minOccurs="0"/>
+			<xs:element name="state_i18n" type="xs:string" minOccurs="0"/>
+			<xs:element name="updateAuthor" type="xs:string" minOccurs="0"/>
+			<xs:element name="initialAuthor" type="xs:string" minOccurs="0"/>
+			<xs:element name="permissions" type="Q1:permissionsType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="creationDate" type="xs:long" minOccurs="0"/>
+			<xs:element name="modificationDate" type="xs:long" minOccurs="0"/>
+			<xs:element name="setModifiedDate" type="xs:string" minOccurs="0"/>
+			<xs:element name="versionName" type="xs:byte" minOccurs="0"/>
+			<xs:element name="versionDescription" type="xs:string" minOccurs="0"/>
+			<xs:element name="versionNumber" type="xs:byte" minOccurs="0"/>
+			<xs:element name="versionLabel" type="xs:string" minOccurs="0"/>
+			<xs:element name="deleted" type="xs:string" minOccurs="0"/>
+			<xs:element name="onlyAdminCanDelete" type="xs:string" minOccurs="0"/>
+			<xs:element name="onlyAdminCanChangeAcl" type="xs:string" minOccurs="0"/>
+			<xs:element name="userCanChangeProperties" type="xs:string" minOccurs="0"/>
+			<xs:element name="userCanChangeAcl" type="xs:string" minOccurs="0"/>
+			<xs:element name="userCanDelete" type="xs:string" minOccurs="0"/>
+			<xs:element name="editable" type="xs:string" minOccurs="0"/>
+			<xs:element name="restrictedDownload" type="xs:string" minOccurs="0"/>
+			<xs:element name="userMapping" type="Q1:userMappingType" minOccurs="0"/>
+			<xs:element name="versionId" type="xs:string" minOccurs="0"/>
+			<xs:element name="versionCreator" type="xs:string" minOccurs="0"/>
+			<xs:element name="versionCreated" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="viewConfiguration" type="Q1:viewConfigurationType" minOccurs="0"/>
+			<xs:element name="permittedOperations" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="publishedMode" type="xs:string" minOccurs="0"/>
+			<xs:element name="sequenceId" type="xs:byte" minOccurs="0"/>
+			<xs:element name="nextVersionName" type="xs:byte" minOccurs="0"/>
+			<xs:element name="coordinate" type="xs:string" minOccurs="0"/>
+			<xs:element name="fullSizeOfAttachments" type="xs:byte" minOccurs="0"/>
+			<xs:element name="numberOfAttachments" type="xs:byte" minOccurs="0"/>
+			<xs:element name="sections" type="Q1:sectionsType" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+
+    <xs:element name="documents" type="Q1:documentsType"></xs:element>
+    <xs:complexType name="attachmentsType">
+			<xs:sequence>
+				<xs:element name="fileId" type="xs:string" minOccurs="0" />
+			</xs:sequence>
+		</xs:complexType>
+</xs:schema>

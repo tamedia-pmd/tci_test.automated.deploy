@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:Q1="adobe:ns:meta/" xmlns:tns="http://ch/txg/core/customfunction/common/PDFAPropertyExtractor/0100" elementFormDefault="qualified" targetNamespace="http://ch/txg/core/customfunction/common/PDFAPropertyExtractor/0100">
+    <import namespace="adobe:ns:meta/"/>
+    <element name="Input">
+    	<complexType>
+    		<sequence>
+    			<element maxOccurs="1" minOccurs="1" name="fileName" type="string"/>
+    			<element maxOccurs="1" minOccurs="1" name="contentPDFAbase64" type="base64Binary"/>
+    		</sequence>
+    	</complexType>
+    </element>
+
+    <element name="Output">
+		<complexType>
+			<sequence>
+				<element maxOccurs="1" minOccurs="1" name="author" type="string"/>
+				<element maxOccurs="1" minOccurs="1" name="title" type="string"/>
+				<element maxOccurs="1" minOccurs="1" name="object" type="string"/>
+				<element maxOccurs="1" minOccurs="1" name="keywords" type="string"/>
+			</sequence>
+		</complexType>
+    </element>
+
+    <element name="CutPDFABase64">
+    	<complexType>
+    		<sequence>
+    			<element name="contentBase64XML" type="string"/>
+    		</sequence>
+    	</complexType>
+    </element>
+    
+    <element name="PDFContent">
+    	<complexType>
+    		<sequence>
+    			<element name="asciiContent" type="string" minOccurs="1" maxOccurs="1"></element>
+    		</sequence>
+    	</complexType>
+    </element>
+
+</schema>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"
+	xmlns:tns="http://www.example.com/namespaces/tns/1603122116032"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+	xmlns:aod="http://ch/txg/common/aodocs/insert/document/input/sl" elementFormDefault="qualified"
+	targetNamespace="http://www.example.com/namespaces/tns/1603122116032">
+
+<xsd:import namespace="http://ch/txg/common/aodocs/insert/document/input/sl" schemaLocation="../../ch.txg.b2c.aodocs.sl.sh/Schemas/InsertDocument/AODocs_InsertDocument_InputSchema.xsd"></xsd:import>
+	
+
+	<xsd:complexType name="amountType">
+		<xsd:sequence>
+			<xsd:element name="amount" type="xsd:decimal" minOccurs="0" />
+			<xsd:element name="endBalance" type="xsd:decimal"
+				minOccurs="0" />
+			<xsd:element name="currency" type="xsd:string" minOccurs="0" />
+		</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:complexType name="bankAccountType">
+		<xsd:sequence>
+			<xsd:element name="internalBankAccountCode" type="xsd:string" minOccurs="1" />
+			<xsd:element name="bank" type="xsd:string" minOccurs="0" />
+			<xsd:element name="companyName" type="xsd:string" minOccurs="0" />
+			<xsd:element name="accountNumber" type="xsd:string" minOccurs="0" />
+			<xsd:element name="iban" type="xsd:string" minOccurs="0" />
+		</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:complexType name="datesType">
+		<xsd:sequence>
+			<xsd:element name="valueDate" type="xsd:string" minOccurs="0" />
+			<xsd:element name="statementDate" type="xsd:string" minOccurs="1" />
+			<xsd:element name="statementEndDate" type="xsd:string" minOccurs="0" />
+			<xsd:element name="statementCreationDate" type="xsd:string" minOccurs="0" />
+		</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:complexType name="documentComplexType">
+		<xsd:sequence>
+			<xsd:element name="documentType" type="xsd:string"
+				minOccurs="1" maxOccurs="1" />
+			<xsd:element name="companyCode" type="xsd:string"
+				minOccurs="1" maxOccurs="1" />
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="systemMetadataType">
+		<xsd:sequence>
+			<xsd:element name="accessList" type="xsd:string"  maxOccurs="1" />
+			<xsd:element name="PDFFilename" type="xsd:string" minOccurs="0" maxOccurs="1" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:element name="Input_PrepareBSDocument">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="amount" type="tns:amountType" />
+				<xsd:element name="bankAccount" type="tns:bankAccountType" />
+				<xsd:element name="dates" type="tns:datesType" />
+				<xsd:element name="document" type="tns:documentComplexType" />
+				<xsd:element name="systemMetadata" type="tns:systemMetadataType" />
+				<xsd:element name="attachments" type="aod:attachmentsType" minOccurs="0" maxOccurs="unbounded"/>
+				<xsd:element name="folders" type="aod:foldersType" minOccurs="0" maxOccurs="unbounded"/>
+				
+			</xsd:sequence>
+		</xsd:complexType>
+
+	</xsd:element>
+</xsd:schema>

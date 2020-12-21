@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://ch/txg/dms/fileTransfer/md/interfaces/0100" elementFormDefault="qualified" targetNamespace="http://ch/txg/dms/fileTransfer/md/interfaces/0100">
+
+	<element name="TransferRequest" type="tns:TransferRequestType"/>
+
+		<complexType name="TransferRequestType">
+			<sequence>
+				<element minOccurs="1" name="TransferName" type="string"/>
+				<element minOccurs="0" name="Callback" type="tns:CallbackType"/>
+				<element minOccurs="1" name="Source" type="tns:FilePathNameType"/>
+				<element minOccurs="0" name="Target" type="tns:FilePathNameType"/>
+			</sequence>
+		</complexType>
+
+		<complexType name="FilePathNameType">
+			<sequence>
+				<element minOccurs="1" name="filePath" 		type="string"/>
+				<element minOccurs="0" name="fileName" 		type="string"/>
+				<element minOccurs="0" name="folderName" 	type="string"/>
+				<element minOccurs="0" name="metadataFileName" type="string"/>				
+				<element minOccurs="0" name="relatedItems"	type="string" maxOccurs="unbounded"   />
+			</sequence>
+		</complexType>
+		
+		
+		
+
+		<complexType name="CallbackType">
+			<sequence>
+				<element name="correlationId" type="string"/>
+				<element name="callbackChannel" type="string"/>
+			</sequence>
+		</complexType>
+
+</schema>

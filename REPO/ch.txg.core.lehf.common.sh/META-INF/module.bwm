@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:dataformat="http://ns.tibco.com/bw/palette/dataformat" xmlns:property="http://ns.tibco.com/bw/property" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_39tV0IUOEeiKupIVW8l7uQ" targetNamespace="http://tns.tibco.com/bw/composite/ch.txg.core.lehf.common.sh" name="ch.txg.core.lehf.common.sh" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:property xmi:id="_4nsuAIUOEeiKupIVW8l7uQ" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_4ogmUIUOEeiKupIVW8l7uQ" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_4onUAIUOEeiKupIVW8l7uQ" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_4ouBsIUOEeiKupIVW8l7uQ" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_4o0IUIUOEeiKupIVW8l7uQ" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_4o4ZwIUOEeiKupIVW8l7uQ" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_4o8rMIUOEeiKupIVW8l7uQ" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_4pCKwIUOEeiKupIVW8l7uQ" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_4pGcMIUOEeiKupIVW8l7uQ" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_Vh9LgJw2EeqQw6igFVjf7w" name="/ch.txg.core.lehf.common.sh/ErrorHandler/LEHF_Flogo/hostname" type="XMLSchema:string" description="Hostname of the LEHF Server API" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_d6-E4Jw2EeqQw6igFVjf7w" name="/ch.txg.core.lehf.common.sh/ErrorHandler/LEHF_Flogo/resourcePath" type="XMLSchema:string" scaext:simpleValue="" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_tx3sIJw2EeqQw6igFVjf7w" name="/ch.txg.core.lehf.common.sh/ErrorHandler/LEHF_Flogo/methodType" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_x9FvYJw2EeqQw6igFVjf7w" name="/ch.txg.core.lehf.common.sh/ErrorHandler/LEHF_Flogo/defaultConfidentiality" type="XMLSchema:boolean" scaext:simpleValue="false" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_4peu4Jw2EeqQw6igFVjf7w" name="/ch.txg.core.lehf.common.sh/ErrorHandler/LEHF_Flogo/port" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_yaz_UOkPEemJ7d3WPjVHsg" name="/ch.txg.core.lehf.common.sh/Logging/Business_Exception" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_33fqcOkPEemJ7d3WPjVHsg" name="/ch.txg.core.lehf.common.sh/Logging/System_Exception" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_3_w1oOkPEemJ7d3WPjVHsg" name="/ch.txg.core.lehf.common.sh/Logging/START_STATE" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_4G6mgOkPEemJ7d3WPjVHsg" name="/ch.txg.core.lehf.common.sh/Logging/END_STATE" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_4PLxsOkPEemJ7d3WPjVHsg" name="/ch.txg.core.lehf.common.sh/Logging/ERROR_STATE" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_4WkMEOkPEemJ7d3WPjVHsg" name="/ch.txg.core.lehf.common.sh/Logging/INFO_SEVERITY" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_4e1XQOkPEemJ7d3WPjVHsg" name="/ch.txg.core.lehf.common.sh/Logging/DEBUG_SEVERITY" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_4njOYOkPEemJ7d3WPjVHsg" name="/ch.txg.core.lehf.common.sh/Logging/ERROR_SEVERITY" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_4us_QOkPEemJ7d3WPjVHsg" name="/ch.txg.core.lehf.common.sh/Logging/BUSINESS_UNIT" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_40EncOkPEemJ7d3WPjVHsg" name="/ch.txg.core.lehf.common.sh/Logging/PROJECT" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_5BszwOkPEemJ7d3WPjVHsg" name="/ch.txg.core.lehf.common.sh/Logging/LOGGER_NAME" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+</sca:composite>

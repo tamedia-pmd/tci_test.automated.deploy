@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmlns:sftpconnection="http://ns.tibco.com/bw/palette/sftpconnection" xmi:id="_j2tnICf6Eeuvn6y7jq4YkA" name="connection.BankStatmentSFTPConnectionResource" type="sftpconnection:sftpconnection">
+  <jndi:configuration xsi:type="sftpconnection:SFTPConnection" xmi:id="_j2uOMCf6Eeuvn6y7jq4YkA">
+    <substitutionBindings xmi:id="_rx24wCf6Eeuvn6y7jq4YkA" template="host" propName="/ch.txg.core.sftp.common/Connections/SFTP/BankStatment/Host"/>
+    <substitutionBindings xmi:id="_uHxnQCf6Eeuvn6y7jq4YkA" template="port" propName="/ch.txg.core.sftp.common/Connections/SFTP/BankStatment/Port"/>
+    <substitutionBindings xmi:id="_wKRDcCf6Eeuvn6y7jq4YkA" template="userName" propName="/ch.txg.core.sftp.common/Connections/SFTP/BankStatment/Username"/>
+    <substitutionBindings xmi:id="_y9qYICf6Eeuvn6y7jq4YkA" template="password" propName="/ch.txg.core.sftp.common/Connections/SFTP/BankStatment/Password"/>
+  </jndi:configuration>
+</jndi:namedResource>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ASCII"?>
+<annox:package xmlns:annox="http://annox.dev.java.net" xmlns:jaxb="http://annox.dev.java.net/javax.xml.bind.annotation">
+  <annox:class name="PDFExtractor">
+    <jaxb:XmlAccessorType value="NONE"/>
+    <jaxb:XmlType name="PDFExtractorType" propOrder=""/>
+    <jaxb:XmlRootElement name="PDFExtractor" namespace="www.tibco.com/plugin/java/xmlSchema/ch.txg.core.pdf.PDFExtractor"/>
+  </annox:class>
+  <jaxb:XmlSchema elementFormDefault="QUALIFIED" namespace="www.tibco.com/plugin/java/xmlSchema/ch.txg.core.pdf.PDFExtractor"/>
+</annox:package>

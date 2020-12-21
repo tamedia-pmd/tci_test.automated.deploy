@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:tibex="http://www.tibco.com/bpel/2007/extensions" xmlns:tns="http://www.example.com/namespaces/tns/1604910301535" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://www.example.com/namespaces/tns/1604910301535">
+ 
+
+
+<xsd:complexType name="BankAccountDetailType">
+	<xsd:sequence>
+		<xsd:element maxOccurs="1" minOccurs="0" name="IBAN" type="xsd:string"/>
+		<xsd:element maxOccurs="1" minOccurs="0" name="CompanyCode" type="xsd:string"/>
+		<xsd:element maxOccurs="1" minOccurs="0" name="CompanyName" type="xsd:string"/>
+		<xsd:element minOccurs="0" name="InternalBankAccount" type="xsd:string"/>                   
+		<xsd:element minOccurs="0" name="WorkdayAccountCode"  type="xsd:string"/>
+		<xsd:element minOccurs="0" name="BankAccountNumber" type="xsd:string"  />
+		<xsd:element minOccurs="0" name="CurrencyID" type="xsd:string"  />
+		
+    </xsd:sequence>
+</xsd:complexType>
+
+<xsd:element name="BankAccountDetail"  type="tns:BankAccountDetailType" />
+
+
+    
+    <xsd:element name="OutputBankAccountList">
+        <xsd:complexType>
+        	<xsd:sequence>
+        		<xsd:element ref="tns:BankAccountDetail"  minOccurs="0"  maxOccurs="unbounded" />
+        	</xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    
+    
+    <xsd:element name="LoadBankAccountList">
+     	<xsd:complexType>
+     		<xsd:sequence>
+     			<xsd:element name="lastupdate" type="xsd:decimal"/>
+     			<xsd:element minOccurs="0" maxOccurs="unbounded" ref="tns:BankAccountDetail">
+     			</xsd:element>
+     		</xsd:sequence>
+     	</xsd:complexType>
+     </xsd:element>
+     
+     <xsd:element name="ListBankAccount">
+     	<xsd:complexType>
+     		<xsd:sequence>
+     			<xsd:element minOccurs="0" maxOccurs="unbounded"  ref="tns:BankAccountDetail" />
+     		</xsd:sequence>
+     	</xsd:complexType>
+     </xsd:element>
+  
+  
+</xsd:schema>

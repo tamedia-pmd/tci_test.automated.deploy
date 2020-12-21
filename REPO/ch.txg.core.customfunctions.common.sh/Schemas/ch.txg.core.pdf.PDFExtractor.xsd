@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema elementFormDefault="qualified" version="1.0" targetNamespace="www.tibco.com/plugin/java/xmlSchema/ch.txg.core.pdf.PDFExtractor" xmlns:tns="www.tibco.com/plugin/java/xmlSchema/ch.txg.core.pdf.PDFExtractor" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="PDFExtractor" type="tns:PDFExtractorType"/>
+
+  <xs:complexType name="PDFExtractorType">
+    <xs:all/>
+  </xs:complexType>
+</xs:schema>
+

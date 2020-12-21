@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns:tns="http://ch/txg/dms/aodocs/edossier-hr/sl/INT5160_InsertDocument" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://ch/txg/dms/aodocs/edossier-hr/sl/INT5160_InsertDocument">
+
+<!-- <xs:import namespace="/T1600446528184Converted/JsonSchema"  schemaLocation="../../../ch.txg.b2c.aodocs.sl.sh/Schemas/AODocsGateway_Interface.xsd"/> -->
+
+ 
+          	<xs:complexType name="fieldsType">
+      			<xs:sequence>
+      				<xs:element name="fieldName" type="xs:string"/>
+      				<xs:element maxOccurs="unbounded" minOccurs="0" name="values" type="xs:string"/>
+      			</xs:sequence>
+      		</xs:complexType>
+
+
+          	<xs:complexType name="foldersType">
+      			<xs:sequence>
+      				<xs:element name="folderAodocsId" type="xs:string"/>
+      			</xs:sequence>
+      		</xs:complexType>
+      		
+
+      					<xs:complexType name="valuesType">
+      						<xs:sequence>      							
+      							<xs:element name="name" type="xs:string"/>
+      						</xs:sequence>
+      					</xs:complexType> 
+      					
+
+		<xs:complexType name="categoriesType">
+      		<xs:sequence>
+      			<xs:element name="fieldName" type="xs:string"/>
+            	<xs:element maxOccurs="unbounded" minOccurs="0" name="values" type="tns:valuesType"/>
+      		</xs:sequence>
+      	</xs:complexType>
+
+    <xs:element name="Output">
+    	<xs:complexType>
+    		<xs:sequence>
+    			<xs:element name="jsonResponse" type="xs:string"/>
+    			<xs:element name="token" type="xs:string" minOccurs="0"/>
+    		</xs:sequence>
+    	</xs:complexType>
+    </xs:element>
+    
+
+	<xs:element name="Input">
+	    <xs:complexType>
+	      <xs:sequence>
+	      	<xs:element name="libraryId" type="xs:string"/>
+	      	<xs:element minOccurs="0" name="title" type="xs:string"/>
+	        <xs:element name="classId" type="xs:string"/>
+	        <xs:element maxOccurs="unbounded" minOccurs="0" name="fields" type="tns:fieldsType"/>
+	        <xs:element maxOccurs="unbounded" minOccurs="0" name="folders" type="tns:foldersType"/>
+	        <xs:element maxOccurs="1" minOccurs="0" name="richText" type="xs:string"/>
+			<xs:element maxOccurs="unbounded" minOccurs="0" name="categories" type="tns:categoriesType"/>
+		  </xs:sequence>
+		</xs:complexType>
+	</xs:element> 
+
+
+</xs:schema>

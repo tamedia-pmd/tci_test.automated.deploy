@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" targetNamespace="/ccx/cc-cloud-repo/launches/T1601907236892Converted/JsonSchema" xmlns:tns="/ccx/cc-cloud-repo/launches/T1601907236892Converted/JsonSchema" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="ProcessingMessageMetaData" type="tns:ProcessingMessageMetaData"/>
+    <xs:complexType name="ProcessingMessageMetaData">
+        <xs:sequence>
+            <xs:element name="Key" type="xs:string"/>
+            <xs:element name="Value" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ProcessingMessage_ObjectType" type="tns:ProcessingMessage_ObjectType"/>
+    <xs:simpleType name="ProcessingMessage_ObjectType">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="ProcessingMessage_ObjectMetaData" type="tns:ProcessingMessage_ObjectMetaData"/>
+    <xs:complexType name="ProcessingMessage_ObjectMetaData">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="ProcessingMessage_ObjectMetaData" type="tns:ProcessingMessageMetaData"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="MessageType" type="tns:MessageType"/>
+    <xs:simpleType name="MessageType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="ERROR"/>
+            <xs:enumeration value="WARNING"/>
+            <xs:enumeration value="INFO"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element name="ProcessingMessage" type="tns:ProcessingMessage"/>
+    <xs:complexType name="ProcessingMessage">
+        <xs:sequence>
+            <xs:element name="CorrelationId" type="xs:string"/>
+            <xs:element name="ProcessId" type="xs:string"/>
+            <xs:element minOccurs="0" name="ObjectId" type="xs:string"/>
+            <xs:element name="ObjectType" type="xs:string"/>
+            <xs:element name="MessageType" type="tns:MessageType"/>
+            <xs:element name="Message" type="xs:string"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="ObjectMetaData" type="tns:ProcessingMessageMetaData"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ProcessingMessagesRequest" type="tns:ProcessingMessagesRequest"/>
+    <xs:complexType name="ProcessingMessagesRequest">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="ProcessingMessage" type="tns:ProcessingMessage"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ProcessingMessagesRequest_processingMessages" type="tns:ProcessingMessagesRequest_processingMessages"/>
+    <xs:complexType name="ProcessingMessagesRequest_processingMessages">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="ProcessingMessagesRequest_processingMessages" type="tns:ProcessingMessage"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

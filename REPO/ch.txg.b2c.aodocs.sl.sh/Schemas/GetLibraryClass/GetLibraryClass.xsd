@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns:tns="http://ch/txg/b2c/aodocs/sl/GetLibraryClass" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://ch/txg/b2c/aodocs/sl/GetLibraryClass">
+
+    <xs:element name="OutputgetLibrary" type="tns:getLibraryResponse"/>
+    <xs:complexType name="getLibraryResponse">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="Result">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="LibraryName" type="xs:string"/>
+                        <xs:element minOccurs="0" name="LibraryID" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="InputgetLibrary">
+    	<xs:complexType>
+    		<xs:sequence>
+                <xs:element name="LibraryName"  type="xs:string" minOccurs="1" maxOccurs="unbounded" />
+                <xs:element name="LibraryInput" type="xs:string" minOccurs="1"/>
+                <xs:element name="forceUpdate" type="xs:boolean" minOccurs="0"/>
+                <xs:element name="skipCheckTTL" type="xs:boolean" minOccurs="0"/>
+            </xs:sequence>
+    	</xs:complexType>
+    </xs:element>
+
+    
+   <xs:element name="OutputgetLibraryClass">
+   	<xs:complexType>
+   		<xs:sequence>
+   			<xs:element maxOccurs="unbounded" minOccurs="0" name="Library" type="tns:Library"/>
+   		</xs:sequence>
+   	</xs:complexType>
+  </xs:element>
+       <xs:complexType name="Library">
+    		<xs:sequence>
+    			<xs:element minOccurs="0" name="LibraryName" type="xs:string"/>
+    			<xs:element minOccurs="0" name="LibraryId " type="xs:string"/>
+    			<xs:element maxOccurs="unbounded" minOccurs="0" name="Class">
+    				<xs:complexType>
+    					<xs:sequence>
+    						<xs:element minOccurs="0" name="ClassName" type="xs:string"/>
+    						<xs:element maxOccurs="1" minOccurs="0" name="ClassId" type="xs:string"/>
+    					</xs:sequence>
+    				</xs:complexType>
+      </xs:element>
+    		</xs:sequence>
+    	</xs:complexType>
+</xs:schema>

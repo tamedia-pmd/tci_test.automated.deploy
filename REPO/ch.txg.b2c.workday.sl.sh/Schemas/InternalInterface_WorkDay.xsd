@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://ch/txg/b2c/workday/sl/InternalInterface_WorkDay/0100"
+	elementFormDefault="qualified"
+	targetNamespace="http://ch/txg/b2c/workday/sl/InternalInterface_WorkDay/0100">
+
+	<!-- start token schema -->
+
+	<element name="Output_GetToken" type="tns:Output_GetTokenType" />
+
+	<complexType name="Output_GetTokenType">
+		<sequence>
+			<element name="refresh_token" type="string" />
+			<element name="token_type" type="string" />
+			<element name="access_token" type="string" />
+		</sequence>
+	</complexType>
+
+	<!-- end token schema -->
+
+	<element name="Input_validateWorktags" type="tns:Input_validateWorktagsType" />
+
+	<complexType name="Input_validateWorktagsType">
+		<sequence>
+			<element name="taggableConfiguration" type="tns:idListType" />
+			<element name="restrictions" type="tns:idListType" />
+			<element name="worktags" type="tns:idListType" />
+			<element name="allowBuiltInWorktags" type="boolean" />
+		</sequence>
+	</complexType>
+
+
+	<complexType name="idType">
+		<sequence>
+			<element name="id" type="string" />
+		</sequence>
+	</complexType>
+
+	<complexType name="idListType">
+		<sequence>
+			<element maxOccurs="unbounded" minOccurs="0" name="id" type="string" />
+		</sequence>
+	</complexType>
+
+
+	<complexType name="Input_validateWorktagsArray">
+		<sequence>
+			<element maxOccurs="unbounded" minOccurs="0"
+				name="Input_validateWorktags" type="tns:Input_validateWorktagsType" />
+		</sequence>
+	</complexType>
+	<element name="Input_validateWorktagsArray" type="tns:Input_validateWorktagsArray" />
+
+	<!-- start request_validateWorkTags schema -->
+
+	<element name="Request_ValidateWorkTags" type="tns:Request_ValidateWorkTags" />
+
+	<complexType name="Request_ValidateWorkTags">
+		<sequence>
+
+			<element name="taggableConfiguration">
+				<complexType>
+					<sequence>
+						<element name="id" type="string" />
+					</sequence>
+				</complexType>
+			</element>
+
+			<element maxOccurs="unbounded" minOccurs="0" name="restrictions">
+				<complexType>
+					<sequence>
+						<element name="id" type="string" />
+					</sequence>
+				</complexType>
+			</element>
+
+
+			<element maxOccurs="unbounded" minOccurs="0" name="worktags">
+				<complexType>
+					<sequence>
+						<element name="id" type="string" />
+					</sequence>
+				</complexType>
+			</element>
+
+			<element name="allowBuiltInWorktags" type="boolean" />
+
+		</sequence>
+	</complexType>
+
+	<!-- end request_validateWorkTags schema -->
+
+	<!-- start response_validateWorkTags schema -->
+
+
+	<element name="Response_ValidateWorkTags" type="tns:Response_ValidateWorkTagsType"/>
+	
+		<complexType name="Response_ValidateWorkTagsType">
+			<sequence>
+
+
+				<element name="missingRequiredWorktagTypesForWorktags"
+					maxOccurs="unbounded" minOccurs="0">
+					<complexType>
+						<sequence>
+							<element name="worktagWithRequiredWorktags">
+								<complexType>
+									<all>
+										<element type="string" name="descriptor" minOccurs="0"
+											maxOccurs="1" />
+										<element type="string" name="id" minOccurs="0"
+											maxOccurs="1" />
+									</all>
+								</complexType>
+							</element>
+							<element name="missingWorktagTypes" minOccurs="0"
+								maxOccurs="unbounded">
+								<complexType>
+									<all>
+										<element type="string" name="descriptor" minOccurs="0"
+											maxOccurs="1" />
+										<element type="string" name="id" minOccurs="0"
+											maxOccurs="1" />
+									</all>
+								</complexType>
+							</element>
+						</sequence>
+					</complexType>
+				</element>
+
+
+				<element name="invalidRestrictionsForWorktags" minOccurs="0"
+					maxOccurs="unbounded">
+					<complexType>
+						<all>
+							<element name="invalidRestrictedToValues">
+								<complexType>
+									<all>
+										<element type="string" name="descriptor" minOccurs="0"
+											maxOccurs="1" />
+										<element type="string" name="id" minOccurs="0"
+											maxOccurs="1" />
+									</all>
+								</complexType>
+							</element>
+							<element name="worktagWithRestrictedToValues">
+								<complexType>
+									<all>
+										<element type="string" name="descriptor" minOccurs="0"
+											maxOccurs="1" />
+										<element type="string" name="id" minOccurs="0"
+											maxOccurs="1" />
+									</all>
+								</complexType>
+							</element>
+						</all>
+					</complexType>
+				</element>
+
+				<element name="invalidWorktagCombinations" minOccurs="0"
+					maxOccurs="unbounded">
+					<complexType>
+						<all>
+							<element name="worktagWithAllowedValues">
+								<complexType>
+									<all>
+										<element type="string" name="descriptor" minOccurs="0"
+											maxOccurs="1" />
+										<element type="string" name="id" minOccurs="0"
+											maxOccurs="1" />
+									</all>
+								</complexType>
+							</element>
+							<element name="invalidWorktagValues">
+								<complexType>
+									<all>
+										<element type="string" name="descriptor" minOccurs="0"
+											maxOccurs="1" />
+										<element type="string" name="id" minOccurs="0"
+											maxOccurs="1" />
+									</all>
+								</complexType>
+							</element>
+						</all>
+					</complexType>
+				</element>
+
+
+				<element name="missingRequiredWorktagTypesForTaggableConfig"
+					minOccurs="0" maxOccurs="unbounded">
+					<complexType>
+						<all>
+							<element type="string" name="descriptor" minOccurs="0"
+								maxOccurs="1" />
+							<element type="string" name="id" minOccurs="0" maxOccurs="1" />
+						</all>
+					</complexType>
+				</element>
+
+
+				<element name="missingRequiredWorktagTypesAfterDefaulting"
+					minOccurs="0" maxOccurs="unbounded">
+					<complexType>
+						<all>
+							<element type="string" name="descriptor" minOccurs="0"
+								maxOccurs="1" />
+							<element type="string" name="id" minOccurs="0" maxOccurs="1" />
+						</all>
+					</complexType>
+				</element>
+
+				<element name="nonAllowedInactiveWorktagValues" minOccurs="0"
+					maxOccurs="unbounded">
+					<complexType>
+						<all>
+							<element type="string" name="descriptor" minOccurs="0"
+								maxOccurs="1" />
+							<element type="string" name="id" minOccurs="0" maxOccurs="1" />
+						</all>
+					</complexType>
+				</element>
+
+				<element name="nonAllowedWorktagTypesForTaggableConfig"
+					minOccurs="0" maxOccurs="unbounded">
+					<complexType>
+						<all>
+							<element type="string" name="descriptor" minOccurs="0"
+								maxOccurs="1" />
+							<element type="string" name="id" minOccurs="0" maxOccurs="1" />
+						</all>
+					</complexType>
+				</element>
+
+
+
+				<element name="onlyOneProjectOrPhaseOrTaskAllowed"
+					minOccurs="0" maxOccurs="unbounded">
+					<complexType>
+						<all>
+							<element type="string" name="descriptor" minOccurs="0"
+								maxOccurs="1" />
+							<element type="string" name="id" minOccurs="0" maxOccurs="1" />
+						</all>
+					</complexType>
+				</element>
+
+
+				<element name="status" type="string" minOccurs="0"
+					maxOccurs="1" />
+
+				<element name="error" type="string" minOccurs="0" maxOccurs="1" />
+
+				<element name="errors" minOccurs="0" maxOccurs="unbounded">
+					<complexType>
+						<all>
+							<element name="error" type="string" minOccurs="0"
+								maxOccurs="1" />
+							<element name="field" type="string" minOccurs="0"
+								maxOccurs="1" />
+							<element name="location" type="string" minOccurs="0"
+								maxOccurs="1" />
+						</all>
+					</complexType>
+				</element>
+
+			</sequence>
+		</complexType>
+
+	<!-- end response_validateWorkTags schema -->
+
+
+	<!-- start NotifyError /AsyncProcessingMessages schema -->
+
+	<element name="NotifyErrorWorkday_Output"> 
+		<complexType>
+			<sequence>
+				<element name="statusCode" type="integer"   		minOccurs="1"/>
+				<element name="binaryContent" type="base64Binary"	minOccurs="0"/>
+				<element name="asciContent" type="string"			minOccurs="0"/>
+			
+			</sequence>
+		</complexType>
+	
+	</element>
+
+
+
+	<!-- end NotifyError /AsyncProcessingMessages schema -->
+
+
+
+
+
+</schema>

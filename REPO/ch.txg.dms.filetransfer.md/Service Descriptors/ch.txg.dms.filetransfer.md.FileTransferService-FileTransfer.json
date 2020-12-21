@@ -1,0 +1,111 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "FileTransfer",
+    "description" : "FileTransfer service"
+  },
+  "host" : "localhost:8080",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/dev/dms/fileTransfer/v1" : {
+      "post" : {
+        "summary" : "postFileTransfer",
+        "description" : "postFileTransfer",
+        "operationId" : "post-dev-dms-fileTransfer-v1",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/TransferRequest"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "202" : {
+            "description" : "Accepted",
+            "schema" : {
+              "type" : "string"
+            }
+          },
+          "200" : {
+            "description" : "OK",
+            "headers" : { }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "Target" : {
+      "type" : "object",
+      "required" : [ "filePath" ],
+      "properties" : {
+        "filePath" : {
+          "type" : "string"
+        },
+        "fileName" : {
+          "type" : "string"
+        },
+        "folderName" : {
+          "type" : "string"
+        },
+        "metadataFileName" : {
+          "type" : "string"
+        }
+      }
+    },
+    "Callback" : {
+      "type" : "object",
+      "required" : [ "correlationId", "callbackChannel" ],
+      "properties" : {
+        "correlationId" : {
+          "type" : "string"
+        },
+        "callbackChannel" : {
+          "type" : "string"
+        }
+      }
+    },
+    "TransferRequest" : {
+      "type" : "object",
+      "required" : [ "TransferName", "Source" ],
+      "properties" : {
+        "TransferName" : {
+          "type" : "string"
+        },
+        "Callback" : {
+          "$ref" : "#/definitions/Callback"
+        },
+        "Source" : {
+          "$ref" : "#/definitions/Source"
+        },
+        "Target" : {
+          "$ref" : "#/definitions/Target"
+        }
+      }
+    },
+    "Source" : {
+      "type" : "object",
+      "required" : [ "filePath" ],
+      "properties" : {
+        "filePath" : {
+          "type" : "string"
+        },
+        "fileName" : {
+          "type" : "string"
+        },
+        "folderName" : {
+          "type" : "string"
+        },
+        "metadataFileName" : {
+          "type" : "string"
+        }
+      }
+    }
+  }
+}

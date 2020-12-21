@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns="http://ch/txg/b2c/aodocs/sl/SearchDocument" xmlns:Q1="http://ch/txg/b2c/aodocs/sl/ParseJson" xmlns:extns="http://www.example.org/ParseID" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://ch/txg/b2c/aodocs/sl/SearchDocument">
+
+    <xsd:import namespace="http://ch/txg/b2c/aodocs/sl/ParseJson"  schemaLocation="./ParseJson.xsd"/>
+    
+    <xsd:element name="InputSearchDocument">
+    	<xsd:complexType>
+    		<xsd:sequence>
+                <xsd:element maxOccurs="1" minOccurs="1" name="libraryId" type="xsd:string"/>
+                <xsd:element maxOccurs="1" minOccurs="1" name="classId" type="xsd:string"/>
+                <xsd:element maxOccurs="1" minOccurs="0" name="field" type="xsd:string"/>
+                <xsd:element maxOccurs="1" minOccurs="0" name="filter">
+    				<xsd:complexType>
+    					<xsd:sequence>
+    						<xsd:element name="name" type="xsd:string"/>
+    						<xsd:element name="value" type="xsd:string"/>
+    					</xsd:sequence>
+    				</xsd:complexType>
+	       		</xsd:element>
+				<xsd:element maxOccurs="1" minOccurs="0" name="token" type="xsd:string"/>
+            </xsd:sequence>
+    	</xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="QueryURI">
+    	<xsd:complexType>
+    		<xsd:sequence>
+    			<xsd:element name="URI" type="xsd:string"/>
+    		</xsd:sequence>
+    	</xsd:complexType>
+    </xsd:element>
+
+
+
+    <xsd:element name="OutputSearchDocument">
+    	<xsd:complexType>
+    		<xsd:sequence>
+    			<xsd:element name="token" minOccurs="0" type="xsd:string"/>
+    			<xsd:element ref="Q1:JSON" minOccurs="0" maxOccurs="1"/>
+    		</xsd:sequence>
+    	</xsd:complexType>
+    </xsd:element>
+    
+</xsd:schema>

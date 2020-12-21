@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://ch/txg/b2c/aodocs/sl/ListFoldersAOdocs" elementFormDefault="qualified" targetNamespace="http://ch/txg/b2c/aodocs/sl/ListFoldersAOdocs">
+
+    <element name="InputListFolderAOdocs" type="tns:InputListfolder">
+    </element>
+    <element name="JSON" type="tns:JSONType">
+    
+
+    </element>
+    
+	<complexType name="JSONType">
+		<sequence>
+			<element maxOccurs="unbounded" minOccurs="0" name="items">
+				<complexType>
+					<sequence>
+					    <element name="libraryName" type="string" minOccurs="0" maxOccurs="1"/>
+						<element name="folderAodocsId" type="string"/>
+						<element name="parentFolderAodocsId" type="string">
+						</element>
+						<element name="name" type="string"/>                      
+                    </sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+    
+    
+
+
+    <element name="OutputListFolderAOdocs">
+        <complexType>
+        	<sequence>
+        		<element maxOccurs="unbounded" minOccurs="0" name="libraryListFolder" type="tns:JSONType"/>
+        	</sequence>
+        </complexType>
+    </element>
+  
+  
+  
+     <complexType name="InputListfolder">
+    		<sequence>
+    			<element maxOccurs="unbounded" minOccurs="0" name="library" type="string"/>
+            </sequence>
+    	</complexType>
+
+
+
+
+     <element name="LoadListFolderAOdocs">
+     	<complexType>
+     		<sequence>
+     			<element name="lastupdate" type="decimal"/>
+     			<element maxOccurs="unbounded" minOccurs="0" name="FolderListAodocs" type="tns:JSONType">
+     			</element>
+     		</sequence>
+     	</complexType>
+     </element>
+</schema>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jsv:DocumentRoot xmlns:jsv="http://tns.tibco.com/bw/model/core/jobSV">
+  <jobSharedVariables>
+    <jobSharedVariable name="loggerParams" type="{http://ch/txg/core/lehf/common/loggerType/0100}loggerParams" initialValueMode="none"/>
+  </jobSharedVariables>
+  <import importType="http://www.w3.org/2001/XMLSchema" namespace="http://ch/txg/core/lehf/common/loggerType/0100"/>
+</jsv:DocumentRoot>

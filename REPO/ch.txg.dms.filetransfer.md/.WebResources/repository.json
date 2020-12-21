@@ -1,0 +1,11 @@
+{
+    "records": [{
+        "name": "Cloud",
+        "items": [],
+        "url": "https://eu.integration.cloud.tibco.com:443"
+    }],
+    "resources": [{
+        "location": "Service Descriptors/ch.txg.dms.filetransfer.md.FileTransferService-FileTransfer.json",
+        "type": "generated"
+    }]
+}

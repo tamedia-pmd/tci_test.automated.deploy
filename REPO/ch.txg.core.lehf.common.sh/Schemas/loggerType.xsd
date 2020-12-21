@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:ns1="http://ch/txg/core/lehf/common/AuditTypes/0100" xmlns:tns="http://ch/txg/core/lehf/common/loggerType/0100" elementFormDefault="qualified" targetNamespace="http://ch/txg/core/lehf/common/loggerType/0100">
+	
+	<import namespace="http://ch/txg/core/lehf/common/AuditTypes/0100" schemaLocation="./AUDIT.xsd"/>
+	
+	<element name="loggerParams" type="ns1:auditElementType"/>
+
+
+<!--  
+	** NOT IN USE , AT THE MOMENT **  
+
+
+	<complexType name="loggerType" >
+		<sequence >
+			<element name="LoggerName" type="string" minOccurs="0" />
+			<element name="BusinessUnit" type="string" minOccurs="0" />
+			<element name="Project" type="string" minOccurs="0" />
+			<element name="WhichProc" type="string" minOccurs="0" />
+			<element name="SysExc" type="string" minOccurs="0" />
+			<element name="ApplExc" type="string" minOccurs="0" />
+			<element name="StartState" type="string" minOccurs="0" />
+			<element name="EndState" type="string" minOccurs="0" />
+			<element name="ErrorState" type="string" minOccurs="0" />
+			<element name="InfoSeverity" type="string" minOccurs="0" />
+			<element name="DebugSeverity" type="string" minOccurs="0" />
+			<element name="ErrorSeverity" type="string" minOccurs="0" />
+			<element name="FlowID" type="string" minOccurs="0" />
+			<element name="CorrelationId" type="string" minOccurs="0" />
+			<element name="TrackingId" type="string" minOccurs="0" />
+			<element name="SourceSystem" type="string" minOccurs="0" />
+			<element name="Commodity" type="string" minOccurs="0" />
+			<element name="CompanyCode" type="string" minOccurs="0" />
+		</sequence>
+	</complexType>
+-->
+
+</schema>

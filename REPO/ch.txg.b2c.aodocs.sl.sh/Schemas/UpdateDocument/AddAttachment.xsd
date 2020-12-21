@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+xmlns:tns="http://ch/txg/b2c/aodocs/sl/AddAttachment" 
+xmlns:tns0="http://ch/txg/common/aodocs/insert/document/input/sl"
+elementFormDefault="qualified" 
+targetNamespace="http://ch/txg/b2c/aodocs/sl/AddAttachment">
+
+<import namespace="http://ch/txg/common/aodocs/insert/document/input/sl" schemaLocation="../InsertDocument/AODocs_InsertDocument_InputSchema.xsd"></import>
+
+    <element name="Input_AddAttachment">
+    	<complexType>
+    		<sequence>
+    			<element name="documentId" type="string"/>
+    			<element name="Input" >
+    				<complexType>
+    					<sequence>
+			    			<element name="libraryId" 	type="string"/>
+							<element name="title"  	 	type="string" 			minOccurs="0"    />
+							<element name="classId"  	 	type="string" 		    />
+							<element name="attachments"	type="tns0:attachmentsType" 	minOccurs="0" maxOccurs="unbounded" />
+    					</sequence>
+    				</complexType>    			
+    			</element>
+    		</sequence>
+    	</complexType>
+    </element>
+
+    <element name="Output_AddAttachment">
+    	<complexType>
+    		<sequence>
+    			<element ref="tns0:AODocs_Output"/>
+    		</sequence>
+    	</complexType>
+    </element>
+</schema>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://ch/txg/core/customfunction/common/Encrypt_process/0100" elementFormDefault="qualified" targetNamespace="http://ch/txg/core/customfunction/common/Encrypt_process/0100">
+
+
+
+    <element name="Output">
+    	<complexType>
+    		<sequence>
+    			<element name="JWT_token" type="string"/>
+    		</sequence>
+    	</complexType>
+    </element>
+    <element name="XMLtoJSONpayload">
+    	<complexType>
+    		<sequence>
+    			<sequence>
+    						<element name="iss" type="string"/>
+    						<element name="scope" type="string"/>
+    						<element name="aud" type="string"/>
+    						<element name="exp" type="string"/>
+    						<element name="iat" type="string"/>
+    			</sequence>
+    		</sequence>
+    	</complexType>
+    </element>
+
+    <element name="Input">
+    	<complexType>
+    		<sequence>
+    			<element name="scope" type="string" minOccurs="1" maxOccurs="1"></element>
+    		</sequence>
+    	</complexType>
+    </element>
+</schema>
