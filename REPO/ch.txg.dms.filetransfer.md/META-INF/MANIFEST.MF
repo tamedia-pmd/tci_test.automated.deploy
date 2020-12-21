@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Ch Txg Dms Bankstatement Filetransfer Md Module
 Bundle-SymbolicName: ch.txg.dms.bankstatement.filetransfer.md
-Bundle-Version: 1.1.16.qualifier
+Bundle-Version: 1.2.0.qualifier
 Bundle-Vendor: TIBCO Software Inc.
 Require-Bundle: ch.txg.core.customfunctions.common.sh;bundle-version="1.2.2"
 TIBCO-BW-ApplicationModule: META-INF/module.bwm

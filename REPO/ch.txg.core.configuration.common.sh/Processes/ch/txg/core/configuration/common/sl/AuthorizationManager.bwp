@@ -19,6 +19,37 @@
     xmlns:sca-bpel="http://docs.oasis-open.org/ns/opencsa/sca-bpel/200801"
     xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"
     xmlns:tibprop="http://ns.tibco.com/bw/property" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <tibex:VariableDescriptor type="MemorySaving">
+        <task name="LogStart">
+            <endingVariables>
+                <variable>LogStart-input</variable>
+                <variable>INFO_Severity</variable>
+            </endingVariables>
+        </task>
+        <task name="ThrowEmptyUserError">
+            <endingVariables>
+                <variable>ThrowEmptyUserError-input</variable>
+            </endingVariables>
+        </task>
+        <task name="validMatches">
+            <endingVariables>
+                <variable>AllAccessString</variable>
+                <variable>call_GetAuthConfiguration</variable>
+            </endingVariables>
+        </task>
+        <task name="ThrowError">
+            <endingVariables>
+                <variable>ThrowError-input</variable>
+            </endingVariables>
+        </task>
+        <task name="ThrowGenericError">
+            <endingVariables>
+                <variable>ThrowGenericError-input</variable>
+                <variable>FaultDetails</variable>
+                <variable>System_Exception</variable>
+            </endingVariables>
+        </task>
+    </tibex:VariableDescriptor>
     <tibex:Types>
         <xs:schema attributeFormDefault="unqualified"
             elementFormDefault="qualified"

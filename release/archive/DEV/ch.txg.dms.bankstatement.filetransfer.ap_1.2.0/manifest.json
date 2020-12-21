@@ -1,0 +1,1065 @@
+{
+	"name" : "ch.txg.dms.bankstatement.filetransfer.ap",
+	"version" : "1.2",
+	"type" : "ipaas",
+	"propertyPrefix" : "iPaaS_USER_OverRIDE_",
+	"properties" : [
+		{
+			"name" : "/ch.txg.core.lehf.common.sh/Logging/System_Exception",
+			"datatype" : "string",
+			"default" : "System"
+		},
+
+		{
+			"name" : "/ch.txg.core.lehf.common.sh/Logging/Business_Exception",
+			"datatype" : "string",
+			"default" : "Business"
+		},
+
+		{
+			"name" : "/ch.txg.core.lehf.common.sh/Logging/ERROR_SEVERITY",
+			"datatype" : "string",
+			"default" : "ERROR"
+		},
+
+		{
+			"name" : "/ch.txg.core.lehf.common.sh/Logging/START_STATE",
+			"datatype" : "string",
+			"default" : "START"
+		},
+
+		{
+			"name" : "/ch.txg.core.lehf.common.sh/Logging/INFO_SEVERITY",
+			"datatype" : "string",
+			"default" : "INFO"
+		},
+
+		{
+			"name" : "/ch.txg.core.lehf.common.sh/Logging/DEBUG_SEVERITY",
+			"datatype" : "string",
+			"default" : "DEBUG"
+		},
+
+		{
+			"name" : "/ch.txg.core.lehf.common.sh/Logging/BUSINESS_UNIT",
+			"datatype" : "string",
+			"default" : "BPM"
+		},
+
+		{
+			"name" : "/ch.txg.core.lehf.common.sh/Logging/END_STATE",
+			"datatype" : "string",
+			"default" : "END"
+		},
+
+		{
+			"name" : "/ch.txg.core.lehf.common.sh/Logging/ERROR_STATE",
+			"datatype" : "string",
+			"default" : "ERROR"
+		},
+
+		{
+			"name" : "/ch.txg.core.lehf.common.sh/Logging/PROJECT",
+			"datatype" : "string",
+			"default" : "TXGROUP"
+		},
+
+		{
+			"name" : "/ch.txg.dms.int5151.bsl.sh/FileTransfer/RetryBaseDelaySFTP_s",
+			"datatype" : "integer",
+			"default" : "1"
+		},
+
+		{
+			"name" : "/ch.txg.dms.int5151.bsl.sh/FileTransfer/maxRetrySFTP",
+			"datatype" : "integer",
+			"default" : "2"
+		},
+
+		{
+			"name" : "/ch.txg.dms.int5151.bsl.sh/FileTransfer/INT5151_TCI/MaxNumberOfFilesPerPolling",
+			"datatype" : "integer",
+			"default" : "5"
+		},
+
+		{
+			"name" : "/ch.txg.dms.int5151.bsl.sh/FileTransfer/INT5151_TCI/ErrorPath",
+			"datatype" : "string",
+			"default" : "/dev/adsuite/temp_5151/ERROR"
+		},
+
+		{
+			"name" : "/ch.txg.dms.int5151.bsl.sh/FileTransfer/INT5151_TCI/SourcePath",
+			"datatype" : "string",
+			"default" : "/dev/adsuite/temp_5151/IN"
+		},
+
+		{
+			"name" : "/ch.txg.dms.int5151.bsl.sh/FileTransfer/INT5151_TCI/TargetPath",
+			"datatype" : "string",
+			"default" : "/dev/adsuite/temp_5151/DONE"
+		},
+
+		{
+			"name" : "/ch.txg.dms.int5151.bsl.sh/Parameters/ParentFolder",
+			"datatype" : "string",
+			"default" : "1SNj5b5arNFBd8Iqm-vkAGMR-TuxXZ5Or"
+		},
+
+		{
+			"name" : "/ch.txg.dms.int5151.bsl.sh/Parameters/LibraryName",
+			"datatype" : "string",
+			"default" : "FIN - Bank Statements"
+		},
+
+		{
+			"name" : "/ch.txg.dms.int5151.bsl.sh/Parameters/searchDocumentParams/fieldsToIncludeInResponse",
+			"datatype" : "string",
+			"default" : "documents/id"
+		},
+
+		{
+			"name" : "/ch.txg.dms.int5151.bsl.sh/Parameters/searchDocumentParams/searchQueryFieldName",
+			"datatype" : "string",
+			"default" : "PDF Filename"
+		},
+
+		{
+			"name" : "/ch.txg.dms.int5151.bsl.sh/Connections/HTTP/Client/FileTransfer/HOST",
+			"datatype" : "string",
+			"default" : "eu-west-1.integration.cloud.tibcoapps.com"
+		},
+
+		{
+			"name" : "/ch.txg.dms.int5151.bsl.sh/Connections/HTTP/Client/FileTransfer/RETRY_COUNT",
+			"datatype" : "integer",
+			"default" : "3"
+		},
+
+		{
+			"name" : "/ch.txg.dms.int5151.bsl.sh/Connections/HTTP/Client/FileTransfer/URI",
+			"datatype" : "string",
+			"default" : "dev/dms/bankstatement/filetransfer/v1"
+		},
+
+		{
+			"name" : "/ch.txg.dms.int5151.bsl.sh/Connections/HTTP/Client/FileTransfer/CONNECTION_TIMEOUT_ms",
+			"datatype" : "integer",
+			"default" : "30000"
+		},
+
+		{
+			"name" : "/ch.txg.dms.int5151.bsl.sh/Connections/HTTP/Client/FileTransfer/MAX_TOTAL_CONNECTIONS",
+			"datatype" : "integer",
+			"default" : "200"
+		},
+
+		{
+			"name" : "/ch.txg.dms.int5151.bsl.sh/Connections/HTTP/Client/FileTransfer/MAX_CONNECTION_PER_HOST",
+			"datatype" : "integer",
+			"default" : "20"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.aodocs.sl.sh/Connection/Http/Client/GetLibraryClass/URL/URI",
+			"datatype" : "string",
+			"default" : "/z4lm36za4c6zngis7vb6ahrrdc5cttlh/dev/common/configuration/libraryId/v1"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.aodocs.sl.sh/Connection/Http/Client/GetLibrary/URL/URI",
+			"datatype" : "string",
+			"default" : "/_ah/api/library/v1/"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.aodocs.sl.sh/Connection/Http/Client/HttpResourceClient/MAX_TOTAL_CONNECTIONS",
+			"datatype" : "integer",
+			"default" : "20"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.aodocs.sl.sh/Connection/Http/Client/HttpResourceClient/USE_SINGLE_COOKIE_HEADER",
+			"datatype" : "boolean",
+			"default" : "false"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.aodocs.sl.sh/Connection/Http/Client/HttpResourceClient/CONNECTION_TIMEOUT_ms",
+			"datatype" : "integer",
+			"default" : "60000"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.aodocs.sl.sh/Connection/Http/Client/HttpResourceClient/DISABLE_CONNECTION_POOLING",
+			"datatype" : "boolean",
+			"default" : "false"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.aodocs.sl.sh/Connection/Http/Client/HttpResourceClient/LOG_REQUEST_RESPONSE_TIME",
+			"datatype" : "boolean",
+			"default" : "false"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.aodocs.sl.sh/Connection/Http/Client/HttpResourceClient/PORT",
+			"datatype" : "integer",
+			"default" : "443"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.aodocs.sl.sh/Connection/Http/Client/HttpResourceClient/HOST",
+			"datatype" : "string",
+			"default" : "ao-docs.appspot.com"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.aodocs.sl.sh/Connection/Http/Client/HttpResourceClient/IDLE_CONNECTION_TIMEOUT_ms",
+			"datatype" : "integer",
+			"default" : "3000"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.aodocs.sl.sh/Connection/Http/Client/HttpResourceClient/SOCKET_TIMEOUT_ms",
+			"datatype" : "integer",
+			"default" : "180000"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.aodocs.sl.sh/Connection/Http/Client/HttpResourceClient/MAX_CONNECTION_PER_HOST",
+			"datatype" : "integer",
+			"default" : "20"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.aodocs.sl.sh/Connection/Http/Client/HttpResourceClient/STALE_CHECK",
+			"datatype" : "boolean",
+			"default" : "false"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.aodocs.sl.sh/Connection/Http/Client/HttpResourceClient/RETRY_COUNT",
+			"datatype" : "integer",
+			"default" : "3"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.aodocs.sl.sh/Connection/Http/Client/HttpResourceClient/USE_NONPREEMPTIVE_AUTHENTICATION",
+			"datatype" : "boolean",
+			"default" : "false"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.aodocs.sl.sh/Connection/Http/Client/HttpResourceClient/ACCEPT_REDIRECT",
+			"datatype" : "boolean",
+			"default" : "true"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.aodocs.sl.sh/Connection/Http/Client/HttpResourceClient/RetriveToken/HOST",
+			"datatype" : "string",
+			"default" : "oauth2.googleapis.com"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.aodocs.sl.sh/Connection/Http/Client/HttpResourceClient/GetLibraryClass/HOST",
+			"datatype" : "string",
+			"default" : "eu-west-1.integration.cloud.tibcoapps.com"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.aodocs.sl.sh/Connection/Http/Client/LockUnlockAodocs/timeoutUnlockms",
+			"datatype" : "integer",
+			"default" : "30000"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.aodocs.sl.sh/Connection/Http/Client/LockUnlockAodocs/Host",
+			"datatype" : "string",
+			"default" : "ao-docs.appspot.com"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.aodocs.sl.sh/Connection/Http/Client/LockUnlockAodocs/URL/URI",
+			"datatype" : "string",
+			"default" : "/_ah/api/document/v1/"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.aodocs.sl.sh/Connection/Http/Client/UpdateDocument/URL/URI",
+			"datatype" : "string",
+			"default" : "/_ah/api/document/v1/"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.aodocs.sl.sh/Connection/Http/Client/SearchDocument/URI",
+			"datatype" : "string",
+			"default" : "/_ah/api/search/v1/libraries/"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.aodocs.sl.sh/Connection/Http/Client/InsertDocument/URL/URI",
+			"datatype" : "string",
+			"default" : "/_ah/api/document/v1"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.aodocs.sl.sh/Connection/Http/Client/listWorkflows/URI",
+			"datatype" : "string",
+			"default" : "/_ah/api/workflow/v1/libraries/"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.aodocs.sl.sh/Connection/RetryManagement/maxRetry",
+			"datatype" : "integer",
+			"default" : "2"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.aodocs.sl.sh/Connection/RetryManagement/baseRetryDelay_s",
+			"datatype" : "integer",
+			"default" : "5"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.aodocs.sl.sh/Parameters/libraryIDTTL_sec",
+			"datatype" : "integer",
+			"default" : "86400"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.aodocs.sl.sh/Parameters/changeDocumentState/customMessage",
+			"datatype" : "string",
+			"default" : "---"
+		},
+
+		{
+			"name" : "/ch.txg.core.customfunctions.common.sh/payloadJson/iss",
+			"datatype" : "string",
+			"default" : "tx-tci@aodocs-storage-dev.iam.gserviceaccount.com"
+		},
+
+		{
+			"name" : "/ch.txg.core.customfunctions.common.sh/payloadJson/aud",
+			"datatype" : "string",
+			"default" : "https://oauth2.googleapis.com/token"
+		},
+
+		{
+			"name" : "/ch.txg.core.customfunctions.common.sh/payloadJson/privateKey",
+			"datatype" : "string",
+			"default" : "MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCxD5AVUiLS4tzd gXKm/J+C+Z5edt6LpLCcBKTVU/qS7ZEVl8/c5EXEBrgw2uoNmHyzgs6538Sn3V1N lCoVuIsAx/0qy1iO6OBbpAqEqC+ygz/WN7ReDqY898e/bM60/xfy45ITtEL0EjIN lsf/RTo9Ozu9ZF+S3IiAXjuZyPChlGRHSKaUfVQjLwwO3SKdNYear6btXPqRDH6k ApLq73dhRaDJWxXwM5V4INkk1WGriTQlfNMswUynF2EQPg94bw4xCKA9aEHlfzgp XEiP8fl2sRXP5QxBQLiv5SqO4/qKvcttJlTKh2SAwAwZ24xdw/esiu/QTAo6Dr81 V2xuILEFAgMBAAECggEAAfeCSjpXWLBcc7l0ZJZ5zyKmt7XqUvLJY3JJwnTkW613 5x2AmZuPitXoReKopu4CtJvHYBk0PgkfeDUlIoiiQqf2D/uiSDQeCeaQl1im7vy2 QNLtlf3jqtm1xlKXGTucMH6GqOFfvQZWt//syNEkDHoT986doSwB+CsTzmmFAsZ2 c407Jxf8tk0XY6+ZeaYJIyhxuKJaAXxTczYRuDEb+j/cQKFSZeIbs/G7AIyZU/IM LP2an4NGmcdKZxVR/n54nrtsWszAqq2OVbSQDttfIFKF3OpkBE8TxqNAtOV/EjSC Y3pya4Cky5dLwdITxnLvLzXMhLKfeNF2PRVe9hkNIQKBgQDvR3JHxPT9Cg34n6+e ycPoX6ubBKck8iW9p6pBw/Svh5ac7j/WW09QuyN3IIcktL+6f9x1efzPby7YZXg/ FQLYg/foNOfi7PeHHMciXYFSBGtQJppj+K6rgmKl0MurM9n2wk2ARReBhLW5vMnT fyHwYqAPl25S99o9kSGbKjtYowKBgQC9bxHnItL1PRECSCYS3A4uSIaM77e4I7Ux rQqgiHJIE2k2Uhz/KGfuNtv+wO3uANpPyZJvl1/gtz5FuO+iCTyycJEKPZAH9leC 5C3ZCdlzgpJdxVWVDGfS54WP8V0+kLU0UfATIeXvj7NXmOheqaLcVjslrII6RLCe SOtAkqkiNwKBgQCcyJXLDPTx8GqjJA7w3oetdTJ+Spgyjy/Hi1r16K4lbZR0k2/k xsO7xENCxV+H359ZVnpfx2Stjs6FIEegHeZVdHM2BaSDfn3aXDLnA5m+4gJm7ERx iPr6il6VA7DQJxOEqmAZ0ivKw+hHIbqlCEJ2vkjernythJXNjZEVmKB2PQKBgQCl 13pF7y/e8UJVzBJBCpQDowzgj/E4bVJxFfwqxKnAPfYrT0IBhD9QxohdBEyIxAhc N61SsqSGmAYVhi2MnyebVH82BuV0gw7kEZ2t2DieLp6zJ1KgdUbj1jsQ5I7sekWZ c26JYXDrBNROiRhN35cr7PZFKjyshHxXZqFGW99kiwKBgCufWosFpAi420aNdQum choarnFIpx4AwSeY7g3y5Vqwpxv/2pa+vKT6zdBPW5VmHb/vARRZDYIe0P7n2TI7 ST3+anvRmR66zZrc2KmHaeDLg4KtDKvTc9DIVihVZCFId65iofEyvIQpuZjbK1Te ps/ioSylOm0vK6x4z32x6yv4"
+		},
+
+		{
+			"name" : "/ch.txg.core.customfunctions.common.sh/payloadJson/scope/scopeAODocs",
+			"datatype" : "string",
+			"default" : "https://www.googleapis.com/auth/drive https://www.googleapis.com/auth/userinfo.email"
+		},
+
+		{
+			"name" : "/ch.txg.core.customfunctions.common.sh/payloadJson/scope/scopeGDRIVE",
+			"datatype" : "string",
+			"default" : "https://www.googleapis.com/auth/drive https://www.googleapis.com/auth/userinfo.email"
+		},
+
+		{
+			"name" : "/ch.txg.core.sftp.common/Connections/SFTP/Username",
+			"datatype" : "string",
+			"default" : "txtci-dev"
+		},
+
+		{
+			"name" : "/ch.txg.core.sftp.common/Connections/SFTP/Host",
+			"datatype" : "string",
+			"default" : "ftp.tamedia.ch"
+		},
+
+		{
+			"name" : "/ch.txg.core.sftp.common/Connections/SFTP/TimeOut_ms",
+			"datatype" : "integer",
+			"default" : "60000"
+		},
+
+		{
+			"name" : "/ch.txg.core.sftp.common/Connections/SFTP/Port",
+			"datatype" : "integer",
+			"default" : "22"
+		},
+
+		{
+			"name" : "/ch.txg.core.sftp.common/Connections/SFTP/Password",
+			"datatype" : "password",
+			"default" : "#!/5yTrTNeiDpo0Fw/6ahbrYY3727pXbfuLV/TJgucAElCHAQNJHfURQ=="
+		},
+
+		{
+			"name" : "/ch.txg.core.sftp.common/Connections/SFTP/ShortRetryManagement/MaxShortRetry",
+			"datatype" : "integer",
+			"default" : "5"
+		},
+
+		{
+			"name" : "/ch.txg.core.sftp.common/Connections/SFTP/ShortRetryManagement/baseRetryDelay_s",
+			"datatype" : "integer",
+			"default" : "1"
+		},
+
+		{
+			"name" : "/ch.txg.core.sftp.common/Connections/SFTP/BankStatment/Password",
+			"datatype" : "password",
+			"default" : "#!lFsTFzz595v4QQkSYTdq9D7RHWkwgtOtCgp7uCXRd78="
+		},
+
+		{
+			"name" : "/ch.txg.core.sftp.common/Connections/SFTP/BankStatment/TimeOut_ms",
+			"datatype" : "integer",
+			"default" : "0"
+		},
+
+		{
+			"name" : "/ch.txg.core.sftp.common/Connections/SFTP/BankStatment/Port",
+			"datatype" : "integer",
+			"default" : "22"
+		},
+
+		{
+			"name" : "/ch.txg.core.sftp.common/Connections/SFTP/BankStatment/Username",
+			"datatype" : "string",
+			"default" : "tx-edocs"
+		},
+
+		{
+			"name" : "/ch.txg.core.sftp.common/Connections/SFTP/BankStatment/Host",
+			"datatype" : "string",
+			"default" : "ftp.tamedia.ch"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.workday.sl.sh/Parameters/TTL_sec",
+			"datatype" : "integer",
+			"default" : "86400"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.workday.sl.sh/Connections/HTTP/RetryhManagement/statusCodesToSkip",
+			"datatype" : "string",
+			"default" : "400;401"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.workday.sl.sh/Connections/HTTP/RetryhManagement/MaxRetry",
+			"datatype" : "integer",
+			"default" : "3"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.workday.sl.sh/Connections/HTTP/RetryhManagement/baseRetryDelay_s",
+			"datatype" : "integer",
+			"default" : "1"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.workday.sl.sh/Connections/HTTP/Operations/getBankAccountList/PORT",
+			"datatype" : "integer",
+			"default" : "443"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.workday.sl.sh/Connections/HTTP/Operations/getBankAccountList/username",
+			"datatype" : "string",
+			"default" : "ISU_TCI"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.workday.sl.sh/Connections/HTTP/Operations/getBankAccountList/URI",
+			"datatype" : "string",
+			"default" : "/ccx/service/customreport2/txgroup2/ISU_TCI/CR_INT5151_TCI_Bank_Accounts_Outbound"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.workday.sl.sh/Connections/HTTP/Operations/getBankAccountList/HOST",
+			"datatype" : "string",
+			"default" : "wd3-impl-services1.workday.com"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.workday.sl.sh/Connections/HTTP/Operations/getBankAccountList/password",
+			"datatype" : "password",
+			"default" : "#!hdFlZivHf0553makQEnCQnw4w1J5efK1s3+j/DrmCE0xLdofpRJEBQ=="
+		},
+
+		{
+			"name" : "/ch.txg.core.configuration.common.sh/RetryManagement/statusCodesToSkip",
+			"datatype" : "string",
+			"default" : "400;401"
+		},
+
+		{
+			"name" : "/ch.txg.core.configuration.common.sh/RetryManagement/maxRetry",
+			"datatype" : "integer",
+			"default" : "2"
+		},
+
+		{
+			"name" : "/ch.txg.core.configuration.common.sh/RetryManagement/baseRetryDelay_s",
+			"datatype" : "integer",
+			"default" : "1"
+		},
+
+		{
+			"name" : "/ch.txg.core.configuration.common.sh/Connection/Http/Client/AoDocsMappingTable/URI",
+			"datatype" : "string",
+			"default" : "/z4lm36za4c6zngis7vb6ahrrdc5cttlh/dev/common/configuration/mappingtable/v1"
+		},
+
+		{
+			"name" : "/ch.txg.core.configuration.common.sh/Connection/Http/Client/LibraryID/URI",
+			"datatype" : "string",
+			"default" : "/3mnh4m5wafr7rwtkq3h2ljecnqxx23mc/dev/common/configuration/libraryId/v1"
+		},
+
+		{
+			"name" : "/ch.txg.core.configuration.common.sh/Connection/Http/Client/BankStatementConfiguration/URIDocType",
+			"datatype" : "string",
+			"default" : "/z4lm36za4c6zngis7vb6ahrrdc5cttlh/dev/common/configuration/bankstatement/doctype/v1"
+		},
+
+		{
+			"name" : "/ch.txg.core.configuration.common.sh/Connection/Http/Client/BankStatementConfiguration/URIFilePoller",
+			"datatype" : "string",
+			"default" : "/z4lm36za4c6zngis7vb6ahrrdc5cttlh/common/configuration/bankstatement/filepoller/v1"
+		},
+
+		{
+			"name" : "/ch.txg.core.configuration.common.sh/Connection/Http/Client/BankStatementConfiguration/URI",
+			"datatype" : "string",
+			"default" : "/z4lm36za4c6zngis7vb6ahrrdc5cttlh/dev/common/configuration/bankstatement/csv/v1"
+		},
+
+		{
+			"name" : "/ch.txg.core.configuration.common.sh/Connection/Http/Client/GoogleGroupID/URI_V3",
+			"datatype" : "string",
+			"default" : "/z4lm36za4c6zngis7vb6ahrrdc5cttlh/dev/common/configuration/googleGroup/v3"
+		},
+
+		{
+			"name" : "/ch.txg.core.configuration.common.sh/Connection/Http/Client/GoogleGroupID/URI",
+			"datatype" : "string",
+			"default" : "/z4lm36za4c6zngis7vb6ahrrdc5cttlh/dev/common/configuration/googleGroup/v2"
+		},
+
+		{
+			"name" : "/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/CONNECTION_TIMEOUT_ms",
+			"datatype" : "integer",
+			"default" : "60000"
+		},
+
+		{
+			"name" : "/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/RETRY_COUNT",
+			"datatype" : "integer",
+			"default" : "3"
+		},
+
+		{
+			"name" : "/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/USE_SINGLE_COOKIE_HEADER",
+			"datatype" : "boolean",
+			"default" : "false"
+		},
+
+		{
+			"name" : "/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/MAX_TOTAL_CONNECTIONS",
+			"datatype" : "integer",
+			"default" : "20"
+		},
+
+		{
+			"name" : "/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/PORT",
+			"datatype" : "integer",
+			"default" : "443"
+		},
+
+		{
+			"name" : "/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/SOCKET_TIMEOUT_ms",
+			"datatype" : "integer",
+			"default" : "180000"
+		},
+
+		{
+			"name" : "/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/DISABLE_CONNECTION_POOLING",
+			"datatype" : "boolean",
+			"default" : "false"
+		},
+
+		{
+			"name" : "/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/MAX_CONNECTION_PER_HOST",
+			"datatype" : "integer",
+			"default" : "20"
+		},
+
+		{
+			"name" : "/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/STALE_CHECK",
+			"datatype" : "boolean",
+			"default" : "false"
+		},
+
+		{
+			"name" : "/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/ACCEPT_REDIRECT",
+			"datatype" : "boolean",
+			"default" : "true"
+		},
+
+		{
+			"name" : "/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/LOG_REQUEST_RESPONSE_TIME",
+			"datatype" : "boolean",
+			"default" : "false"
+		},
+
+		{
+			"name" : "/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/IDLE_CONNECTION_TIMEOUT_ms",
+			"datatype" : "integer",
+			"default" : "3000"
+		},
+
+		{
+			"name" : "/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/USE_NONPREEMPTIVE_AUTHENTICATION",
+			"datatype" : "boolean",
+			"default" : "false"
+		},
+
+		{
+			"name" : "/ch.txg.core.configuration.common.sh/Connection/Http/Client/HttpResourceClient/HOST",
+			"datatype" : "string",
+			"default" : "eu-west-1.integration.cloud.tibcoapps.com"
+		},
+
+		{
+			"name" : "/ch.txg.core.configuration.common.sh/AodocsParameters/AodocsConfig/libraryIDTTL_sec",
+			"datatype" : "integer",
+			"default" : "86400"
+		},
+
+		{
+			"name" : "/ch.txg.core.configuration.common.sh/AodocsParameters/AodocsConfig/aodocsMappingTableTTL_sec",
+			"datatype" : "integer",
+			"default" : "86400"
+		},
+
+		{
+			"name" : "/ch.txg.core.configuration.common.sh/AodocsParameters/AodocsConfig/googleGroupTTL_sec",
+			"datatype" : "integer",
+			"default" : "86400"
+		},
+
+		{
+			"name" : "/ch.txg.core.configuration.common.sh/BankStatement/CSV_TTLsec",
+			"datatype" : "integer",
+			"default" : "86400"
+		},
+
+		{
+			"name" : "/ch.txg.core.configuration.common.sh/BankStatement/DocType_TTLsec",
+			"datatype" : "integer",
+			"default" : "86400"
+		},
+
+		{
+			"name" : "/ch.txg.core.configuration.common.sh/BankStatement/FilePoller_TTLsec",
+			"datatype" : "integer",
+			"default" : "86400"
+		},
+
+		{
+			"name" : "/INT5151BankStatement/AODocsSecurityGroupProject",
+			"datatype" : "string",
+			"default" : "BANKSTATEMENT"
+		},
+
+		{
+			"name" : "/INT5151BankStatement/className",
+			"datatype" : "string",
+			"default" : "Bank Statement"
+		},
+
+		{
+			"name" : "/INT5151BankStatement/dateFormatUnixTs",
+			"datatype" : "string",
+			"default" : "yyyyMMdd"
+		},
+
+		{
+			"name" : "/INT5151BankStatement/libraryName",
+			"datatype" : "string",
+			"default" : "FIN - Bank Statements"
+		},
+
+		{
+			"name" : "/INT5151BankStatement/dateFormat",
+			"datatype" : "string",
+			"default" : "[Y0001][M01][D01]"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.gdrive.sl.sh/Connection/RetryManagement/statusCodesToSkip",
+			"datatype" : "string",
+			"default" : "400;401"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.gdrive.sl.sh/Connection/RetryManagement/maxRetry",
+			"datatype" : "integer",
+			"default" : "3"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.gdrive.sl.sh/Connection/RetryManagement/baseRetryDelay_s",
+			"datatype" : "integer",
+			"default" : "1"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.gdrive.sl.sh/Connection/Http/Client/UploadFile/Timeout_s",
+			"datatype" : "integer",
+			"default" : "60"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.gdrive.sl.sh/Connection/Http/Client/UploadFile/Host",
+			"datatype" : "string",
+			"default" : "www.googleapis.com"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.gdrive.sl.sh/Connection/Http/Client/UploadFile/Port",
+			"datatype" : "integer",
+			"default" : "443"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.gdrive.sl.sh/Connection/Http/Client/DeleteFile/Timeout_s",
+			"datatype" : "integer",
+			"default" : "60"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.gdrive.sl.sh/Connection/Http/Client/HttpResourceClient/RETRY_COUNT",
+			"datatype" : "integer",
+			"default" : "3"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.gdrive.sl.sh/Connection/Http/Client/HttpResourceClient/USE_NONPREEMPTIVE_AUTHENTICATION",
+			"datatype" : "boolean",
+			"default" : "false"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.gdrive.sl.sh/Connection/Http/Client/HttpResourceClient/PORT",
+			"datatype" : "integer",
+			"default" : "443"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.gdrive.sl.sh/Connection/Http/Client/HttpResourceClient/STALE_CHECK",
+			"datatype" : "boolean",
+			"default" : "false"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.gdrive.sl.sh/Connection/Http/Client/HttpResourceClient/MAX_TOTAL_CONNECTIONS",
+			"datatype" : "integer",
+			"default" : "20"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.gdrive.sl.sh/Connection/Http/Client/HttpResourceClient/LOG_REQUEST_RESPONSE_TIME",
+			"datatype" : "boolean",
+			"default" : "false"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.gdrive.sl.sh/Connection/Http/Client/HttpResourceClient/ACCEPT_REDIRECT",
+			"datatype" : "boolean",
+			"default" : "true"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.gdrive.sl.sh/Connection/Http/Client/HttpResourceClient/CONNECTION_TIMEOUT_ms",
+			"datatype" : "integer",
+			"default" : "60000"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.gdrive.sl.sh/Connection/Http/Client/HttpResourceClient/SOCKET_TIMEOUT_ms",
+			"datatype" : "integer",
+			"default" : "180000"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.gdrive.sl.sh/Connection/Http/Client/HttpResourceClient/MAX_CONNECTION_PER_HOST",
+			"datatype" : "integer",
+			"default" : "20"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.gdrive.sl.sh/Connection/Http/Client/HttpResourceClient/IDLE_CONNECTION_TIMEOUT_ms",
+			"datatype" : "integer",
+			"default" : "3000"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.gdrive.sl.sh/Connection/Http/Client/HttpResourceClient/DISABLE_CONNECTION_POOLING",
+			"datatype" : "boolean",
+			"default" : "false"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.gdrive.sl.sh/Connection/Http/Client/HttpResourceClient/USE_SINGLE_COOKIE_HEADER",
+			"datatype" : "boolean",
+			"default" : "false"
+		},
+
+		{
+			"name" : "/ch.txg.b2c.gdrive.sl.sh/Connection/Http/Client/HttpResourceClient/RetriveToken/HOST",
+			"datatype" : "string",
+			"default" : "oauth2.googleapis.com"
+		},
+
+		{
+			"name" : "/ch.txg.dms.bankstatement.filetransfer.md/ch.txg.dms.filetransfer.adm/ClearCacheMemory/URI",
+			"datatype" : "string",
+			"default" : "/dev/dms/filetransfer/admin/clearmemory/v1"
+		},
+
+		{
+			"name" : "/ch.txg.dms.bankstatement.filetransfer.md/ch.txg.dms.filetransfer.adm/ConfigLoader/ConfLoad_TimeInterval_s",
+			"datatype" : "integer",
+			"default" : "86400"
+		},
+
+		{
+			"name" : "/ch.txg.dms.bankstatement.filetransfer.md/ch.txg.dms.filetransfer.adm/ConfigLoader/StartTimestamp",
+			"datatype" : "datetime",
+			"default" : "2020-12-09T02:30:00+01:00"
+		},
+
+		{
+			"name" : "/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/MinimumQTPThreads",
+			"datatype" : "integer",
+			"default" : "10"
+		},
+
+		{
+			"name" : "/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/RequestBufferSize_B",
+			"datatype" : "integer",
+			"default" : "8192"
+		},
+
+		{
+			"name" : "/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/MaxIdleTime_ms",
+			"datatype" : "integer",
+			"default" : "200000"
+		},
+
+		{
+			"name" : "/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/AcceptorThreads",
+			"datatype" : "integer",
+			"default" : "1"
+		},
+
+		{
+			"name" : "/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/MaxSavePostSize_B",
+			"datatype" : "integer",
+			"default" : "4096"
+		},
+
+		{
+			"name" : "/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/LingerTime_ms",
+			"datatype" : "integer",
+			"default" : "0"
+		},
+
+		{
+			"name" : "/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/AcceptQueueSize",
+			"datatype" : "integer",
+			"default" : "0"
+		},
+
+		{
+			"name" : "/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/HeaderBufferSize_B",
+			"datatype" : "integer",
+			"default" : "4096"
+		},
+
+		{
+			"name" : "/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/ResponseBufferSize_B",
+			"datatype" : "integer",
+			"default" : "24576"
+		},
+
+		{
+			"name" : "/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/SessionTimeout_s",
+			"datatype" : "integer",
+			"default" : "1800"
+		},
+
+		{
+			"name" : "/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/LowResourceMaxIdleTime_ms",
+			"datatype" : "integer",
+			"default" : "0"
+		},
+
+		{
+			"name" : "/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/MaximumQTPThreads",
+			"datatype" : "integer",
+			"default" : "75"
+		},
+
+		{
+			"name" : "/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/MaxPostSize_B",
+			"datatype" : "integer",
+			"default" : "2097152"
+		}
+	],
+	"volumesFrom" : [
+		"bwplugin/bw.sftp"
+	],
+	"endpoints" : [
+		{
+			"name" : "Dev-dms-fileTransfer-v1",
+			"protocol" : "http",
+			"port" : "8080",
+			"spec" : {
+				"name" : "ch.txg.dms.bankstatement.filetransfer.ap",
+				"version" : "v1"
+			},
+			"swagger" : {
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "FileTransfer",
+    "description" : "FileTransfer service"
+  },
+  "host" : "localhost:8080",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/dev/dms/fileTransfer/v1" : {
+      "post" : {
+        "summary" : "postFileTransfer",
+        "description" : "postFileTransfer",
+        "operationId" : "post-dev-dms-fileTransfer-v1",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/TransferRequest"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "202" : {
+            "description" : "Accepted",
+            "schema" : {
+              "type" : "string"
+            }
+          },
+          "200" : {
+            "description" : "OK",
+            "headers" : { }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "Target" : {
+      "type" : "object",
+      "required" : [ "filePath" ],
+      "properties" : {
+        "filePath" : {
+          "type" : "string"
+        },
+        "fileName" : {
+          "type" : "string"
+        },
+        "folderName" : {
+          "type" : "string"
+        },
+        "metadataFileName" : {
+          "type" : "string"
+        }
+      }
+    },
+    "Callback" : {
+      "type" : "object",
+      "required" : [ "correlationId", "callbackChannel" ],
+      "properties" : {
+        "correlationId" : {
+          "type" : "string"
+        },
+        "callbackChannel" : {
+          "type" : "string"
+        }
+      }
+    },
+    "TransferRequest" : {
+      "type" : "object",
+      "required" : [ "TransferName", "Source" ],
+      "properties" : {
+        "TransferName" : {
+          "type" : "string"
+        },
+        "Callback" : {
+          "$ref" : "#/definitions/Callback"
+        },
+        "Source" : {
+          "$ref" : "#/definitions/Source"
+        },
+        "Target" : {
+          "$ref" : "#/definitions/Target"
+        }
+      }
+    },
+    "Source" : {
+      "type" : "object",
+      "required" : [ "filePath" ],
+      "properties" : {
+        "filePath" : {
+          "type" : "string"
+        },
+        "fileName" : {
+          "type" : "string"
+        },
+        "folderName" : {
+          "type" : "string"
+        },
+        "metadataFileName" : {
+          "type" : "string"
+        }
+      }
+    }
+  }
+}
+		},
+		{
+			"name" : "FileTransfer",
+			"protocol" : "http",
+			"port" : "8080",
+			"spec" : {
+				"name" : "ch.txg.dms.bankstatement.filetransfer.ap",
+				"version" : "v1"
+			}
+		},
+		{
+			"type" : "private",
+			"pingable" : true,
+			"protocol" : "http",
+			"port" : "7777"
+		}
+	]
+}

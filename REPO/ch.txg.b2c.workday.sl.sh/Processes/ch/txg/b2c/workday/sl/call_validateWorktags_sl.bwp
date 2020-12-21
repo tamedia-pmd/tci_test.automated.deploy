@@ -2193,6 +2193,8 @@
                 <bpws:literal>false</bpws:literal>
             </bpws:from>
         </bpws:variable>
+        <bpws:variable element="ns5:ActivityErrorData"
+            name="_error_ThrowError" sca-bpel:internal="true"/>
     </bpws:variables>
     <bpws:extensions>
         <bpws:extension mustUnderstand="no" namespace="http://www.eclipse.org/gmf/runtime/1.0.2/notation"/>
@@ -2286,8 +2288,7 @@
                     </tibex:config>
                 </tibex:activityExtension>
             </bpws:extensionActivity>
-            <bpws:scope name="RepeatOnError" tibex:group="repeatOnError"
-                tibex:indexToGlobal="false" tibex:xpdlId="0a88bdea-8976-48e7-a8ce-02a894099db0">
+            <bpws:scope name="RepeatOnError" tibex:group="repeatOnError" tibex:xpdlId="0a88bdea-8976-48e7-a8ce-02a894099db0">
                 <bpws:targets>
                     <bpws:target linkName="render_RequestJSONToRepeatOnError"/>
                 </bpws:targets>

@@ -37,18 +37,18 @@
   <sca:property xmi:id="_kZRtgDoVEeuZd6JX20Vneg" name="/ch.txg.dms.bankstatement.filetransfer.md/ch.txg.dms.filetransfer.adm/ConfigLoader/ConfLoad_TimeInterval_s" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
   <sca:property xmi:id="_NSlpUDoWEeuZd6JX20Vneg" name="/ch.txg.dms.bankstatement.filetransfer.md/ch.txg.dms.filetransfer.adm/ConfigLoader/StartTimestamp" type="XMLSchema:dateTime" publicAccess="true" scalable="true"/>
   <sca:component xmi:id="_CHU3ULFJEeqSmfPn4kedNQ" name="ComponentFileTransferService" compositeext:version="1.0.0.qualifier">
-    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_CHU3UbFJEeqSmfPn4kedNQ" processName="ch.txg.dms.filetransfer.tlp.FileTransferService_tlp"/>
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_CHU3UbFJEeqSmfPn4kedNQ" processName="ch.txg.dms.bankstatement.filetransfer.tlp.FileTransferService_tlp"/>
     <sca:service xmi:id="_xYb3oP41EeqHK49DkXuMdA" name="dev-dms-fileTransfer-v1">
       <sca:interface.wsdl xmi:id="_xYdFwP41EeqHK49DkXuMdA" interface="http://xmlns.example.com/20200618114941PLT#wsdl.interface(dev-dms-fileTransfer-v13)"/>
     </sca:service>
   </sca:component>
   <sca:component xmi:id="_efJPULSoEeqCJ-tL7gWIog" name="ComponentStartLoadErrorConfig" compositeext:version="1.0.0.qualifier">
-    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_efJPUbSoEeqCJ-tL7gWIog" processName="ch.txg.dms.filetransfer.startup.StartupLoadConfig"/>
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_efJPUbSoEeqCJ-tL7gWIog" processName="ch.txg.dms.bankstatement.filetransfer.startup.StartupLoadConfig"/>
   </sca:component>
   <sca:component xmi:id="_CGqnoCQWEeuQPdKmtLFlyw" name="ComponentClearSharedVariables" compositeext:version="1.0.0.qualifier">
-    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_CGqnoSQWEeuQPdKmtLFlyw" processName="ch.txg.dms.filetransfer.config.CleanCacheMemory"/>
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_CGqnoSQWEeuQPdKmtLFlyw" processName="ch.txg.dms.bankstatement.filetransfer.config.CleanCacheMemory"/>
   </sca:component>
   <sca:component xmi:id="_Z1oP8DoSEeuZd6JX20Vneg" name="ComponentConfigLoader" compositeext:version="1.0.0.qualifier">
-    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_Z1oP8ToSEeuZd6JX20Vneg" processName="ch.txg.dms.filetransfer.config.ConfigLoader_tlp"/>
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_Z1oP8ToSEeuZd6JX20Vneg" processName="ch.txg.dms.bankstatement.filetransfer.config.ConfigLoader_tlp"/>
   </sca:component>
 </sca:composite>

@@ -1181,6 +1181,8 @@
         <bpws:variable element="ns14:LogAudit" name="ThrowError-input" sca-bpel:internal="true"/>
         <bpws:variable element="ns25:ActivityErrorData"
             name="_error_GetLibraryClass" sca-bpel:internal="true"/>
+        <bpws:variable element="ns16:ActivityErrorData"
+            name="_error_ThrowGenericError" sca-bpel:internal="true"/>
     </bpws:variables>
     <bpws:extensions>
         <bpws:extension mustUnderstand="no" namespace="http://www.eclipse.org/gmf/runtime/1.0.2/notation"/>

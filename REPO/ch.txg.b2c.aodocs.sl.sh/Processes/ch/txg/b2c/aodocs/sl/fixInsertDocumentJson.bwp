@@ -34,6 +34,58 @@
     xmlns:sca-bpel="http://docs.oasis-open.org/ns/opencsa/sca-bpel/200801"
     xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"
     xmlns:tibprop="http://ns.tibco.com/bw/property" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <tibex:VariableDescriptor type="MemorySaving">
+        <task name="CreateJsonWithAll">
+            <endingVariables>
+                <variable>CreateJsonWithAll-input</variable>
+                <variable>RenderJsonWithoutCategories</variable>
+                <variable>Accumulate</variable>
+            </endingVariables>
+        </task>
+        <task name="CreateJsonWithAllGroupIterate">
+            <endingVariables>
+                <variable>RenderJSONWithAll</variable>
+            </endingVariables>
+        </task>
+        <task name="RenderJSONWithAll">
+            <endingVariables>
+                <variable>RenderJSONWithAll-input</variable>
+            </endingVariables>
+        </task>
+        <task name="SetFixedJsonRequest">
+            <endingVariables>
+                <variable>Start</variable>
+                <variable>CreateJsonWithAll</variable>
+                <variable>ParseInputJson</variable>
+            </endingVariables>
+        </task>
+        <task name="ParseInputJson">
+            <endingVariables>
+                <variable>ParseInputJson-input</variable>
+            </endingVariables>
+        </task>
+        <task name="RenderJsonWithoutCategories">
+            <endingVariables>
+                <variable>RenderJsonWithoutCategories-input</variable>
+            </endingVariables>
+        </task>
+        <task name="ThrowParseJsonError">
+            <endingVariables>
+                <variable>ThrowParseJsonError-input</variable>
+            </endingVariables>
+        </task>
+        <task name="ThrowRenderJsonError">
+            <endingVariables>
+                <variable>ThrowRenderJsonError-input</variable>
+            </endingVariables>
+        </task>
+        <task name="ThrowGenericError">
+            <endingVariables>
+                <variable>ThrowGenericError-input</variable>
+                <variable>FaultDetails</variable>
+            </endingVariables>
+        </task>
+    </tibex:VariableDescriptor>
     <tibex:Types>
         <xs:schema attributeFormDefault="unqualified"
             elementFormDefault="qualified"

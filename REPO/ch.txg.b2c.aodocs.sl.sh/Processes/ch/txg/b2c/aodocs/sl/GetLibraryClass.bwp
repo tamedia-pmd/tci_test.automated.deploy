@@ -2771,6 +2771,10 @@
             name="FilterLibrariesToRetrieve" sca-bpel:internal="true"/>
         <bpws:variable element="ns24:AccumulatedOutput"
             name="ListOfLibrariesToRetrieve" sca-bpel:internal="true"/>
+        <bpws:variable element="ns16:ActivityErrorData"
+            name="_error_LibraryNeededNotPresent" sca-bpel:internal="true"/>
+        <bpws:variable element="ns16:ActivityErrorData"
+            name="_error_ThrowGenericError" sca-bpel:internal="true"/>
     </bpws:variables>
     <bpws:extensions>
         <bpws:extension mustUnderstand="no" namespace="http://www.eclipse.org/gmf/runtime/1.0.2/notation"/>

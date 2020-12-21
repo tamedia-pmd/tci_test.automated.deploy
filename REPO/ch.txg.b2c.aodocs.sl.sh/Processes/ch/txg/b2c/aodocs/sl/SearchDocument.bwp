@@ -27,6 +27,72 @@
     xmlns:tibprop="http://ns.tibco.com/bw/property"
     xmlns:tns="http://schemas.tibco.com/bw/plugins/http/5.0/httpExceptions"
     xmlns:tns1="http://schemas.tibco.com/bw/pe/plugin/5.0/exceptions" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <tibex:VariableDescriptor type="MemorySaving">
+        <task name="End">
+            <endingVariables>
+                <variable>ParseJSON</variable>
+            </endingVariables>
+        </task>
+        <task name="Repeat">
+            <endingVariables>
+                <variable>_error_HTTPRequestSearchDocument</variable>
+                <variable>maxRetry</variable>
+                <variable>indexRetry</variable>
+                <variable>QueryFields</variable>
+                <variable>baseRetryDelay_s</variable>
+                <variable>System_EXCEPTION</variable>
+            </endingVariables>
+        </task>
+        <task name="HTTPRequestSearchDocument">
+            <endingVariables>
+                <variable>HTTPRequestSearchDocument-input</variable>
+            </endingVariables>
+        </task>
+        <task name="Sleep">
+            <endingVariables>
+                <variable>Sleep-input</variable>
+            </endingVariables>
+        </task>
+        <task name="ParseJSON">
+            <endingVariables>
+                <variable>ParseJSON-input</variable>
+                <variable>HTTPRequestSearchDocument</variable>
+            </endingVariables>
+        </task>
+        <task name="ThrowError400">
+            <endingVariables>
+                <variable>ThrowError400-input</variable>
+            </endingVariables>
+        </task>
+        <task name="ThrowEnd">
+            <endingVariables>
+                <variable>ThrowEnd-input</variable>
+            </endingVariables>
+        </task>
+        <task name="QueryFields">
+            <endingVariables>
+                <variable>QueryFields-input</variable>
+                <variable>URI</variable>
+                <variable>classIdQuery</variable>
+                <variable>searchQuery</variable>
+                <variable>fieldQuery</variable>
+            </endingVariables>
+        </task>
+        <task name="setTokenRetrieved">
+            <endingVariables>
+                <variable>RetrieveToken</variable>
+            </endingVariables>
+        </task>
+        <task name="Throw">
+            <endingVariables>
+                <variable>Throw-input</variable>
+                <variable>_error_ParseJSON</variable>
+                <variable>FaultDetails</variable>
+                <variable>_error_ThrowError400</variable>
+                <variable>_error_ThrowEnd</variable>
+            </endingVariables>
+        </task>
+    </tibex:VariableDescriptor>
     <tibex:Types>
         <xs:schema attributeFormDefault="unqualified"
             elementFormDefault="qualified"
@@ -1921,8 +1987,7 @@
                         variableName="//ch.txg.core.lehf.common.sh//loggerParams" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"/>
                 </tibex:extActivity>
             </bpws:extensionActivity>
-            <bpws:scope name="Repeat" tibex:group="repeatUntil"
-                tibex:indexToGlobal="false" tibex:xpdlId="6ebeefdd-1fee-46cb-85c9-c887828bfc89">
+            <bpws:scope name="Repeat" tibex:group="repeatUntil" tibex:xpdlId="6ebeefdd-1fee-46cb-85c9-c887828bfc89">
                 <bpws:targets>
                     <bpws:target linkName="EmptyToRepeat"/>
                 </bpws:targets>

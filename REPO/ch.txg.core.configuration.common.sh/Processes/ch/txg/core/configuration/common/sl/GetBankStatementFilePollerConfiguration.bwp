@@ -34,6 +34,85 @@
     xmlns:tibprop="http://ns.tibco.com/bw/property"
     xmlns:tns="http://schemas.tibco.com/bw/plugins/http/5.0/httpExceptions"
     xmlns:tns1="http://schemas.tibco.com/bw/pe/plugin/5.0/exceptions" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <tibex:VariableDescriptor type="MemorySaving">
+        <task name="flow">
+            <endingVariables>
+                <variable>_error_InvokeGetBSFilePollerConfig</variable>
+                <variable>InvokeGetBSFilePollerConfig</variable>
+            </endingVariables>
+        </task>
+        <task name="ParseBodyResponse">
+            <endingVariables>
+                <variable>ParseBodyResponse-input</variable>
+            </endingVariables>
+        </task>
+        <task name="SetFilePollerConfig">
+            <endingVariables>
+                <variable>SetFilePollerConfig-input</variable>
+                <variable>ParseBodyResponse</variable>
+            </endingVariables>
+        </task>
+        <task name="RetryInvokeGetBSFilePollerConfig">
+            <endingVariables>
+                <variable>maxRetry</variable>
+                <variable>StatusCodeToSkip</variable>
+                <variable>indexRetry</variable>
+                <variable>URI</variable>
+                <variable>baseRetryDelay_s</variable>
+            </endingVariables>
+        </task>
+        <task name="InvokeGetBSFilePollerConfig">
+            <endingVariables>
+                <variable>InvokeGetBSFilePollerConfig-input</variable>
+            </endingVariables>
+        </task>
+        <task name="Sleep">
+            <endingVariables>
+                <variable>Sleep-input</variable>
+            </endingVariables>
+        </task>
+        <task name="CheckContent">
+            <endingVariables>
+                <variable>TTL_s</variable>
+            </endingVariables>
+        </task>
+        <task name="AssignNewOutput">
+            <endingVariables>
+                <variable>SetFilePollerConfig</variable>
+            </endingVariables>
+        </task>
+        <task name="AssignFromMemory">
+            <endingVariables>
+                <variable>GetBSFilePollerVar</variable>
+            </endingVariables>
+        </task>
+        <task name="ThrowSystemException">
+            <endingVariables>
+                <variable>ThrowSystemException-input</variable>
+            </endingVariables>
+        </task>
+        <task name="ThrowBusinessException">
+            <endingVariables>
+                <variable>ThrowBusinessException-input</variable>
+            </endingVariables>
+        </task>
+        <task name="LogAuditError">
+            <endingVariables>
+                <variable>LogAuditError-input</variable>
+            </endingVariables>
+        </task>
+        <task name="ParseError">
+            <endingVariables>
+                <variable>ParseError-input</variable>
+            </endingVariables>
+        </task>
+        <task name="ThrowError">
+            <endingVariables>
+                <variable>ThrowError-input</variable>
+                <variable>FaultDetails</variable>
+            </endingVariables>
+        </task>
+    </tibex:VariableDescriptor>
     <tibex:Types>
         <xs:schema attributeFormDefault="unqualified"
             elementFormDefault="qualified"

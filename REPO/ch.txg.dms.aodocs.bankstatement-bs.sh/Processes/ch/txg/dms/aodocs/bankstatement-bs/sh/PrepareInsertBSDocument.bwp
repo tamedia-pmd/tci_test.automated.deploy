@@ -30,6 +30,73 @@
     xmlns:sca-bpel="http://docs.oasis-open.org/ns/opencsa/sca-bpel/200801"
     xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"
     xmlns:tibprop="http://ns.tibco.com/bw/property" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <tibex:VariableDescriptor type="MemorySaving">
+        <task name="End">
+            <endingVariables>
+                <variable>fixInsertDocumentJson</variable>
+            </endingVariables>
+        </task>
+        <task name="getUnixTsFromDatesV2">
+            <endingVariables>
+                <variable>getUnixTsFromDatesV2-input</variable>
+                <variable>formatDate</variable>
+            </endingVariables>
+        </task>
+        <task name="GetLibraryID">
+            <endingVariables>
+                <variable>GetLibraryID-input</variable>
+                <variable>libraryName</variable>
+            </endingVariables>
+        </task>
+        <task name="PrepareJsonRequestHRDocument">
+            <endingVariables>
+                <variable>PrepareJsonRequestHRDocument-input</variable>
+                <variable>MapJsonRequestHRDocument</variable>
+            </endingVariables>
+        </task>
+        <task name="fixInsertDocumentJson">
+            <endingVariables>
+                <variable>fixInsertDocumentJson-input</variable>
+                <variable>PrepareJsonRequestHRDocument</variable>
+            </endingVariables>
+        </task>
+        <task name="MapJsonRequestHRDocument">
+            <endingVariables>
+                <variable>MapJsonRequestHRDocument-input</variable>
+                <variable>Start</variable>
+                <variable>GetLibraryID</variable>
+                <variable>className</variable>
+                <variable>valueDate</variable>
+                <variable>statementDate</variable>
+                <variable>statementEndDate</variable>
+                <variable>statementCreationDate</variable>
+                <variable>getUnixTsFromDatesV2</variable>
+            </endingVariables>
+        </task>
+        <task name="LogXMLRequestHRDocument_DEBUG">
+            <endingVariables>
+                <variable>LogXMLRequestHRDocument_DEBUG-input</variable>
+                <variable>LogXMLRequestHRDocument_DEBUG</variable>
+                <variable>DEBUG_Severity</variable>
+            </endingVariables>
+        </task>
+        <task name="ThrowLogAuditError">
+            <endingVariables>
+                <variable>ThrowLogAuditError-input</variable>
+            </endingVariables>
+        </task>
+        <task name="ThrowRenderJsonError">
+            <endingVariables>
+                <variable>ThrowRenderJsonError-input</variable>
+            </endingVariables>
+        </task>
+        <task name="ThrowGenericError">
+            <endingVariables>
+                <variable>ThrowGenericError-input</variable>
+                <variable>FaultDetails</variable>
+            </endingVariables>
+        </task>
+    </tibex:VariableDescriptor>
     <tibex:Types>
         <xs:schema attributeFormDefault="unqualified"
             elementFormDefault="qualified"

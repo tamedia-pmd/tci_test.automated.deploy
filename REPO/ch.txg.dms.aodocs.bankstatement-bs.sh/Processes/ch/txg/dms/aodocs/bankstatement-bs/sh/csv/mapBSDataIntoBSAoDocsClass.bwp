@@ -10,6 +10,8 @@
     xmlns:ns1="http://ch/txg/core/common/bankstatement/configuration"
     xmlns:ns10="http://www.tibco.com/pe/WriteToLogActivitySchema"
     xmlns:ns11="http://tns.tibco.com/bw/palette/internal/activityerror+e92a20a7-ac1c-40c9-bec2-b052b76134db"
+    xmlns:ns12="http://tns.tibco.com/bw/palette/internal/activityerror+de47d996-5fc6-4444-8d9f-186f5905ada2"
+    xmlns:ns13="http://tns.tibco.com/bw/palette/internal/activityerror+121b9dad-0cb8-4200-a858-a4a86a4064e8"
     xmlns:ns2="http://ch/txg/core/lehf/common/loggerType/0100"
     xmlns:ns3="http://ch/txg/core/lehf/common/AuditTypes/0100"
     xmlns:ns4="http://tns.tibco.com/bw/palette/internal/activityerror+com.tibco.bw.core.design.process.editor.Activity_4002_Throw"
@@ -225,6 +227,30 @@
             targetNamespace="http://tns.tibco.com/bw/palette/internal/activityerror+e7214009-a2b1-41d3-9949-85fd976dc3e3"
             xmlns="http://www.w3.org/2001/XMLSchema"
             xmlns:Q1="http://ch/txg/core/lehf/common/AuditTypes/0100" xmlns:tns="http://tns.tibco.com/bw/palette/internal/activityerror+e7214009-a2b1-41d3-9949-85fd976dc3e3">
+            <import namespace="http://ch/txg/core/lehf/common/AuditTypes/0100"/>
+            <element name="ActivityErrorData" type="tns:ActivityErrorDataType"/>
+            <complexType name="ActivityErrorDataType">
+                <choice>
+                    <element maxOccurs="1" minOccurs="0" ref="Q1:LogAudit"/>
+                </choice>
+            </complexType>
+        </schema>
+        <schema elementFormDefault="unqualified"
+            targetNamespace="http://tns.tibco.com/bw/palette/internal/activityerror+de47d996-5fc6-4444-8d9f-186f5905ada2"
+            xmlns="http://www.w3.org/2001/XMLSchema"
+            xmlns:Q1="http://ch/txg/core/lehf/common/AuditTypes/0100" xmlns:tns="http://tns.tibco.com/bw/palette/internal/activityerror+de47d996-5fc6-4444-8d9f-186f5905ada2">
+            <import namespace="http://ch/txg/core/lehf/common/AuditTypes/0100"/>
+            <element name="ActivityErrorData" type="tns:ActivityErrorDataType"/>
+            <complexType name="ActivityErrorDataType">
+                <choice>
+                    <element maxOccurs="1" minOccurs="0" ref="Q1:LogAudit"/>
+                </choice>
+            </complexType>
+        </schema>
+        <schema elementFormDefault="unqualified"
+            targetNamespace="http://tns.tibco.com/bw/palette/internal/activityerror+121b9dad-0cb8-4200-a858-a4a86a4064e8"
+            xmlns="http://www.w3.org/2001/XMLSchema"
+            xmlns:Q1="http://ch/txg/core/lehf/common/AuditTypes/0100" xmlns:tns="http://tns.tibco.com/bw/palette/internal/activityerror+121b9dad-0cb8-4200-a858-a4a86a4064e8">
             <import namespace="http://ch/txg/core/lehf/common/AuditTypes/0100"/>
             <element name="ActivityErrorData" type="tns:ActivityErrorDataType"/>
             <complexType name="ActivityErrorDataType">
@@ -1808,6 +1834,14 @@
             name="GetBankStatementCSVConfiguration-input" sca-bpel:internal="true"/>
         <bpws:variable element="ns1:bankStatementConfigList"
             name="GetBankStatementCSVConfiguration" sca-bpel:internal="true"/>
+        <bpws:variable element="ns4:ActivityErrorData"
+            name="_error_ThrowConfigurationError" sca-bpel:internal="true"/>
+        <bpws:variable element="ns12:ActivityErrorData"
+            name="_error_getBankAccountListConfig" sca-bpel:internal="true"/>
+        <bpws:variable element="ns13:ActivityErrorData"
+            name="_error_GetGoogleGroupV3" sca-bpel:internal="true"/>
+        <bpws:variable element="ns4:ActivityErrorData"
+            name="_error_ThrowDocumentTypeError" sca-bpel:internal="true"/>
     </bpws:variables>
     <bpws:extensions>
         <bpws:extension mustUnderstand="no" namespace="http://www.eclipse.org/gmf/runtime/1.0.2/notation"/>

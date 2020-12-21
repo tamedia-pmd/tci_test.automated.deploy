@@ -19,6 +19,8 @@
     xmlns:ns18="http://schemas.tibco.com/bw/plugins/xml/5.0/xmlExceptions"
     xmlns:ns19="http://tns.tibco.com/bw/palette/internal/errorlinkhandler+10b1a79e-c90e-43a5-8d60-7ed541d487cf"
     xmlns:ns2="http://www.tibco.com/namespaces/tnt/plugins/restinvoke+63bc7ce1-43d3-4299-b997-5b988f34928a+RestInvokeOutput"
+    xmlns:ns20="http://tns.tibco.com/bw/palette/internal/activityerror+bw.internal.end"
+    xmlns:ns21="http://tns.tibco.com/bw/palette/internal/activityerror+com.tibco.bw.core.design.process.editor.Activity_4002_Throw"
     xmlns:ns3="http://tns.tibco.com/bw/palette/internal/activityerror+bw.restjson.Rest"
     xmlns:ns4="http://tns.tibco.com/bw/activity/sendhttprequest/input+98d2f299-b26c-4a78-a638-3d106a5605d2+RequestActivityInput"
     xmlns:ns5="http://tns.tibco.com/bw/activity/sendhttprequest/output+98d2f299-b26c-4a78-a638-3d106a5605d2+RequestActivityOutput"
@@ -559,6 +561,30 @@
                     <element maxOccurs="1" minOccurs="0" ref="Q1:UnsupportedEncodingException"/>
                     <element maxOccurs="1" minOccurs="0" ref="Q1:MissingByteCountException"/>
                     <element maxOccurs="1" minOccurs="0" ref="Q1:ValidationException"/>
+                </choice>
+            </complexType>
+        </schema>
+        <schema elementFormDefault="unqualified"
+            targetNamespace="http://tns.tibco.com/bw/palette/internal/activityerror+bw.internal.end"
+            xmlns="http://www.w3.org/2001/XMLSchema"
+            xmlns:Q1="http://ch/txg/core/lehf/common/AuditTypes/0100" xmlns:tns="http://tns.tibco.com/bw/palette/internal/activityerror+bw.internal.end">
+            <import namespace="http://ch/txg/core/lehf/common/AuditTypes/0100"/>
+            <element name="ActivityErrorData" type="tns:ActivityErrorDataType"/>
+            <complexType name="ActivityErrorDataType">
+                <choice>
+                    <element maxOccurs="1" minOccurs="0" ref="Q1:LogAudit"/>
+                </choice>
+            </complexType>
+        </schema>
+        <schema elementFormDefault="unqualified"
+            targetNamespace="http://tns.tibco.com/bw/palette/internal/activityerror+com.tibco.bw.core.design.process.editor.Activity_4002_Throw"
+            xmlns="http://www.w3.org/2001/XMLSchema"
+            xmlns:Q1="http://ch/txg/core/lehf/common/AuditTypes/0100" xmlns:tns="http://tns.tibco.com/bw/palette/internal/activityerror+com.tibco.bw.core.design.process.editor.Activity_4002_Throw">
+            <import namespace="http://ch/txg/core/lehf/common/AuditTypes/0100"/>
+            <element name="ActivityErrorData" type="tns:ActivityErrorDataType"/>
+            <complexType name="ActivityErrorDataType">
+                <choice>
+                    <element maxOccurs="1" minOccurs="0" ref="Q1:LogAudit"/>
                 </choice>
             </complexType>
         </schema>
@@ -1744,6 +1770,18 @@
         <bpws:variable element="ns:FaultDetail" name="FaultDetails1" sca-bpel:internal="true"/>
         <bpws:variable element="ns13:LogAudit"
             name="ThrowGenericError-input" sca-bpel:internal="true"/>
+        <bpws:variable element="ns20:ActivityErrorData"
+            name="_error_End" sca-bpel:internal="true"/>
+        <bpws:variable element="ns21:ActivityErrorData"
+            name="_error_ThrowSystemException" sca-bpel:internal="true"/>
+        <bpws:variable element="ns21:ActivityErrorData"
+            name="_error_ThrowBusinessException" sca-bpel:internal="true"/>
+        <bpws:variable element="ns21:ActivityErrorData"
+            name="_error_ThrowParseXMLError" sca-bpel:internal="true"/>
+        <bpws:variable element="ns21:ActivityErrorData"
+            name="_error_ThrowError" sca-bpel:internal="true"/>
+        <bpws:variable element="ns21:ActivityErrorData"
+            name="_error_ThrowGenericError" sca-bpel:internal="true"/>
     </bpws:variables>
     <bpws:extensions>
         <bpws:extension mustUnderstand="no" namespace="http://www.eclipse.org/gmf/runtime/1.0.2/notation"/>

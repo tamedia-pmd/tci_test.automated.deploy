@@ -23,6 +23,56 @@
     xmlns:tibprop="http://ns.tibco.com/bw/property"
     xmlns:tns="http://schemas.tibco.com/bw/plugins/http/5.0/httpExceptions"
     xmlns:tns1="http://schemas.tibco.com/bw/pe/plugin/5.0/exceptions" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <tibex:VariableDescriptor type="MemorySaving">
+        <task name="End">
+            <endingVariables>
+                <variable>HTTPRequest_UpdateDocument</variable>
+            </endingVariables>
+        </task>
+        <task name="RepeatOnError">
+            <endingVariables>
+                <variable>_error_HTTPRequest_UpdateDocument</variable>
+                <variable>maxRetry</variable>
+                <variable>indexRetry</variable>
+                <variable>URI</variable>
+                <variable>baseRetryDelay_s</variable>
+                <variable>System_EXCEPTION</variable>
+            </endingVariables>
+        </task>
+        <task name="HTTPRequest_UpdateDocument">
+            <endingVariables>
+                <variable>HTTPRequest_UpdateDocument-input</variable>
+            </endingVariables>
+        </task>
+        <task name="Sleep">
+            <endingVariables>
+                <variable>Sleep-input</variable>
+            </endingVariables>
+        </task>
+        <task name="ThrowError400">
+            <endingVariables>
+                <variable>ThrowError400-input</variable>
+            </endingVariables>
+        </task>
+        <task name="ThrowEnd">
+            <endingVariables>
+                <variable>ThrowEnd-input</variable>
+            </endingVariables>
+        </task>
+        <task name="AssignToken">
+            <endingVariables>
+                <variable>RetrieveToken</variable>
+            </endingVariables>
+        </task>
+        <task name="Throw">
+            <endingVariables>
+                <variable>Throw-input</variable>
+                <variable>FaultDetails</variable>
+                <variable>_error_ThrowError400</variable>
+                <variable>_error_ThrowEnd</variable>
+            </endingVariables>
+        </task>
+    </tibex:VariableDescriptor>
     <tibex:Types>
         <xs:schema attributeFormDefault="unqualified"
             elementFormDefault="qualified"
@@ -1746,8 +1796,7 @@
                         variableName="//ch.txg.core.lehf.common.sh//loggerParams" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"/>
                 </tibex:extActivity>
             </bpws:extensionActivity>
-            <bpws:scope name="RepeatOnError" tibex:group="repeatUntil"
-                tibex:indexToGlobal="false" tibex:xpdlId="491934e0-f94a-4bff-aaf9-3a9e6a5e3aca">
+            <bpws:scope name="RepeatOnError" tibex:group="repeatUntil" tibex:xpdlId="491934e0-f94a-4bff-aaf9-3a9e6a5e3aca">
                 <bpws:targets>
                     <bpws:target linkName="AssignToRepeatOnError"/>
                     <bpws:target linkName="AssignToRepeatOnError1"/>

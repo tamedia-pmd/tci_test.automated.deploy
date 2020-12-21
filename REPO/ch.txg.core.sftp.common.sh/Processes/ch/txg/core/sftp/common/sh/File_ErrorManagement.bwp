@@ -23,6 +23,33 @@
     xmlns:sca-bpel="http://docs.oasis-open.org/ns/opencsa/sca-bpel/200801"
     xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"
     xmlns:tibprop="http://ns.tibco.com/bw/property" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <tibex:VariableDescriptor type="MemorySaving">
+        <task name="Iterate">
+            <endingVariables>
+                <variable>currentElement</variable>
+            </endingVariables>
+        </task>
+        <task name="SFTPMoveInputFile">
+            <endingVariables>
+                <variable>SFTPMoveInputFile-input</variable>
+            </endingVariables>
+        </task>
+        <task name="SFTPCreateErrorFile">
+            <endingVariables>
+                <variable>SFTPCreateErrorFile-input</variable>
+                <variable>SFTPCreateErrorFile</variable>
+                <variable>Start</variable>
+            </endingVariables>
+        </task>
+        <task name="ThrowGenericError">
+            <endingVariables>
+                <variable>ThrowGenericError-input</variable>
+                <variable>FaultDetails</variable>
+                <variable>Error_Severity</variable>
+                <variable>System_Exception</variable>
+            </endingVariables>
+        </task>
+    </tibex:VariableDescriptor>
     <tibex:Types>
         <xs:schema attributeFormDefault="unqualified"
             elementFormDefault="qualified"

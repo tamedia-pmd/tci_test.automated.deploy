@@ -93,7 +93,11 @@
     xmlns:ns84="http://ch/txg/b2c/aodocs/sl/SearchDocument"
     xmlns:ns85="http://tns.tibco.com/bw/palette/internal/errorlinkhandler+7111a027-75bf-41aa-b6b4-7107180ee8ca"
     xmlns:ns86="http://tns.tibco.com/bw/palette/internal/activityerror+a3672599-1023-4e83-8544-db295b009421"
+    xmlns:ns87="http://tns.tibco.com/bw/palette/internal/activityerror+a8b88cc9-22f2-4a5b-8e38-7d78bc5b2064"
+    xmlns:ns88="http://tns.tibco.com/bw/palette/internal/activityerror+e55a9bb6-0a4d-4ab7-8e16-44a2f339641f"
+    xmlns:ns89="http://tns.tibco.com/bw/palette/internal/activityerror+3a8b286a-54fe-4ec7-89b3-bf5309353136"
     xmlns:ns9="http://tns.tibco.com/bw/activity/removeRemoteFile"
+    xmlns:ns90="http://tns.tibco.com/bw/palette/internal/activityerror+ef33c557-e7e0-4a22-8932-193657e30c09"
     xmlns:sca="http://docs.oasis-open.org/ns/opencsa/sca/200912"
     xmlns:sca-bpel="http://docs.oasis-open.org/ns/opencsa/sca-bpel/200801"
     xmlns:tib="http://www.tibco.com/bw/xslt/custom-functions"
@@ -657,6 +661,54 @@
             targetNamespace="http://tns.tibco.com/bw/palette/internal/activityerror+a3672599-1023-4e83-8544-db295b009421"
             xmlns="http://www.w3.org/2001/XMLSchema"
             xmlns:Q1="http://ch/txg/core/lehf/common/AuditTypes/0100" xmlns:tns="http://tns.tibco.com/bw/palette/internal/activityerror+a3672599-1023-4e83-8544-db295b009421">
+            <import namespace="http://ch/txg/core/lehf/common/AuditTypes/0100"/>
+            <element name="ActivityErrorData" type="tns:ActivityErrorDataType"/>
+            <complexType name="ActivityErrorDataType">
+                <choice>
+                    <element maxOccurs="1" minOccurs="0" ref="Q1:LogAudit"/>
+                </choice>
+            </complexType>
+        </schema>
+        <schema elementFormDefault="unqualified"
+            targetNamespace="http://tns.tibco.com/bw/palette/internal/activityerror+a8b88cc9-22f2-4a5b-8e38-7d78bc5b2064"
+            xmlns="http://www.w3.org/2001/XMLSchema"
+            xmlns:Q1="http://ch/txg/core/lehf/common/AuditTypes/0100" xmlns:tns="http://tns.tibco.com/bw/palette/internal/activityerror+a8b88cc9-22f2-4a5b-8e38-7d78bc5b2064">
+            <import namespace="http://ch/txg/core/lehf/common/AuditTypes/0100"/>
+            <element name="ActivityErrorData" type="tns:ActivityErrorDataType"/>
+            <complexType name="ActivityErrorDataType">
+                <choice>
+                    <element maxOccurs="1" minOccurs="0" ref="Q1:LogAudit"/>
+                </choice>
+            </complexType>
+        </schema>
+        <schema elementFormDefault="unqualified"
+            targetNamespace="http://tns.tibco.com/bw/palette/internal/activityerror+e55a9bb6-0a4d-4ab7-8e16-44a2f339641f"
+            xmlns="http://www.w3.org/2001/XMLSchema"
+            xmlns:Q1="http://ch/txg/core/lehf/common/AuditTypes/0100" xmlns:tns="http://tns.tibco.com/bw/palette/internal/activityerror+e55a9bb6-0a4d-4ab7-8e16-44a2f339641f">
+            <import namespace="http://ch/txg/core/lehf/common/AuditTypes/0100"/>
+            <element name="ActivityErrorData" type="tns:ActivityErrorDataType"/>
+            <complexType name="ActivityErrorDataType">
+                <choice>
+                    <element maxOccurs="1" minOccurs="0" ref="Q1:LogAudit"/>
+                </choice>
+            </complexType>
+        </schema>
+        <schema elementFormDefault="unqualified"
+            targetNamespace="http://tns.tibco.com/bw/palette/internal/activityerror+3a8b286a-54fe-4ec7-89b3-bf5309353136"
+            xmlns="http://www.w3.org/2001/XMLSchema"
+            xmlns:Q1="http://ch/txg/core/lehf/common/AuditTypes/0100" xmlns:tns="http://tns.tibco.com/bw/palette/internal/activityerror+3a8b286a-54fe-4ec7-89b3-bf5309353136">
+            <import namespace="http://ch/txg/core/lehf/common/AuditTypes/0100"/>
+            <element name="ActivityErrorData" type="tns:ActivityErrorDataType"/>
+            <complexType name="ActivityErrorDataType">
+                <choice>
+                    <element maxOccurs="1" minOccurs="0" ref="Q1:LogAudit"/>
+                </choice>
+            </complexType>
+        </schema>
+        <schema elementFormDefault="unqualified"
+            targetNamespace="http://tns.tibco.com/bw/palette/internal/activityerror+ef33c557-e7e0-4a22-8932-193657e30c09"
+            xmlns="http://www.w3.org/2001/XMLSchema"
+            xmlns:Q1="http://ch/txg/core/lehf/common/AuditTypes/0100" xmlns:tns="http://tns.tibco.com/bw/palette/internal/activityerror+ef33c557-e7e0-4a22-8932-193657e30c09">
             <import namespace="http://ch/txg/core/lehf/common/AuditTypes/0100"/>
             <element name="ActivityErrorData" type="tns:ActivityErrorDataType"/>
             <complexType name="ActivityErrorDataType">
@@ -4575,6 +4627,26 @@
             name="WARNFailedDeleteGdrive_Error-input" sca-bpel:internal="true"/>
         <bpws:variable element="ns78:LEHF_Output"
             name="WARNFailedDeleteGdrive_Error" sca-bpel:internal="true"/>
+        <bpws:variable element="ns14:ActivityErrorData"
+            name="_error_ThrowSftpGetError" sca-bpel:internal="true"/>
+        <bpws:variable element="ns14:ActivityErrorData"
+            name="_error_ThrowSftpMoveError" sca-bpel:internal="true"/>
+        <bpws:variable element="ns14:ActivityErrorData"
+            name="_error_ThrowSFTPRelatedFilesError" sca-bpel:internal="true"/>
+        <bpws:variable element="ns14:ActivityErrorData"
+            name="_error_ThrowUploadOtherFiles" sca-bpel:internal="true"/>
+        <bpws:variable element="ns14:ActivityErrorData"
+            name="_error_ThrowMoveRelFilesError" sca-bpel:internal="true"/>
+        <bpws:variable element="ns87:ActivityErrorData"
+            name="_error_DataCleansing" sca-bpel:internal="true"/>
+        <bpws:variable element="ns88:ActivityErrorData"
+            name="_error_SearchBSDocument" sca-bpel:internal="true"/>
+        <bpws:variable element="ns89:ActivityErrorData"
+            name="_error_UpdateBSDocument" sca-bpel:internal="true"/>
+        <bpws:variable element="ns90:ActivityErrorData"
+            name="_error_GetLibraryIDandClass" sca-bpel:internal="true"/>
+        <bpws:variable element="ns14:ActivityErrorData"
+            name="_error_ThrowError" sca-bpel:internal="true"/>
     </bpws:variables>
     <bpws:extensions>
         <bpws:extension mustUnderstand="no" namespace="http://www.eclipse.org/gmf/runtime/1.0.2/notation"/>
@@ -4634,9 +4706,7 @@
                             </bpws:sources>
                         </bpws:empty>
                         <bpws:scope name="ForEach3"
-                            tibex:group="foreach"
-                            tibex:indexOriginalName="index"
-                            tibex:indexToGlobal="false" tibex:xpdlId="9d649454-51bd-43a3-adc6-a06119c54cb8">
+                            tibex:group="foreach" tibex:xpdlId="9d649454-51bd-43a3-adc6-a06119c54cb8">
                             <bpws:targets>
                                 <bpws:target linkName="checkListAttachToForEach3"/>
                             </bpws:targets>

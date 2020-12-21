@@ -25,6 +25,7 @@
     xmlns:ns23="http://ch/txg/b2c/aodocs/sl/listWorkflowsByLibrary"
     xmlns:ns24="http://ch/txg/b2c/aodocs/sl/retrieveToken/100"
     xmlns:ns25="http://tns.tibco.com/bw/palette/internal/errorlinkhandler+79d2ca19-a26a-4d44-bd6c-94c13cf27e4f"
+    xmlns:ns26="http://tns.tibco.com/bw/palette/internal/activityerror+c863bb0c-da87-46b1-b89f-2c162e58a772"
     xmlns:ns3="http://ch/txg/b2c/configuration/AODocsGetGoogleID"
     xmlns:ns4="http://tns.tibco.com/bw/palette/internal/activityerror+4544f441-a5f4-4b00-9f61-fc7a50c939e6"
     xmlns:ns5="http://tns.tibco.com/bw/activity/sendhttprequest/input+3f330e23-e68c-4cdb-b8f3-04c70556f083+RequestActivityInput"
@@ -567,6 +568,18 @@
             <complexType name="ErrorLinkHandlerFaultDataType">
                 <choice>
                     <element maxOccurs="1" minOccurs="0" ref="Q1:JSONParserException"/>
+                </choice>
+            </complexType>
+        </schema>
+        <schema elementFormDefault="unqualified"
+            targetNamespace="http://tns.tibco.com/bw/palette/internal/activityerror+c863bb0c-da87-46b1-b89f-2c162e58a772"
+            xmlns="http://www.w3.org/2001/XMLSchema"
+            xmlns:Q1="http://ch/txg/core/lehf/common/AuditTypes/0100" xmlns:tns="http://tns.tibco.com/bw/palette/internal/activityerror+c863bb0c-da87-46b1-b89f-2c162e58a772">
+            <import namespace="http://ch/txg/core/lehf/common/AuditTypes/0100"/>
+            <element name="ActivityErrorData" type="tns:ActivityErrorDataType"/>
+            <complexType name="ActivityErrorDataType">
+                <choice>
+                    <element maxOccurs="1" minOccurs="0" ref="Q1:LogAudit"/>
                 </choice>
             </complexType>
         </schema>
@@ -2282,6 +2295,16 @@
         <bpws:variable element="ns14:LogAudit"
             name="ThrowParseJson-input" sca-bpel:internal="true"/>
         <bpws:variable element="ns23:OutputListWorkFlows" name="listWorkflowsOutput"/>
+        <bpws:variable element="ns16:ActivityErrorData"
+            name="_error_ThrowSystemError" sca-bpel:internal="true"/>
+        <bpws:variable element="ns26:ActivityErrorData"
+            name="_error_RetrieveToken" sca-bpel:internal="true"/>
+        <bpws:variable element="ns16:ActivityErrorData"
+            name="_error_ThrowParseJson" sca-bpel:internal="true"/>
+        <bpws:variable element="ns16:ActivityErrorData"
+            name="_error_ThrowError" sca-bpel:internal="true"/>
+        <bpws:variable element="ns16:ActivityErrorData"
+            name="_error_ThrowGenericError" sca-bpel:internal="true"/>
     </bpws:variables>
     <bpws:extensions>
         <bpws:extension mustUnderstand="no" namespace="http://www.eclipse.org/gmf/runtime/1.0.2/notation"/>

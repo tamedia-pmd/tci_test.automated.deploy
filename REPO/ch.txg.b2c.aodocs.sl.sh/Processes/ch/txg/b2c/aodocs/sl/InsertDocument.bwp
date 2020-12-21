@@ -1779,6 +1779,8 @@
             name="_errorOptional" sca-bpel:internal="true"/>
         <bpws:variable element="ns0:LogAudit" name="ThrowError-input" sca-bpel:internal="true"/>
         <bpws:variable name="token" type="xsd:string"/>
+        <bpws:variable element="ns8:ActivityErrorData"
+            name="_error_ThrowGenericError" sca-bpel:internal="true"/>
     </bpws:variables>
     <bpws:extensions>
         <bpws:extension mustUnderstand="no" namespace="http://www.eclipse.org/gmf/runtime/1.0.2/notation"/>

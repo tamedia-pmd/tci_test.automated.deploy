@@ -92,82 +92,6 @@
 			<useLookupValue>false</useLookupValue>
 		</globalVariable>
 		<globalVariable>
-			<name>/ch.txg.dms.int5160.bsl.sh/FileTransfer/INT5160/ErrorPath</name>
-			<value>/dev/workday/INT5160/ERROR/</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>String</type>
-			<isOverride>false</isOverride>
-			<useLookupValue>false</useLookupValue>
-			<lookupValue>/dev/workday/INT5160/ERROR/</lookupValue>
-		</globalVariable>
-		<globalVariable>
-			<name>/ch.txg.dms.int5160.bsl.sh/FileTransfer/INT5160/MaxNumberOfFilesPerPolling</name>
-			<value>5</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>Integer</type>
-			<isOverride>false</isOverride>
-			<useLookupValue>false</useLookupValue>
-		</globalVariable>
-		<globalVariable>
-			<name>/ch.txg.dms.int5160.bsl.sh/FileTransfer/INT5160/TargetPath</name>
-			<value>/dev/workday/INT5160/DONE/</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>String</type>
-			<isOverride>false</isOverride>
-			<useLookupValue>false</useLookupValue>
-			<lookupValue>/dev/workday/INT5160/DONE/</lookupValue>
-		</globalVariable>
-		<globalVariable>
-			<name>/ch.txg.dms.int5160.bsl.sh/FileTransfer/INT5160/SourcePath</name>
-			<value>/dev/workday/INT5160/IN/</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>String</type>
-			<isOverride>false</isOverride>
-			<useLookupValue>false</useLookupValue>
-			<lookupValue>/dev/workday/INT5160/IN/</lookupValue>
-		</globalVariable>
-		<globalVariable>
-			<name>/ch.txg.dms.int5160.bsl.sh/Parameters/LibraryName</name>
-			<value>E-Dossier Library</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>String</type>
-			<isOverride>false</isOverride>
-			<useLookupValue>false</useLookupValue>
-		</globalVariable>
-		<globalVariable>
-			<name>/ch.txg.dms.int5160.bsl.sh/Parameters/ParentFolder</name>
-			<value>1JhuM2KdvIrN4qeTn7u33HPMvDsWYQTIc</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>String</type>
-			<isOverride>false</isOverride>
-			<useLookupValue>false</useLookupValue>
-			<lookupValue>1JhuM2KdvIrN4qeTn7u33HPMvDsWYQTIc</lookupValue>
-		</globalVariable>
-		<globalVariable>
-			<name>/ch.txg.dms.int5160.bsl.sh/Connections/HTTP/Client/FileTransfer/URI</name>
-			<value>dev/dms/fileTransfer/v1</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>String</type>
-			<isOverride>false</isOverride>
-			<useLookupValue>false</useLookupValue>
-		</globalVariable>
-		<globalVariable>
-			<name>/ch.txg.dms.int5160.bsl.sh/Connections/HTTP/Client/FileTransfer/HOST</name>
-			<value>eu-west-1.integration.cloud.tibcoapps.com</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>String</type>
-			<isOverride>false</isOverride>
-			<useLookupValue>false</useLookupValue>
-		</globalVariable>
-		<globalVariable>
 			<name>/ch.txg.dms.int5151.bsl.sh/FileTransfer/RetryBaseDelaySFTP_s</name>
 			<value>1</value>
 			<deploymentSettable>false</deploymentSettable>
@@ -1024,6 +948,60 @@
 			<useLookupValue>false</useLookupValue>
 		</globalVariable>
 		<globalVariable>
+			<name>/ch.txg.core.configuration.common.sh/AodocsParameters/AodocsConfig/libraryIDTTL_sec</name>
+			<value>86400</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>Integer</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable>
+		<globalVariable>
+			<name>/ch.txg.core.configuration.common.sh/AodocsParameters/AodocsConfig/aodocsMappingTableTTL_sec</name>
+			<value>86400</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>Integer</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable>
+		<globalVariable>
+			<name>/ch.txg.core.configuration.common.sh/AodocsParameters/AodocsConfig/googleGroupTTL_sec</name>
+			<value>86400</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>Integer</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable>
+		<globalVariable>
+			<name>/ch.txg.core.configuration.common.sh/BankStatement/CSV_TTLsec</name>
+			<value>86400</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>Integer</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable>
+		<globalVariable>
+			<name>/ch.txg.core.configuration.common.sh/BankStatement/DocType_TTLsec</name>
+			<value>86400</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>Integer</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable>
+		<globalVariable>
+			<name>/ch.txg.core.configuration.common.sh/BankStatement/FilePoller_TTLsec</name>
+			<value>86400</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>Integer</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable>
+		<globalVariable>
 			<name>/INT5151BankStatement/AODocsSecurityGroupProject</name>
 			<value>BANKSTATEMENT</value>
 			<deploymentSettable>false</deploymentSettable>
@@ -1624,290 +1602,6 @@
 			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
 			<lookupValue>%%/ch.txg.dms.bankstatement.filetransfer.md/ch.txg.dms.filetransfer.adm/ConfigLoader/StartTimestamp%%</lookupValue>
-		</globalVariable>
-		<globalVariable>
-			<name>//ch.txg.dms.int5160.bsl.sh//BW.DEPLOYMENTUNIT.NAME</name>
-			<value></value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>String</type>
-			<isOverride>false</isOverride>
-			<useLookupValue>false</useLookupValue>
-		</globalVariable>
-		<globalVariable>
-			<name>//ch.txg.dms.int5160.bsl.sh//BW.APPNODE.NAME</name>
-			<value></value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>String</type>
-			<isOverride>false</isOverride>
-			<useLookupValue>false</useLookupValue>
-		</globalVariable>
-		<globalVariable>
-			<name>//ch.txg.dms.int5160.bsl.sh//BW.HOST.NAME</name>
-			<value>localhost</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>String</type>
-			<isOverride>false</isOverride>
-			<useLookupValue>false</useLookupValue>
-		</globalVariable>
-		<globalVariable>
-			<name>//ch.txg.dms.int5160.bsl.sh//BW.MODULE.VERSION</name>
-			<value></value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>String</type>
-			<isOverride>false</isOverride>
-			<useLookupValue>false</useLookupValue>
-		</globalVariable>
-		<globalVariable>
-			<name>//ch.txg.dms.int5160.bsl.sh//BW.DEPLOYMENTUNIT.VERSION</name>
-			<value></value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>String</type>
-			<isOverride>false</isOverride>
-			<useLookupValue>false</useLookupValue>
-		</globalVariable>
-		<globalVariable>
-			<name>//ch.txg.dms.int5160.bsl.sh//BW.MODULE.NAME</name>
-			<value></value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>String</type>
-			<isOverride>false</isOverride>
-			<useLookupValue>false</useLookupValue>
-		</globalVariable>
-		<globalVariable>
-			<name>//ch.txg.dms.int5160.bsl.sh///ch.txg.dms.int5160.bsl.sh/Connections/HTTP/Client/FileTransfer/HOST</name>
-			<value>%%/ch.txg.dms.int5160.bsl.sh/Connections/HTTP/Client/FileTransfer/HOST%%</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>String</type>
-			<isOverride>true</isOverride>
-			<useLookupValue>false</useLookupValue>
-			<lookupValue>%%/ch.txg.dms.int5160.bsl.sh/Connections/HTTP/Client/FileTransfer/HOST%%</lookupValue>
-		</globalVariable>
-		<globalVariable>
-			<name>//ch.txg.dms.int5160.bsl.sh///ch.txg.dms.int5160.bsl.sh/Connections/HTTP/Client/FileTransfer/ACCEPT_REDIRECT</name>
-			<value>false</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>Boolean</type>
-			<isOverride>false</isOverride>
-			<useLookupValue>false</useLookupValue>
-			<lookupValue>false</lookupValue>
-		</globalVariable>
-		<globalVariable>
-			<name>//ch.txg.dms.int5160.bsl.sh///ch.txg.dms.int5160.bsl.sh/Connections/HTTP/Client/FileTransfer/DEFAULT_CONFIDENTIALITY</name>
-			<value>true</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>Boolean</type>
-			<isOverride>false</isOverride>
-			<useLookupValue>false</useLookupValue>
-			<lookupValue>true</lookupValue>
-		</globalVariable>
-		<globalVariable>
-			<name>//ch.txg.dms.int5160.bsl.sh///ch.txg.dms.int5160.bsl.sh/Connections/HTTP/Client/FileTransfer/MAX_TOTAL_CONNECTIONS</name>
-			<value>200</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>Integer</type>
-			<isOverride>false</isOverride>
-			<useLookupValue>false</useLookupValue>
-			<lookupValue>200</lookupValue>
-		</globalVariable>
-		<globalVariable>
-			<name>//ch.txg.dms.int5160.bsl.sh///ch.txg.dms.int5160.bsl.sh/Connections/HTTP/Client/FileTransfer/RETRY_COUNT</name>
-			<value>3</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>Integer</type>
-			<isOverride>false</isOverride>
-			<useLookupValue>false</useLookupValue>
-			<lookupValue>3</lookupValue>
-		</globalVariable>
-		<globalVariable>
-			<name>//ch.txg.dms.int5160.bsl.sh///ch.txg.dms.int5160.bsl.sh/Connections/HTTP/Client/FileTransfer/PORT</name>
-			<value>443</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>Integer</type>
-			<isOverride>false</isOverride>
-			<useLookupValue>false</useLookupValue>
-			<lookupValue>443</lookupValue>
-		</globalVariable>
-		<globalVariable>
-			<name>//ch.txg.dms.int5160.bsl.sh///ch.txg.dms.int5160.bsl.sh/Connections/HTTP/Client/FileTransfer/IDLE_CONNECTION_TIMEOUT_ms</name>
-			<value>3000</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>Integer</type>
-			<isOverride>false</isOverride>
-			<useLookupValue>false</useLookupValue>
-			<lookupValue>3000</lookupValue>
-		</globalVariable>
-		<globalVariable>
-			<name>//ch.txg.dms.int5160.bsl.sh///ch.txg.dms.int5160.bsl.sh/Connections/HTTP/Client/FileTransfer/URI</name>
-			<value>%%/ch.txg.dms.int5160.bsl.sh/Connections/HTTP/Client/FileTransfer/URI%%</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>String</type>
-			<isOverride>true</isOverride>
-			<useLookupValue>false</useLookupValue>
-			<lookupValue>%%/ch.txg.dms.int5160.bsl.sh/Connections/HTTP/Client/FileTransfer/URI%%</lookupValue>
-		</globalVariable>
-		<globalVariable>
-			<name>//ch.txg.dms.int5160.bsl.sh///ch.txg.dms.int5160.bsl.sh/Connections/HTTP/Client/FileTransfer/USE_SINGLE_COOKIE_HEADER</name>
-			<value>false</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>Boolean</type>
-			<isOverride>false</isOverride>
-			<useLookupValue>false</useLookupValue>
-			<lookupValue>false</lookupValue>
-		</globalVariable>
-		<globalVariable>
-			<name>//ch.txg.dms.int5160.bsl.sh///ch.txg.dms.int5160.bsl.sh/Connections/HTTP/Client/FileTransfer/CONFIDENTIALITY</name>
-			<value>false</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>Boolean</type>
-			<isOverride>false</isOverride>
-			<useLookupValue>false</useLookupValue>
-			<lookupValue>false</lookupValue>
-		</globalVariable>
-		<globalVariable>
-			<name>//ch.txg.dms.int5160.bsl.sh///ch.txg.dms.int5160.bsl.sh/Connections/HTTP/Client/FileTransfer/DISABLE_CONNECTION_POOLING</name>
-			<value>false</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>Boolean</type>
-			<isOverride>false</isOverride>
-			<useLookupValue>false</useLookupValue>
-			<lookupValue>false</lookupValue>
-		</globalVariable>
-		<globalVariable>
-			<name>//ch.txg.dms.int5160.bsl.sh///ch.txg.dms.int5160.bsl.sh/Connections/HTTP/Client/FileTransfer/STALE_CHECK</name>
-			<value>false</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>Boolean</type>
-			<isOverride>false</isOverride>
-			<useLookupValue>false</useLookupValue>
-			<lookupValue>false</lookupValue>
-		</globalVariable>
-		<globalVariable>
-			<name>//ch.txg.dms.int5160.bsl.sh///ch.txg.dms.int5160.bsl.sh/Connections/HTTP/Client/FileTransfer/SOCKET_TIMEOUT_ms</name>
-			<value>180000</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>Integer</type>
-			<isOverride>false</isOverride>
-			<useLookupValue>false</useLookupValue>
-			<lookupValue>180000</lookupValue>
-		</globalVariable>
-		<globalVariable>
-			<name>//ch.txg.dms.int5160.bsl.sh///ch.txg.dms.int5160.bsl.sh/Connections/HTTP/Client/FileTransfer/LOG_REQUEST_RESPONSE_TIME</name>
-			<value>false</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>Boolean</type>
-			<isOverride>false</isOverride>
-			<useLookupValue>false</useLookupValue>
-			<lookupValue>false</lookupValue>
-		</globalVariable>
-		<globalVariable>
-			<name>//ch.txg.dms.int5160.bsl.sh///ch.txg.dms.int5160.bsl.sh/Connections/HTTP/Client/FileTransfer/CONNECTION_TIMEOUT_ms</name>
-			<value>30000</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>Integer</type>
-			<isOverride>false</isOverride>
-			<useLookupValue>false</useLookupValue>
-			<lookupValue>30000</lookupValue>
-		</globalVariable>
-		<globalVariable>
-			<name>//ch.txg.dms.int5160.bsl.sh///ch.txg.dms.int5160.bsl.sh/Connections/HTTP/Client/FileTransfer/USE_NONPREEMPTIVE_AUTHENTICATION</name>
-			<value>true</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>Boolean</type>
-			<isOverride>false</isOverride>
-			<useLookupValue>false</useLookupValue>
-			<lookupValue>true</lookupValue>
-		</globalVariable>
-		<globalVariable>
-			<name>//ch.txg.dms.int5160.bsl.sh///ch.txg.dms.int5160.bsl.sh/Connections/HTTP/Client/FileTransfer/MAX_CONNECTION_PER_HOST</name>
-			<value>20</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>Integer</type>
-			<isOverride>false</isOverride>
-			<useLookupValue>false</useLookupValue>
-			<lookupValue>20</lookupValue>
-		</globalVariable>
-		<globalVariable>
-			<name>//ch.txg.dms.int5160.bsl.sh///ch.txg.dms.int5160.bsl.sh/FileTransfer/INT5160/ErrorPath</name>
-			<value>%%/ch.txg.dms.int5160.bsl.sh/FileTransfer/INT5160/ErrorPath%%</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>String</type>
-			<isOverride>true</isOverride>
-			<useLookupValue>false</useLookupValue>
-			<lookupValue>%%/ch.txg.dms.int5160.bsl.sh/FileTransfer/INT5160/ErrorPath%%</lookupValue>
-		</globalVariable>
-		<globalVariable>
-			<name>//ch.txg.dms.int5160.bsl.sh///ch.txg.dms.int5160.bsl.sh/FileTransfer/INT5160/MaxNumberOfFilesPerPolling</name>
-			<value>%%/ch.txg.dms.int5160.bsl.sh/FileTransfer/INT5160/MaxNumberOfFilesPerPolling%%</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>Integer</type>
-			<isOverride>true</isOverride>
-			<useLookupValue>false</useLookupValue>
-			<lookupValue>%%/ch.txg.dms.int5160.bsl.sh/FileTransfer/INT5160/MaxNumberOfFilesPerPolling%%</lookupValue>
-		</globalVariable>
-		<globalVariable>
-			<name>//ch.txg.dms.int5160.bsl.sh///ch.txg.dms.int5160.bsl.sh/FileTransfer/INT5160/SourcePath</name>
-			<value>%%/ch.txg.dms.int5160.bsl.sh/FileTransfer/INT5160/SourcePath%%</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>String</type>
-			<isOverride>true</isOverride>
-			<useLookupValue>false</useLookupValue>
-			<lookupValue>%%/ch.txg.dms.int5160.bsl.sh/FileTransfer/INT5160/SourcePath%%</lookupValue>
-		</globalVariable>
-		<globalVariable>
-			<name>//ch.txg.dms.int5160.bsl.sh///ch.txg.dms.int5160.bsl.sh/FileTransfer/INT5160/TargetPath</name>
-			<value>%%/ch.txg.dms.int5160.bsl.sh/FileTransfer/INT5160/TargetPath%%</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>String</type>
-			<isOverride>true</isOverride>
-			<useLookupValue>false</useLookupValue>
-			<lookupValue>%%/ch.txg.dms.int5160.bsl.sh/FileTransfer/INT5160/TargetPath%%</lookupValue>
-		</globalVariable>
-		<globalVariable>
-			<name>//ch.txg.dms.int5160.bsl.sh///ch.txg.dms.int5160.bsl.sh/Parameters/LibraryName</name>
-			<value>%%/ch.txg.dms.int5160.bsl.sh/Parameters/LibraryName%%</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>String</type>
-			<isOverride>true</isOverride>
-			<useLookupValue>false</useLookupValue>
-			<lookupValue>%%/ch.txg.dms.int5160.bsl.sh/Parameters/LibraryName%%</lookupValue>
-		</globalVariable>
-		<globalVariable>
-			<name>//ch.txg.dms.int5160.bsl.sh///ch.txg.dms.int5160.bsl.sh/Parameters/ParentFolder</name>
-			<value>%%/ch.txg.dms.int5160.bsl.sh/Parameters/ParentFolder%%</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>String</type>
-			<isOverride>true</isOverride>
-			<useLookupValue>false</useLookupValue>
-			<lookupValue>%%/ch.txg.dms.int5160.bsl.sh/Parameters/ParentFolder%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.core.sftp.common.sh//BW.DEPLOYMENTUNIT.NAME</name>
@@ -3751,57 +3445,63 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.core.configuration.common.sh///ch.txg.core.configuration.common.sh/AodocsParameters/AodocsConfig/googleGroupTTL_sec</name>
-			<value>86400</value>
+			<value>%%/ch.txg.core.configuration.common.sh/AodocsParameters/AodocsConfig/googleGroupTTL_sec%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.core.configuration.common.sh/AodocsParameters/AodocsConfig/googleGroupTTL_sec%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.core.configuration.common.sh///ch.txg.core.configuration.common.sh/AodocsParameters/AodocsConfig/aodocsMappingTableTTL_sec</name>
-			<value>86400</value>
+			<value>%%/ch.txg.core.configuration.common.sh/AodocsParameters/AodocsConfig/aodocsMappingTableTTL_sec%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.core.configuration.common.sh/AodocsParameters/AodocsConfig/aodocsMappingTableTTL_sec%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.core.configuration.common.sh///ch.txg.core.configuration.common.sh/AodocsParameters/AodocsConfig/libraryIDTTL_sec</name>
-			<value>86400</value>
+			<value>%%/ch.txg.core.configuration.common.sh/AodocsParameters/AodocsConfig/libraryIDTTL_sec%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.core.configuration.common.sh/AodocsParameters/AodocsConfig/libraryIDTTL_sec%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.core.configuration.common.sh///ch.txg.core.configuration.common.sh/BankStatement/CSV_TTLsec</name>
-			<value>86400</value>
+			<value>%%/ch.txg.core.configuration.common.sh/BankStatement/CSV_TTLsec%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.core.configuration.common.sh/BankStatement/CSV_TTLsec%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.core.configuration.common.sh///ch.txg.core.configuration.common.sh/BankStatement/DocType_TTLsec</name>
-			<value>86400</value>
+			<value>%%/ch.txg.core.configuration.common.sh/BankStatement/DocType_TTLsec%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.core.configuration.common.sh/BankStatement/DocType_TTLsec%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.core.configuration.common.sh///ch.txg.core.configuration.common.sh/BankStatement/FilePoller_TTLsec</name>
-			<value>86400</value>
+			<value>%%/ch.txg.core.configuration.common.sh/BankStatement/FilePoller_TTLsec%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>%%/ch.txg.core.configuration.common.sh/BankStatement/FilePoller_TTLsec%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.core.configuration.common.sh///ch.txg.core.configuration.common.sh/GetAuthConfiguration/AllAccessString</name>

@@ -27,6 +27,58 @@
     xmlns:tns="http://xmlns.example.com/Default/parameters"
     xmlns:tns1="http://schemas.tibco.com/bw/pe/plugin/5.0/exceptions"
     xmlns:tns2="http://tns.tibco.com/bw/REST_GDRIVE" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <tibex:VariableDescriptor type="MemorySaving">
+        <task name="End">
+            <endingVariables>
+                <variable>requestAccessToken</variable>
+            </endingVariables>
+        </task>
+        <task name="encrypt_JWT">
+            <endingVariables>
+                <variable>encrypt_JWT-input</variable>
+                <variable>scope</variable>
+            </endingVariables>
+        </task>
+        <task name="RepeatRetrieveToken">
+            <endingVariables>
+                <variable>maxRetry</variable>
+                <variable>_error_requestAccessToken</variable>
+                <variable>indexRetry</variable>
+                <variable>encrypt_JWT</variable>
+                <variable>baseRetryDelay_s</variable>
+                <variable>System_EXCEPTION</variable>
+            </endingVariables>
+        </task>
+        <task name="requestAccessToken">
+            <endingVariables>
+                <variable>requestAccessToken-input</variable>
+            </endingVariables>
+        </task>
+        <task name="Sleep">
+            <endingVariables>
+                <variable>Sleep-input</variable>
+            </endingVariables>
+        </task>
+        <task name="ThrowError400">
+            <endingVariables>
+                <variable>ThrowError400-input</variable>
+            </endingVariables>
+        </task>
+        <task name="ThrowEnd">
+            <endingVariables>
+                <variable>ThrowEnd-input</variable>
+            </endingVariables>
+        </task>
+        <task name="Throw">
+            <endingVariables>
+                <variable>Throw-input</variable>
+                <variable>_error_encrypt_JWT</variable>
+                <variable>FaultDetails</variable>
+                <variable>_error_ThrowEnd</variable>
+                <variable>_error_ThrowError400</variable>
+            </endingVariables>
+        </task>
+    </tibex:VariableDescriptor>
     <tibex:Types>
         <xs:schema attributeFormDefault="unqualified"
             elementFormDefault="qualified"

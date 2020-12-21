@@ -1890,6 +1890,8 @@
         <bpws:variable name="token" type="xsd:string"/>
         <bpws:variable element="ns7:LogAudit"
             name="ThrowLogAuditError-input" sca-bpel:internal="true"/>
+        <bpws:variable element="ns9:ActivityErrorData"
+            name="_error_Throw" sca-bpel:internal="true"/>
     </bpws:variables>
     <bpws:extensions>
         <bpws:extension mustUnderstand="no" namespace="http://www.eclipse.org/gmf/runtime/1.0.2/notation"/>

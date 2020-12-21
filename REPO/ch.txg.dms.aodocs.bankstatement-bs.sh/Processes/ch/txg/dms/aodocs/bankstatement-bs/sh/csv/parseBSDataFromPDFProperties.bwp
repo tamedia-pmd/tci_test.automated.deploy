@@ -17,6 +17,51 @@
     xmlns:sca-bpel="http://docs.oasis-open.org/ns/opencsa/sca-bpel/200801"
     xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"
     xmlns:tibprop="http://ns.tibco.com/bw/property" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <tibex:VariableDescriptor type="MemorySaving">
+        <task name="GetBankStatementCSVConfiguration">
+            <endingVariables>
+                <variable>GetBankStatementCSVConfiguration-input</variable>
+            </endingVariables>
+        </task>
+        <task name="BankConfiguration">
+            <endingVariables>
+                <variable>BankConfiguration-input</variable>
+                <variable>GetBankStatementCSVConfiguration</variable>
+            </endingVariables>
+        </task>
+        <task name="IncludePDFProps">
+            <endingVariables>
+                <variable>CleanInput</variable>
+                <variable>BankConfiguration</variable>
+            </endingVariables>
+        </task>
+        <task name="CleanInput">
+            <endingVariables>
+                <variable>CleanInput-input</variable>
+            </endingVariables>
+        </task>
+        <task name="ThrowPositional">
+            <endingVariables>
+                <variable>ThrowPositional-input</variable>
+            </endingVariables>
+        </task>
+        <task name="ThrowKeyValue">
+            <endingVariables>
+                <variable>ThrowKeyValue-input</variable>
+            </endingVariables>
+        </task>
+        <task name="ThrowLogAudit">
+            <endingVariables>
+                <variable>ThrowLogAudit-input</variable>
+            </endingVariables>
+        </task>
+        <task name="ThrowGeneric">
+            <endingVariables>
+                <variable>ThrowGeneric-input</variable>
+                <variable>FaultDetails</variable>
+            </endingVariables>
+        </task>
+    </tibex:VariableDescriptor>
     <tibex:Types>
         <xs:schema attributeFormDefault="unqualified"
             elementFormDefault="qualified"

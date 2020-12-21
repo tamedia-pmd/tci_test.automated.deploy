@@ -14,7 +14,14 @@
     xmlns:ns14="http://tns.tibco.com/bw/palette/internal/activityerror+com.tibco.bw.core.design.process.editor.Activity_4002_Throw"
     xmlns:ns15="http://ch/txg/b2c/aodocs/sl/GetDocument"
     xmlns:ns16="http://ch/txg/b2c/aodocs/sl/LockUnlockAodocs"
+    xmlns:ns17="http://tns.tibco.com/bw/palette/internal/activityerror+e14d4bfe-917e-444c-9283-5cdcb51e0f9a"
+    xmlns:ns18="http://tns.tibco.com/bw/palette/internal/activityerror+4c218aeb-de43-44e9-96b1-f09b3b7533cd"
+    xmlns:ns19="http://tns.tibco.com/bw/palette/internal/activityerror+0746ca45-b225-4869-8992-183376d1d49e"
     xmlns:ns2="activity.jsonRender.output+82b8a4e2-3247-437b-957e-c9a416bd1055+ActivityOutputType"
+    xmlns:ns20="http://tns.tibco.com/bw/palette/internal/activityerror+0cc1ba89-9b1e-443c-879f-437d04a405eb"
+    xmlns:ns21="http://tns.tibco.com/bw/palette/internal/activityerror+d1bc6c84-1192-4ada-884a-edef64f68ca9"
+    xmlns:ns22="http://tns.tibco.com/bw/palette/internal/activityerror+8181e0ea-40cf-4f6f-9c3c-829e91739439"
+    xmlns:ns23="http://tns.tibco.com/bw/palette/internal/activityerror+a1f12a14-1742-4b67-a452-f036863c92ab"
     xmlns:ns3="http://tns.tibco.com/bw/palette/internal/activityerror+bw.restjson.JsonRender"
     xmlns:ns4="http://ch/txg/b2c/aodocs/sl/AddAttachment"
     xmlns:ns5="http://ch/txg/b2c/aodocs/sl/UpdateDocument"
@@ -312,6 +319,90 @@
             targetNamespace="http://tns.tibco.com/bw/palette/internal/activityerror+com.tibco.bw.core.design.process.editor.Activity_4002_Throw"
             xmlns="http://www.w3.org/2001/XMLSchema"
             xmlns:Q1="http://ch/txg/core/lehf/common/AuditTypes/0100" xmlns:tns="http://tns.tibco.com/bw/palette/internal/activityerror+com.tibco.bw.core.design.process.editor.Activity_4002_Throw">
+            <import namespace="http://ch/txg/core/lehf/common/AuditTypes/0100"/>
+            <element name="ActivityErrorData" type="tns:ActivityErrorDataType"/>
+            <complexType name="ActivityErrorDataType">
+                <choice>
+                    <element maxOccurs="1" minOccurs="0" ref="Q1:LogAudit"/>
+                </choice>
+            </complexType>
+        </schema>
+        <schema elementFormDefault="unqualified"
+            targetNamespace="http://tns.tibco.com/bw/palette/internal/activityerror+e14d4bfe-917e-444c-9283-5cdcb51e0f9a"
+            xmlns="http://www.w3.org/2001/XMLSchema"
+            xmlns:Q1="http://ch/txg/core/lehf/common/AuditTypes/0100" xmlns:tns="http://tns.tibco.com/bw/palette/internal/activityerror+e14d4bfe-917e-444c-9283-5cdcb51e0f9a">
+            <import namespace="http://ch/txg/core/lehf/common/AuditTypes/0100"/>
+            <element name="ActivityErrorData" type="tns:ActivityErrorDataType"/>
+            <complexType name="ActivityErrorDataType">
+                <choice>
+                    <element maxOccurs="1" minOccurs="0" ref="Q1:LogAudit"/>
+                </choice>
+            </complexType>
+        </schema>
+        <schema elementFormDefault="unqualified"
+            targetNamespace="http://tns.tibco.com/bw/palette/internal/activityerror+4c218aeb-de43-44e9-96b1-f09b3b7533cd"
+            xmlns="http://www.w3.org/2001/XMLSchema"
+            xmlns:Q1="http://ch/txg/core/lehf/common/AuditTypes/0100" xmlns:tns="http://tns.tibco.com/bw/palette/internal/activityerror+4c218aeb-de43-44e9-96b1-f09b3b7533cd">
+            <import namespace="http://ch/txg/core/lehf/common/AuditTypes/0100"/>
+            <element name="ActivityErrorData" type="tns:ActivityErrorDataType"/>
+            <complexType name="ActivityErrorDataType">
+                <choice>
+                    <element maxOccurs="1" minOccurs="0" ref="Q1:LogAudit"/>
+                </choice>
+            </complexType>
+        </schema>
+        <schema elementFormDefault="unqualified"
+            targetNamespace="http://tns.tibco.com/bw/palette/internal/activityerror+0746ca45-b225-4869-8992-183376d1d49e"
+            xmlns="http://www.w3.org/2001/XMLSchema"
+            xmlns:Q1="http://ch/txg/core/lehf/common/AuditTypes/0100" xmlns:tns="http://tns.tibco.com/bw/palette/internal/activityerror+0746ca45-b225-4869-8992-183376d1d49e">
+            <import namespace="http://ch/txg/core/lehf/common/AuditTypes/0100"/>
+            <element name="ActivityErrorData" type="tns:ActivityErrorDataType"/>
+            <complexType name="ActivityErrorDataType">
+                <choice>
+                    <element maxOccurs="1" minOccurs="0" ref="Q1:LogAudit"/>
+                </choice>
+            </complexType>
+        </schema>
+        <schema elementFormDefault="unqualified"
+            targetNamespace="http://tns.tibco.com/bw/palette/internal/activityerror+0cc1ba89-9b1e-443c-879f-437d04a405eb"
+            xmlns="http://www.w3.org/2001/XMLSchema"
+            xmlns:Q1="http://ch/txg/core/lehf/common/AuditTypes/0100" xmlns:tns="http://tns.tibco.com/bw/palette/internal/activityerror+0cc1ba89-9b1e-443c-879f-437d04a405eb">
+            <import namespace="http://ch/txg/core/lehf/common/AuditTypes/0100"/>
+            <element name="ActivityErrorData" type="tns:ActivityErrorDataType"/>
+            <complexType name="ActivityErrorDataType">
+                <choice>
+                    <element maxOccurs="1" minOccurs="0" ref="Q1:LogAudit"/>
+                </choice>
+            </complexType>
+        </schema>
+        <schema elementFormDefault="unqualified"
+            targetNamespace="http://tns.tibco.com/bw/palette/internal/activityerror+d1bc6c84-1192-4ada-884a-edef64f68ca9"
+            xmlns="http://www.w3.org/2001/XMLSchema"
+            xmlns:Q1="http://ch/txg/core/lehf/common/AuditTypes/0100" xmlns:tns="http://tns.tibco.com/bw/palette/internal/activityerror+d1bc6c84-1192-4ada-884a-edef64f68ca9">
+            <import namespace="http://ch/txg/core/lehf/common/AuditTypes/0100"/>
+            <element name="ActivityErrorData" type="tns:ActivityErrorDataType"/>
+            <complexType name="ActivityErrorDataType">
+                <choice>
+                    <element maxOccurs="1" minOccurs="0" ref="Q1:LogAudit"/>
+                </choice>
+            </complexType>
+        </schema>
+        <schema elementFormDefault="unqualified"
+            targetNamespace="http://tns.tibco.com/bw/palette/internal/activityerror+8181e0ea-40cf-4f6f-9c3c-829e91739439"
+            xmlns="http://www.w3.org/2001/XMLSchema"
+            xmlns:Q1="http://ch/txg/core/lehf/common/AuditTypes/0100" xmlns:tns="http://tns.tibco.com/bw/palette/internal/activityerror+8181e0ea-40cf-4f6f-9c3c-829e91739439">
+            <import namespace="http://ch/txg/core/lehf/common/AuditTypes/0100"/>
+            <element name="ActivityErrorData" type="tns:ActivityErrorDataType"/>
+            <complexType name="ActivityErrorDataType">
+                <choice>
+                    <element maxOccurs="1" minOccurs="0" ref="Q1:LogAudit"/>
+                </choice>
+            </complexType>
+        </schema>
+        <schema elementFormDefault="unqualified"
+            targetNamespace="http://tns.tibco.com/bw/palette/internal/activityerror+a1f12a14-1742-4b67-a452-f036863c92ab"
+            xmlns="http://www.w3.org/2001/XMLSchema"
+            xmlns:Q1="http://ch/txg/core/lehf/common/AuditTypes/0100" xmlns:tns="http://tns.tibco.com/bw/palette/internal/activityerror+a1f12a14-1742-4b67-a452-f036863c92ab">
             <import namespace="http://ch/txg/core/lehf/common/AuditTypes/0100"/>
             <element name="ActivityErrorData" type="tns:ActivityErrorDataType"/>
             <complexType name="ActivityErrorDataType">
@@ -1503,6 +1594,20 @@
             name="UnlockedAodocsFaultCatchAll-input" sca-bpel:internal="true"/>
         <bpws:variable element="ns16:Output"
             name="UnlockedAodocsFaultCatchAll" sca-bpel:internal="true"/>
+        <bpws:variable element="ns17:ActivityErrorData"
+            name="_error_GetDocument" sca-bpel:internal="true"/>
+        <bpws:variable element="ns18:ActivityErrorData"
+            name="_error_LockAodocs" sca-bpel:internal="true"/>
+        <bpws:variable element="ns19:ActivityErrorData"
+            name="_error_UnlockedAodocs" sca-bpel:internal="true"/>
+        <bpws:variable element="ns20:ActivityErrorData"
+            name="_error_UnlockedAodocsFaultParseException" sca-bpel:internal="true"/>
+        <bpws:variable element="ns21:ActivityErrorData"
+            name="_error_UnlockedAodocsFaultRenderException" sca-bpel:internal="true"/>
+        <bpws:variable element="ns22:ActivityErrorData"
+            name="_error_UnlockedAodocsFaultLogAudit" sca-bpel:internal="true"/>
+        <bpws:variable element="ns23:ActivityErrorData"
+            name="_error_UnlockedAodocsFaultCatchAll" sca-bpel:internal="true"/>
     </bpws:variables>
     <bpws:extensions>
         <bpws:extension mustUnderstand="no" namespace="http://www.eclipse.org/gmf/runtime/1.0.2/notation"/>

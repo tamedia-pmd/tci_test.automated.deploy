@@ -9,6 +9,7 @@
     xmlns:ns1="http://ch/txg/b2c/gdrive/sl/retrieveToken/100"
     xmlns:ns10="http://schemas.tibco.com/bw/plugins/http/5.0/httpExceptions"
     xmlns:ns11="http://tns.tibco.com/bw/palette/internal/activityerror+com.tibco.bw.core.design.process.editor.Activity_4002_Throw"
+    xmlns:ns12="http://tns.tibco.com/bw/palette/internal/activityerror+bw.internal.end"
     xmlns:ns2="http://www.tibco.com/namespaces/tnt/plugins/restinvoke+d9860860-f9e0-4005-a854-3805e592563c+RestInvokeInput"
     xmlns:ns3="http://www.tibco.com/namespaces/tnt/plugins/restinvoke+d9860860-f9e0-4005-a854-3805e592563c+RestInvokeOutput"
     xmlns:ns4="http://tns.tibco.com/bw/palette/internal/activityerror+bw.restjson.Rest"
@@ -436,6 +437,18 @@
             targetNamespace="http://tns.tibco.com/bw/palette/internal/activityerror+com.tibco.bw.core.design.process.editor.Activity_4002_Throw"
             xmlns="http://www.w3.org/2001/XMLSchema"
             xmlns:Q1="http://ch/txg/core/lehf/common/AuditTypes/0100" xmlns:tns="http://tns.tibco.com/bw/palette/internal/activityerror+com.tibco.bw.core.design.process.editor.Activity_4002_Throw">
+            <import namespace="http://ch/txg/core/lehf/common/AuditTypes/0100"/>
+            <element name="ActivityErrorData" type="tns:ActivityErrorDataType"/>
+            <complexType name="ActivityErrorDataType">
+                <choice>
+                    <element maxOccurs="1" minOccurs="0" ref="Q1:LogAudit"/>
+                </choice>
+            </complexType>
+        </schema>
+        <schema elementFormDefault="unqualified"
+            targetNamespace="http://tns.tibco.com/bw/palette/internal/activityerror+bw.internal.end"
+            xmlns="http://www.w3.org/2001/XMLSchema"
+            xmlns:Q1="http://ch/txg/core/lehf/common/AuditTypes/0100" xmlns:tns="http://tns.tibco.com/bw/palette/internal/activityerror+bw.internal.end">
             <import namespace="http://ch/txg/core/lehf/common/AuditTypes/0100"/>
             <element name="ActivityErrorData" type="tns:ActivityErrorDataType"/>
             <complexType name="ActivityErrorDataType">
@@ -1608,6 +1621,18 @@
             name="ThrowGDRS000014-input" sca-bpel:internal="true"/>
         <bpws:variable element="ns11:ActivityErrorData"
             name="_error_Copy_3_ThrowGDRS000011" sca-bpel:internal="true"/>
+        <bpws:variable element="ns12:ActivityErrorData"
+            name="_error_End" sca-bpel:internal="true"/>
+        <bpws:variable element="ns11:ActivityErrorData"
+            name="_error_ThrowRetrieveTokenError" sca-bpel:internal="true"/>
+        <bpws:variable element="ns11:ActivityErrorData"
+            name="_error_ThrowGDRS000011" sca-bpel:internal="true"/>
+        <bpws:variable element="ns11:ActivityErrorData"
+            name="_error_ThrowGDRS000012" sca-bpel:internal="true"/>
+        <bpws:variable element="ns11:ActivityErrorData"
+            name="_error_ThrowGDRS000013" sca-bpel:internal="true"/>
+        <bpws:variable element="ns11:ActivityErrorData"
+            name="_error_ThrowGDRS000014" sca-bpel:internal="true"/>
     </bpws:variables>
     <bpws:extensions>
         <bpws:extension mustUnderstand="no" namespace="http://www.eclipse.org/gmf/runtime/1.0.2/notation"/>
@@ -1840,8 +1865,7 @@
                     <bpws:target linkName="RetrieveTokenToThrowRetrieveTokenError"/>
                 </bpws:targets>
             </bpws:throw>
-            <bpws:scope name="RepeatOnError" tibex:group="repeatOnError"
-                tibex:indexToGlobal="false" tibex:xpdlId="b64e8a08-780d-46d4-a319-2f0f53950d6b">
+            <bpws:scope name="RepeatOnError" tibex:group="repeatOnError" tibex:xpdlId="b64e8a08-780d-46d4-a319-2f0f53950d6b">
                 <bpws:targets>
                     <bpws:target linkName="AssignTokenToRepeatOnError"/>
                 </bpws:targets>

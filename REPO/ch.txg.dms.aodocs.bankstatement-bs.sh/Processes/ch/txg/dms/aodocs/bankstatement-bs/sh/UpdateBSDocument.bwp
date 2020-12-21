@@ -9,6 +9,7 @@
     xmlns:ns0="http://www.example.com/namespaces/tns/1603122116032"
     xmlns:ns1="http://ch/txg/core/lehf/common/loggerType/0100"
     xmlns:ns10="http://ch.txg.aodocs/bankstatement/bs"
+    xmlns:ns11="http://tns.tibco.com/bw/palette/internal/activityerror+b3945d56-63e1-458b-b12d-76453a99258a"
     xmlns:ns2="http://ch/txg/dms/aodocs/edossier-hr/sl/INT5160_InsertDocument"
     xmlns:ns3="http://ch/txg/b2c/aodocs/sl/InsertDocument"
     xmlns:ns4="http://ch/txg/core/lehf/common/AuditTypes/0100"
@@ -210,6 +211,18 @@
             targetNamespace="http://tns.tibco.com/bw/palette/internal/activityerror+com.tibco.bw.core.design.process.editor.Activity_4002_Throw"
             xmlns="http://www.w3.org/2001/XMLSchema"
             xmlns:Q1="http://ch/txg/core/lehf/common/AuditTypes/0100" xmlns:tns="http://tns.tibco.com/bw/palette/internal/activityerror+com.tibco.bw.core.design.process.editor.Activity_4002_Throw">
+            <import namespace="http://ch/txg/core/lehf/common/AuditTypes/0100"/>
+            <element name="ActivityErrorData" type="tns:ActivityErrorDataType"/>
+            <complexType name="ActivityErrorDataType">
+                <choice>
+                    <element maxOccurs="1" minOccurs="0" ref="Q1:LogAudit"/>
+                </choice>
+            </complexType>
+        </schema>
+        <schema elementFormDefault="unqualified"
+            targetNamespace="http://tns.tibco.com/bw/palette/internal/activityerror+b3945d56-63e1-458b-b12d-76453a99258a"
+            xmlns="http://www.w3.org/2001/XMLSchema"
+            xmlns:Q1="http://ch/txg/core/lehf/common/AuditTypes/0100" xmlns:tns="http://tns.tibco.com/bw/palette/internal/activityerror+b3945d56-63e1-458b-b12d-76453a99258a">
             <import namespace="http://ch/txg/core/lehf/common/AuditTypes/0100"/>
             <element name="ActivityErrorData" type="tns:ActivityErrorDataType"/>
             <complexType name="ActivityErrorDataType">
@@ -763,6 +776,8 @@
             name="_error_ThrowGenericError" sca-bpel:internal="true"/>
         <bpws:variable element="ns9:Input" name="UpdateDocument-input" sca-bpel:internal="true"/>
         <bpws:variable element="ns9:Output" name="UpdateDocument" sca-bpel:internal="true"/>
+        <bpws:variable element="ns11:ActivityErrorData"
+            name="_error_UpdateDocument" sca-bpel:internal="true"/>
     </bpws:variables>
     <bpws:extensions>
         <bpws:extension mustUnderstand="no" namespace="http://www.eclipse.org/gmf/runtime/1.0.2/notation"/>

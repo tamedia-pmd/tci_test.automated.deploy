@@ -21,6 +21,45 @@
     xmlns:sca-bpel="http://docs.oasis-open.org/ns/opencsa/sca-bpel/200801"
     xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"
     xmlns:tibprop="http://ns.tibco.com/bw/property" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <tibex:VariableDescriptor type="MemorySaving">
+        <task name="End">
+            <endingVariables>
+                <variable>InsertDocument</variable>
+            </endingVariables>
+        </task>
+        <task name="PrepareInsertBSDocument">
+            <endingVariables>
+                <variable>PrepareInsertBSDocument-input</variable>
+            </endingVariables>
+        </task>
+        <task name="InsertDocument">
+            <endingVariables>
+                <variable>InsertDocument-input</variable>
+                <variable>PrepareInsertBSDocument</variable>
+                <variable>Start</variable>
+            </endingVariables>
+        </task>
+        <task name="LogInsertDocumentJSON">
+            <endingVariables>
+                <variable>LogInsertDocumentJSON-input</variable>
+                <variable>LogInsertDocumentJSON</variable>
+                <variable>DEBUG_Severity</variable>
+            </endingVariables>
+        </task>
+        <task name="ThrowLogAuditError">
+            <endingVariables>
+                <variable>ThrowLogAuditError-input</variable>
+            </endingVariables>
+        </task>
+        <task name="ThrowGenericError">
+            <endingVariables>
+                <variable>ThrowGenericError-input</variable>
+                <variable>FaultDetails</variable>
+                <variable>ERROR_Severity</variable>
+                <variable>System_Exception</variable>
+            </endingVariables>
+        </task>
+    </tibex:VariableDescriptor>
     <tibex:Types>
         <xs:schema attributeFormDefault="unqualified"
             elementFormDefault="qualified"

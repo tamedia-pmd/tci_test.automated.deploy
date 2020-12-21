@@ -63,6 +63,56 @@
     xmlns:tns="http://ch.txg/core/lehf/InternalInterface_RetryProcess/0100"
     xmlns:tns0="http://xmlns.example.com/Ccx-oauth2-tamedia2-token/parameters"
     xmlns:tns1="http://schemas.tibco.com/bw/plugins/http/5.0/httpExceptions" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <tibex:VariableDescriptor type="MemorySaving">
+        <task name="End">
+            <endingVariables>
+                <variable>callService_ProcessingMessages</variable>
+            </endingVariables>
+        </task>
+        <task name="RepeatOnError">
+            <endingVariables>
+                <variable>maxRetry</variable>
+                <variable>indexRetry</variable>
+                <variable>_error_callService_ProcessingMessages</variable>
+                <variable>baseRetryDelay_s</variable>
+                <variable>requestURI</variable>
+                <variable>RemoveNamespacesAndPrefixes</variable>
+                <variable>ERROR_SEVERITY</variable>
+            </endingVariables>
+        </task>
+        <task name="Wait">
+            <endingVariables>
+                <variable>Wait-input</variable>
+            </endingVariables>
+        </task>
+        <task name="callService_ProcessingMessages">
+            <endingVariables>
+                <variable>callService_ProcessingMessages-input</variable>
+            </endingVariables>
+        </task>
+        <task name="Throw_HTTPError">
+            <endingVariables>
+                <variable>Throw_HTTPError-input</variable>
+            </endingVariables>
+        </task>
+        <task name="RemoveNamespacesAndPrefixes">
+            <endingVariables>
+                <variable>RemoveNamespacesAndPrefixes-input</variable>
+                <variable>Start</variable>
+            </endingVariables>
+        </task>
+        <task name="ThrowError">
+            <endingVariables>
+                <variable>ThrowError-input</variable>
+            </endingVariables>
+        </task>
+        <task name="ThrowGenericError">
+            <endingVariables>
+                <variable>ThrowGenericError-input</variable>
+                <variable>FaultDetails1</variable>
+            </endingVariables>
+        </task>
+    </tibex:VariableDescriptor>
     <tibex:Types>
         <xs:schema attributeFormDefault="unqualified"
             elementFormDefault="qualified"
