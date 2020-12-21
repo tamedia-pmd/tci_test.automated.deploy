@@ -3,42 +3,42 @@
   <packaging:description></packaging:description>
   <packaging:properties>
     <packaging:property>
-      <packaging:name>//ch.txg.dms.filetransfer.md//BW.APPNODE.NAME</packaging:name>
+      <packaging:name>//ch.txg.dms.bankstatement.filetransfer.md//BW.APPNODE.NAME</packaging:name>
       <packaging:type>xsd:string</packaging:type>
       <packaging:visibility>private</packaging:visibility>
       <packaging:scalable>true</packaging:scalable>
       <packaging:overrideValue>false</packaging:overrideValue>
     </packaging:property>
     <packaging:property>
-      <packaging:name>//ch.txg.dms.filetransfer.md//BW.DEPLOYMENTUNIT.NAME</packaging:name>
+      <packaging:name>//ch.txg.dms.bankstatement.filetransfer.md//BW.DEPLOYMENTUNIT.NAME</packaging:name>
       <packaging:type>xsd:string</packaging:type>
       <packaging:visibility>private</packaging:visibility>
       <packaging:scalable>true</packaging:scalable>
       <packaging:overrideValue>false</packaging:overrideValue>
     </packaging:property>
     <packaging:property>
-      <packaging:name>//ch.txg.dms.filetransfer.md//BW.HOST.NAME</packaging:name>
+      <packaging:name>//ch.txg.dms.bankstatement.filetransfer.md//BW.HOST.NAME</packaging:name>
       <packaging:type>xsd:string</packaging:type>
       <packaging:visibility>private</packaging:visibility>
       <packaging:scalable>true</packaging:scalable>
       <packaging:overrideValue>false</packaging:overrideValue>
     </packaging:property>
     <packaging:property>
-      <packaging:name>//ch.txg.dms.filetransfer.md//BW.DEPLOYMENTUNIT.VERSION</packaging:name>
+      <packaging:name>//ch.txg.dms.bankstatement.filetransfer.md//BW.DEPLOYMENTUNIT.VERSION</packaging:name>
       <packaging:type>xsd:string</packaging:type>
       <packaging:visibility>private</packaging:visibility>
       <packaging:scalable>true</packaging:scalable>
       <packaging:overrideValue>false</packaging:overrideValue>
     </packaging:property>
     <packaging:property>
-      <packaging:name>//ch.txg.dms.filetransfer.md//BW.MODULE.VERSION</packaging:name>
+      <packaging:name>//ch.txg.dms.bankstatement.filetransfer.md//BW.MODULE.VERSION</packaging:name>
       <packaging:type>xsd:string</packaging:type>
       <packaging:visibility>private</packaging:visibility>
       <packaging:scalable>true</packaging:scalable>
       <packaging:overrideValue>false</packaging:overrideValue>
     </packaging:property>
     <packaging:property>
-      <packaging:name>//ch.txg.dms.filetransfer.md//BW.MODULE.NAME</packaging:name>
+      <packaging:name>//ch.txg.dms.bankstatement.filetransfer.md//BW.MODULE.NAME</packaging:name>
       <packaging:type>xsd:string</packaging:type>
       <packaging:visibility>private</packaging:visibility>
       <packaging:scalable>true</packaging:scalable>
@@ -110,104 +110,6 @@
     <packaging:property>
       <packaging:name>/ch.txg.core.lehf.common.sh/Logging/PROJECT</packaging:name>
       <packaging:type>xsd:string</packaging:type>
-      <packaging:visibility>public</packaging:visibility>
-      <packaging:scalable>true</packaging:scalable>
-      <packaging:overrideValue>false</packaging:overrideValue>
-    </packaging:property>
-    <packaging:property>
-      <packaging:name>//ch.txg.dms.filetransfer.md///ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/MaxIdleTime_ms</packaging:name>
-      <packaging:type>xsd:int</packaging:type>
-      <packaging:visibility>public</packaging:visibility>
-      <packaging:scalable>true</packaging:scalable>
-      <packaging:overrideValue>false</packaging:overrideValue>
-    </packaging:property>
-    <packaging:property>
-      <packaging:name>//ch.txg.dms.filetransfer.md///ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/MaxSavePostSize_B</packaging:name>
-      <packaging:type>xsd:int</packaging:type>
-      <packaging:visibility>public</packaging:visibility>
-      <packaging:scalable>true</packaging:scalable>
-      <packaging:overrideValue>false</packaging:overrideValue>
-    </packaging:property>
-    <packaging:property>
-      <packaging:name>//ch.txg.dms.filetransfer.md///ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/SessionTimeout_s</packaging:name>
-      <packaging:type>xsd:int</packaging:type>
-      <packaging:visibility>public</packaging:visibility>
-      <packaging:scalable>true</packaging:scalable>
-      <packaging:overrideValue>false</packaging:overrideValue>
-    </packaging:property>
-    <packaging:property>
-      <packaging:name>//ch.txg.dms.filetransfer.md///ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/Port</packaging:name>
-      <packaging:type>xsd:int</packaging:type>
-      <packaging:visibility>public</packaging:visibility>
-      <packaging:scalable>true</packaging:scalable>
-      <packaging:overrideValue>false</packaging:overrideValue>
-    </packaging:property>
-    <packaging:property>
-      <packaging:name>//ch.txg.dms.filetransfer.md///ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/MaximumQTPThreads</packaging:name>
-      <packaging:type>xsd:int</packaging:type>
-      <packaging:visibility>public</packaging:visibility>
-      <packaging:scalable>true</packaging:scalable>
-      <packaging:overrideValue>false</packaging:overrideValue>
-    </packaging:property>
-    <packaging:property>
-      <packaging:name>//ch.txg.dms.filetransfer.md///ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/ResponseBufferSize_B</packaging:name>
-      <packaging:type>xsd:int</packaging:type>
-      <packaging:visibility>public</packaging:visibility>
-      <packaging:scalable>true</packaging:scalable>
-      <packaging:overrideValue>false</packaging:overrideValue>
-    </packaging:property>
-    <packaging:property>
-      <packaging:name>//ch.txg.dms.filetransfer.md///ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/HeaderBufferSize_B</packaging:name>
-      <packaging:type>xsd:int</packaging:type>
-      <packaging:visibility>public</packaging:visibility>
-      <packaging:scalable>true</packaging:scalable>
-      <packaging:overrideValue>false</packaging:overrideValue>
-    </packaging:property>
-    <packaging:property>
-      <packaging:name>//ch.txg.dms.filetransfer.md///ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/LingerTime_ms</packaging:name>
-      <packaging:type>xsd:int</packaging:type>
-      <packaging:visibility>public</packaging:visibility>
-      <packaging:scalable>true</packaging:scalable>
-      <packaging:overrideValue>false</packaging:overrideValue>
-    </packaging:property>
-    <packaging:property>
-      <packaging:name>//ch.txg.dms.filetransfer.md///ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/RequestBufferSize_B</packaging:name>
-      <packaging:type>xsd:int</packaging:type>
-      <packaging:visibility>public</packaging:visibility>
-      <packaging:scalable>true</packaging:scalable>
-      <packaging:overrideValue>false</packaging:overrideValue>
-    </packaging:property>
-    <packaging:property>
-      <packaging:name>//ch.txg.dms.filetransfer.md///ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/AcceptQueueSize</packaging:name>
-      <packaging:type>xsd:int</packaging:type>
-      <packaging:visibility>public</packaging:visibility>
-      <packaging:scalable>true</packaging:scalable>
-      <packaging:overrideValue>false</packaging:overrideValue>
-    </packaging:property>
-    <packaging:property>
-      <packaging:name>//ch.txg.dms.filetransfer.md///ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/AcceptorThreads</packaging:name>
-      <packaging:type>xsd:int</packaging:type>
-      <packaging:visibility>public</packaging:visibility>
-      <packaging:scalable>true</packaging:scalable>
-      <packaging:overrideValue>false</packaging:overrideValue>
-    </packaging:property>
-    <packaging:property>
-      <packaging:name>//ch.txg.dms.filetransfer.md///ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/MaxPostSize_B</packaging:name>
-      <packaging:type>xsd:int</packaging:type>
-      <packaging:visibility>public</packaging:visibility>
-      <packaging:scalable>true</packaging:scalable>
-      <packaging:overrideValue>false</packaging:overrideValue>
-    </packaging:property>
-    <packaging:property>
-      <packaging:name>//ch.txg.dms.filetransfer.md///ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/LowResourceMaxIdleTime_ms</packaging:name>
-      <packaging:type>xsd:int</packaging:type>
-      <packaging:visibility>public</packaging:visibility>
-      <packaging:scalable>true</packaging:scalable>
-      <packaging:overrideValue>false</packaging:overrideValue>
-    </packaging:property>
-    <packaging:property>
-      <packaging:name>//ch.txg.dms.filetransfer.md///ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/MinimumQTPThreads</packaging:name>
-      <packaging:type>xsd:int</packaging:type>
       <packaging:visibility>public</packaging:visibility>
       <packaging:scalable>true</packaging:scalable>
       <packaging:overrideValue>false</packaging:overrideValue>
@@ -1788,104 +1690,6 @@
       <packaging:overrideValue>false</packaging:overrideValue>
     </packaging:property>
     <packaging:property>
-      <packaging:name>/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/MaxIdleTime_ms</packaging:name>
-      <packaging:type>xsd:int</packaging:type>
-      <packaging:visibility>public</packaging:visibility>
-      <packaging:scalable>true</packaging:scalable>
-      <packaging:overrideValue>false</packaging:overrideValue>
-    </packaging:property>
-    <packaging:property>
-      <packaging:name>/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/MaxSavePostSize_B</packaging:name>
-      <packaging:type>xsd:int</packaging:type>
-      <packaging:visibility>public</packaging:visibility>
-      <packaging:scalable>true</packaging:scalable>
-      <packaging:overrideValue>false</packaging:overrideValue>
-    </packaging:property>
-    <packaging:property>
-      <packaging:name>/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/SessionTimeout_s</packaging:name>
-      <packaging:type>xsd:int</packaging:type>
-      <packaging:visibility>public</packaging:visibility>
-      <packaging:scalable>true</packaging:scalable>
-      <packaging:overrideValue>false</packaging:overrideValue>
-    </packaging:property>
-    <packaging:property>
-      <packaging:name>/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/Port</packaging:name>
-      <packaging:type>xsd:int</packaging:type>
-      <packaging:visibility>public</packaging:visibility>
-      <packaging:scalable>true</packaging:scalable>
-      <packaging:overrideValue>false</packaging:overrideValue>
-    </packaging:property>
-    <packaging:property>
-      <packaging:name>/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/MaximumQTPThreads</packaging:name>
-      <packaging:type>xsd:int</packaging:type>
-      <packaging:visibility>public</packaging:visibility>
-      <packaging:scalable>true</packaging:scalable>
-      <packaging:overrideValue>false</packaging:overrideValue>
-    </packaging:property>
-    <packaging:property>
-      <packaging:name>/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/ResponseBufferSize_B</packaging:name>
-      <packaging:type>xsd:int</packaging:type>
-      <packaging:visibility>public</packaging:visibility>
-      <packaging:scalable>true</packaging:scalable>
-      <packaging:overrideValue>false</packaging:overrideValue>
-    </packaging:property>
-    <packaging:property>
-      <packaging:name>/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/HeaderBufferSize_B</packaging:name>
-      <packaging:type>xsd:int</packaging:type>
-      <packaging:visibility>public</packaging:visibility>
-      <packaging:scalable>true</packaging:scalable>
-      <packaging:overrideValue>false</packaging:overrideValue>
-    </packaging:property>
-    <packaging:property>
-      <packaging:name>/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/LingerTime_ms</packaging:name>
-      <packaging:type>xsd:int</packaging:type>
-      <packaging:visibility>public</packaging:visibility>
-      <packaging:scalable>true</packaging:scalable>
-      <packaging:overrideValue>false</packaging:overrideValue>
-    </packaging:property>
-    <packaging:property>
-      <packaging:name>/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/RequestBufferSize_B</packaging:name>
-      <packaging:type>xsd:int</packaging:type>
-      <packaging:visibility>public</packaging:visibility>
-      <packaging:scalable>true</packaging:scalable>
-      <packaging:overrideValue>false</packaging:overrideValue>
-    </packaging:property>
-    <packaging:property>
-      <packaging:name>/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/AcceptQueueSize</packaging:name>
-      <packaging:type>xsd:int</packaging:type>
-      <packaging:visibility>public</packaging:visibility>
-      <packaging:scalable>true</packaging:scalable>
-      <packaging:overrideValue>false</packaging:overrideValue>
-    </packaging:property>
-    <packaging:property>
-      <packaging:name>/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/AcceptorThreads</packaging:name>
-      <packaging:type>xsd:int</packaging:type>
-      <packaging:visibility>public</packaging:visibility>
-      <packaging:scalable>true</packaging:scalable>
-      <packaging:overrideValue>false</packaging:overrideValue>
-    </packaging:property>
-    <packaging:property>
-      <packaging:name>/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/MaxPostSize_B</packaging:name>
-      <packaging:type>xsd:int</packaging:type>
-      <packaging:visibility>public</packaging:visibility>
-      <packaging:scalable>true</packaging:scalable>
-      <packaging:overrideValue>false</packaging:overrideValue>
-    </packaging:property>
-    <packaging:property>
-      <packaging:name>/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/LowResourceMaxIdleTime_ms</packaging:name>
-      <packaging:type>xsd:int</packaging:type>
-      <packaging:visibility>public</packaging:visibility>
-      <packaging:scalable>true</packaging:scalable>
-      <packaging:overrideValue>false</packaging:overrideValue>
-    </packaging:property>
-    <packaging:property>
-      <packaging:name>/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/MinimumQTPThreads</packaging:name>
-      <packaging:type>xsd:int</packaging:type>
-      <packaging:visibility>public</packaging:visibility>
-      <packaging:scalable>true</packaging:scalable>
-      <packaging:overrideValue>false</packaging:overrideValue>
-    </packaging:property>
-    <packaging:property>
       <packaging:name>//ch.txg.b2c.gdrive.sl.sh///ch.txg.b2c.gdrive.sl.sh/Connection/RetryManagement/statusCodesToSkip</packaging:name>
       <packaging:type>xsd:string</packaging:type>
       <packaging:visibility>public</packaging:visibility>
@@ -2433,13 +2237,6 @@
     </packaging:property>
     <packaging:property>
       <packaging:name>//ch.txg.core.lehf.common.sh///ch.txg.core.lehf.common.sh/Logging/PROJECT</packaging:name>
-      <packaging:type>xsd:string</packaging:type>
-      <packaging:visibility>public</packaging:visibility>
-      <packaging:scalable>true</packaging:scalable>
-      <packaging:overrideValue>false</packaging:overrideValue>
-    </packaging:property>
-    <packaging:property>
-      <packaging:name>//ch.txg.dms.filetransfer.md///ch.txg.dms.filetransfer.md/ch.txg.dms.filetransfer.adm/ClearCacheMemory/URI</packaging:name>
       <packaging:type>xsd:string</packaging:type>
       <packaging:visibility>public</packaging:visibility>
       <packaging:scalable>true</packaging:scalable>
@@ -3139,13 +2936,6 @@
       <packaging:overrideValue>false</packaging:overrideValue>
     </packaging:property>
     <packaging:property>
-      <packaging:name>/ch.txg.dms.filetransfer.md/ch.txg.dms.filetransfer.adm/ClearCacheMemory/URI</packaging:name>
-      <packaging:type>xsd:string</packaging:type>
-      <packaging:visibility>public</packaging:visibility>
-      <packaging:scalable>true</packaging:scalable>
-      <packaging:overrideValue>false</packaging:overrideValue>
-    </packaging:property>
-    <packaging:property>
       <packaging:name>//ch.txg.core.sftp.common.sh///ch.txg.core.sftp.common/Connections/SFTP/BankStatment/Password</packaging:name>
       <packaging:type>ns:password</packaging:type>
       <packaging:visibility>public</packaging:visibility>
@@ -3279,29 +3069,232 @@
       <packaging:overrideValue>false</packaging:overrideValue>
     </packaging:property>
     <packaging:property>
-      <packaging:name>//ch.txg.dms.filetransfer.md///ch.txg.dms.filetransfer.md/ch.txg.dms.filetransfer.adm/ConfigLoader/ConfLoad_TimeInterval_s</packaging:name>
+      <packaging:name>//ch.txg.dms.bankstatement.filetransfer.md///ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/MinimumQTPThreads</packaging:name>
       <packaging:type>xsd:int</packaging:type>
       <packaging:visibility>public</packaging:visibility>
       <packaging:scalable>true</packaging:scalable>
       <packaging:overrideValue>false</packaging:overrideValue>
     </packaging:property>
     <packaging:property>
-      <packaging:name>//ch.txg.dms.filetransfer.md///ch.txg.dms.filetransfer.md/ch.txg.dms.filetransfer.adm/ConfigLoader/StartTimestamp</packaging:name>
-      <packaging:type>xsd:dateTime</packaging:type>
-      <packaging:visibility>public</packaging:visibility>
-      <packaging:scalable>true</packaging:scalable>
-      <packaging:overrideValue>false</packaging:overrideValue>
-    </packaging:property>
-    <packaging:property>
-      <packaging:name>/ch.txg.dms.filetransfer.md/ch.txg.dms.filetransfer.adm/ConfigLoader/ConfLoad_TimeInterval_s</packaging:name>
+      <packaging:name>//ch.txg.dms.bankstatement.filetransfer.md///ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/RequestBufferSize_B</packaging:name>
       <packaging:type>xsd:int</packaging:type>
       <packaging:visibility>public</packaging:visibility>
       <packaging:scalable>true</packaging:scalable>
       <packaging:overrideValue>false</packaging:overrideValue>
     </packaging:property>
     <packaging:property>
-      <packaging:name>/ch.txg.dms.filetransfer.md/ch.txg.dms.filetransfer.adm/ConfigLoader/StartTimestamp</packaging:name>
+      <packaging:name>//ch.txg.dms.bankstatement.filetransfer.md///ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/MaxIdleTime_ms</packaging:name>
+      <packaging:type>xsd:int</packaging:type>
+      <packaging:visibility>public</packaging:visibility>
+      <packaging:scalable>true</packaging:scalable>
+      <packaging:overrideValue>false</packaging:overrideValue>
+    </packaging:property>
+    <packaging:property>
+      <packaging:name>//ch.txg.dms.bankstatement.filetransfer.md///ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/AcceptorThreads</packaging:name>
+      <packaging:type>xsd:int</packaging:type>
+      <packaging:visibility>public</packaging:visibility>
+      <packaging:scalable>true</packaging:scalable>
+      <packaging:overrideValue>false</packaging:overrideValue>
+    </packaging:property>
+    <packaging:property>
+      <packaging:name>//ch.txg.dms.bankstatement.filetransfer.md///ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/MaxSavePostSize_B</packaging:name>
+      <packaging:type>xsd:int</packaging:type>
+      <packaging:visibility>public</packaging:visibility>
+      <packaging:scalable>true</packaging:scalable>
+      <packaging:overrideValue>false</packaging:overrideValue>
+    </packaging:property>
+    <packaging:property>
+      <packaging:name>//ch.txg.dms.bankstatement.filetransfer.md///ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/LingerTime_ms</packaging:name>
+      <packaging:type>xsd:int</packaging:type>
+      <packaging:visibility>public</packaging:visibility>
+      <packaging:scalable>true</packaging:scalable>
+      <packaging:overrideValue>false</packaging:overrideValue>
+    </packaging:property>
+    <packaging:property>
+      <packaging:name>//ch.txg.dms.bankstatement.filetransfer.md///ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/AcceptQueueSize</packaging:name>
+      <packaging:type>xsd:int</packaging:type>
+      <packaging:visibility>public</packaging:visibility>
+      <packaging:scalable>true</packaging:scalable>
+      <packaging:overrideValue>false</packaging:overrideValue>
+    </packaging:property>
+    <packaging:property>
+      <packaging:name>//ch.txg.dms.bankstatement.filetransfer.md///ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/HeaderBufferSize_B</packaging:name>
+      <packaging:type>xsd:int</packaging:type>
+      <packaging:visibility>public</packaging:visibility>
+      <packaging:scalable>true</packaging:scalable>
+      <packaging:overrideValue>false</packaging:overrideValue>
+    </packaging:property>
+    <packaging:property>
+      <packaging:name>//ch.txg.dms.bankstatement.filetransfer.md///ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/ResponseBufferSize_B</packaging:name>
+      <packaging:type>xsd:int</packaging:type>
+      <packaging:visibility>public</packaging:visibility>
+      <packaging:scalable>true</packaging:scalable>
+      <packaging:overrideValue>false</packaging:overrideValue>
+    </packaging:property>
+    <packaging:property>
+      <packaging:name>//ch.txg.dms.bankstatement.filetransfer.md///ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/SessionTimeout_s</packaging:name>
+      <packaging:type>xsd:int</packaging:type>
+      <packaging:visibility>public</packaging:visibility>
+      <packaging:scalable>true</packaging:scalable>
+      <packaging:overrideValue>false</packaging:overrideValue>
+    </packaging:property>
+    <packaging:property>
+      <packaging:name>//ch.txg.dms.bankstatement.filetransfer.md///ch.txg.dms.bankstatement.filetransfer.md/ch.txg.dms.filetransfer.adm/ClearCacheMemory/URI</packaging:name>
+      <packaging:type>xsd:string</packaging:type>
+      <packaging:visibility>public</packaging:visibility>
+      <packaging:scalable>true</packaging:scalable>
+      <packaging:overrideValue>false</packaging:overrideValue>
+    </packaging:property>
+    <packaging:property>
+      <packaging:name>//ch.txg.dms.bankstatement.filetransfer.md///ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/LowResourceMaxIdleTime_ms</packaging:name>
+      <packaging:type>xsd:int</packaging:type>
+      <packaging:visibility>public</packaging:visibility>
+      <packaging:scalable>true</packaging:scalable>
+      <packaging:overrideValue>false</packaging:overrideValue>
+    </packaging:property>
+    <packaging:property>
+      <packaging:name>//ch.txg.dms.bankstatement.filetransfer.md///ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/MaximumQTPThreads</packaging:name>
+      <packaging:type>xsd:int</packaging:type>
+      <packaging:visibility>public</packaging:visibility>
+      <packaging:scalable>true</packaging:scalable>
+      <packaging:overrideValue>false</packaging:overrideValue>
+    </packaging:property>
+    <packaging:property>
+      <packaging:name>//ch.txg.dms.bankstatement.filetransfer.md///ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/Port</packaging:name>
+      <packaging:type>xsd:int</packaging:type>
+      <packaging:visibility>public</packaging:visibility>
+      <packaging:scalable>true</packaging:scalable>
+      <packaging:overrideValue>false</packaging:overrideValue>
+    </packaging:property>
+    <packaging:property>
+      <packaging:name>//ch.txg.dms.bankstatement.filetransfer.md///ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/MaxPostSize_B</packaging:name>
+      <packaging:type>xsd:int</packaging:type>
+      <packaging:visibility>public</packaging:visibility>
+      <packaging:scalable>true</packaging:scalable>
+      <packaging:overrideValue>false</packaging:overrideValue>
+    </packaging:property>
+    <packaging:property>
+      <packaging:name>//ch.txg.dms.bankstatement.filetransfer.md///ch.txg.dms.bankstatement.filetransfer.md/ch.txg.dms.filetransfer.adm/ConfigLoader/ConfLoad_TimeInterval_s</packaging:name>
+      <packaging:type>xsd:int</packaging:type>
+      <packaging:visibility>public</packaging:visibility>
+      <packaging:scalable>true</packaging:scalable>
+      <packaging:overrideValue>false</packaging:overrideValue>
+    </packaging:property>
+    <packaging:property>
+      <packaging:name>//ch.txg.dms.bankstatement.filetransfer.md///ch.txg.dms.bankstatement.filetransfer.md/ch.txg.dms.filetransfer.adm/ConfigLoader/StartTimestamp</packaging:name>
       <packaging:type>xsd:dateTime</packaging:type>
+      <packaging:visibility>public</packaging:visibility>
+      <packaging:scalable>true</packaging:scalable>
+      <packaging:overrideValue>false</packaging:overrideValue>
+    </packaging:property>
+    <packaging:property>
+      <packaging:name>/ch.txg.dms.bankstatement.filetransfer.md/ch.txg.dms.filetransfer.adm/ClearCacheMemory/URI</packaging:name>
+      <packaging:type>xsd:string</packaging:type>
+      <packaging:visibility>public</packaging:visibility>
+      <packaging:scalable>true</packaging:scalable>
+      <packaging:overrideValue>false</packaging:overrideValue>
+    </packaging:property>
+    <packaging:property>
+      <packaging:name>/ch.txg.dms.bankstatement.filetransfer.md/ch.txg.dms.filetransfer.adm/ConfigLoader/ConfLoad_TimeInterval_s</packaging:name>
+      <packaging:type>xsd:int</packaging:type>
+      <packaging:visibility>public</packaging:visibility>
+      <packaging:scalable>true</packaging:scalable>
+      <packaging:overrideValue>false</packaging:overrideValue>
+    </packaging:property>
+    <packaging:property>
+      <packaging:name>/ch.txg.dms.bankstatement.filetransfer.md/ch.txg.dms.filetransfer.adm/ConfigLoader/StartTimestamp</packaging:name>
+      <packaging:type>xsd:dateTime</packaging:type>
+      <packaging:visibility>public</packaging:visibility>
+      <packaging:scalable>true</packaging:scalable>
+      <packaging:overrideValue>false</packaging:overrideValue>
+    </packaging:property>
+    <packaging:property>
+      <packaging:name>/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/MinimumQTPThreads</packaging:name>
+      <packaging:type>xsd:int</packaging:type>
+      <packaging:visibility>public</packaging:visibility>
+      <packaging:scalable>true</packaging:scalable>
+      <packaging:overrideValue>false</packaging:overrideValue>
+    </packaging:property>
+    <packaging:property>
+      <packaging:name>/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/RequestBufferSize_B</packaging:name>
+      <packaging:type>xsd:int</packaging:type>
+      <packaging:visibility>public</packaging:visibility>
+      <packaging:scalable>true</packaging:scalable>
+      <packaging:overrideValue>false</packaging:overrideValue>
+    </packaging:property>
+    <packaging:property>
+      <packaging:name>/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/MaxIdleTime_ms</packaging:name>
+      <packaging:type>xsd:int</packaging:type>
+      <packaging:visibility>public</packaging:visibility>
+      <packaging:scalable>true</packaging:scalable>
+      <packaging:overrideValue>false</packaging:overrideValue>
+    </packaging:property>
+    <packaging:property>
+      <packaging:name>/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/AcceptorThreads</packaging:name>
+      <packaging:type>xsd:int</packaging:type>
+      <packaging:visibility>public</packaging:visibility>
+      <packaging:scalable>true</packaging:scalable>
+      <packaging:overrideValue>false</packaging:overrideValue>
+    </packaging:property>
+    <packaging:property>
+      <packaging:name>/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/MaxSavePostSize_B</packaging:name>
+      <packaging:type>xsd:int</packaging:type>
+      <packaging:visibility>public</packaging:visibility>
+      <packaging:scalable>true</packaging:scalable>
+      <packaging:overrideValue>false</packaging:overrideValue>
+    </packaging:property>
+    <packaging:property>
+      <packaging:name>/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/LingerTime_ms</packaging:name>
+      <packaging:type>xsd:int</packaging:type>
+      <packaging:visibility>public</packaging:visibility>
+      <packaging:scalable>true</packaging:scalable>
+      <packaging:overrideValue>false</packaging:overrideValue>
+    </packaging:property>
+    <packaging:property>
+      <packaging:name>/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/AcceptQueueSize</packaging:name>
+      <packaging:type>xsd:int</packaging:type>
+      <packaging:visibility>public</packaging:visibility>
+      <packaging:scalable>true</packaging:scalable>
+      <packaging:overrideValue>false</packaging:overrideValue>
+    </packaging:property>
+    <packaging:property>
+      <packaging:name>/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/HeaderBufferSize_B</packaging:name>
+      <packaging:type>xsd:int</packaging:type>
+      <packaging:visibility>public</packaging:visibility>
+      <packaging:scalable>true</packaging:scalable>
+      <packaging:overrideValue>false</packaging:overrideValue>
+    </packaging:property>
+    <packaging:property>
+      <packaging:name>/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/ResponseBufferSize_B</packaging:name>
+      <packaging:type>xsd:int</packaging:type>
+      <packaging:visibility>public</packaging:visibility>
+      <packaging:scalable>true</packaging:scalable>
+      <packaging:overrideValue>false</packaging:overrideValue>
+    </packaging:property>
+    <packaging:property>
+      <packaging:name>/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/SessionTimeout_s</packaging:name>
+      <packaging:type>xsd:int</packaging:type>
+      <packaging:visibility>public</packaging:visibility>
+      <packaging:scalable>true</packaging:scalable>
+      <packaging:overrideValue>false</packaging:overrideValue>
+    </packaging:property>
+    <packaging:property>
+      <packaging:name>/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/LowResourceMaxIdleTime_ms</packaging:name>
+      <packaging:type>xsd:int</packaging:type>
+      <packaging:visibility>public</packaging:visibility>
+      <packaging:scalable>true</packaging:scalable>
+      <packaging:overrideValue>false</packaging:overrideValue>
+    </packaging:property>
+    <packaging:property>
+      <packaging:name>/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/MaximumQTPThreads</packaging:name>
+      <packaging:type>xsd:int</packaging:type>
+      <packaging:visibility>public</packaging:visibility>
+      <packaging:scalable>true</packaging:scalable>
+      <packaging:overrideValue>false</packaging:overrideValue>
+    </packaging:property>
+    <packaging:property>
+      <packaging:name>/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/MaxPostSize_B</packaging:name>
+      <packaging:type>xsd:int</packaging:type>
       <packaging:visibility>public</packaging:visibility>
       <packaging:scalable>true</packaging:scalable>
       <packaging:overrideValue>false</packaging:overrideValue>
@@ -3309,7 +3302,7 @@
   </packaging:properties>
   <packaging:modules>
     <packaging:module>
-      <packaging:symbolicName>ch.txg.dms.filetransfer.md</packaging:symbolicName>
+      <packaging:symbolicName>ch.txg.dms.bankstatement.filetransfer.md</packaging:symbolicName>
       <packaging:technologyType>osgi-bundle,bw-appmodule</packaging:technologyType>
       <packaging:technologyVersion>1.1.16.qualifier</packaging:technologyVersion>
     </packaging:module>

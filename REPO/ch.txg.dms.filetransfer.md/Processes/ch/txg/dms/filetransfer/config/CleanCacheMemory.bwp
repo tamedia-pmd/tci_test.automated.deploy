@@ -1091,7 +1091,7 @@
         <bpws:variable element="ns:ErrorReport" name="_error" sca-bpel:internal="true"/>
         <bpws:variable name="URI" sca-bpel:hotUpdate="false"
             sca-bpel:privateProperty="true" sca-bpel:property="yes"
-            tibex:propertySource="/ch.txg.dms.filetransfer.md/ch.txg.dms.filetransfer.adm/ClearCacheMemory/URI" type="xsd:string"/>
+            tibex:propertySource="/ch.txg.dms.bankstatement.filetransfer.md/ch.txg.dms.filetransfer.adm/ClearCacheMemory/URI" type="xsd:string"/>
         <bpws:variable element="ns3:loadLibraries"
             name="Libraries-input" sca-bpel:internal="true"/>
         <bpws:variable element="ns3:loadLibraries" name="Libraries" sca-bpel:internal="true"/>

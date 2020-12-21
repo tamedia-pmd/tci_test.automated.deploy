@@ -727,160 +727,6 @@
 			<useLookupValue>false</useLookupValue>
 		</globalVariable>
 		<globalVariable>
-			<name>/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/MaxIdleTime_ms</name>
-			<value>200000</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>Integer</type>
-			<isOverride>false</isOverride>
-			<useLookupValue>false</useLookupValue>
-		</globalVariable>
-		<globalVariable>
-			<name>/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/MaxSavePostSize_B</name>
-			<value>4096</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>Integer</type>
-			<isOverride>false</isOverride>
-			<useLookupValue>false</useLookupValue>
-		</globalVariable>
-		<globalVariable>
-			<name>/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/SessionTimeout_s</name>
-			<value>1800</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>Integer</type>
-			<isOverride>false</isOverride>
-			<useLookupValue>false</useLookupValue>
-		</globalVariable>
-		<globalVariable>
-			<name>/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/Port</name>
-			<value>8083</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>Integer</type>
-			<isOverride>false</isOverride>
-			<useLookupValue>false</useLookupValue>
-			<lookupValue>8083</lookupValue>
-		</globalVariable>
-		<globalVariable>
-			<name>/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/MaximumQTPThreads</name>
-			<value>75</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>Integer</type>
-			<isOverride>false</isOverride>
-			<useLookupValue>false</useLookupValue>
-		</globalVariable>
-		<globalVariable>
-			<name>/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/ResponseBufferSize_B</name>
-			<value>24576</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>Integer</type>
-			<isOverride>false</isOverride>
-			<useLookupValue>false</useLookupValue>
-		</globalVariable>
-		<globalVariable>
-			<name>/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/HeaderBufferSize_B</name>
-			<value>4096</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>Integer</type>
-			<isOverride>false</isOverride>
-			<useLookupValue>false</useLookupValue>
-		</globalVariable>
-		<globalVariable>
-			<name>/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/LingerTime_ms</name>
-			<value>0</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>Integer</type>
-			<isOverride>false</isOverride>
-			<useLookupValue>false</useLookupValue>
-		</globalVariable>
-		<globalVariable>
-			<name>/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/RequestBufferSize_B</name>
-			<value>8192</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>Integer</type>
-			<isOverride>false</isOverride>
-			<useLookupValue>false</useLookupValue>
-		</globalVariable>
-		<globalVariable>
-			<name>/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/AcceptQueueSize</name>
-			<value>0</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>Integer</type>
-			<isOverride>false</isOverride>
-			<useLookupValue>false</useLookupValue>
-		</globalVariable>
-		<globalVariable>
-			<name>/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/AcceptorThreads</name>
-			<value>1</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>Integer</type>
-			<isOverride>false</isOverride>
-			<useLookupValue>false</useLookupValue>
-		</globalVariable>
-		<globalVariable>
-			<name>/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/MaxPostSize_B</name>
-			<value>2097152</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>Integer</type>
-			<isOverride>false</isOverride>
-			<useLookupValue>false</useLookupValue>
-		</globalVariable>
-		<globalVariable>
-			<name>/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/LowResourceMaxIdleTime_ms</name>
-			<value>0</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>Integer</type>
-			<isOverride>false</isOverride>
-			<useLookupValue>false</useLookupValue>
-		</globalVariable>
-		<globalVariable>
-			<name>/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/MinimumQTPThreads</name>
-			<value>10</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>Integer</type>
-			<isOverride>false</isOverride>
-			<useLookupValue>false</useLookupValue>
-		</globalVariable>
-		<globalVariable>
-			<name>/ch.txg.dms.filetransfer.md/ch.txg.dms.filetransfer.adm/ClearCacheMemory/URI</name>
-			<value>/dev/dms/filetransfer/admin/clearmemory/v1</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>String</type>
-			<isOverride>false</isOverride>
-			<useLookupValue>false</useLookupValue>
-		</globalVariable>
-		<globalVariable>
-			<name>/ch.txg.dms.filetransfer.md/ch.txg.dms.filetransfer.adm/ConfigLoader/ConfLoad_TimeInterval_s</name>
-			<value>86400</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>Integer</type>
-			<isOverride>false</isOverride>
-			<useLookupValue>false</useLookupValue>
-		</globalVariable>
-		<globalVariable>
-			<name>/ch.txg.dms.filetransfer.md/ch.txg.dms.filetransfer.adm/ConfigLoader/StartTimestamp</name>
-			<value>2020-12-09T02:30:00+01:00</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>String</type>
-			<isOverride>false</isOverride>
-			<useLookupValue>false</useLookupValue>
-		</globalVariable>
-		<globalVariable>
 			<name>/ch.txg.b2c.workday.sl.sh/Parameters/TTL_sec</name>
 			<value>86400</value>
 			<deploymentSettable>false</deploymentSettable>
@@ -1413,7 +1259,151 @@
 			<useLookupValue>false</useLookupValue>
 		</globalVariable>
 		<globalVariable>
-			<name>//ch.txg.dms.filetransfer.md//BW.APPNODE.NAME</name>
+			<name>/ch.txg.dms.bankstatement.filetransfer.md/ch.txg.dms.filetransfer.adm/ClearCacheMemory/URI</name>
+			<value>/dev/dms/filetransfer/admin/clearmemory/v1</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable>
+		<globalVariable>
+			<name>/ch.txg.dms.bankstatement.filetransfer.md/ch.txg.dms.filetransfer.adm/ConfigLoader/ConfLoad_TimeInterval_s</name>
+			<value>86400</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>Integer</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable>
+		<globalVariable>
+			<name>/ch.txg.dms.bankstatement.filetransfer.md/ch.txg.dms.filetransfer.adm/ConfigLoader/StartTimestamp</name>
+			<value>2020-12-09T02:30:00+01:00</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable>
+		<globalVariable>
+			<name>/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/MinimumQTPThreads</name>
+			<value>10</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>Integer</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable>
+		<globalVariable>
+			<name>/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/RequestBufferSize_B</name>
+			<value>8192</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>Integer</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable>
+		<globalVariable>
+			<name>/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/MaxIdleTime_ms</name>
+			<value>200000</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>Integer</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable>
+		<globalVariable>
+			<name>/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/AcceptorThreads</name>
+			<value>1</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>Integer</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable>
+		<globalVariable>
+			<name>/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/MaxSavePostSize_B</name>
+			<value>4096</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>Integer</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable>
+		<globalVariable>
+			<name>/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/LingerTime_ms</name>
+			<value>0</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>Integer</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable>
+		<globalVariable>
+			<name>/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/AcceptQueueSize</name>
+			<value>0</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>Integer</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable>
+		<globalVariable>
+			<name>/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/HeaderBufferSize_B</name>
+			<value>4096</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>Integer</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable>
+		<globalVariable>
+			<name>/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/ResponseBufferSize_B</name>
+			<value>24576</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>Integer</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable>
+		<globalVariable>
+			<name>/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/SessionTimeout_s</name>
+			<value>1800</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>Integer</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable>
+		<globalVariable>
+			<name>/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/LowResourceMaxIdleTime_ms</name>
+			<value>0</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>Integer</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable>
+		<globalVariable>
+			<name>/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/MaximumQTPThreads</name>
+			<value>75</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>Integer</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable>
+		<globalVariable>
+			<name>/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/MaxPostSize_B</name>
+			<value>2097152</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>Integer</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable>
+		<globalVariable>
+			<name>//ch.txg.dms.bankstatement.filetransfer.md//BW.APPNODE.NAME</name>
 			<value></value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
@@ -1422,7 +1412,7 @@
 			<useLookupValue>false</useLookupValue>
 		</globalVariable>
 		<globalVariable>
-			<name>//ch.txg.dms.filetransfer.md//BW.DEPLOYMENTUNIT.NAME</name>
+			<name>//ch.txg.dms.bankstatement.filetransfer.md//BW.DEPLOYMENTUNIT.NAME</name>
 			<value></value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
@@ -1431,7 +1421,7 @@
 			<useLookupValue>false</useLookupValue>
 		</globalVariable>
 		<globalVariable>
-			<name>//ch.txg.dms.filetransfer.md//BW.HOST.NAME</name>
+			<name>//ch.txg.dms.bankstatement.filetransfer.md//BW.HOST.NAME</name>
 			<value>localhost</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
@@ -1440,7 +1430,7 @@
 			<useLookupValue>false</useLookupValue>
 		</globalVariable>
 		<globalVariable>
-			<name>//ch.txg.dms.filetransfer.md//BW.DEPLOYMENTUNIT.VERSION</name>
+			<name>//ch.txg.dms.bankstatement.filetransfer.md//BW.DEPLOYMENTUNIT.VERSION</name>
 			<value></value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
@@ -1449,7 +1439,7 @@
 			<useLookupValue>false</useLookupValue>
 		</globalVariable>
 		<globalVariable>
-			<name>//ch.txg.dms.filetransfer.md//BW.MODULE.VERSION</name>
+			<name>//ch.txg.dms.bankstatement.filetransfer.md//BW.MODULE.VERSION</name>
 			<value></value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
@@ -1458,7 +1448,7 @@
 			<useLookupValue>false</useLookupValue>
 		</globalVariable>
 		<globalVariable>
-			<name>//ch.txg.dms.filetransfer.md//BW.MODULE.NAME</name>
+			<name>//ch.txg.dms.bankstatement.filetransfer.md//BW.MODULE.NAME</name>
 			<value></value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
@@ -1467,174 +1457,173 @@
 			<useLookupValue>false</useLookupValue>
 		</globalVariable>
 		<globalVariable>
-			<name>//ch.txg.dms.filetransfer.md///ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/MaxIdleTime_ms</name>
-			<value>%%/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/MaxIdleTime_ms%%</value>
+			<name>//ch.txg.dms.bankstatement.filetransfer.md///ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/MinimumQTPThreads</name>
+			<value>%%/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/MinimumQTPThreads%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
 			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
-			<lookupValue>%%/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/MaxIdleTime_ms%%</lookupValue>
+			<lookupValue>%%/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/MinimumQTPThreads%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
-			<name>//ch.txg.dms.filetransfer.md///ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/MaxSavePostSize_B</name>
-			<value>%%/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/MaxSavePostSize_B%%</value>
+			<name>//ch.txg.dms.bankstatement.filetransfer.md///ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/RequestBufferSize_B</name>
+			<value>%%/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/RequestBufferSize_B%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
 			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
-			<lookupValue>%%/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/MaxSavePostSize_B%%</lookupValue>
+			<lookupValue>%%/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/RequestBufferSize_B%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
-			<name>//ch.txg.dms.filetransfer.md///ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/SessionTimeout_s</name>
-			<value>%%/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/SessionTimeout_s%%</value>
+			<name>//ch.txg.dms.bankstatement.filetransfer.md///ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/MaxIdleTime_ms</name>
+			<value>%%/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/MaxIdleTime_ms%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
 			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
-			<lookupValue>%%/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/SessionTimeout_s%%</lookupValue>
+			<lookupValue>%%/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/MaxIdleTime_ms%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
-			<name>//ch.txg.dms.filetransfer.md///ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/Port</name>
-			<value>%%/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/Port%%</value>
+			<name>//ch.txg.dms.bankstatement.filetransfer.md///ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/AcceptorThreads</name>
+			<value>%%/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/AcceptorThreads%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
 			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
-			<lookupValue>%%/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/Port%%</lookupValue>
+			<lookupValue>%%/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/AcceptorThreads%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
-			<name>//ch.txg.dms.filetransfer.md///ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/MaximumQTPThreads</name>
-			<value>%%/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/MaximumQTPThreads%%</value>
+			<name>//ch.txg.dms.bankstatement.filetransfer.md///ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/MaxSavePostSize_B</name>
+			<value>%%/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/MaxSavePostSize_B%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
 			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
-			<lookupValue>%%/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/MaximumQTPThreads%%</lookupValue>
+			<lookupValue>%%/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/MaxSavePostSize_B%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
-			<name>//ch.txg.dms.filetransfer.md///ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/ResponseBufferSize_B</name>
-			<value>%%/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/ResponseBufferSize_B%%</value>
+			<name>//ch.txg.dms.bankstatement.filetransfer.md///ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/LingerTime_ms</name>
+			<value>%%/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/LingerTime_ms%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
 			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
-			<lookupValue>%%/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/ResponseBufferSize_B%%</lookupValue>
+			<lookupValue>%%/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/LingerTime_ms%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
-			<name>//ch.txg.dms.filetransfer.md///ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/HeaderBufferSize_B</name>
-			<value>%%/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/HeaderBufferSize_B%%</value>
+			<name>//ch.txg.dms.bankstatement.filetransfer.md///ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/AcceptQueueSize</name>
+			<value>%%/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/AcceptQueueSize%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
 			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
-			<lookupValue>%%/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/HeaderBufferSize_B%%</lookupValue>
+			<lookupValue>%%/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/AcceptQueueSize%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
-			<name>//ch.txg.dms.filetransfer.md///ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/LingerTime_ms</name>
-			<value>%%/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/LingerTime_ms%%</value>
+			<name>//ch.txg.dms.bankstatement.filetransfer.md///ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/HeaderBufferSize_B</name>
+			<value>%%/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/HeaderBufferSize_B%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
 			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
-			<lookupValue>%%/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/LingerTime_ms%%</lookupValue>
+			<lookupValue>%%/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/HeaderBufferSize_B%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
-			<name>//ch.txg.dms.filetransfer.md///ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/RequestBufferSize_B</name>
-			<value>%%/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/RequestBufferSize_B%%</value>
+			<name>//ch.txg.dms.bankstatement.filetransfer.md///ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/ResponseBufferSize_B</name>
+			<value>%%/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/ResponseBufferSize_B%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
 			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
-			<lookupValue>%%/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/RequestBufferSize_B%%</lookupValue>
+			<lookupValue>%%/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/ResponseBufferSize_B%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
-			<name>//ch.txg.dms.filetransfer.md///ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/AcceptQueueSize</name>
-			<value>%%/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/AcceptQueueSize%%</value>
+			<name>//ch.txg.dms.bankstatement.filetransfer.md///ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/SessionTimeout_s</name>
+			<value>%%/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/SessionTimeout_s%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
 			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
-			<lookupValue>%%/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/AcceptQueueSize%%</lookupValue>
+			<lookupValue>%%/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/SessionTimeout_s%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
-			<name>//ch.txg.dms.filetransfer.md///ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/AcceptorThreads</name>
-			<value>%%/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/AcceptorThreads%%</value>
+			<name>//ch.txg.dms.bankstatement.filetransfer.md///ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/LowResourceMaxIdleTime_ms</name>
+			<value>%%/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/LowResourceMaxIdleTime_ms%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
 			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
-			<lookupValue>%%/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/AcceptorThreads%%</lookupValue>
+			<lookupValue>%%/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/LowResourceMaxIdleTime_ms%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
-			<name>//ch.txg.dms.filetransfer.md///ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/MaxPostSize_B</name>
-			<value>%%/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/MaxPostSize_B%%</value>
+			<name>//ch.txg.dms.bankstatement.filetransfer.md///ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/MaximumQTPThreads</name>
+			<value>%%/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/MaximumQTPThreads%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
 			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
-			<lookupValue>%%/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/MaxPostSize_B%%</lookupValue>
+			<lookupValue>%%/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/MaximumQTPThreads%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
-			<name>//ch.txg.dms.filetransfer.md///ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/LowResourceMaxIdleTime_ms</name>
-			<value>%%/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/LowResourceMaxIdleTime_ms%%</value>
+			<name>//ch.txg.dms.bankstatement.filetransfer.md///ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/Port</name>
+			<value>8080</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>Integer</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable>
+		<globalVariable>
+			<name>//ch.txg.dms.bankstatement.filetransfer.md///ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/MaxPostSize_B</name>
+			<value>%%/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/MaxPostSize_B%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
 			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
-			<lookupValue>%%/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/LowResourceMaxIdleTime_ms%%</lookupValue>
+			<lookupValue>%%/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/MaxPostSize_B%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
-			<name>//ch.txg.dms.filetransfer.md///ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/MinimumQTPThreads</name>
-			<value>%%/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/MinimumQTPThreads%%</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>Integer</type>
-			<isOverride>true</isOverride>
-			<useLookupValue>false</useLookupValue>
-			<lookupValue>%%/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/MinimumQTPThreads%%</lookupValue>
-		</globalVariable>
-		<globalVariable>
-			<name>//ch.txg.dms.filetransfer.md///ch.txg.dms.filetransfer.md/ch.txg.dms.filetransfer.adm/ClearCacheMemory/URI</name>
-			<value>%%/ch.txg.dms.filetransfer.md/ch.txg.dms.filetransfer.adm/ClearCacheMemory/URI%%</value>
+			<name>//ch.txg.dms.bankstatement.filetransfer.md///ch.txg.dms.bankstatement.filetransfer.md/ch.txg.dms.filetransfer.adm/ClearCacheMemory/URI</name>
+			<value>%%/ch.txg.dms.bankstatement.filetransfer.md/ch.txg.dms.filetransfer.adm/ClearCacheMemory/URI%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
 			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
-			<lookupValue>%%/ch.txg.dms.filetransfer.md/ch.txg.dms.filetransfer.adm/ClearCacheMemory/URI%%</lookupValue>
+			<lookupValue>%%/ch.txg.dms.bankstatement.filetransfer.md/ch.txg.dms.filetransfer.adm/ClearCacheMemory/URI%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
-			<name>//ch.txg.dms.filetransfer.md///ch.txg.dms.filetransfer.md/ch.txg.dms.filetransfer.adm/ConfigLoader/ConfLoad_TimeInterval_s</name>
-			<value>%%/ch.txg.dms.filetransfer.md/ch.txg.dms.filetransfer.adm/ConfigLoader/ConfLoad_TimeInterval_s%%</value>
+			<name>//ch.txg.dms.bankstatement.filetransfer.md///ch.txg.dms.bankstatement.filetransfer.md/ch.txg.dms.filetransfer.adm/ConfigLoader/ConfLoad_TimeInterval_s</name>
+			<value>%%/ch.txg.dms.bankstatement.filetransfer.md/ch.txg.dms.filetransfer.adm/ConfigLoader/ConfLoad_TimeInterval_s%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
 			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
-			<lookupValue>%%/ch.txg.dms.filetransfer.md/ch.txg.dms.filetransfer.adm/ConfigLoader/ConfLoad_TimeInterval_s%%</lookupValue>
+			<lookupValue>%%/ch.txg.dms.bankstatement.filetransfer.md/ch.txg.dms.filetransfer.adm/ConfigLoader/ConfLoad_TimeInterval_s%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
-			<name>//ch.txg.dms.filetransfer.md///ch.txg.dms.filetransfer.md/ch.txg.dms.filetransfer.adm/ConfigLoader/StartTimestamp</name>
-			<value>%%/ch.txg.dms.filetransfer.md/ch.txg.dms.filetransfer.adm/ConfigLoader/StartTimestamp%%</value>
+			<name>//ch.txg.dms.bankstatement.filetransfer.md///ch.txg.dms.bankstatement.filetransfer.md/ch.txg.dms.filetransfer.adm/ConfigLoader/StartTimestamp</name>
+			<value>%%/ch.txg.dms.bankstatement.filetransfer.md/ch.txg.dms.filetransfer.adm/ConfigLoader/StartTimestamp%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
 			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
-			<lookupValue>%%/ch.txg.dms.filetransfer.md/ch.txg.dms.filetransfer.adm/ConfigLoader/StartTimestamp%%</lookupValue>
+			<lookupValue>%%/ch.txg.dms.bankstatement.filetransfer.md/ch.txg.dms.filetransfer.adm/ConfigLoader/StartTimestamp%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//ch.txg.dms.int5160.bsl.sh//BW.DEPLOYMENTUNIT.NAME</name>

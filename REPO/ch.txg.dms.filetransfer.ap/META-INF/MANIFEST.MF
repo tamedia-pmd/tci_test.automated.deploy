@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: ch txg dms filetransfer ap
-Bundle-SymbolicName: ch.txg.dms.filetransfer.ap
+Bundle-Name: ch txg dms bankstatement filetransfer ap
+Bundle-SymbolicName: ch.txg.dms.bankstatement.filetransfer.ap
 Bundle-Version: 1.1.16.qualifier
 Bundle-Vendor: TIBCO Software Inc.
 TIBCO-BW-Version: 2.5.2 V67 2020-03-05

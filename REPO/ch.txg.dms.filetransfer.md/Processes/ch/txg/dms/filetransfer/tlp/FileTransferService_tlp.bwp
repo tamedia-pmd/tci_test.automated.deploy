@@ -608,69 +608,6 @@
                                     xsi:type="notation:Bounds" y="72"/>
                                     </children>
 
-                                    <children type="4002">
-
-                                    <children type="4017">
-
-                                    <styles
-                                    fontName="Segoe UI"
-                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
-
-                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.3"/>
-
-                                    <layoutConstraint xsi:type="notation:Bounds"/>
-                                    </children>
-
-                                    <children type="4017">
-
-                                    <styles
-                                    fontName="Segoe UI"
-                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
-
-                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.3"/>
-
-                                    <layoutConstraint xsi:type="notation:Bounds"/>
-                                    </children>
-
-                                    <children type="4017">
-
-                                    <styles
-                                    fontName="Segoe UI"
-                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
-
-                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.3"/>
-
-                                    <layoutConstraint xsi:type="notation:Bounds"/>
-                                    </children>
-
-                                    <children type="4017">
-
-                                    <styles
-                                    fontName="Segoe UI"
-                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
-
-                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.3"/>
-
-                                    <layoutConstraint xsi:type="notation:Bounds"/>
-                                    </children>
-
-                                    <styles
-                                    fontName="Segoe UI"
-                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
-
-                                    <styles
-                                    backgroundColor="16777215"
-                                    gradientEndColor="50431"
-                                    gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
-
-                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.3"/>
-
-                                    <layoutConstraint
-                                    width="190"
-                                    x="764"
-                                    xsi:type="notation:Bounds" y="72"/>
-                                    </children>
-
                                     <children type="4002 com.tibco.bw.core.design.process.editor.Activity_4002_Empty">
 
                                     <children type="4017">
@@ -679,7 +616,7 @@
                                     fontName="Segoe UI"
                                     lineColor="0" xsi:type="notation:ShapeStyle"/>
 
-                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.4"/>
+                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.3"/>
 
                                     <layoutConstraint xsi:type="notation:Bounds"/>
                                     </children>
@@ -690,7 +627,7 @@
                                     fontName="Segoe UI"
                                     lineColor="0" xsi:type="notation:ShapeStyle"/>
 
-                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.4"/>
+                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.3"/>
 
                                     <layoutConstraint xsi:type="notation:Bounds"/>
                                     </children>
@@ -701,7 +638,7 @@
                                     fontName="Segoe UI"
                                     lineColor="0" xsi:type="notation:ShapeStyle"/>
 
-                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.4"/>
+                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.3"/>
 
                                     <layoutConstraint xsi:type="notation:Bounds"/>
                                     </children>
@@ -712,7 +649,7 @@
                                     fontName="Segoe UI"
                                     lineColor="0" xsi:type="notation:ShapeStyle"/>
 
-                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.4"/>
+                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.3"/>
 
                                     <layoutConstraint xsi:type="notation:Bounds"/>
                                     </children>
@@ -726,7 +663,7 @@
                                     gradientEndColor="50431"
                                     gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
 
-                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.4"/>
+                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.3"/>
 
                                     <layoutConstraint
                                     height="40"
@@ -743,7 +680,7 @@
                                     fontName="Segoe UI"
                                     lineColor="0" xsi:type="notation:ShapeStyle"/>
 
-                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.5"/>
+                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.4"/>
 
                                     <layoutConstraint xsi:type="notation:Bounds"/>
                                     </children>
@@ -754,7 +691,7 @@
                                     fontName="Segoe UI"
                                     lineColor="0" xsi:type="notation:ShapeStyle"/>
 
-                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.5"/>
+                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.4"/>
 
                                     <layoutConstraint xsi:type="notation:Bounds"/>
                                     </children>
@@ -765,7 +702,7 @@
                                     fontName="Segoe UI"
                                     lineColor="0" xsi:type="notation:ShapeStyle"/>
 
-                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.5"/>
+                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.4"/>
 
                                     <layoutConstraint xsi:type="notation:Bounds"/>
                                     </children>
@@ -776,7 +713,7 @@
                                     fontName="Segoe UI"
                                     lineColor="0" xsi:type="notation:ShapeStyle"/>
 
-                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.5"/>
+                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.4"/>
 
                                     <layoutConstraint xsi:type="notation:Bounds"/>
                                     </children>
@@ -790,12 +727,12 @@
                                     gradientEndColor="50431"
                                     gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
 
-                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.5"/>
+                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.4"/>
 
                                     <layoutConstraint
                                     width="206"
-                                    x="764"
-                                    xsi:type="notation:Bounds" y="197"/>
+                                    x="759"
+                                    xsi:type="notation:Bounds" y="72"/>
                                     </children>
 
                                     <children type="4002 bw.internal.setSharedVariable">
@@ -806,7 +743,7 @@
                                     fontName="Segoe UI"
                                     lineColor="0" xsi:type="notation:ShapeStyle"/>
 
-                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.6"/>
+                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.5"/>
 
                                     <layoutConstraint xsi:type="notation:Bounds"/>
                                     </children>
@@ -817,7 +754,7 @@
                                     fontName="Segoe UI"
                                     lineColor="0" xsi:type="notation:ShapeStyle"/>
 
-                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.6"/>
+                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.5"/>
 
                                     <layoutConstraint xsi:type="notation:Bounds"/>
                                     </children>
@@ -828,7 +765,7 @@
                                     fontName="Segoe UI"
                                     lineColor="0" xsi:type="notation:ShapeStyle"/>
 
-                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.6"/>
+                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.5"/>
 
                                     <layoutConstraint xsi:type="notation:Bounds"/>
                                     </children>
@@ -839,7 +776,7 @@
                                     fontName="Segoe UI"
                                     lineColor="0" xsi:type="notation:ShapeStyle"/>
 
-                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.6"/>
+                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.5"/>
 
                                     <layoutConstraint xsi:type="notation:Bounds"/>
                                     </children>
@@ -853,7 +790,7 @@
                                     gradientEndColor="50431"
                                     gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
 
-                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.6"/>
+                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.5"/>
 
                                     <layoutConstraint
                                     height="40"
@@ -870,7 +807,7 @@
                                     fontName="Segoe UI"
                                     lineColor="0" xsi:type="notation:ShapeStyle"/>
 
-                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.7"/>
+                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.6"/>
 
                                     <layoutConstraint xsi:type="notation:Bounds"/>
                                     </children>
@@ -881,7 +818,7 @@
                                     fontName="Segoe UI"
                                     lineColor="0" xsi:type="notation:ShapeStyle"/>
 
-                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.7"/>
+                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.6"/>
 
                                     <layoutConstraint xsi:type="notation:Bounds"/>
                                     </children>
@@ -892,7 +829,7 @@
                                     fontName="Segoe UI"
                                     lineColor="0" xsi:type="notation:ShapeStyle"/>
 
-                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.7"/>
+                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.6"/>
 
                                     <layoutConstraint xsi:type="notation:Bounds"/>
                                     </children>
@@ -903,7 +840,7 @@
                                     fontName="Segoe UI"
                                     lineColor="0" xsi:type="notation:ShapeStyle"/>
 
-                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.7"/>
+                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.6"/>
 
                                     <layoutConstraint xsi:type="notation:Bounds"/>
                                     </children>
@@ -917,7 +854,7 @@
                                     gradientEndColor="50431"
                                     gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
 
-                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.7"/>
+                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.6"/>
 
                                     <layoutConstraint
                                     width="263"
@@ -933,7 +870,7 @@
                                     fontName="Segoe UI"
                                     lineColor="0" xsi:type="notation:ShapeStyle"/>
 
-                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.8"/>
+                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.7"/>
 
                                     <layoutConstraint xsi:type="notation:Bounds"/>
                                     </children>
@@ -944,7 +881,7 @@
                                     fontName="Segoe UI"
                                     lineColor="0" xsi:type="notation:ShapeStyle"/>
 
-                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.8"/>
+                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.7"/>
 
                                     <layoutConstraint xsi:type="notation:Bounds"/>
                                     </children>
@@ -955,7 +892,7 @@
                                     fontName="Segoe UI"
                                     lineColor="0" xsi:type="notation:ShapeStyle"/>
 
-                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.8"/>
+                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.7"/>
 
                                     <layoutConstraint xsi:type="notation:Bounds"/>
                                     </children>
@@ -966,7 +903,7 @@
                                     fontName="Segoe UI"
                                     lineColor="0" xsi:type="notation:ShapeStyle"/>
 
-                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.8"/>
+                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.7"/>
 
                                     <layoutConstraint xsi:type="notation:Bounds"/>
                                     </children>
@@ -980,7 +917,7 @@
                                     gradientEndColor="50431"
                                     gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
 
-                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.8"/>
+                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.7"/>
 
                                     <layoutConstraint
                                     height="40"
@@ -1013,7 +950,7 @@
 
                                     <layoutConstraint
                                     height="374"
-                                    width="1149" xsi:type="notation:Bounds"/>
+                                    width="1159" xsi:type="notation:Bounds"/>
                                     </children>
 
                                     <styles xsi:type="notation:SortingStyle"/>
@@ -1825,7 +1762,7 @@
                                     <element href="//0/@process/@activity/@activity/@activities.0"/>
                                     <layoutConstraint
                                     height="1022"
-                                    width="1283" xsi:type="notation:Bounds"/>
+                                    width="1221" xsi:type="notation:Bounds"/>
                                     </children>
                                     <styles xsi:type="notation:DrawerStyle"/>
                                     <styles xsi:type="notation:SortingStyle"/>
@@ -2122,7 +2059,7 @@
         </edges>
         <edges
             source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0"
-            target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.4" type="4006">
+            target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.3" type="4006">
             <children type="6002">
                 <layoutConstraint xsi:type="notation:Location" y="40"/>
             </children>
@@ -2144,7 +2081,7 @@
             <bendpoints points="[25, 0, -165, 0]$[166, 0, -24, 0]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
         <edges
-            source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.1"
+            source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2"
             target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.2/@children.0" type="4006">
             <children type="6002">
                 <layoutConstraint xsi:type="notation:Location" y="40"/>
@@ -2153,13 +2090,13 @@
             <styles fontName="Segoe UI" xsi:type="notation:FontStyle"/>
             <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@links/@children.2"/>
             <bendpoints
-                points="[58, 5, -206, -8]$[204, 5, -60, -8]$[204, 9, -60, -4]$[252, 9, -12, -4]" xsi:type="notation:RelativeBendpoints"/>
+                points="[66, 0, -284, 12]$[267, 0, -83, 12]$[267, -17, -83, -5]$[338, -17, -12, -5]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
         <edges
-            source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2"
-            target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.1" type="4006">
+            source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.3"
+            target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.5" type="4006">
             <children type="6002">
-                <layoutConstraint x="59" xsi:type="notation:Location" y="-14"/>
+                <layoutConstraint x="19" xsi:type="notation:Location" y="-59"/>
             </children>
             <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
             <styles fontName="Segoe UI" xsi:type="notation:FontStyle"/>
@@ -2167,60 +2104,25 @@
             <bendpoints points="[0, 0, 0, 0]$[0, 0, 0, 0]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
         <edges
-            source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2"
-            target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.3" type="4006">
-            <children type="6002">
-                <layoutConstraint x="58" xsi:type="notation:Location" y="38"/>
-            </children>
-            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
-            <styles fontName="Segoe UI" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@links/@children.4"/>
-            <bendpoints
-                points="[37, 0, -330, -125]$[197, 0, -170, -125]$[197, 136, -170, 11]$[301, 136, -66, 11]" xsi:type="notation:RelativeBendpoints"/>
-        </edges>
-        <edges
-            source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.3"
-            target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.2/@children.0" type="4006">
-            <children type="6002">
-                <layoutConstraint xsi:type="notation:Location" y="40"/>
-            </children>
-            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
-            <styles fontName="Segoe UI" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@links/@children.5"/>
-            <bendpoints
-                points="[25, 8, -240, 126]$[210, 8, -55, 126]$[210, -113, -55, 5]$[253, -113, -12, 5]" xsi:type="notation:RelativeBendpoints"/>
-        </edges>
-        <edges
-            source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.4"
-            target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.6" type="4006">
-            <children type="6002">
-                <layoutConstraint x="19" xsi:type="notation:Location" y="-59"/>
-            </children>
-            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
-            <styles fontName="Segoe UI" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@links/@children.6"/>
-            <bendpoints points="[0, 0, 0, 0]$[0, 0, 0, 0]" xsi:type="notation:RelativeBendpoints"/>
-        </edges>
-        <edges
-            source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2"
-            target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.5" type="4006">
+            source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.1"
+            target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.4" type="4006">
             <children type="6002">
                 <layoutConstraint x="12" xsi:type="notation:Location" y="-9"/>
             </children>
             <styles lineColor="255" xsi:type="notation:ConnectorStyle"/>
             <styles fontColor="255" fontName="Segoe UI" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@links/@children.7"/>
+            <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@links/@children.4"/>
             <bendpoints points="[0, 0, 0, 0]$[0, 0, 0, 0]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
         <edges
-            source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.6"
-            target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2" type="4006">
+            source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.5"
+            target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.1" type="4006">
             <children type="6002">
                 <layoutConstraint x="23" xsi:type="notation:Location" y="-49"/>
             </children>
             <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
             <styles fontName="Segoe UI" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@links/@children.8"/>
+            <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@links/@children.5"/>
             <bendpoints points="[0, 0, 0, 0]$[0, 0, 0, 0]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
         <edges
@@ -2302,6 +2204,17 @@
             <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@faultHandlers/@catch.0/@activity/@activity/@links/@children.5"/>
             <bendpoints points="[0, 0, 0, 0]$[0, 0, 0, 0]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
+        <edges
+            source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.1"
+            target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2" type="4006">
+            <children type="6002">
+                <layoutConstraint xsi:type="notation:Location" y="40"/>
+            </children>
+            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
+            <styles fontName="Segoe UI" xsi:type="notation:FontStyle"/>
+            <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@links/@children.6"/>
+            <bendpoints points="[37, -6, -337, 0]$[308, 0, -66, 6]" xsi:type="notation:RelativeBendpoints"/>
+        </edges>
     </notation:Diagram>
     <tibex:NamespaceRegistry enabled="true">
         <tibex:namespaceItem namespace="http://tns.tibco.com/bw/REST" prefix="tns1"/>
@@ -2338,13 +2251,10 @@
     </tibex:NamespaceRegistry>
     <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://ch.txg/core/lehf/InternalInterface_DynamicProperties/0100"/>
     <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://ch/txg/core/lehf/common/xsd/loggingwrapper/internal"/>
-    <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="/T1595602021139Converted/JsonSchema"/>
     <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://ch/txg/core/lehf/common/AuditTypes/0100"/>
     <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://xmlns.example.com/FileTransfer/parameters"/>
     <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://ch/txg/dms/fileTransfer/md/interfaces/0100"/>
     <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://tns.tibco.com/bw/REST_fileTransfer"/>
-    <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="/T1595602021139Converted/JsonSchema"/>
-    <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="/T1595602021139Converted/JsonSchema"/>
     <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://ch/txg/dms/int5151/bsl/xsd/filetransferInterface"/>
     <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://ch/txg/core/lehf/common/loggerType/0100"/>
     <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://ch/txg/core/sftp/common/FilesParameters_Schema"/>
@@ -2377,8 +2287,6 @@
             tibex:propertySource="//ch.txg.core.lehf.common.sh///ch.txg.core.lehf.common.sh/Logging/Business_Exception" type="xsd:string"/>
         <bpws:variable element="ns10:ActivityErrorData"
             name="_error_CallFileTransfer_INT5151" sca-bpel:internal="true"/>
-        <bpws:variable element="ns8:TransferRequest"
-            name="CallFileTransfer_INT5160c-input" sca-bpel:internal="true"/>
         <bpws:variable element="ns3:LogAudit"
             name="LogErrorBadRequest-input" sca-bpel:internal="true"/>
         <bpws:variable element="ns9:LEHF_Output"
@@ -2394,8 +2302,6 @@
             name="postOut1-input2" sca-bpel:internal="true"/>
         <bpws:variable element="ns11:TransferRequest"
             name="CallFileTransfer_INT5151-input" sca-bpel:internal="true"/>
-        <bpws:variable element="ns10:ActivityErrorData"
-            name="_error_CallFileTransfer_INT5160c" sca-bpel:internal="true"/>
         <bpws:variable element="ns2:loggerParams"
             name="SetLogParams-input" sca-bpel:internal="true"/>
         <bpws:variable element="ns2:loggerParams" name="SetLogParams" sca-bpel:internal="true"/>
@@ -2741,14 +2647,6 @@
                                 <bpws:link
                                     name="postOutToSetSharedVariable" tibex:linkType="SUCCESS"/>
                                 <bpws:link
-                                    name="CallProcessToOnMessageEnd" tibex:linkType="SUCCESS"/>
-                                <bpws:link
-                                    name="EmptyToCallFileTransfer_INT5160"
-                                    tibex:label="INT5160" tibex:linkType="SUCCESSWITHCONDITION"/>
-                                <bpws:link
-                                    name="checkTransferNameToCallProcess_INT5151"
-                                    tibex:label="INT5151" tibex:linkType="SUCCESSWITHCONDITION"/>
-                                <bpws:link
                                     name="CallProcessToOnMessageEnd1" tibex:linkType="SUCCESS"/>
                                 <bpws:link
                                     name="SetSharedVariableTocheckTransferName_Name"
@@ -2759,6 +2657,8 @@
                                 <bpws:link
                                     name="AssignTocheckTransferName_Name"
                                     tibex:label="" tibex:linkType="SUCCESS"/>
+                                <bpws:link
+                                    name="checkTransferNameToCallFileTransfer_INT5151" tibex:linkType="SUCCESS"/>
                             </bpws:links>
                             <bpws:empty name="OnMessageStart"
                                 tibex:constructor="onMessageStart" tibex:xpdlId="7bbd478d-1588-494f-8df6-b64709b2ee85">
@@ -2769,7 +2669,6 @@
                             <bpws:empty name="OnMessageEnd"
                                 tibex:constructor="onMessageEnd" tibex:xpdlId="7bfdce5d-c97d-4d91-a40f-eeedf8fe327d">
                                 <bpws:targets>
-                                    <bpws:target linkName="CallProcessToOnMessageEnd"/>
                                     <bpws:target linkName="CallProcessToOnMessageEnd1"/>
                                 </bpws:targets>
                             </bpws:empty>
@@ -2792,48 +2691,11 @@
                                     </bpws:source>
                                 </bpws:sources>
                             </bpws:reply>
-                            <bpws:extensionActivity>
-                                <tibex:extActivity
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns7=&quot;http://ch/txg/dms/fileTransfer/md/interfaces/0100&quot; xmlns:tns8=&quot;/T1595602021139Converted/JsonSchema&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;post&quot;/>&lt;xsl:template name=&quot;CallFileTransfer_INT5160c-input&quot; match=&quot;/&quot;>&lt;tns8:TransferRequest>&lt;tns8:TransferName>&lt;xsl:value-of select=&quot;$post/item/tns7:TransferRequest/tns7:TransferName&quot;/>&lt;/tns8:TransferName>&lt;tns8:Callback>&lt;tns8:correlationId>&lt;xsl:value-of select=&quot;$post/item/tns7:TransferRequest/tns7:Callback/tns7:correlationId&quot;/>&lt;/tns8:correlationId>&lt;tns8:callbackChannel>&lt;xsl:value-of select=&quot;$post/item/tns7:TransferRequest/tns7:Callback/tns7:callbackChannel&quot;/>&lt;/tns8:callbackChannel>&lt;/tns8:Callback>&lt;tns8:Source>&lt;tns8:filePath>&lt;xsl:value-of select=&quot;$post/item/tns7:TransferRequest/tns7:Source/tns7:filePath&quot;/>&lt;/tns8:filePath>&lt;xsl:if test=&quot;$post/item/tns7:TransferRequest/tns7:Source/tns7:fileName&quot;>&lt;tns8:fileName>&lt;xsl:value-of select=&quot;$post/item/tns7:TransferRequest/tns7:Source/tns7:fileName&quot;/>&lt;/tns8:fileName>&lt;/xsl:if>&lt;xsl:if test=&quot;$post/item/tns7:TransferRequest/tns7:Source/tns7:folderName&quot;>&lt;tns8:folderName>&lt;xsl:value-of select=&quot;$post/item/tns7:TransferRequest/tns7:Source/tns7:folderName&quot;/>&lt;/tns8:folderName>&lt;/xsl:if>&lt;xsl:if test=&quot;$post/item/tns7:TransferRequest/tns7:Source/tns7:metadataFileName&quot;>&lt;tns8:metadataFileName>&lt;xsl:value-of select=&quot;$post/item/tns7:TransferRequest/tns7:Source/tns7:metadataFileName&quot;/>&lt;/tns8:metadataFileName>&lt;/xsl:if>&lt;/tns8:Source>&lt;tns8:Target>&lt;tns8:filePath>&lt;xsl:value-of select=&quot;$post/item/tns7:TransferRequest/tns7:Target/tns7:filePath&quot;/>&lt;/tns8:filePath>&lt;xsl:if test=&quot;$post/item/tns7:TransferRequest/tns7:Target/tns7:fileName&quot;>&lt;tns8:fileName>&lt;xsl:value-of select=&quot;$post/item/tns7:TransferRequest/tns7:Target/tns7:fileName&quot;/>&lt;/tns8:fileName>&lt;/xsl:if>&lt;xsl:if test=&quot;$post/item/tns7:TransferRequest/tns7:Target/tns7:folderName&quot;>&lt;tns8:folderName>&lt;xsl:value-of select=&quot;$post/item/tns7:TransferRequest/tns7:Target/tns7:folderName&quot;/>&lt;/tns8:folderName>&lt;/xsl:if>&lt;xsl:if test=&quot;$post/item/tns7:TransferRequest/tns7:Target/tns7:metadataFileName&quot;>&lt;tns8:metadataFileName>&lt;xsl:value-of select=&quot;$post/item/tns7:TransferRequest/tns7:Target/tns7:metadataFileName&quot;/>&lt;/tns8:metadataFileName>&lt;/xsl:if>&lt;/tns8:Target>&lt;/tns8:TransferRequest>&lt;/xsl:template>&lt;/xsl:stylesheet>"
-                                    expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"
-                                    inputVariable="CallFileTransfer_INT5160c-input"
-                                    name="CallFileTransfer_INT5160c"
-                                    tibex:xpdlId="e96df764-b42d-4127-8d2a-f2ecb7f0851c"
-                                    type="bw.generalactivities.callprocess" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
-                                    <bpws:targets>
-                                    <bpws:target linkName="EmptyToCallFileTransfer_INT5160"/>
-                                    </bpws:targets>
-                                    <bpws:sources>
-                                    <bpws:source linkName="CallProcessToOnMessageEnd"/>
-                                    </bpws:sources>
-                                    <tibex:inputBindings>
-                                    <tibex:inputBinding
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns7=&quot;http://ch/txg/dms/fileTransfer/md/interfaces/0100&quot; xmlns:tns8=&quot;/T1595602021139Converted/JsonSchema&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;post.item&quot;/>&#xa;    &lt;xsl:template name=&quot;CallFileTransfer_INT5160c-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns8:TransferRequest>&#xa;            &lt;tns8:TransferName>&#xa;                &lt;xsl:value-of select=&quot;$post.item/tns7:TransferName&quot;/>&#xa;            &lt;/tns8:TransferName>&#xa;            &lt;tns8:Callback>&#xa;                &lt;tns8:correlationId>&#xa;                    &lt;xsl:value-of select=&quot;$post.item/tns7:Callback/tns7:correlationId&quot;/>&#xa;                &lt;/tns8:correlationId>&#xa;                &lt;tns8:callbackChannel>&#xa;                    &lt;xsl:value-of select=&quot;$post.item/tns7:Callback/tns7:callbackChannel&quot;/>&#xa;                &lt;/tns8:callbackChannel>&#xa;            &lt;/tns8:Callback>&#xa;            &lt;tns8:Source>&#xa;                &lt;tns8:filePath>&#xa;                    &lt;xsl:value-of select=&quot;$post.item/tns7:Source/tns7:filePath&quot;/>&#xa;                &lt;/tns8:filePath>&#xa;                &lt;xsl:if test=&quot;$post.item/tns7:Source/tns7:fileName&quot;>&#xa;                    &lt;tns8:fileName>&#xa;                        &lt;xsl:value-of select=&quot;$post.item/tns7:Source/tns7:fileName&quot;/>&#xa;                    &lt;/tns8:fileName>&#xa;                &lt;/xsl:if>&#xa;                &lt;xsl:if test=&quot;$post.item/tns7:Source/tns7:folderName&quot;>&#xa;                    &lt;tns8:folderName>&#xa;                        &lt;xsl:value-of select=&quot;$post.item/tns7:Source/tns7:folderName&quot;/>&#xa;                    &lt;/tns8:folderName>&#xa;                &lt;/xsl:if>&#xa;                &lt;xsl:if test=&quot;$post.item/tns7:Source/tns7:metadataFileName&quot;>&#xa;                    &lt;tns8:metadataFileName>&#xa;                        &lt;xsl:value-of select=&quot;$post.item/tns7:Source/tns7:metadataFileName&quot;/>&#xa;                    &lt;/tns8:metadataFileName>&#xa;                &lt;/xsl:if>&#xa;            &lt;/tns8:Source>&#xa;            &lt;tns8:Target>&#xa;                &lt;tns8:filePath>&#xa;                    &lt;xsl:value-of select=&quot;$post.item/tns7:Target/tns7:filePath&quot;/>&#xa;                &lt;/tns8:filePath>&#xa;                &lt;xsl:if test=&quot;$post.item/tns7:Target/tns7:fileName&quot;>&#xa;                    &lt;tns8:fileName>&#xa;                        &lt;xsl:value-of select=&quot;$post.item/tns7:Target/tns7:fileName&quot;/>&#xa;                    &lt;/tns8:fileName>&#xa;                &lt;/xsl:if>&#xa;                &lt;xsl:if test=&quot;$post.item/tns7:Target/tns7:folderName&quot;>&#xa;                    &lt;tns8:folderName>&#xa;                        &lt;xsl:value-of select=&quot;$post.item/tns7:Target/tns7:folderName&quot;/>&#xa;                    &lt;/tns8:folderName>&#xa;                &lt;/xsl:if>&#xa;                &lt;xsl:if test=&quot;$post.item/tns7:Target/tns7:metadataFileName&quot;>&#xa;                    &lt;tns8:metadataFileName>&#xa;                        &lt;xsl:value-of select=&quot;$post.item/tns7:Target/tns7:metadataFileName&quot;/>&#xa;                    &lt;/tns8:metadataFileName>&#xa;                &lt;/xsl:if>&#xa;            &lt;/tns8:Target>&#xa;        &lt;/tns8:TransferRequest>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
-                                    </tibex:inputBindings>
-                                    <tibex:CallProcess
-                                    moduleRef="ch.txg.dms.int5160.bsl.sh"
-                                    subProcessName="ch.txg.dms.int5160.bsl.FileTransfer_INT5160c_BSL" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"/>
-                                </tibex:extActivity>
-                            </bpws:extensionActivity>
                             <bpws:empty name="checkTransferName" tibex:xpdlId="548e4ee7-9e8f-4ed8-b15d-9e2e0074a9e8">
                                 <bpws:targets>
                                     <bpws:target linkName="AssignTocheckTransferName_Name"/>
                                 </bpws:targets>
                                 <bpws:sources>
-                                    <bpws:source linkName="EmptyToCallFileTransfer_INT5160">
-                                    <tibex:DesignExpression>
-                                    <tibex:expression
-                                    expression="contains(upper-case($post/item/tns:TransferRequest/tns:TransferName), &quot;INT5160&quot;)" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"/>
-                                    </tibex:DesignExpression>
-                                    <bpws:transitionCondition expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"><![CDATA[contains(upper-case($post.item/tns:TransferName), "INT5160")]]></bpws:transitionCondition>
-                                    </bpws:source>
-                                    <bpws:source linkName="checkTransferNameToCallProcess_INT5151">
-                                    <tibex:DesignExpression>
-                                    <tibex:expression
-                                    expression="contains(upper-case($post/item/tns:TransferRequest/tns:TransferName), &quot;INT5151&quot;)" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"/>
-                                    </tibex:DesignExpression>
-                                    <bpws:transitionCondition expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"><![CDATA[contains(upper-case($post.item/tns:TransferName), "INT5151")]]></bpws:transitionCondition>
-                                    </bpws:source>
                                     <bpws:source linkName="checkTransferNameToThrow_unknowntransferName">
                                     <tibex:DesignExpression>
                                     <tibex:expression
@@ -2841,6 +2703,7 @@
                                     </tibex:DesignExpression>
                                     <bpws:transitionCondition expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"><![CDATA[##otherwise##]]></bpws:transitionCondition>
                                     </bpws:source>
+                                    <bpws:source linkName="checkTransferNameToCallFileTransfer_INT5151"/>
                                 </bpws:sources>
                             </bpws:empty>
                             <bpws:extensionActivity>
@@ -2852,7 +2715,7 @@
                                     tibex:xpdlId="617dcb78-dfa0-4b23-b2aa-b660499d5e36"
                                     type="bw.generalactivities.callprocess" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                                     <bpws:targets>
-                                    <bpws:target linkName="checkTransferNameToCallProcess_INT5151"/>
+                                    <bpws:target linkName="checkTransferNameToCallFileTransfer_INT5151"/>
                                     </bpws:targets>
                                     <bpws:sources>
                                     <bpws:source linkName="CallProcessToOnMessageEnd1"/>

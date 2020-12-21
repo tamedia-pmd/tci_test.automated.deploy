@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>ch.txg.dms.filetransfer.md</name>
+	<name>ch.txg.dms.bankstatement.filetransfer.md</name>
 	<comment></comment>
 	<projects>
 		<project>ch.txg.core.sftp.common.sh</project>
-		<project>ch.txg.dms.int5160.bsl.sh</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

@@ -601,10 +601,10 @@
         <bpws:variable element="ns0:TimerOutputSchema" name="Timer" sca-bpel:internal="true"/>
         <bpws:variable name="TimeInterval_s" sca-bpel:hotUpdate="false"
             sca-bpel:privateProperty="true" sca-bpel:property="yes"
-            tibex:propertySource="/ch.txg.dms.filetransfer.md/ch.txg.dms.filetransfer.adm/ConfigLoader/ConfLoad_TimeInterval_s" type="xsd:int"/>
+            tibex:propertySource="/ch.txg.dms.bankstatement.filetransfer.md/ch.txg.dms.filetransfer.adm/ConfigLoader/ConfLoad_TimeInterval_s" type="xsd:int"/>
         <bpws:variable name="Start_Datetime" sca-bpel:hotUpdate="false"
             sca-bpel:privateProperty="true" sca-bpel:property="yes"
-            tibex:propertySource="/ch.txg.dms.filetransfer.md/ch.txg.dms.filetransfer.adm/ConfigLoader/StartTimestamp" type="xsd:dateTime"/>
+            tibex:propertySource="/ch.txg.dms.bankstatement.filetransfer.md/ch.txg.dms.filetransfer.adm/ConfigLoader/StartTimestamp" type="xsd:dateTime"/>
         <bpws:variable name="LibraryName" sca-bpel:hotUpdate="false"
             sca-bpel:privateProperty="true" sca-bpel:property="yes"
             tibex:propertySource="//ch.txg.dms.aodocs.bankstatement-bs.sh///INT5151BankStatement/libraryName" type="xsd:string"/>

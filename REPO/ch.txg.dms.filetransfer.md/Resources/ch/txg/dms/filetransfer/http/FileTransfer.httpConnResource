@@ -2,19 +2,19 @@
 <jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:httpconnector="http://xsd.tns.tibco.com/bw/models/sharedresource/httpconnector" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmi:id="_YWehoa76EeqlbYW_EmwFxg" name="ch.txg.dms.filetransfer.http.FileTransfer" type="httpconnector:HttpConnectorConfiguration">
   <jndi:configuration xsi:type="httpconnector:HttpConnectorConfiguration" xmi:id="_YWjaIK76EeqlbYW_EmwFxg">
     <substitutionBindings xmi:id="_YWjaIa76EeqlbYW_EmwFxg" template="host" propName="BW.HOST.NAME"/>
-    <substitutionBindings xmi:id="_vgX8cLU8EeqCJ-tL7gWIog" template="port" propName="/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/Port"/>
-    <substitutionBindings xmi:id="_Iw7hEM2vEeqle4nGzm48qw" template="acceptQueueSize" propName="/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/AcceptQueueSize"/>
-    <substitutionBindings xmi:id="_6gmZkM2vEeqle4nGzm48qw" template="acceptors" propName="/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/AcceptorThreads"/>
-    <substitutionBindings xmi:id="_94b4EM2vEeqle4nGzm48qw" template="headerBufferSize" propName="/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/HeaderBufferSize_B"/>
-    <substitutionBindings xmi:id="__uT0kM2vEeqle4nGzm48qw" template="requestBufferSize" propName="/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/RequestBufferSize_B"/>
-    <substitutionBindings xmi:id="_DR4pAM2wEeqle4nGzm48qw" template="responseBufferSize" propName="/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/ResponseBufferSize_B"/>
-    <substitutionBindings xmi:id="_F4F2QM2wEeqle4nGzm48qw" template="maxIdleTime" propName="/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/MaxIdleTime_ms"/>
-    <substitutionBindings xmi:id="_HtjjEM2wEeqle4nGzm48qw" template="lowResourceMaxIdleTime" propName="/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/LowResourceMaxIdleTime_ms"/>
-    <substitutionBindings xmi:id="_J7IN4M2wEeqle4nGzm48qw" template="lingerTime" propName="/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/LingerTime_ms"/>
-    <substitutionBindings xmi:id="_LoGtEM2wEeqle4nGzm48qw" template="sessionTimeout" propName="/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/SessionTimeout_s"/>
-    <substitutionBindings xmi:id="_Qs744M2wEeqle4nGzm48qw" template="maxPostSize" propName="/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/MaxPostSize_B"/>
-    <substitutionBindings xmi:id="_SjdVoM2wEeqle4nGzm48qw" template="maxSavePostSize" propName="/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/MaxSavePostSize_B"/>
-    <substitutionBindings xmi:id="_V4YDAM2wEeqle4nGzm48qw" template="minThreads" propName="/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/MinimumQTPThreads"/>
-    <substitutionBindings xmi:id="_XH5KIM2wEeqle4nGzm48qw" template="maxThreads" propName="/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/MaximumQTPThreads"/>
+    <substitutionBindings xmi:id="_vgX8cLU8EeqCJ-tL7gWIog" template="port" propName="/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/Port"/>
+    <substitutionBindings xmi:id="_Iw7hEM2vEeqle4nGzm48qw" template="acceptQueueSize" propName="/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/AcceptQueueSize"/>
+    <substitutionBindings xmi:id="_6gmZkM2vEeqle4nGzm48qw" template="acceptors" propName="/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/AcceptorThreads"/>
+    <substitutionBindings xmi:id="_94b4EM2vEeqle4nGzm48qw" template="headerBufferSize" propName="/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/HeaderBufferSize_B"/>
+    <substitutionBindings xmi:id="__uT0kM2vEeqle4nGzm48qw" template="requestBufferSize" propName="/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/RequestBufferSize_B"/>
+    <substitutionBindings xmi:id="_DR4pAM2wEeqle4nGzm48qw" template="responseBufferSize" propName="/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/ResponseBufferSize_B"/>
+    <substitutionBindings xmi:id="_F4F2QM2wEeqle4nGzm48qw" template="maxIdleTime" propName="/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/MaxIdleTime_ms"/>
+    <substitutionBindings xmi:id="_HtjjEM2wEeqle4nGzm48qw" template="lowResourceMaxIdleTime" propName="/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/LowResourceMaxIdleTime_ms"/>
+    <substitutionBindings xmi:id="_J7IN4M2wEeqle4nGzm48qw" template="lingerTime" propName="/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/LingerTime_ms"/>
+    <substitutionBindings xmi:id="_LoGtEM2wEeqle4nGzm48qw" template="sessionTimeout" propName="/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/SessionTimeout_s"/>
+    <substitutionBindings xmi:id="_Qs744M2wEeqle4nGzm48qw" template="maxPostSize" propName="/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/MaxPostSize_B"/>
+    <substitutionBindings xmi:id="_SjdVoM2wEeqle4nGzm48qw" template="maxSavePostSize" propName="/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/MaxSavePostSize_B"/>
+    <substitutionBindings xmi:id="_V4YDAM2wEeqle4nGzm48qw" template="minThreads" propName="/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/MinimumQTPThreads"/>
+    <substitutionBindings xmi:id="_XH5KIM2wEeqle4nGzm48qw" template="maxThreads" propName="/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/MaximumQTPThreads"/>
   </jndi:configuration>
 </jndi:namedResource>

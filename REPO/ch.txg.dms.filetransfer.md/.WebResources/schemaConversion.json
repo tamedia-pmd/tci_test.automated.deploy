@@ -1,5 +1,5 @@
 {"records": [{
-    "jsonSchemaLocation": "/ch.txg.dms.filetransfer.md/Service Descriptors/ch.txg.dms.filetransfer.md.FileTransferService-FileTransfer.json",
+    "jsonSchemaLocation": "/ch.txg.dms.bankstatement.filetransfer.md/Service Descriptors/ch.txg.dms.filetransfer.md.FileTransferService-FileTransfer.json",
     "conversionType": "linked",
     "xsdSchemaTargetNamespace": "http://ch/txg/dms/fileTransfer/md/interfaces/0100"
 }]}

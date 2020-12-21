@@ -56,7 +56,7 @@
 			<useLookupValue>false</useLookupValue>
 		</globalVariable>
 		<globalVariable>
-			<name>/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/Port</name>
+			<name>/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/Port</name>
 			<value>8080</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
@@ -65,7 +65,7 @@
 			<useLookupValue>false</useLookupValue>
 		</globalVariable>
 		<globalVariable>
-			<name>/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/AcceptQueueSize</name>
+			<name>/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/AcceptQueueSize</name>
 			<value>0</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
@@ -74,7 +74,7 @@
 			<useLookupValue>false</useLookupValue>
 		</globalVariable>
 		<globalVariable>
-			<name>/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/AcceptorThreads</name>
+			<name>/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/AcceptorThreads</name>
 			<value>1</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
@@ -83,7 +83,7 @@
 			<useLookupValue>false</useLookupValue>
 		</globalVariable>
 		<globalVariable>
-			<name>/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/HeaderBufferSize_B</name>
+			<name>/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/HeaderBufferSize_B</name>
 			<value>4096</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
@@ -92,7 +92,7 @@
 			<useLookupValue>false</useLookupValue>
 		</globalVariable>
 		<globalVariable>
-			<name>/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/RequestBufferSize_B</name>
+			<name>/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/RequestBufferSize_B</name>
 			<value>8192</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
@@ -101,7 +101,7 @@
 			<useLookupValue>false</useLookupValue>
 		</globalVariable>
 		<globalVariable>
-			<name>/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/ResponseBufferSize_B</name>
+			<name>/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/ResponseBufferSize_B</name>
 			<value>24576</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
@@ -110,7 +110,7 @@
 			<useLookupValue>false</useLookupValue>
 		</globalVariable>
 		<globalVariable>
-			<name>/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/MaxIdleTime_ms</name>
+			<name>/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/MaxIdleTime_ms</name>
 			<value>200000</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
@@ -119,7 +119,7 @@
 			<useLookupValue>false</useLookupValue>
 		</globalVariable>
 		<globalVariable>
-			<name>/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/LowResourceMaxIdleTime_ms</name>
+			<name>/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/LowResourceMaxIdleTime_ms</name>
 			<value>0</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
@@ -128,7 +128,7 @@
 			<useLookupValue>false</useLookupValue>
 		</globalVariable>
 		<globalVariable>
-			<name>/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/LingerTime_ms</name>
+			<name>/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/LingerTime_ms</name>
 			<value>0</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
@@ -137,7 +137,7 @@
 			<useLookupValue>false</useLookupValue>
 		</globalVariable>
 		<globalVariable>
-			<name>/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/SessionTimeout_s</name>
+			<name>/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/SessionTimeout_s</name>
 			<value>1800</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
@@ -146,7 +146,7 @@
 			<useLookupValue>false</useLookupValue>
 		</globalVariable>
 		<globalVariable>
-			<name>/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/MaxPostSize_B</name>
+			<name>/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/MaxPostSize_B</name>
 			<value>2097152</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
@@ -155,7 +155,7 @@
 			<useLookupValue>false</useLookupValue>
 		</globalVariable>
 		<globalVariable>
-			<name>/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/MaxSavePostSize_B</name>
+			<name>/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/MaxSavePostSize_B</name>
 			<value>4096</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
@@ -164,7 +164,7 @@
 			<useLookupValue>false</useLookupValue>
 		</globalVariable>
 		<globalVariable>
-			<name>/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/MinimumQTPThreads</name>
+			<name>/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/MinimumQTPThreads</name>
 			<value>10</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
@@ -173,7 +173,7 @@
 			<useLookupValue>false</useLookupValue>
 		</globalVariable>
 		<globalVariable>
-			<name>/ch.txg.dms.filetransfer.md/Connections/HTTP/Connector/MaximumQTPThreads</name>
+			<name>/ch.txg.dms.bankstatement.filetransfer.md/Connections/HTTP/Connector/MaximumQTPThreads</name>
 			<value>75</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
@@ -182,7 +182,7 @@
 			<useLookupValue>false</useLookupValue>
 		</globalVariable>
 		<globalVariable>
-			<name>/ch.txg.dms.filetransfer.md/ch.txg.dms.filetransfer.adm/ClearCacheMemory/URI</name>
+			<name>/ch.txg.dms.bankstatement.filetransfer.md/ch.txg.dms.filetransfer.adm/ClearCacheMemory/URI</name>
 			<value>/dev/dms/filetransfer/admin/clearmemory/v1</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
@@ -191,7 +191,7 @@
 			<useLookupValue>false</useLookupValue>
 		</globalVariable>
 		<globalVariable>
-			<name>/ch.txg.dms.filetransfer.md/ch.txg.dms.filetransfer.adm/ConfigLoader/ConfLoad_TimeInterval_s</name>
+			<name>/ch.txg.dms.bankstatement.filetransfer.md/ch.txg.dms.filetransfer.adm/ConfigLoader/ConfLoad_TimeInterval_s</name>
 			<value>86400</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
@@ -200,7 +200,7 @@
 			<useLookupValue>false</useLookupValue>
 		</globalVariable>
 		<globalVariable>
-			<name>/ch.txg.dms.filetransfer.md/ch.txg.dms.filetransfer.adm/ConfigLoader/StartTimestamp</name>
+			<name>/ch.txg.dms.bankstatement.filetransfer.md/ch.txg.dms.filetransfer.adm/ConfigLoader/StartTimestamp</name>
 			<value>2020-12-09T02:30:00+01:00</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
