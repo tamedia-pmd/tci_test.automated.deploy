@@ -1,0 +1,13 @@
+{
+    "records": [],
+    "resources": [
+        {
+            "location": "Service Descriptors/test.automated.deploy.md.Process-testservice.json",
+            "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/test.automated.deploy.md.dummyservice-testservice.json",
+            "type": "generated"
+        }
+    ]
+}

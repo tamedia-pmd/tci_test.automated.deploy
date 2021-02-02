@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_Q-P7oGVsEeu9q_rRIJE6kg" targetNamespace="http://tns.tibco.com/bw/composite/test.automated.deploy.md" name="test.automated.deploy.md" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_Wuc_smVsEeu9q_rRIJE6kg" name="testservice" promote="ComponentProcess/testservice">
+    <sca:interface.wsdl xmi:id="_WupM8GVsEeu9q_rRIJE6kg" interface="http://xmlns.example.com/20210202163524PLT#wsdl.interface(testservice)"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_Wu1aMGVsEeu9q_rRIJE6kg" name="RestService" path="/testservice" docBasePath="http://localhost:7777/test.automated.deploy.md" docResourcePath="testservice" basePath="/" connector="test.automated.deploy.md.testservice" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/test.automated.deploy.md.Process-testservice.json">
+      <operation xmi:id="_Wu4dgWVsEeu9q_rRIJE6kg" operationName="post" nickname="post-testservice" httpMethod="POST" notes="postTestservice" responseStyle="element" outputPartName="item">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_WvHuE2VsEeu9q_rRIJE6kg"/>
+      <advancedConfig xmi:id="_Wu4dgGVsEeu9q_rRIJE6kg" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_Wu4dgmVsEeu9q_rRIJE6kg" bindingName="RestService"/>
+  </sca:service>
+  <sca:property xmi:id="_Re2uUGVsEeu9q_rRIJE6kg" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_RfC7kGVsEeu9q_rRIJE6kg" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_RfF-4GVsEeu9q_rRIJE6kg" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_RfJCMGVsEeu9q_rRIJE6kg" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_RfMFgGVsEeu9q_rRIJE6kg" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_RfPI0GVsEeu9q_rRIJE6kg" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_CI-7EGVtEeu9q_rRIJE6kg" name="/properties/successResponse" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_EKmNgGVtEeu9q_rRIJE6kg" name="/properties/errorResponse" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_Hz850GVtEeu9q_rRIJE6kg" name="/properties/successHTTPcode" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_H5PpgGVtEeu9q_rRIJE6kg" name="/properties/errorHTTPstatusCodeBR" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:component xmi:id="_RLH6AGVsEeu9q_rRIJE6kg" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_RLH6AWVsEeu9q_rRIJE6kg" processName="test.automated.deploy.md.dummyservice"/>
+    <sca:service xmi:id="_Wuc_sGVsEeu9q_rRIJE6kg" name="testservice">
+      <sca:interface.wsdl xmi:id="_Wuc_sWVsEeu9q_rRIJE6kg" interface="http://xmlns.example.com/20210202163524PLT#wsdl.interface(testservice)"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>
