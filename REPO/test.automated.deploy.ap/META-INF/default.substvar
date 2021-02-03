@@ -3,21 +3,23 @@
 	<globalVariables>
 		<globalVariable>
 			<name>/properties/errorResponse</name>
-			<value>&quot;NOT OK&quot;</value>
+			<value>NOT OK</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
 			<isOverride>false</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>NOT OK</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>/properties/successResponse</name>
-			<value>&quot;OK&quot;</value>
+			<value>OK</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
 			<isOverride>false</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>OK</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//test.automated.deploy.md//BW.APPNODE.NAME</name>
