@@ -91,7 +91,7 @@
     <packaging:module>
       <packaging:symbolicName>test.automated.deploy.md</packaging:symbolicName>
       <packaging:technologyType>osgi-bundle,bw-appmodule</packaging:technologyType>
-      <packaging:technologyVersion>1.0.0.qualifier</packaging:technologyVersion>
+      <packaging:technologyVersion>1.1.0.qualifier</packaging:technologyVersion>
     </packaging:module>
   </packaging:modules>
 </packaging:packageUnit>

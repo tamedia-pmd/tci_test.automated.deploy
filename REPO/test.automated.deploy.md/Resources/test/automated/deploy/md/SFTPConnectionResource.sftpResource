@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmlns:sftpconnection="http://ns.tibco.com/bw/palette/sftpconnection" xmi:id="_YNKuEW-sEeuw_PWxO9CPgQ" name="test.automated.deploy.md.SFTPConnectionResource" type="sftpconnection:sftpconnection">
+  <jndi:configuration xsi:type="sftpconnection:SFTPConnection" xmi:id="_YNQ0sG-sEeuw_PWxO9CPgQ" host="ftp.tamedia.ch" userName="txtci-dev" password="#!z6LX4RXsBm1VommkZHOyU0/xxickX9avCX9YFWPrSLr1EJFkaj6L3Q=="/>
+</jndi:namedResource>
