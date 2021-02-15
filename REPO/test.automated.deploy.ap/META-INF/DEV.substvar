@@ -3,19 +3,23 @@
 	<globalVariables>
 		<globalVariable>
 			<name>/properties/errorResponse</name>
+			<value>NOT OK</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
 			<isOverride>false</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>NOT OK</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>/properties/successResponse</name>
+			<value>OK</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
 			<isOverride>false</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>OK</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//test.automated.deploy.md//BW.APPNODE.NAME</name>
@@ -73,23 +77,23 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//test.automated.deploy.md///properties/errorResponse</name>
-			<value>NOT OK</value>
+			<value>%%/properties/errorResponse%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
 			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
-			<lookupValue>NOT OK</lookupValue>
+			<lookupValue>%%/properties/errorResponse%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//test.automated.deploy.md///properties/successResponse</name>
-			<value>OK</value>
+			<value>%%/properties/successResponse%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
 			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
-			<lookupValue>OK</lookupValue>
+			<lookupValue>%%/properties/successResponse%%</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//test.automated.deploy.md///properties/errorHTTPstatusCodeBR</name>
@@ -99,6 +103,7 @@
 			<type>Integer</type>
 			<isOverride>false</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>400</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//test.automated.deploy.md///properties/successHTTPcode</name>
@@ -108,6 +113,7 @@
 			<type>Integer</type>
 			<isOverride>false</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>0</lookupValue>
 		</globalVariable>
 	</globalVariables>
 </repository>
