@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: test automated deploy ap
 Bundle-SymbolicName: test.automated.deploy.ap
-Bundle-Version: 1.1.0.qualifier
+Bundle-Version: 1.2.0.qualifier
 Bundle-Vendor: TIBCO Software Inc.
 TIBCO-BW-Version: 2.5.3 V26 2020-05-15
 TIBCO-BW-Edition: bwcloud
